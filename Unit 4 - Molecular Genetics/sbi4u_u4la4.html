@@ -1,0 +1,1879 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Learning activity 4.4: Investigating biotechnology and bioethics</title>
+
+    <style>
+        /* Reader Tabs*/
+        ul.nav.reader_tab {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+
+        .reader_tab>li>a {
+            background-color: #31708f;
+            border: 1px solid #c0c9cb;
+            text-align: center;
+            padding: 5px;
+            color: #fff;
+        }
+
+        .reader_tab>li>a:hover {
+            color: #333;
+        }
+
+        .reader_tab-body {
+            border-right: 1px solid grey;
+            border-top: 1px solid grey;
+            padding: 40px;
+        }
+
+        .reader_tab-body p {
+            padding: 20px 40px 0 0;
+        }
+
+        table,
+        th,
+        td {
+            width: 10%;
+        }
+
+
+        body#topNavNone nav.navbar-ilc {
+            display: none;
+        }
+
+        /*matching widget styles*/
+        .completionItem {
+            /*question (label) and option (select) div*/
+            position: relative;
+            clear: both;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(86, 101, 105, 0.5);
+            margin-bottom: 20px;
+            background-color: #F8F9F9;
+        }
+
+        .completionItem label {
+            /* question is inside <label>*/
+            width: 71%;
+            padding: 2%;
+            font-size: 95%;
+        }
+
+        .completionItem select {
+            /* options are inside <select>*/
+            width: 25%;
+            float: right;
+            margin: 2%;
+            margin-right: 0px;
+            /* .btn-info -- button styles from CVL */
+            color: #F8F9F9;
+            background-color: #0A76A5;
+            border-color: #0A76A5;
+        }
+
+        .completionItem label>span {
+            /*all text is inside <span> - this overrides bold for question text*/
+            font-weight: normal;
+        }
+
+        .completionItem span {
+            /*feedback text*/
+            font-weight: bold;
+        }
+
+        .completionFeedback i {
+            /*this pushes the feedback to a new line*/
+            padding: 20px
+        }
+
+        .completionControls {
+            /*position of submit button - width and position matches options*/
+            float: right;
+            width: 25%;
+        }
+
+        .completionControls button {
+            /*button is full width of 25% in layout*/
+            width: 100%;
+            /* different button */
+            color: #F8F9F9;
+            background-color: gray;
+            border-color: #0A76A5;
+        }
+
+        .completionControls button:hover {
+            background-color: black;
+        }
+
+    </style>
+    <link rel="stylesheet" href="../assets/css/ilc_core_temp.css">
+</head>
+
+<body>
+    <noscript>
+        <div class="alert alert-warning clearfix" role="alert">
+            <p>
+                <strong>Warning!</strong> To ensure the greatest educational experience, this learning activity contians aspects that require Javascript to be enabled.
+            </p>
+        </div>
+    </noscript>
+    <section id="ilcLearningGoals" class="hidden">
+        <h2>Learning goals</h2>
+        <p>We are learning to:</p>
+        <ul>
+            <li>analyse some of the social, ethical, and legal issues associated with genetic research and biotechnology;</li>
+        </ul>
+        <h2>Success criteria</h2>
+        <p>I am able to:</p>
+        <ul>
+            <li>analyse, on the basis of research, some of the social, ethical, and legal implications of biotechnology (genetically modified foods)</li>
+            <li>describe the main techniques used in biotechnology </li>
+            <li>compare and analyse some key aspects of Canadian regulations pertaining to biotechnology</li>
+        </ul>
+    </section>
+
+
+
+
+
+
+    <main id="mainContent" class="container">
+        <section id="mindsOn">
+            <div class="row banner">
+                <h1><img src="../assets/img/sbi4u_04.04_mindsOn.png" alt="Minds On" class="img-responsive"></h1>
+
+            </div>
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2 class="h3">Case Study</h2>
+                    <div class="callout_content_icon"><img src="../assets/icons/case_study.svg" alt class="img-responsive">
+                        <div class="callout_content">
+
+                            <p><a href="../assets/locker_docs/sbi4u_04.05.01.pdf" target="_blank">Read the following case study<span class="sr-only"> (Opens in new window)</span></a> and consider the following questions after:</p>
+                            <ul>
+                                <li>What do you think of when you think of genetically modified food? </li>
+                                <li>Have there been any articles in the news lately about GMOs? </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-callout margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Notebook</h3>
+                    <div class="callout_content_icon"><img src="../assets/icons/notebook.svg" alt class="img-responsive">
+                        <div class="callout_content">
+                            <p>Make some notes about the basics what genetically modified foods are based on your current knowledge before moving on to the action part of this learning activity. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="action">
+            <div class="row banner">
+                <h1><img src="../assets/img/sbi4u_04_action.png" alt="Action" class="img-responsive"></h1>
+            </div>
+
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Importance of biotechnology</h2>
+                    <p>The word “<strong>biotechnology</strong>” means “<em class="Italic">life tools</em>” (as “bio” means “life” and “technology” means “tools” in ancient Greek). A more technical definition is provided by the United Nations Convention on
+                        Biodiversity:</p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Definition</h3>
+                    <div class="callout_content_icon">
+                        <div class="callout_content">
+                            <img src="../assets/img/sbi4u_04.04.03.png" alt="The United Nations Convention of Biodiversity logo" class="img-responsive" style="min-width: 200px; float: left; margin-right: 15px">
+                            <p>“<strong>Biotechnology</strong> is any technological application that uses biological systems, living organisms, or derivatives thereof, to make or modify products or processes for specific use.”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <img src="../assets/img/sbi4u_04.04.04.jpg" alt="Woman scientist looking through a microscope" class="img-responsive">
+                    <h3 class="margin-top-lg">Canadian example: Barcode of Life Project</h3>
+                    <p><strong>The Barcode of Life Project</strong> is an example of how Canadians are leading the world in developing pioneering biotechnology. In this case, the tool of genetic sequencing is being used for <strong>biodiversity
+                            conservation</strong>. </p>
+                    <p>The Barcode of Life Project uses a simple observation from the revolution in genetic sequencing. Most species have short segments of genetic code (approximately 648 base pairs) that are nearly identical across all individuals of that
+                        species, but which are different from other species. If we can determine these sequences for every species, then we can quickly identify each species by reading short sections of their DNA, in the same way that a barcode uniquely
+                        identifies a product in a store.</p>
+
+                    <img src="../assets/img/sbi4u_04.04.05.png" alt="The Barcode of Life Project logo" class="img-responsive" style="margin: auto">
+                    <p>The Barcode of Life Project began in 2003, in the research lab of Prof. Paul Hebert, an evolutionary biologist from the University of Guelph in Ontario. It has now become a worldwide program, with research networks formed in many
+                        countries. </p>
+                    <h3 class="margin-top-xl">Practical applications of the Barcode for Life Project</h3>
+                    <p>A recent application of this project has been in identifying species of fish for sale in seafood markets and restaurants around the world. Sometimes species are sold illegally or inexpensive species are given false names to hide their
+                        true identity. In 2008, two New York City high school students used the freely available barcode database to prove that about one quarter of fish items they purchased in Manhattan were inaccurately labelled. Their “Sushigate”
+                        investigation earned front-page coverage in <em class="Italic">The New York Times newspaper</em></p>
+                    <img src="../assets/img/sbi4u_04.04.08.jpg" alt="The “Sushigate” investigation performed by two high school students proved that that about one quarter of fish items they purchased in Manhattan were inaccurately labelled.  Their research spawned further investigations. " class="img-responsive">
+                    <p>One problem with biodiversity conservation is the difficulty that people have in identifying different species. Even highly trained specialists in taxonomy are limited to knowing only about 1,000 species, yet there are at least 10
+                        million species on the planet. Endangered species may be living in threatened areas but may go unnoticed. This is especially true for insects, soil invertebrates, fungi, and small plants.</p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <img src="../assets/img/sbi4u_04.04.09.jpg" alt="Biodiversity or biological diversity is the variety and variability of organisms on earth.  Pictured here is an ostrich family. " class="img-responsive">
+                    <p>It takes many years to train a person in taxonomy and such training is very expensive. There aren’t enough highly trained people or enough time to train them, to address the biodiversity crisis facing us today. This is a particular
+                        problem in developing nations where most of the world’s biodiversity exists. The Barcode of Life Project is seeking a way for everyone—trained or not—to be able to identify any one of millions of species in a few minutes, using hand-held
+                        technology.</p>
+                    <p>Large collaborative scientific projects like the Barcode of Life Project do not come about by chance. It requires a lot of hard work to bring partners together and get the research funding for a project like this. One important job is to
+                        write scientific assessment reports, outlining the costs and benefits of the proposed research.</p>
+                    <img src="../assets/img/sbi4u_04.04.11.png" alt="An overview of the DNA barcoding “pipeline”" class="img-responsive" style="margin: auto">
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Writing scientific assessments</h2>
+                    <p>Scientific assessments, such as the one that follows:</p>
+                    <ul>
+                        <li>have an informative title.</li>
+                        <li>start out with an introduction of the project’s goals and technologies.</li>
+                        <li>provide detailed evidence in the body of the report so that the reader can see why it is relevant.</li>
+                        <li>properly cite references to support scientific points, where necessary. Short links to the references (name and year only) are given in the main text of the report immediately after the information based on them. Notice that if the
+                            article cited has three or more authors, then only the first author’s name is given in the brackets, to save space. Full citations for each reference are placed at the end of the report in alphabetical order, based on the last name of
+                            the first author (or the name of the organization, if the report has too many authors to list, for example, GBA 1995).</li>
+                        <li>end with a conclusion that clearly states the author’s position.</li>
+                    </ul>
+                    <p>Here is an example of a short (350-word) scientific assessment of the costs and benefits of DNA barcoding. Read “DNA Barcoding” assessment and identify all the parts that make up a scientific assessment.</p>
+                </div>
+            </div>
+
+            <div class="row color-safe-bg_light-brand-2">
+                <!-- *************************** READER 1 BEGINS ******************************************* -->
+                <div>
+                    <div>
+                        <ul class="nav reader_tab" role="tablist">
+
+                            <!-- <li class="active"><a href="#tab1_1" data-toggle="tab">
+                                        </a></li>-->
+                        </ul>
+
+                        <div class="tab-pane fade in active" id="reader1">
+                            <h3 class="margin-top-md">DNA barcoding: A new tool for cataloguing biodiversity</h3>
+                            <p>It has taken over 250 years for scientists to catalogue only about 15% of the world’s biodiversity (GBA 1995). With so many species and ecosystems now under immediate threat, the worry is that most species will be extinct before they
+                                can even be identified. Species identification is one of the first steps in biodiversity protection. To speed up species identification, a new genetics tool is being developed that will allow non-experts anywhere in the world to
+                                quickly identify species of all kinds. DNA barcodes use a small fragment of an organism’s DNA—a portion of a single gene—to identify the species to which an organism belongs.</p>
+                            <p>The Barcode of Life Project, started by Canadian researcher Paul Hebert at the University of Guelph, is developing a DNA-based identification system that can catalogue all species on earth using these barcodes (Dooh and Hebert 2005).
+                            </p>
+                            <p>With this technology, anyone anywhere could rapidly identify any species at any stage of development for less than 50 cents per sample (Dooh and Hebert 2005). This would make bioprospecting much more efficient and economical,
+                                speeding up the discovery of organisms yielding life-saving drugs. Fast, cheap, and accurate identification of species will also help in controlling pests in agriculture, policing the illegal traffic in endangered species, and
+                                promoting protection for species-rich areas that may have been overlooked.</p>
+                            <p>This technology does not yet work for all species. Some plants and microbes may not have species-level barcodes in the sequences of DNA being examined. This requires more research. Also, barcoding does not replace the need for
+                                researchers trained in taxonomy, phylogenetics, or ecology, as some have warned. In fact, because barcoding helps to catalogue biodiversity, it could provide an amazing new source of data that would greatly benefit research in these
+                                fields (Hajibabaei et al. 2007).</p>
+                            <p>The process began in Canada, and scientists here continue to lead international work aiming to catalogue the earth’s biodiversity. The DNA barcoding project provides a foundation for the creation of a complete inventory of
+                                biodiversity in Canada, which would be the first inventory of its kind anywhere in the world. It is important that this work continue to be funded and develop.</p>
+                            <p>References</p>
+                            <p>Dooh, R. and Hebert, P.D.N. (2005). The Canadian Barcode of Life Network.</p>
+                            <p>GBA (Global Biodiversity Assessment). 1995. Global Biodiversity Assessment. United Nations Environment Programme, Cambridge, UK, Cambridge University Press.</p>
+                            <p>Hajibabaei M, Singer G.A., Hickey D.A. 2007. DNA barcoding: how it complements taxonomy, molecular phylogenetics and population genetics. <em class="Italic">Trends in Genetics</em>. 23: 167–72.</p>
+                        </div>
+                        <!-- END OF TAB ITEMS -->
+                    </div>
+                </div>
+            </div>
+            <div class="row ilc-row-text margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Understanding checkpoint: Importance of biodiversity </h3>
+                    <p>Why is biotechnology often shown as being controversial in media reports?</p>
+                    <button class="btn btn-default btn-answer-reveal" id="sbi4u_u4la4-suggestedAnswerButton-1">Suggested Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u4la4-suggestedAnswer-1">
+                        <p>Because biotechnology has implications for many different considerations in society, such as legal, ethical, economic, political, and environmental factors, these considerations can sometimes be contradictory. For example, a new
+                            biotechnology may have a medical benefit, but its production could harm the environment, so it’s difficult for society to decide whether it is a good or bad invention, overall.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                   <div id="u4la4_mc1" class="multiple-choice-widget" data-ng-controller="multipleChoiceController" data-ng-init="getQuestionData('../widgets/sbi4u_u4la4_mc1.json')">
+                      <div data-multiple-choice-directive></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-callout margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Notebook</h3>
+                    <div class="callout_content_icon"><img src="../assets/icons/notebook.svg" alt class="img-responsive">
+                        <div class="callout_content">
+                            <p>Complete the table below in your notebook by listing two benefits and two potential drawbacks of DNA barcoding that were described in the scientific assessment report example above. There are two parts to this question, Part A and
+                                Part B. Check your answer once you have completed both parts. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Part A:</h3>
+                         <table id="ilc1u_u1la1-tableSuggestedAnswers-1" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="Table-Header">Two (or more) benefits of DNA barcoding </th>
+                                <th scope="col" class="Table-Header">Two potential drawbacks of barcoding </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td><br>
+                                    <p class="tableSuggestedAnswer invisible">&#8226; Fast</p>
+                                    <p class="tableSuggestedAnswer invisible">&#8226; Inexpensive</p>
+                                    <p class="tableSuggestedAnswer invisible">&#8226; Accurate</p>
+                                    <p class="tableSuggestedAnswer invisible">&#8226; Anyone can use it anywhere, without needing specialized training</p>
+                                </td>
+                                <td>
+                                    <br>
+                                    <p class="tableSuggestedAnswer invisible">&#8226; It doesn’t yet work for all types of species, especially plants.</p>
+                                    <p class="tableSuggestedAnswer invisible">&#8226; Some worry that it will reduce the recruitment and training of scientific experts in taxonomy and other biological fields.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button id="ilc1u_u1la1-tableSuggestedAnswersButton-1" class="btn btn-table-answer-reveal">Show Answers</button>
+                    <!-- *************************** REVEAL TABLE 1 ENDS ****************************************** -->
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Part B: </h3>
+                    <p>What is the author’s conclusion about the value of the project?</p>
+                    <button class="btn btn-default btn-answer-reveal" id="sbi4u_u4la4-suggestedAnswerButton-2">Suggested Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u4la4-suggestedAnswer-2">
+                        <p>The author concludes that the project is very valuable and should be funded, so that it can continue to develop.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Key developments in the history of biotechnology</h2>
+                    <p>Biotechnology draws from the sciences of biology, chemistry, engineering, and medicine, so many of these areas have provided input to the growing field.</p>
+                    <h3 class="margin-top-lg">Biotechnology timeline</h3>
+                    <p>The timeline below lists some key events in the story of biotechnology:</p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                            <ul class="nav nav-pills-sm" role="tablist" style="width:100%">
+
+                                <!--YOU WILL NEED TO ADJUST THE WIDTH % DEPENDING ON HOW MANY TABS YOU HAVE-->
+                                <li class="active" style="width:30%" role="tab"><a href="#tab1_1" data-toggle="tab">
+                                        <strong>8000 BC<br>–1589 AD</strong> </a></li>
+                                <li style="width:20%" role="tab"><a href="#tab1_2" data-toggle="tab">
+                                        <strong>1590<br>–1862</strong></a></li>
+                                <li style="width:15%" role="tab"><a href="#tab1_3" data-toggle="tab">
+                                        1919<br><br></a></li>
+                                <li style="width:15%" role="tab"><a href="#tab1_4" data-toggle="tab">
+                                        1953<br><br></a></li>
+                                <li style="width:20%" role="tab"><a href="#tab1_5" data-toggle="tab">
+                                        1959<br><br></a></li>
+
+                            </ul>
+                        <div class="panel-body">
+                            <div class="tab-content">
+                                <!-- START TAB ITEMS -->
+                                <div class="tab-pane fade in active" id="tab1_1">
+                                    <p>Humans selected seeds for planting and livestock for breeding, mated different species to form hybrids, and utilized yeast and bacteria to ferment a wide variety of foods and beverages</p>
+                                    <img src="../assets/img/sbi4u_04.04.12.jpg" alt="Yeast is used to make bread rise" class="img-responsive">
+                                </div>
+                                <div class="tab-pane fade" id="tab1_2">
+                                    <p>Zacharias Janssen (Holland) invented the microscope and Anton van Leeuwenhoek (Holland) discovered microorganisms, using a microscope. Gregor Mendel (Austria) described the laws of inheritance, and Louis Pasteur (France)
+                                        determined that fermentation is the result of bacterial metabolism.</p>
+                                    <img src="../assets/img/sbi4u_04.04.13.jpg" alt="The invention of the microscope led to discovery of microorganisms" class="img-responsive">
+                                </div>
+                                <div class="tab-pane fade" id="tab1_3">
+                                    <p>The term “biotechnology” was coined by agricultural engineer Karl Ereky (Hungary).</p>
+                                    <img src="../assets/img/sbi4u_04.04.14.jpg" alt="Biotechnology lab" class="img-responsive">
+                                </div>
+                                <div class="tab-pane fade" id="tab1_4">
+                                    <p>The double helical structure of DNA was recorded by Rosalind Franklin (United Kingdom). James Watson (USA) and Francis Crick (United Kingdom) described the full structure of DNA.</p>
+                                    <img src="../assets/img/sbi4u_04.04.15.jpg" alt="DNA molecule" class="img-responsive">
+                                </div>
+                                <div class="tab-pane fade" id="tab1_5">
+                                    <p>Gel electrophoresis became refined as a method for separating large molecules, such as DNA and proteins, based on their size.</p>
+                                    <img src="../assets/img/sbi4u_04.04.16.jpg" alt="gel electrophoresis" class="img-responsive">
+                                </div>
+                                <!-- END OF TAB ITEMS -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- *************************** TAB 1 ENDS ******************************************* -->
+                </div>
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                            <ul class="nav nav-pills-sm" role="tablist" style="width:100%">
+ <li class="active" style="width:20%" role="tab"><a href="#tab2_1" data-toggle="tab">
+                                        1973</a></li>
+                                <li style="width:20%" role="tab"><a href="#tab2_2" data-toggle="tab">
+                                        1978</a></li>
+                                <li style="width:20%" role="tab"><a href="#tab2_3" data-toggle="tab">
+                                        1984</a></li>
+                                <li style="width:20%" role="tab"><a href="#tab2_4" data-toggle="tab">
+                                        1987</a></li>
+                                <li style="width:20%" role="tab"><a href="#tab2_5" data-toggle="tab">
+                                        1994</a></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="panel-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="tab2_1">
+                                    <p>Genetic engineers Herbert Boyer and Stanley Cohen (USA) were the first to transfer genes between species. They developed a method to insert a gene from an African clawed frog into bacteria. Their work laid the foundation for most
+                                        genetic engineering done today.</p>
+                                    <img src="../assets/img/sbi4u_04.04.17.jpg" alt="DNA colour-coded codes show on tablet" class="img-responsive">
+                                </div>
+                                <div class="tab-pane fade" id="tab2_2">
+                                    <p>Synthetic human insulin is produced by genetically-engineered bacteria (E. coli) using recombinant DNA technology by genetic engineer Herbert Boyer (USA).</p>
+                                    <img src="../assets/img/sbi4u_04.04.18.jpg" alt="synthetic human insulin" class="img-responsive">
+                                </div>
+                                <div class="tab-pane fade" id="tab2_3">
+                                    <p>The Polymerase Chain Reaction (PCR) technique, which replicates small samples of DNA quickly, was developed by Kary Mullis (USA). This opened the door to rapid DNA sequencing.</p>
+                                    <img src="../assets/img/sbi4u_04.04.19.jpg" alt="Polymerase Chain Reaction machine at genetics lab in HKU Lab" class="img-responsive">
+                                </div>
+                                <div class="tab-pane fade" id="tab2_4">
+                                    <p>Colin Pitchfork (Britain) was the first criminal caught and convicted, using DNA fingerprinting.</p>
+                                    <img src="../assets/img/sbi4u_04.04.20.jpg" alt="fingerprints" class="img-responsive">
+                                </div>
+                                <div class="tab-pane fade" id="tab2_5">
+                                    <p>The “Flavr Savr” tomato was the first GM food approved for the U.S. food market.</p>
+                                    <img src="../assets/img/sbi4u_04.04.21.jpg" alt="tomatoe" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- *************************** TAB 2 ENDS ******************************************* -->
+            
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                            <ul class="nav nav-pills-sm" role="tablist" style="width:100%">
+                                <li class="active" style="width:20%" role="tab"><a href="#tab3_1" data-toggle="tab">
+                                        1996<br><br></a></li>
+                                <li style="width:20%" role="tab"><a href="#tab3_2" data-toggle="tab">
+                                        1997<br><br></a></li>
+                                <li style="width:20%" role="tab"><a href="#tab3_3" data-toggle="tab">
+                                        2000<br><br></a></li>
+                                <li style="width:20%" role="tab"><a href="#tab3_4" data-toggle="tab">
+                                        2002<br><br></a></li>
+                                <li style="width:20%" role="tab"><a href="#tab3_5" data-toggle="tab">
+                                        2004<br>–2005</a></li>
+                            </ul>
+
+                        <div class="panel-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="tab3_1">
+                                    <p>The U.S. company, Monsanto, used recombinant DNA technology to make “Roundup Ready” soybeans, which are resistant to their herbicide, “Roundup.”</p>
+                                    <img src="../assets/img/sbi4u_04.04.22a.jpg" alt="soybean in the pod" class="img-responsive">
+                                </div>
+                                <div class="tab-pane fade" id="tab3_2">
+                                    <p>“Dolly” the sheep was the first successfully cloned mammal. She was created by Ian Wilmut and his team (United Kingdom).</p>
+                                    <img src="../assets/img/sbi4u_04.04.22.jpg" alt="sheep" class="img-responsive">
+                                </div>
+                                <div class="tab-pane fade" id="tab3_3">
+                                    <p>The International Human Genome Project provided the complete sequence of DNA for all 30,000 genes in humans.</p>
+                                    <img src="../assets/img/sbi4u_04.04.23.jpg" alt="dna test sequencing" class="img-responsive">
+                                </div>
+                                <div class="tab-pane fade" id="tab3_4">
+                                    <p>Rice was the first crop that had its genome sequenced. The Mouse Genome Project was completed.</p>
+                                    <img src="../assets/img/sbi4u_04.04.24.jpg" alt="basmati rice" class="img-responsive">
+                                </div>
+                                <div class="tab-pane fade" id="tab3_5">
+                                    <p>Stem cells were used to repair human tissue all over the world.</p>
+                                    <img src="../assets/img/sbi4u_04.04.25.jpg" alt="stem cell therapy" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- *************************** TAB 3 ENDS ******************************************* -->
+                </div>
+
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                   
+                            <ul class="nav nav-pills-sm" role="tablist" style="width:100%">
+                                <li class="active" style="width:30%" role="tab"><a href="#tab4_1" data-toggle="tab">
+                                        2006<br>–2009</a></li>
+                                <li style="width:20%" role="tab"><a href="#tab4_2" data-toggle="tab">
+                                        2010<br><br></a></li>
+                                <li style="width:15%" role="tab"><a href="#tab4_3" data-toggle="tab">
+                                        2011<br><br></a></li>
+                                <li style="width:15%" role="tab"><a href="#tab4_4" data-toggle="tab">
+                                        2012<br><br></a></li>
+                                <li style="width:20%" role="tab"><a href="#tab4_5" data-toggle="tab">
+                                        2013<br><br></a></li>
+                            </ul>
+
+                        <div class="panel-body">
+                            <div class="tab-content">
+                                <!-- START TAB ITEMS -->
+
+                                <div class="tab-pane fade in active" id="tab4_1">
+                                    <p>Epigenetics were recognized to play a significant role in genetic inheritance. Epigenetics controlled the way in which genes are expressed and provided new insight into the primary causes of human disease.</p>
+                                    <img src="../assets/img/sbi4u_04.04.26.jpg" alt="epigenetics" class="img-responsive">
+                                </div>
+
+                                <div class="tab-pane fade" id="tab4_2">
+                                    <p>Scientists from the University of Toronto cracked the “second” genetic code, which explains how RNA segments get spliced together to express a gene. This opened the door to new genetic treatments for disease, especially cancer.
+                                    </p>
+                                    <img src="../assets/img/sbi4u_04.04.27.jpg" alt="DNA molecule research mixed media" class="img-responsive">
+                                </div>
+                                <div class="tab-pane fade" id="tab4_3">
+                                    <p>Human trials of a malaria vaccine are underway and showing positive results. This could be the first vaccine against a parasitic infection. </p>
+                                    <img src="../assets/img/sbi4u_04.04.28.jpg" alt="Malaria vaccine" class="img-responsive">
+                                </div>
+
+                                <div class="tab-pane fade" id="tab4_4">
+                                    <p>An international team announces a draft of the wheat genome. A hybrid of three grasses, bread wheat has 3 genomes and over 96,000 genes within one plant, making it particularly complex to decipher.</p>
+                                    <img src="../assets/img/sbi4u_04.04.29.jpg" alt="Wheat" class="img-responsive">
+                                </div>
+
+                                <div class="tab-pane fade" id="tab4_5">
+                                    <p>The world celebrates the 60th anniversary of Watson and Crick’s discovery of the double helix</p>
+                                    <img src="../assets/img/sbi4u_04.04.30.jpg" alt="Red Balloons" class="img-responsive">
+                                </div>
+
+
+                                <!-- END OF TAB ITEMS -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- *************************** TAB 4 ENDS ******************************************* -->
+                </div>
+
+            <div class="row ilc-row-text margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Understanding checkpoint: Key developments in the history of biodiversity </h3>
+                    <p>Answer the questions below to help you reflect on and review this section. </p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div id="u4la4_mc2" class="multiple-choice-widget" data-ng-controller="multipleChoiceController" data-ng-init="getQuestionData('../widgets/sbi4u_u4la4_mc2.json')">
+                        <div data-multiple-choice-directive></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Techniques used in biotechnology</h2>
+                    <h3>Safe practices in the lab</h3>
+                    <p>All biotechnology procedures must be carried out under safe conditions, the following must be considered:</p>
+                    <ul>
+                        <li>sometimes the materials and chemicals used are potentially harmful and require special storage, handling, and disposal. </li>
+                        <li>protective clothing, gloves, and eye protection are sometimes required.</li>
+                        <li>the lab procedures shown in the videos you’ll view throughout the next section demonstrate this. Where applicable, you will see examples of safe practices demonstrated in the videos, especially regarding personal safety and the proper
+                            disposal of waste. </li>
+                    </ul>
+                    <p>Everyone in Canada working in a biotechnology lab is required to take a course in workplace health and safety so that they will know how to safely store, handle, and dispose of potentially dangerous substances. In particular, they must
+                        demonstrate an understanding of Workplace Hazardous Materials Information System (WHMIS) labels. WHMIS is a Canadian system of labeling that uses symbols to warn of potential threats to safety and health.</p>
+                    <p>Complete the following tutorial, <strong>Understanding WHMIS</strong>, to learn about the meaning of various WHMIS symbols and how to correctly identify them. You will also learn how to safely handle and store some common hazardous
+                        materials.</p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-ilo">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <!-- *************************** ILO 1 BEGINS ****************************************** -->
+                    <img src="../assets/img/sbi4u_04.04_WHMIS.jpg" alt="screengrab of ILO" class="img-responsive center-block">
+                    <a href="../widgets/b2b_whmis/index.html" target="_blank" class="btn btn-inverse pull-right">
+                        Start <span class="sr-only">(Opens in a new window)</span></a>
+                </div>
+            </div>
+
+
+            <div class="row ilc-row-text margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Biotechnology techniques </h3>
+                    <p>The lab techniques that are used in genetic biotechnology are incredibly varied. Many different methods are used and new ones are being developed all the time. However, there are some fundamental techniques that are understood by most
+                        biotechnology researchers. You will learn about five of these techniques in the following sections, all of which relate to working with DNA:</p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>1. Extraction</h2>
+                    <h3>Technique 1: Extracting DNA</h3>
+                    <p>Most genetic technologies start by extracting DNA from cells. </p>
+                    <h4>The four basic steps in extracting DNA are always the same:</h4>
+                </div>
+            </div>
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <!-- *************************** ACCORDION 1 BEGINS ******************************************* -->
+
+                    <div class="accordionILC panel-group" id="accordion1">
+
+                        <!-- ACCORDION ITEM 1 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse1" class="collapsed">Physically break open the cell (lysis)</a></h4>
+                            </div>
+                            <div id="accordion1-collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p><strong>Break open the cell:</strong> The cell wall, cell membrane, and organelle membranes (mitochondria and chloroplasts) must be broken, so that the DNA can be released. Because plants have cell walls, these must be broken by
+                                        mechanical action, such as grinding or blending. Animal cells may also be ground up as well, to increase the surface area for the next step.</p>
+                                    <img src="../assets/img/sbi4u_04.04.32.jpg" alt="Cell disruption laboratory equipment. Small metal beads are added to the tubes that contain the tissue that need to be broken down.  The violent spinning of the tubes in the machines helps to break down the cell walls and cell membranes of the animal or plant cells" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ACCORDION ITEM 2 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse2" class="collapsed">Remove the lipid membranes that protect the DNA, using a detergent</a></h4>
+                            </div>
+                            <div id="accordion1-collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p><strong>Break the lipid membranes apart:</strong> The lipid-rich membranes are torn apart, using a detergent. Most laboratories use the detergent sodium dodecyl sulphate (SDS). This detergent is also found in many household
+                                        detergents (such as liquid detergents used for washing dishes).</p>
+                                    <img src="../assets/img/sbi4u_04.04.33.jpg" alt="Lipid-rich membranes can be torn apart, using the detergent sodium dodecyl sulphate (SDS)." class="img-responsive">
+                                    <cite> Lipid-rich membranes can be torn apart, using the detergent sodium dodecyl sulphate (SDS).</cite>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ACCORDION ITEM 3 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse3" class="collapsed">Protect the DNA from degradation by enzymes</a></h4>
+                            </div>
+                            <div id="accordion1-collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p><strong>Protect the DNA</strong>: After the membranes are torn apart, the DNA mixes with the cytoplasm. The enzymes present in the cytoplasm can quickly degrade the DNA. Many labs add a protease (an enzyme that degrades proteins)
+                                        to the mixture, to destroy the enzymes. Another technique is to keep the mixture very cold, in order to slow down the destructive action of the enzymes.</p>
+                                    <img src="../assets/img/sbi4u_04.04.34.jpg" alt="Scientist storing test samples in ice." class="img-responsive" style="margin: auto">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ACCORDION ITEM 4 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse4" class="collapsed">Separate the DNA from the other cellular molecules, using a solvent</a></h4>
+                            </div>
+                            <div id="accordion1-collapse4" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p><strong>Separate the DNA, using a solvent:</strong> DNA is soluble in water. The DNA can be separated using a water filtration process or it can be extracted out of solution, using alcohol. DNA is not soluble in alcohol, but the
+                                        other molecules are, so alcohol can be used to separate the DNA from the other cell components.</p>
+                                    <img src="../assets/img/sbi4u_04.04.35.jpg" alt="Plastic 1.5-mL microcentrifuge tube with a colored liquid" class="img-responsive">
+                                    <cite> DNA can be separated using a water filtration process or it can be extracted out of solution, using alcohol.</cite>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- END OF ACCORDION ITEMS -->
+                    </div>
+
+                    <!-- *************************** ACCORDION 1 ENDS ******************************************* -->
+
+
+                </div>
+            </div>
+
+            <div class="row ilc-row-text margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Isolating individual genes out of chromosomes</h3>
+                    <p>The extracted DNA contains the entire genome of the organism. Usually, it is not practical to work with all the genes. Often, researchers are only interested in studying one gene, or parts of a gene. Individual genes can be cut from the
+                        chromosome using a specific <strong>restriction endonuclease </strong>(RE) enzyme. These enzymes work by recognizing and cutting a specific sequence of nucleotides at a location called a restriction site. Biologists use these enzymes as
+                        “molecular scissors.” Many different kinds of endonucleases have been found, each targeting a different sequence.</p>
+                    <p>Very small amounts of purified RE are used—around 1 microlitre (where 1 µl = 10<sup>–6</sup> L). The REs are added to the DNA sample, using a micropipette. A micropipette is a very accurate instrument that biologists use to transfer
+                        small amounts of solution (1–1000 µl) from one location to another.</p>
+                    <img src="../assets/img/sbi4u_04.04.37.jpg" alt="Pipette, adjustable volume micropipette" class="img-responsive">
+                    <p>The DNA restriction fragments often have a few unpaired nucleotides at each end of the fragment. These short sequences, called <strong>sticky ends</strong>, allow the fragment to join with other DNA that has also been cut by the same RE.
+                        The result is that the DNA fragments can be joined together—even with DNA from different species—to form new DNA called recombinant DNA.</p>
+                    <img src="../assets/img/sbi4u_04.04.38.gif" alt="The DNA restriction fragments often have a few unpaired nucleotides at each end of the fragment called sticky ends which allow the fragment to join with other DNA that has also been cut by the same RE." class="img-responsive" style="margin: auto">
+                </div>
+            </div>
+
+            <div class="row ilc-row-text margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Understanding checkpoint: Extracting DNA from cells</h3>
+                    <p>Put these steps in the correct order for extracting DNA from a sample of grass leaves and press submit:</p>
+
+                    <!-- *************************** matching 1 ******************************************* -->
+
+                    <div id="u4la4_matching" class="matching-widget" data-ng-controller="completionActivityController" data-ng-init="init('../widgets/sbi4u_u4la4_matching.json')">
+                        <div data-matching-directive></div>
+                    </div>
+
+
+
+
+
+                    <!--*************************** Matching ENDS ******************************************* -->
+
+
+
+                </div>
+            </div>
+
+            <div class="row ilc-row-text margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>How did the discovery of restriction enzymes allow biologists to work with DNA samples? Check your answer after you have attempted the question. </p>
+                    <button class="btn btn-default btn-answer-reveal" id="ilc1u_u1la1-suggestedAnswerButton-1">Suggested Answer</button>
+                    <div class="answer_reveal invisible" id="ilc1u_u1la1-suggestedAnswer-1">
+                        <p>Restriction enzymes (RE) allow biologists to cut DNA at known locations into short sequences. The DNA fragments can then be analyzed, removed, or inserted into the DNA of other individuals (even individuals of other species). RE makes
+                            genetic engineering possible.</p>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="row ilc-row-text margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>2. Electrophoresis</h2>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Technique 2: Electrophoresis</h3>
+                    <p>Extracted DNA is invisible to the eye, so you do not know exactly what is in your sample. It may even be contaminated with DNA from other sources. One technique for determining whether your sample contains the right fragments of DNA is
+                        called <strong>gel electrophoresis</strong>.</p>
+                    <img src="../assets/img/sbi4u_04.04.40.jpg" alt="Hands in protective gloves hold blue-stained electrophoresis gel" class="img-responsive" style="margin: auto">
+                </div>
+            </div>
+
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Explore this!</h3>
+                    <div class="callout_content_icon"><img src="../assets/icons/watch.svg" alt class="img-responsive">
+                        <div class="callout_content">
+                            <p> <a href="https://www.youtube.com/watch?v=vq759wKCCUQ" target="_blank">
+                                    Explore this video to learn how Agarose Gel Electrophoresis is set up in a laboratory<span class="sr-only"> (Opens in new window)</span></a> or research the topic on your own if you'd like to learn more.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>A closer look at gel electrophoresis </h3>
+                    <p>Gel electrophoresis combines knowledge from the fields of chemistry and physics. You can think of it as an obstacle course for molecules. Negatively charged DNA molecules are forced to pass through a gelatin-like material called
+                        <strong>agarose</strong>, which slows them down. The negatively charged molecules are pulled towards the positively charged end of the agarose gel. The larger molecules get blocked more easily, so they move through the gel more slowly.
+                        Smaller molecules can avoid some obstacles, so they move through the gel more rapidly.
+                    </p>
+                    <p>The extracted DNA solution is forced to pass through the gel for a fixed period of time. Special imaging techniques are then used to see how far the different-sized fragments of DNA have moved. The result is that the different sizes of
+                        DNA molecules are spread out across the gel in stripes or bands. The size of the DNA molecule making up each band can then be determined, in order to see if your sample contains the fragments you thought it did.</p>
+                    <img src="../assets/img/sbi4u_04.04.41.jpg" alt=" Electrophoresis gel with wheat varieties" class="img-responsive" style="margin: auto">
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Interpreting Gel electrophoresis</h3>
+                    <img src="../assets/img/sbi4u_04.04.38a.jpg" alt=" Electrophoresis gel with wheat varieties" class="img-responsive" style="margin: auto">
+                </div>
+            </div>
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <!-- *************************** TAB 5 BEGINS ******************************************* -->
+
+                    <div>
+                        <div>
+                            <ul class="nav nav-pills-sm" role="tablist" style="width:100%">
+
+                                <!--YOU WILL NEED TO ADJUST THE WIDTH % DEPENDING ON HOW MANY TABS YOU HAVE-->
+                                <li class="active" style="width:29%" role="tab"><a href="#tab5_1" data-toggle="tab">
+                                        Lanes &amp;<br> Ladders</a></li>
+                                <li style="width:29%" role="tab"><a href="#tab5_2" data-toggle="tab">
+                                        DNA<br> Fragments</a></li>
+                                <li style="width:42%" role="tab"><a href="#tab5_3" data-toggle="tab">
+                                        Patterns in<br> the DNA Samples </a></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="panel-body">
+                            <div class="tab-content">
+                                <!-- START TAB ITEMS -->
+
+                                <div class="tab-pane fade in active" id="tab5_1">
+                                    <p>A gel is usually constructed with 8 to 10 wells along its top end, into which the samples are deposited. As the DNA moves downward through the gel from each well, it flows in straight lines called <strong>lanes</strong>. The
+                                        first lane is often reserved for a special sample called a <strong>DNA ladder</strong>. The ladder is a solution made up of a variety of DNA fragments of known length. As the ladder sample is drawn through the gel it will leave
+                                        many bands, representing DNA fragments of known size, arranged in order from largest to smallest. This series of bands is like having a ruler on the gel, so you can determine the fragment size of the DNA in your samples.</p>
+                                </div>
+
+                                <div class="tab-pane fade" id="tab5_2">
+                                    <p>In the image above, representing a sample gel electrophoresis sample. The grey bands indicate the position of DNA fragments. The DNA samples are loaded into the wells at the negative end of the gel and move towards the positive
+                                        end. Lane 1 contains the DNA ladder. Labels have been added on the right, showing the number of base pairs (bp) contained in some of its fragments.</p>
+                                </div>
+
+                                <div class="tab-pane fade" id="tab5_3">
+                                    <p>The electrophoresis reveals several patterns in the samples. </p>
+                                    <ul>
+                                        <li>You can see that samples 2, 3, 8, and 9 all show the same banding pattern. All contain the same two DNA fragments (one 2000 bp and one 1000 bp). </li>
+                                        <li>Sample 4 does not have any bands. This probably means that the DNA extraction or PCR process failed for this sample and will have to be redone. </li>
+                                        <li>Samples 5 and 7 are the same. Each has three bands in the same locations (between 1000 and 2000 bp). </li>
+                                        <li>Sample 6 only shows one band, which is 1000 bp. </li>
+                                        <li>Sample 10 is also different, showing two bands in the 200–400 bp range. From this electrophoresis output, you would conclude that you have four different genetic varieties represented in your samples: (2, 3, 8, 9), (5, 7), 6,
+                                            and 10.</li>
+                                    </ul>
+                                </div>
+
+
+                                <!-- END OF TAB ITEMS -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- *************************** TAB 5 ENDS ******************************************* -->
+                </div>
+            </div>
+
+            <div class="row ilc-row-text margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Understanding checkpoint: Gel electrophoresis</h3>
+                    <p>What roles do the electrical current and the agarose gel play in sorting DNA samples according to their different sizes?</p>
+                    <p>Fill in the blanks with the terms below in your notebook and check your answers. </p>
+                    <ul>
+                        <li>positive</li>
+                        <li>agrose gel</li>
+                        <li>pull</li>
+                        <li>slows</li>
+                        <li>negatively</li>
+                        <li>faster</li>
+                    </ul>
+                    <p>Because DNA is ___________ charged, it will move towards the _____________end of the gel when an electric current is applied to the gel. The electric current provides the “_____” that drags the DNA fragments through the gel.
+                        ______________ is like an obstacle course that _____ the larger DNA molecules down, as they pass through it. The smaller fragments will move ______ than the larger ones, so they will reach the positive end of the gel the fastest.</p>
+                    <button class="btn btn-default btn-answer-reveal" id="sbi4u_u4la4-suggestedAnswerButton-3">Suggested Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u4la4-suggestedAnswer-3">
+
+
+                        <p>Because DNA is <strong>negatively</strong> charged, it will move towards the <strong>positive</strong> end of the gel when an electric current is applied to the gel. The electric current provides the “<strong>pull</strong>” that drags
+                            the DNA fragments through the gel. <strong>Agarose gel</strong> is like an obstacle course that <strong>slows</strong> the larger DNA molecules down, as they pass through it. The smaller fragments will move <strong>faster</strong> than
+                            the larger ones, so they will reach the positive end of the gel the fastest.</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>What is the purpose of having a DNA ladder run alongside the other samples?</p>
+                    <button class="btn btn-default btn-answer-reveal" id="sbi4u_u4la4-suggestedAnswerButton-4">Suggested Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u4la4-suggestedAnswer-4">
+
+
+                        <p>The DNA ladder provides a known reference of fragment lengths spread along the gel. You can compare a fragment from another sample to the ladder, to determine its number of base pairs.</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>3. Amplification</h2>
+                    <h3>Technique 3: Amplification using polymerase chain reactions (PCR)</h3>
+                    <p>You usually need a lot of DNA material to perform genetic analyses, but sometimes the amount of DNA in your extraction is tiny. What you need is a fast way to make millions of copies of the DNA fragments in your sample (known as
+                        amplifying), so that you can analyze it. The <strong>polymerase chain reaction</strong> (PCR) is a method of replicating specific sequences within a DNA sample. The invention of PCR in 1984 revolutionized genetic research. Kary Mullis
+                        (USA) won the 1993 Nobel Prize in Chemistry for inventing PCR, which is now routinely used in biology labs around the world.</p>
+                    <img src="../assets/img/sbi4u_04.04.42.jpg" alt="The PCR provides a method to produce millions of copies of DNA in a small amount of time." class="img-responsive">
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h4>Overview of the polymerase chain reaction</h4>
+                    <p>PCR works by amplifying a particular sequence of DNA selected by the researcher. The selection is done using a customized DNA primer, which is similar to RNA primers in DNA replication (which you learned about earlier) but is
+                        artificially made. Each primer is designed to bind only to a specific sequence on the DNA. This ensures that only the DNA sequence of interest gets amplified. The DNA sequence is then replicated, through an automated series of steps, at
+                        temperatures much higher than those naturally occurring in a cell. The high temperatures speed up the replication process significantly.</p>
+                    <img src="../assets/img/sbi4u_04.04.43.png" alt="Overview of the Polymerase Chain Reaction" class="img-responsive" style="margin: auto">
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h4>The importance of Taq polymerase </h4>
+                    <p>PCR would not be possible without <em class="Italic">Thermus aquaticus</em>, a bacterium that lives in hot springs and undersea hydrothermal vents. This bacterium contains a form of DNA polymerase called <em class="Italic">Taq</em>
+                        polymerase, which achieves its optimal activity around 72°C. Mullis recognized the potential of this special DNA polymerase. In experiments, he combined the DNA fragments to be amplified, <em class="Italic">Taq</em> polymerase, DNA
+                        primers, and free DNA nucleotides in vials alternately heated and then cooled. He found that, by doing so, the rate of DNA replication was increased exponentially, producing millions of copies of his target DNA fragment in a few hours.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h4>How Labs Perform PCR?</h4>
+                    <p>Over the past 25 years, the PCR process has been refined and automated, allowing researchers to amplify billions of copies of DNA in just a few hours. </p>
+                    <p>A closer look at how PCR works:</p>
+                    <ol>
+                        <li>The process begins by adding all the necessary ingredients to a vial:</li>
+                    </ol>
+                    <ul>
+                        <li>the DNA sample</li>
+                        <li>a specific primer</li>
+                        <li>Taq polymerase</li>
+                        <li>free DNA nucleotides. </li>
+                    </ul>
+                    <ol start="2">
+                        <li>The vial is then heated to 94°C, which causes the two coiled DNA strands to unravel and separate (denature). As you learned earlier, in normal DNA replication, this unravelling and separation of the DNA strands is done using the
+                            enzymes helicase and topoisomerase. </li>
+                        <li>The temperature is then lowered to 60°C, which allows the primer to bind to the template DNA strand at the correct location. This is called the annealing temperature, because the primer anneals (binds) to the DNA. </li>
+                        <li>The temperature is then raised to 72°C, which is the optimal temperature for the Taq polymerase to start adding DNA nucleotides at the 3’ end of the template strand. This elongation process is completed in a few minutes and the result
+                            is a doubling of the target DNA in the sample.</li>
+                        <li>The whole process is repeated, cycling the vial’s temperature between 94°C, 60°C, and 72°C, over the course of a few minutes.</li>
+                    </ol>
+                    <p>This process results in an exponential increase in the amount of DNA in the sample, because with every repetition of the cycle, the amount of target DNA gets doubled. Normally, this process is repeated about 30 to 35 times, yielding
+                        billions of copies of the target DNA in only a few hours. New machines called <strong>thermocyclers</strong> automatically take a sample of vials throughout the three temperature stages and repeat the cycle as often as desired.</p>
+                        <img src="../assets/img/sbi4u_04.04.45.jpg" alt="Scientist conducting the process of Polymerase chain reaction (PCR) to amplify DNA by using a thermocycler to create samples" class="img-responsive" style="margin: auto">
+                    </div>
+            </div>
+
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Explore this!</h3>
+                    <div class="callout_content_icon"><img src="../assets/icons/watch.svg" alt class="img-responsive">
+                        <div class="callout_content">
+                            <p>You can learn how PCR is used to amplify DNA in the genetics lab at the Canadian Museum of Nature.
+                                Explore this video, called DNA Amplification or perform your own research to learn more.</p>
+                            <div class="brightcove-video-container" data-video-id="2601583"></div>
+                        </div>
+                    </div>
+</div>
+</div>
+            <div class="row ilc-row-text margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Understanding checkpoint: Amplification</h3>
+                    <p>Complete the questions below and then check your answers with the suggested responses. </p>
+                    <p>Describe the unique feature of <em class="Italic">Taq</em> polymerase that makes PCR possible.&#9;</p>
+                    <button class="btn btn-default btn-answer-reveal" id="sbi4u_u4la4-suggestedAnswerButton-5">Suggested Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u4la4-suggestedAnswer-5">
+
+
+                        <p>The unique feature of the Taq polymerase enzyme that makes PCR possible is that its optimal activity occurs at a high temperature (around 72°C). Most enzymes denature (split apart) above 40°C. Therefore, the DNA sample being amplified
+                            can be separated cleanly by raising the temperature, while the activity of the enzyme is improved. This speeds up the replication process greatly.</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>Explain why PCR needs to be carried out at three different temperatures.</p>
+                    <button class="btn btn-default btn-answer-reveal" id="sbi4u_u4la4-suggestedAnswerButton-6">Suggested Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u4la4-suggestedAnswer-6">
+
+
+                        <p>PCR requires three steps and each one occurs at a different optimal temperature. The first step is to denature or split apart the DNA molecule. At 94°C, this will happen naturally, without the use of enzymes. The next step is the
+                            attachment of the primer molecule to the exposed DNA templates. This is called annealing and happens most effectively at around 60°C. The final step is the addition of new nucleotides to the growing DNA strand. This elongation step
+                            occurs with the help of <em class="Italic">Taq</em> polymerase, which is optimally active at 72°C.</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>4. Sequencing</h2>
+                    <h3>Technique 4: Sequencing</h3>
+                    <p>Once a segment of DNA has been extracted and amplified, it is relatively easy to sequence it. You may want to know the sequence to understand a gene or to identify a particular individual (such as occurs in DNA fingerprinting). DNA
+                        sequencing is a relatively new technology that has opened a new era in genetics and biotechnology. Perhaps the most famous application of this new technology was the Human Genome Project. This project aimed to obtain the sequence of the
+                        entire human genome—all 3 billion base pairs. It took thousands of researchers many years to achieve this, but by 2003, it was complete. Since then, the complete genetic sequence of other important species has been obtained, including
+                        that of the mouse, fruit fly and various crop plants.</p>
+                    <img src="../assets/img/sbi4u_04.04.46.jpg" alt="DNA sequencing was used to complete the Human Genome Project which successfully obtained the sequence of the entire human genome" class="img-responsive">
+                    <p>The basis for DNA sequencing was initially developed by Frederick Sanger in Britain, in the 1970s. It is now called <strong>chain termination sequencing</strong> and uses a modified form of the polymerase chain reaction.</p>
+                    <h3 class="margin-top-xl">Chain termination sequencing</h3>
+                    <p>The process of chain termination sequencing results in the creation of many short segments of the original DNA fragment called <strong>DNA oligonucleotides</strong>. Their lengths range from one base, right up to the entire sequence.</p>
+                    <h4 class="margin-top-xl">Example</h4>
+                    <p>Imagine that you had a DNA fragment whose sequence was ATGACTGA. </p>
+                    <p>After chain termination sequencing, you would have a mix of DNA oligonucleotides of the lengths seen in the table below. </p>
+                    <table class="table table-bordered">
+                        <thead>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="col" class="table-copy">Number of<br>DNA Nucleotides</th>
+                                <td>
+                                    <p class="table-copy">Sequence of DNA Oligonucleotides </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="table-copy">1</th>
+                                <td>
+                                    <p class="table-copy">A</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="table-copy">2</th>
+                                <td>
+                                    <p class="table-copy">AT</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="table-copy">3</th>
+                                <td>
+                                    <p class="table-copy">ATG</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="table-copy">4</th>
+                                <td>
+                                    <p class="table-copy">ATGA</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="table-copy">5</th>
+                                <td>
+                                    <p class="table-copy">ATGAC</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="table-copy">6</th>
+                                <td>
+                                    <p class="table-copy">ATGACT</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="table-copy">7</th>
+                                <td>
+                                    <p class="table-copy">ATGACTG</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="table-copy">8</th>
+                                <td>
+                                    <p class="table-copy">ATGACTGA</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h4>Dideoxynucleotide triphosphates (ddNTPs) as DNA chain terminators.</h4>
+                    <p>The key innovation in Sanger’s method was the use of <strong>dideoxynucleotide triphosphates (ddNTPs)</strong> as <strong>DNA chain terminators</strong>. The ddNTPs are like regular nucleotides, except that they don’t have a 3’-OH
+                        bonding site for the next incoming phosphate group. This means that no other nucleotide can bind to them, so the elongation process of the DNA strand stops immediately after they are added.</p>
+                    <img src="../assets/img/sbi4u_04.04.47.jpg" alt="A comparative look at dideoxynucleotide triphosphates (ddNTPs)" class="img-responsive" style="margin: auto">
+                    <h4>Sanger’s method</h4>
+                    <ul>
+                        <li>Sanger added ddNTP versions of each nucleotide (ddA, ddT, ddC, and ddG) to a solution undergoing normal DNA replication, along with regular nucleotides (A, T, C, G). </li>
+                        <li>If a normal nucleotide joined the strand, the elongation process would continue.</li>
+                        <li>The ddNTPs would bind to the growing DNA strand, just like their normal nucleotide counterparts but the DNA strand would stop growing.</li>
+                        <li>Every time the growing DNA strand attempted to add a new nucleotide, it was up to chance whether this nucleotide would be the regular or ddNTP version. </li>
+                        <li>The result was a mix of DNA pieces made up of all possible lengths. If you arrange these pieces in order by length and read the last nucleotide in each, you get the sequence of the original DNA fragment. You can see how this works in
+                            the table below using the example DNA sequence given above. The last nucleotide in each oligonucleotide has been highlighted in bold.</li>
+                    </ul>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+
+                                <th scope="col" class="Table-Header">Original sequence</th>
+
+                                <th scope="col" class="Table-Header">DNA oligonucleotides arranged in order from smallest to largest</th>
+
+                                <th scope="col" class="Table-Header">DNA sequence obtained</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <p class="table-copy">ATGACTGA</p>
+                                </td>
+                                <td>
+                                    <p class="table-copy"><strong>A</strong></p>
+                                </td>
+                                <td>
+                                    <p class="table-copy">A</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                    <p class="table-copy">A <strong>T</strong></p>
+                                </td>
+                                <td>
+                                    <p class="table-copy">T</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                    <p class="table-copy">AT <strong>G</strong></p>
+                                </td>
+                                <td>
+                                    <p class="table-copy">G</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                    <p class="table-copy">ATG <strong>A</strong></p>
+                                </td>
+                                <td>
+                                    <p class="table-copy">A</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                    <p class="table-copy">ATGA <strong>C</strong></p>
+                                </td>
+                                <td>
+                                    <p class="table-copy">C</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                    <p class="table-copy">ATGAC <strong>T</strong></p>
+                                </td>
+                                <td>
+                                    <p class="table-copy">T</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                    <p class="table-copy">ATGACT <strong>G</strong></p>
+                                </td>
+                                <td>
+                                    <p class="table-copy">G</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                    <p class="table-copy">ATGACTG <strong>A</strong></p>
+                                </td>
+                                <td>
+                                    <p class="table-copy">A</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>You can see that the chain termination sequencing process involves a lot of DNA replication. Today, most labs use a modified version of the PCR technique to be able to produce the DNA oligonucleotides rapidly.</p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <!-- *************************** TAB 6 BEGINS ******************************************* -->
+
+                    <div>
+                        <div>
+                            <ul class="nav nav-pills-sm" role="tablist" style="width:100%">
+
+                                <!--YOU WILL NEED TO ADJUST THE WIDTH % DEPENDING ON HOW MANY TABS YOU HAVE-->
+                                <li class="active" style="width:40%" role="tab"><a href="#tab6_1" data-toggle="tab">
+                                        Reading the<br> Sequence</a></li>
+                                <li style="width:30%" role="tab"><a href="#tab6_2" data-toggle="tab">
+                                        Step<br> 1</a></li>
+                                <li style="width:30%" role="tab"><a href="#tab6_3" data-toggle="tab">
+                                        Step<br> 2</a></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="panel-body">
+                            <div class="tab-content">
+                                <!-- START TAB ITEMS -->
+
+                                <div class="tab-pane fade in active" id="tab6_1">
+                                    <p>Once the chain termination sequencing reaction is complete, the next step is to read the last nucleotide in each oligonucleotide. This is a two-step process. </p>
+                                    <ul>
+                                        <li>The first step is to get the oligonucleotides arranged in ascending order, by length. </li>
+                                        <li>The second step is to identify the nucleotide in the last position. Automated sequencers perform both steps quickly, so they are able to process hundreds of samples in a few hours.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="tab-pane fade" id="tab6_2">
+                                    <h4>Sorting the oligonucleotides using electrophoresis</h4>
+                                    <p>You have seen how gel electrophoresis can be used to sort DNA molecules by their length. Labs use several automated electrophoresis methods and new ones are continually being developed. A current popular technique is called
+                                        <strong>capillary electrophoresis</strong>. With this technique, a sample is passed through a very thin tube (capillary) containing a special gel, which allows the smaller molecules to move through more quickly, while slowing the
+                                        larger ones down. The result is that the oligonucleotides get sorted by size, with the shortest one coming out first.
+                                    </p>
+                                </div>
+
+                                <div class="tab-pane fade" id="tab6_3">
+                                    <h4>Reading the last nucleotide</h4>
+                                    <p>In order to identify the last nucleotide in the oligonucleotide sequence, each ddNTP needs to be labelled in some unique way. One popular method is to attach small <strong>fluorescent molecules</strong> to the ddNTPs, using a
+                                        different fluorescent colour for each of the four bases. When these <strong>fluorescent molecules</strong> are exposed to a strong light, like a laser, they fluoresce (glow), giving off a particular colour of light. A camera
+                                        records the colour of light released as the oligonucleotides pass under the light source. The image below shows a typical output from a DNA sequencing reaction, using fluorescently labelled ddNTPs.</p>
+
+
+                                    <img src="../assets/img/sbi4u_04.04.49.png" alt="Camera output from a DNA sequencing run. The peaks in the curve represent the colour of light passing in front of the camera. Each colour of light represents one nucleotide (A, T, C, G)." class="img-responsive" style="margin: auto">
+                                    <p>The information from the camera output is converted by a computer into the four letters of the DNA sequence. The result is stored as a text file, containing hundreds or thousands of letters in one long string. This is the DNA
+                                        sequence of the original fragment.</p>
+                                    <p>You can learn more about DNA sequencing and see how it is performed in the genetics lab at the Canadian Museum of Nature by watching this video called <strong>DNA Sequencing</strong>.</p>
+                                    <div class="brightcove-video-container" data-video-id="2601584"></div>
+                                </div>
+
+
+
+                                <!-- END OF TAB ITEMS -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- *************************** TAB 6 ENDS ******************************************* -->
+                </div>
+            </div>
+
+            <div class="row ilc-row-widget margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Understanding checkpoint: Sequencing</h3>
+                    <!-- *************************** MULTIPLE CHOICE 5 BEGINS ******************************************* -->
+
+                    <div id="u4la4_mc5" class="multiple-choice-widget" data-ng-controller="multipleChoiceController" data-ng-init="getQuestionData('../widgets/sbi4u_u4la4_mc5.json')">
+
+                        <div data-multiple-choice-directive></div>
+                    </div>
+
+
+                    <!--*************************** MULTIPLE CHOICE 5 ENDS ******************************************* -->
+
+                </div>
+            </div>
+
+            <div class="row ilc-row-text margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>5. Recombinant DNA</h2>
+                    <h3>Technique 5: Recombinant DNA</h3>
+                    <p>Once biologists learned how to cut specific genes from chromosomes using restriction enzymes, the next step was to take individual genes from one genome and insert them into another genome. This process, called recombination, was developed
+                        in 1973 by Boyer and Cohen (as described in the timeline). This was the beginning of recombinant DNA technology.</p>
+                    <p> In 1978, Herbert Boyer achieved another first: he transferred human genes into a bacterium (E. coli) to create synthetic human insulin. This was the first human application of recombinant DNA technology. The genetically modified
+                        bacteria are described as transgenic, because they contain genes from another species.</p>
+
+                    <img src="../assets/img/sbi4u_04.04.50.jpg" alt=" Synthetic Human Insulin was first produced by recombinant technology in 1978 using a bacterium (E. coli) and human insulin." class="img-responsive">
+                    <p>In 1982, human insulin became the first commercially available genetically engineered product created using recombinant DNA techniques. Insulin is required by hundreds of thousands of diabetics daily. Making it in genetically engineered
+                        microorganisms provides an allergy-free, abundant, and inexpensive supply. Since then, hundreds of kinds of transgenic organisms have been produced, mostly for use in agriculture and medicine.</p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h4>How foreign genes are inserted into a host organism</h4>
+                    <p>The methods for inserting genes are different, depending on whether the genes are being inserted into prokaryotes (for example, bacteria) or eukaryotes (for example, crop plants and livestock). Since the genomes of prokaryotes are easier
+                        to work with, they were the first group to have foreign, usually eukaryotic, genes inserted into their genome. The process for inserting foreign genes into eukaryotes uses a similar principle, so only the details for prokaryotes will be
+                        dealt with here.</p>
+                    <h4>Role of plasmids</h4>
+                    <p>Not all the genetic material in bacteria is stored in their chromosomes. They also have structures called plasmids, which contain some genetic material. Plasmids are small circular ribbons of DNA (about 3 kbp long) that can move between
+                        bacteria. Plasmids are separate from the chromosomal DNA but are also used by the bacteria to code for proteins. When the bacterium undergoes replication, the plasmid DNA is copied, along with the cell’s chromosomal DNA.</p>
+                    <p>The key to recombinant DNA is the plasmid. Researchers use the same restriction enzyme (for example, the endonuclease, HindIII) to cut open the plasmid in a bacterium like E. coli, as well as cut up specific fragments of DNA in the
+                        eukaryotic cell. This creates a plasmid and DNA fragments that all have sticky ends. These sticky ends can be joined together in a process called ligation. The enzyme ligase is used to guide the sticky ends through the rejoining process.
+                        In this way, genes not normally found in the plasmid can be inserted into it to create a recombinant plasmid. The recombinant plasmid is called a vector, because it is the vehicle that carries the foreign gene into the bacteria.</p>
+                    <h4>Expressing the new gene</h4>
+                    <p>The recombinant plasmid vector is then placed in a culture medium where the bacterium takes in the plasmid. It is now treated as a normal part of the cell. The bacterium makes proteins from the new gene and replicates the plasmid, along
+                        with its normal chromosomal DNA, during reproduction. This means that the new gene is now part of the permanent genetic makeup of that organism. Figure 12.6 summarizes the process of making the recombinant plasmid and inserting it into
+                        the host bacterium.</p>
+                    <img src="../assets/img/sbi4u_04.04.52.png" alt="Recombinant DNA technique using a plasmid to incorporate a eukaryotic (frog) gene into a bacterium." class="img-responsive" style="margin: auto">
+                    <p>Bacteria can reproduce once every 20 minutes, so, within hours, several million copies of the new gene can be made. The bacterial cells act as micro-factories, pumping out the desired protein as instructed by the foreign DNA. Technicians
+                        can then isolate and purify the protein for a specific use.</p>
+
+
+                </div>
+            </div>
+
+            <div class="row ilc-row-text margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Understanding checkpoint: Recombinant DNA</h3>
+                    <p>Answer the questions below and then check your answers with the suggested response. </p>
+                    <h4>What is recombinant DNA?</h4>
+                    <button class="btn btn-default btn-answer-reveal" id="sbi4u_u4la4-suggestedAnswerButton-7">Suggested Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u4la4-suggestedAnswer-7">
+
+
+                        <p>Recombinant DNA is the result of removing genetic material from one genome and inserting it into another genome. This is often done across species to create transgenic organisms.</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>Describe one useful product produced by recombinant DNA.</p>
+                    <button class="btn btn-default btn-answer-reveal" id="sbi4u_u4la4-suggestedAnswerButton-8">Suggested Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u4la4-suggestedAnswer-8">
+
+
+                        <p>Insulin is a hormone needed by millions of diabetics around the world. Producing insulin in transgenic bacteria creates a cheap, plentiful supply that does not cause the same allergy problems as the old source of insulin obtained from
+                            animals.</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text margin-top-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>What is the role of restriction enzymes in the process of making recombinant DNA?</p>
+                    <button class="btn btn-default btn-answer-reveal" id="sbi4u_u4la4-suggestedAnswerButton-9">Suggested Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u4la4-suggestedAnswer-9">
+                        <p>Restriction enzymes are designed to cut the DNA at particular locations. They are like “molecular scissors” that can be designed to cut out specific genes or fragments of genes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Biotechnology in Canada</h2>
+                    <p>Canada has the second-largest biotech industry in the world, after the United States. Most of the research and product development done in Canada is in the fields of health, medicine, and agriculture. </p>
+
+                    <img src="../assets/img/sbi4u_04.04.53.jpg" alt="Canadian flag waving with parliament building" class="img-responsive">
+
+                    <p>The various biotechnology fields in Canada can be divided into two sectors: </p>
+                    <ul>
+                        <li>Reading DNA</li>
+                        <li>Manipulating DNA</li>
+                    </ul>
+                    <p>Let’s look at some example applications within each of these fields.</p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+
+                    <!-- ACCORDION 2 BEGINS -->
+                    <div class="accordionILC panel-group" id="accordion2">
+                        <!-- ACCORDION ITEM 1 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion2" href="#accordion2-collapse1" class="collapsed">
+                                        Reading DNA</a>
+                                </h4>
+                            </div>
+                            <div id="accordion2-collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Biotechnologies that read DNA have been around for a few decades and are found in a wide variety of fields, including the following.</p>
+                                    <!-- *************************** TAB 8 BEGINS ******************************************* -->
+
+                                    <div>
+                                        <div>
+                                            <ul class="nav nav-pills-sm" role="tablist" style="width:100%">
+
+                                                <!--YOU WILL NEED TO ADJUST THE WIDTH % DEPENDING ON HOW MANY TABS YOU HAVE-->
+                                                <li class="active" style="width:30%" role="tab"><a href="#tab8_1" data-toggle="tab">
+                                                        <br>Forensics<br><br></a></li>
+                                                <li style="width:40%" role="tab"><a href="#tab8_2" data-toggle="tab">
+                                                        Medicine—health<br> and<br> pharmaceutical</a></li>
+                                                <li style="width:30%" role="tab"><a href="#tab8_3" data-toggle="tab">
+                                                        Genetic<br> counseling<br><br></a></li>
+
+                                            </ul>
+                                        </div>
+
+                                        <div class="panel-body">
+                                            <div class="tab-content">
+                                                <!-- START TAB ITEMS -->
+
+                                                <div class="tab-pane fade in active" id="tab8_1">
+                                                    <ul>
+                                                        <li>DNA evidence helped prove the innocence of three high-profile Canadians convicted of murder: David Milgaard, Guy Paul Morin, and Thomas Sophonow.</li>
+                                                        <li>Police across Canada use DNA fingerprinting to identify victims and perpetrators of crime.</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="tab8_2">
+                                                    <ul>
+                                                        <li>Researchers at the Hospital for Sick Children in Toronto have identified a gene associated with learning disabilities, called Neto 1, which is opening the door for new treatments.</li>
+                                                        <li>Canadians have developed microbial DNA tests that will detect the presence of up to 500 different bacterial and viral pathogens in a single drop of water. This is less costly, faster, and more accurate than current
+                                                            detection methods.</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="tab8_3">
+                                                    <ul>
+                                                        <li>People who are concerned about their risk of developing a genetic problem or of giving birth to a child with a genetic problem, can talk to a genetic counsellor, who will explain these risks.</li>
+                                                    </ul>
+                                                </div>
+
+
+
+
+                                                <!-- END OF TAB ITEMS -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- *************************** TAB 8 ENDS ******************************************* -->
+
+
+
+
+                                    <!-- *************************** TAB 9 BEGINS ******************************************* -->
+
+                                    <div>
+                                        <div>
+                                            <ul class="nav nav-pills-sm" role="tablist" style="width:100%">
+
+                                                <!--YOU WILL NEED TO ADJUST THE WIDTH % DEPENDING ON HOW MANY TABS YOU HAVE-->
+
+                                                <li class="active" style="width:33.33%" role="tab"><a href="#tab9_1" data-toggle="tab">
+                                                        Proteomics<br>(study of<br> proteins)</a></li>
+                                                <li style="width:33.33%" role="tab"><a href="#tab9_2" data-toggle="tab">
+                                                        Bioinformatics (managing<br> genetic data)</a></li>
+                                                <li style="width:33.33%" role="tab"><a href="#tab9_3" data-toggle="tab">
+                                                        Evolution<br> and<br> conservation</a></li>
+
+                                            </ul>
+                                        </div>
+
+                                        <div class="panel-body">
+                                            <div class="tab-content">
+                                                <!-- START TAB ITEMS -->
+
+
+                                                <div class="tab-pane fade in active" id="tab9_1">
+                                                    <ul>
+                                                        <li>Networks of Canadian researchers have developed techniques of studying the expression, interactions, and structure of proteins.</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="tab9_2">
+                                                    <ul>
+                                                        <li>The Canadian Protein Engineering Network of Centres of Excellence (PENCE) and collaborators have developed an online resource providing in-depth data and tools for analyzing the genomes, genes, and proteins of SARS and
+                                                            other related viruses.</li>
+                                                        <li>Many Canadian companies offer database design services for handling and manipulating the vast quantities of data generated in biotech research. </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="tab9_3">
+                                                    <ul>
+                                                        <li>A massive study published in 2003 compared targeted regions of the genome across many species. It improved our understanding of the evolutionary relationships among species and led to some surprising information. For
+                                                            example, rodents were found to be closely related to primates.</li>
+                                                        <li>A Canadian invention, DNA barcoding, is a genetic tool for providing quick identification of any species. It can be used to assess biodiversity or to enforce conservation laws. In the future, it is hoped that cheap,
+                                                            handheld barcoding devices will be made available, so that everyone, everywhere can rapidly identify any species.</li>
+                                                    </ul>
+                                                </div>
+
+
+                                                <!-- END OF TAB ITEMS -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- *************************** TAB 9 ENDS ******************************************* -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ACCORDION ITEM 2 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion2" href="#accordion2-collapse2" class="collapsed">
+                                        Manipulating DNA</a>
+                                </h4>
+                            </div>
+                            <div id="accordion2-collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Biotechnologies that manipulate DNA have only been available since the mid-1980s and are advancing very rapidly. Most applications of this technology have been in the fields of agriculture, medicine, and pharmaceuticals.</p>
+                                    <!-- *************************** TAB 10 BEGINS ******************************************* -->
+
+                                    <div>
+                                        <div>
+                                            <ul class="nav nav-pills-sm" role="tablist" style="width:100%">
+
+                                                <!--YOU WILL NEED TO ADJUST THE WIDTH % DEPENDING ON HOW MANY TABS YOU HAVE-->
+                                                <li class="active" style="width:25%" role="tab"><a href="#tab10_1" data-toggle="tab">
+                                                        <br>Medicine<br><br></a></li>
+                                                <li style="width:75%" role="tab"><a href="#tab10_2" data-toggle="tab">
+                                                        Transgenic Organisms<br> to Make<br> Human Hormones</a></li>
+
+
+                                            </ul>
+                                        </div>
+
+                                        <div class="panel-body">
+                                            <div class="tab-content">
+                                                <!-- START TAB ITEMS -->
+
+                                                <div class="tab-pane fade in active" id="tab10_1">
+                                                    <ul>
+                                                        <li>Toronto’s Mount Sinai Hospital is using genetic engineering to develop DNA vaccines for immunization against the hepatitis B virus.</li>
+                                                        <li>A Canadian and U.S. research team has found a way to treat AIDS by helping the patient’s damaged immune cells to become healthy again.</li>
+                                                        <li>A University of Toronto research team has revealed a hidden code within DNA that explains how a limited number of human genes can produce a huge number of genetic messages by splicing together segments of RNA.</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="tab10_2">
+                                                    <ul>
+                                                        <li>A transgenic goat engineered by a company in Montreal is capable of producing a human protein in her milk that is used to treat disease.</li>
+                                                        <li>A Calgary-based company uses genetically engineered canola plants to produce hirudin, which is an anti-blood-clotting agent used to reduce the risk of heart attacks</li>
+                                                    </ul>
+                                                </div>
+
+
+
+                                                <!-- END OF TAB ITEMS -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- *************************** TAB 10 ENDS ******************************************* -->
+
+
+                                    <!-- *************************** TAB 11 BEGINS ******************************************* -->
+
+                                    <div>
+                                        <div>
+                                            <ul class="nav nav-pills-sm" role="tablist" style="width:100%">
+
+
+                                                <li class="active" style="width:33.33%" role="tab"><a href="#tab11_1" data-toggle="tab">
+                                                        Agriculture</a></li>
+                                                <li style="width:33.33%" role="tab"><a href="#tab11_2" data-toggle="tab">
+                                                        Forestry</a></li>
+                                                <li style="width:33.33%" role="tab"><a href="#tab11_3" data-toggle="tab">
+                                                        Environment</a></li>
+
+                                            </ul>
+                                        </div>
+
+                                        <div class="panel-body">
+                                            <div class="tab-content">
+                                                <!-- START TAB ITEMS -->
+
+
+                                                <div class="tab-pane fade in active" id="tab11_1">
+                                                    <ul>
+                                                        <li>A Canadian firm has invented a way to make human insulin from the grain plant safflower.</li>
+                                                        <li>A genetically altered variety of canola was created by researchers in Saskatchewan, using X-rays to mutate the genes. This variety is now grown commercially around the world.</li>
+                                                        <li>To control insect damage to crops, a gene (Bt) from a bacterium (Bacillus thuringiensis) has been inserted into varieties of corn, soya beans, cotton, and other important crops. The gene produces the toxic Bt protein,
+                                                            which kills some pest insects but is largely harmless to vertebrates and most other insects. Use of these transgenic crops is one of the more controversial issues in agricultural biotechnology. </li>
+                                                        <li>A drought-resistant maize (corn) genetically engineered in Canada is grown in drought-prone regions of Africa to help fight malnutrition and poverty.</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="tab11_2">
+                                                    <ul>
+                                                        <li>A New Brunswick company is able to identify conifer embryos that will produce faster- and larger-growing trees.</li>
+                                                        <li>A company in British Columbia has developed a process for trees to produce above average quantities of seeds. These seeds produce faster-growing and disease-resistant trees, generating high quality wood.</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="tab11_3">
+                                                    <ul>
+                                                        <li>Guelph University researchers have designed a transgenic pig that reduces the phosphate levels in its manure by 50%. It does this by expressing a bacterial gene in its salivary glands to digest phytate (a molecule
+                                                            containing several unusable phosphates that normally gets excreted).</li>
+                                                        <li>Across Canada, transgenic bacteria containing new genes that allow them to disperse and digest oil are being used to treat oil spills in water and soils.</li>
+                                                    </ul>
+                                                </div>
+
+
+                                                <!-- END OF TAB ITEMS -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- *************************** TAB 11 ENDS ******************************************* -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- END OF ACCORDION ITEMS -->
+                    </div>
+                    <!-- ACCORDION 2 ENDS -->
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Regulation of biotechnology in Canada</h3>
+                    <p>Canada has developed one of the best systems in the world for regulating biotechnology in order to protect people and the environment. The process for getting a biotechnology product approved for use in Canada is longer and more rigorous
+                        than in most countries. For example, the cow growth hormone bovine somatotropin (BST) is approved for use in the U.S. but is banned in Canada.</p>
+                    <p>Canada has several federal government agencies that are responsible for regulating biotechnology.</p>
+                    <p>The Canadian Food Inspection Agency (CFIA) is responsible for the regulation of food products produced using biotechnology. This includes plants, animals, animal feeds, and animal medications. For example, for genetically modified crop
+                        plants, the CFIA assesses the potential risk of environmental impacts. It also oversees import permits and research.</p>
+                    <p>Health Canada is responsible for assessing the risks to human health of products produced using biotechnology. </p>
+                    <p>This includes:</p>
+                    <ul>
+                        <li>Foods</li>
+                        <li>Drugs</li>
+                        <li>Cosmetics</li>
+                        <li>Medical devices,</li>
+                        <li>Pest-control products. </li>
+                    </ul>
+                    <p>To assess the safety and societal benefit of new types of bioengineered foods, the agency considers:</p>
+                    <ul>
+                        <li>the process used to develop the food</li>
+                        <li>its nutritional quality</li>
+                        <li>the presence of any toxins</li>
+                        <li>the potential for allergic reactions.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>There are also some misconceptions about GE foods among the public. For example, some people fear that just by eating a genetically engineered food, they will incorporate a foreign gene into their genetic code, but that is biologically
+                        impossible. Just because a bacterial gene has been inserted into a tomato does not mean that the gene will somehow find its way into the consumer’s genome. Your genetic code does not get changed by the foods you eat.</p>
+                    <img src="../assets/img/sbi4u_04.04.57.jpg" alt="GMO foods" class="img-responsive">
+                    <p>This does not mean that all genetically engineered foods are safe, however. As with all new technology, sometimes unexpected consequences occur. For example, in 2000, U.S. researchers inserted an anti-freeze gene from the flounder, a
+                        cold-water fish, into strains of strawberries and oranges to help them tolerate freezing. These genetically engineered fruits could then be grown in colder climates. Unfortunately, the fish’s anti-freeze protein that was being expressed
+                        in the “fishfruit” could induce allergic reactions in people who were allergic to seafood. Because of this, these GE fruits were removed from agricultural production.</p>
+                    <p>In theory, inserting the anti-freeze gene from flounder fish into strawberries was a good idea; however, fish’s anti-freeze protein that was being expressed in the “fishfruit” could induce allergic reactions in people who were allergic
+                        to seafood. These GMO strawberries were removed from agricultural production.</p>
+                    <p>Some people argue that the safety requirements imposed on GE foods are too strict. They say that common foods like peanuts and scallops also induce allergies in many people, but these foods are not banned from being sold. Consumer
+                        protection advocates respond that labels on food products help people to avoid those foods that cause their allergies, but with GE foods, the consumer does not know what genes have been inserted into the food. Someone with a seafood
+                        allergy could perhaps get a potentially deadly allergic reaction to a chocolate bar. How can consumer safety be guaranteed?</p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+
+                    <img src="../assets/img/sbi4u_04.04.59.jpg" alt="In Canada, it is not mandatory to label GMO foods. People argue that labelling GMO foods is focusing on the how the food is processed or made instead of focusing on its content or ingredients. Others argue that consumers have a right to know if the food they eat is GMO to prevent allergic reactions" class="img-responsive">
+                    <p>The answers are not simple. Each biotechnology application should be examined for its risks and benefits to society. We are now living in an era of rapid advancements in biotechnology and this will affect everyone.</p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3 class="margin-top-lg">Understanding checkpoint: Biotechnology in Canada</h3>
+                    <p>Determine if the following statements are True or False.</p>
+
+                    <!-- *************************** MULTIPLE CHOICE 6 BEGINS ******************************************* -->
+
+                    <!--BE SURE TO UPDATE THE NAME OF THE u1la1_mc1 IN THE FOLLOWING LINES OF CODE-->
+
+                    <div id="u4la4_mc6" class="multiple-choice-widget" data-ng-controller="multipleChoiceController" data-ng-init="getQuestionData('../widgets/sbi4u_u4la4_mc6.json')">
+
+                        <div data-multiple-choice-directive></div>
+                    </div>
+
+
+
+
+
+
+
+                    <!--*************************** MULTIPLE CHOICE 6 ENDS ******************************************* -->
+
+
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="consolidation">
+            <div class="row banner">
+                <h1><img src="../assets/img/sbi4u_04_consolidation.png" alt="Consolidation" class="img-responsive"></h1>
+            </div>
+
+            <div class="row ilc-row-text margin-bottom-xl">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Part 1: Case study </h2>
+                    <p><a href="../assets/locker_docs/sbi4u_04.05.01.pdf" target="_blank">Review the case study from the beginning of this learning activity<span class="sr-only"> (Opens in new window)</span></a>. Using your notes and what you have learned in
+                        this learning activity, what answers can you improve on? </p>
+                    <p>Are there other areas that you can research to improve your understanding? </p>
+                    <h2>Part 2: <a href="../assets/locker_docs/sbi4u_04.04.150.pdf" target="_blank">Preparing for the Unit 4 assessment<span class="sr-only"> (Opens in new window)</span></a></h2>
+                    <h3>Genetically Modified Food Response</h3>
+                    <p>Once you complete this learning activity, your next task will be to complete an assessment for grading using the quiz feature. The assessment will consist of a series of multiple choice and short answer questions, followed by a longer
+                        written response. You should prepare your response in advance so that you can add it in when you get to the end of the assessment.</p>
+                    <p>The instructions and marking criteria for this response are outlined below:</p>
+                    <h3>Instructions:</h3>
+                    <p>Review your work and research on the GMO case study. You will submit a response that explains your stand on the question “should genetically modified food be banned?”.</p>
+                    <p>In your response you should explain what genetically modified food is, including some examples. Then, explain if you believe that genetically modified food should be banned or not. You should include examples, reference current
+                        regulations and laws and scientific facts to show why you believe this. You will be assessed on your work giving evidence why you think they should or should not be banned. You are encouraged to find sources on your own, but to get you
+                        started a list of suggested references are below.</p>
+                    <br>
+                    <p>Resources that may help your research:</p>
+                    <ul>
+                        <li><a href="https://royalsociety.org/topics-policy/projects/gm-plants/what-is-gm-and-how-is-it-done/" target="_blank">https://royalsociety.org/topics-policy/projects/gm-plants/what-is-gm-and-how-is-it-done/<span class="sr-only"> (Opens
+                                    in new window)</span></a></li>
+                        <li><a href="https://www.canada.ca/en/health-canada/services/food-nutrition/genetically-modified-foods-other-novel-foods/safety.html" target="_blank">https://www.canada.ca/en/health-canada/services/food-nutrition/genetically-modified-foods-other-novel-foods/safety.html<span class="sr-only"> (Opens in new window)</span></a></li>
+                        <li><a href="https://globalnews.ca/news/4222159/canadians-genetically-modified-food/" target="_blank">https://globalnews.ca/news/4222159/canadians-genetically-modified-food/<span class="sr-only"> (Opens in new window)</span></a></li>
+                        <li><a href="https://cban.ca/gmos/products/on-the-market/" target="_blank">https://cban.ca/gmos/products/on-the-market/<span class="sr-only"> (Opens in new window)</span></a> (note: this is an advocacy group generally against GMO - be
+                            sure to use your critical thinking skills and research the political standpoint of the group and get secondary references for any scientific facts presented).</li>
+                    </ul>
+                    <p>You will be graded based on the following success criteria and rubric:</p>
+                    <h3>Success Criteria</h3>
+                    <ul>
+                        <li>Describe some main techniques used in biotechnology to genetically modify food</li>
+                        <li>Based on research, analyse some of the social, ethical, and legal implications of biotechnology (genetically modified foods)</li>
+                        <li>Demonstrate expression and organization of ideas and information with logic (across the presentation) using scientific terminology.</li>
+                        <li>Compare and analyse some key aspects of Canadian regulations pertaining to biotechnology</li>
+                    </ul>
+                    <h4>Rubric</h4>
+                    <table class="table table-bordered small">
+                        <thead>
+                            <tr>
+                                <th scope="col">Criteria</th>
+                                <th scope="col">50-59%<br>(level 1)</th>
+                                <th scope="col">60-69%<br>(level 2)</th>
+                                <th scope="col">70-79%<br>(level 3)</th>
+                                <th scope="col">80-100%<br>(level 4)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="small">
+
+                            <tr>
+                                <td colspan="5" style="text-align: center; vertical-align: middle;">
+                                    Knowledge and understanding
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Describe some of the main techniques used in biotechnology to genetically modify food.<br><br><strong>(8 marks)</strong></td>
+                                <td>Describes some of the main techniques used in biotechnology to genetically modify food with limited depth and accuracy.</td>
+                                <td>Describes some of the main techniques used in biotechnology to genetically modify food with some depth and accuracy.</td>
+                                <td>Describes some of the main techniques used in biotechnology to genetically modify food with considerable depth and accuracy.</td>
+                                <td>Describes some of the main techniques used in biotechnology to genetically modify food with thorough depth and accuracy.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="text-align: center; vertical-align: middle;">
+                                    Thinking & Investigation
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Based on research, analyse some of the social, ethical, and legal implications of genetically modified foods.<br><br><strong>(8 marks)</strong></td>
+                                <td>Based on research, analyses some of the social, ethical, and legal implications of genetically modified foods with limited clarity, appropriateness, and significance.</td>
+                                <td>Based on research, analyses some of the social, ethical, and legal implications of genetically modified foods with some clarity, appropriateness, and significance.</td>
+                                <td>Based on research, analyses some of the social, ethical, and legal implications of genetically modified foods with considerable clarity, appropriateness, and significance.</td>
+                                <td>Based on research, analyses some of the social, ethical, and legal implications of genetically modified foods with a high degree of clarity, appropriateness, and significance.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="text-align: center; vertical-align: middle;">
+                                    Communication
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Demonstrate expression and organization of ideas and information with logic (across the presentation) using scientific terminology.<br><br><strong>(8 marks)</strong></td>
+                                <td>Demonstrates limited expression and organization of ideas and information with logic (across the presentation) using scientific terminology.</td>
+                                <td>Demonstrates some expression and organization of ideas and information with logic (across the presentation) using scientific terminology.</td>
+                                <td>Demonstrates considerable expression and organization of ideas and information with logic (across the presentation) using scientific terminology.</td>
+                                <td>Demonstrates thorough expression and organization of ideas and information with logic (across the presentation) using scientific terminology.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="text-align: center; vertical-align: middle;">
+                                    Application
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Compare and analyse key aspects of Canadian regulations pertaining to biotechnology.<br><br><strong>(8 marks)</strong></td>
+                                <td>Compares and analyses key aspects of Canadian regulations pertaining to biotechnology to a limited degree.</td>
+                                <td>Compares and analyses key aspects of Canadian regulations pertaining to biotechnology to some degree.</td>
+                                <td>Compares and analyses key aspects of Canadian regulations pertaining to biotechnology to a considerable degree.</td>
+                                <td>Compares and analyses key aspects of Canadian regulations pertaining to biotechnology to a thorough degree.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2>Part 3: Reflection </h2>
+                    <p>Now that you have completed this learning activity, reflect on the success criteria. </p>
+                    <ul>
+                        <li>Based on research, analyse some of the social, ethical, and legal implications of biotechnology (genetically modified foods)</li>
+                        <li>Describe the main techniques used in biotechnology </li>
+                        <li>Compare and analyse some key aspects of Canadian regulations pertaining to biotechnology<br></li>
+                    </ul>
+                    <p>Looking at your notes for this learning activity, are they complete? </p>
+                    <p>Do you have all the information you will need to study later on? </p>
+                    <p>Take the time to review concepts you are unsure about before moving on. </p>
+                    <p>Select your level of readiness for each criteria. </p>
+
+
+                    <!-- Semantic Responsive AODA AA compliant Table -->
+
+
+                    <fieldset>
+                        <!--Wrapping a table in a fieldset is the last resort in terms of semantic AODA compliance to pass WAVE test-->
+                        <legend class="sr-only">
+                            Agree or Disagree statements
+                        </legend>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col" id="table001Col1" style="min-width: 150px; text-align: center; vertical-align: middle">Success Criteria</th>
+                                    <th scope="col" id="table001Col2" style=" text-align: center; vertical-align: middle">Yes - confident I am able</th>
+                                    <th scope="col" id="table001Col3" style=" text-align: center; vertical-align: middle">Not yet - need to review the learning activity</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Analyse, based on research, some of the social, ethical, and legal implications of biotechnology (genetically modified foods)</td>
+
+                                    <td><input type="radio" id="table1Row1Radial1" name="table1Row1Radial" aria-labelledby="table001Col2"> </td>
+                                    <td><input type="radio" id="table1Row1Radial2" name="table1Row1Radial" aria-labelledby="table001Col3"> </td>
+
+                                </tr>
+                                <tr>
+                                    <td>Describe the main techniques used in biotechnology</td>
+                                    <td><input type="radio" id="table1Row2Radial1" name="table1Row2Radial" aria-labelledby="table001Col2"> </td>
+                                    <td><input type="radio" id="table1Row2Radial2" name="table1Row2Radial" aria-labelledby="table001Col3"> </td>
+
+                                </tr>
+                                <tr>
+                                    <td>Compare and analyse some key aspects of Canadian regulations pertaining to biotechnology</td>
+                                    <td><input type="radio" id="table1Row3Radial1" name="table1Row3Radial" aria-labelledby="table001Col2"> </td>
+                                    <td><input type="radio" id="table1Row3Radial2" name="table1Row3Radial" aria-labelledby="table001Col3"> </td>
+
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </fieldset>
+
+                </div>
+            </div>
+
+
+
+        </section>
+
+    </main>
+
+    <!-- Compiled GVL, Widgets, ILOs, etc. -->
+    <script src="../dependencies/vendor.min.js"></script>
+    <script>
+        angular.bootstrap(document.getElementById('u4la4_mc1'), ['multipleChoiceWidget']);
+        angular.bootstrap(document.getElementById('u4la4_mc2'), ['multipleChoiceWidget']);
+        angular.bootstrap(document.getElementById("u4la4_matching"), ["matchingComboWidget"]);
+        angular.bootstrap(document.getElementById('u4la4_mc4'), ['multipleChoiceWidget']);
+        angular.bootstrap(document.getElementById('u4la4_mc5'), ['multipleChoiceWidget']);
+        angular.bootstrap(document.getElementById('u4la4_mc6'), ['multipleChoiceWidget']);
+
+    </script>
+    <script src="../assets/js/bugfixes.js"></script>
+</body>
+
+</html>

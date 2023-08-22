@@ -1,0 +1,1527 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning activity 3.3: Understanding photosynthesis</title>
+
+    <style>
+        /*matching widget styles*/
+        .completionItem {
+            /*question (label) and option (select) div*/
+            position: relative;
+            clear: both;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(86, 101, 105, 0.5);
+            margin-bottom: 20px;
+            background-color: #F8F9F9;
+        }
+
+        .completionItem label {
+            /* question is inside <label>*/
+            width: 50%;
+            padding: 2%;
+            font-size: 95%;
+        }
+
+        .completionItem select {
+            /* options are inside <select>*/
+            width: 40%;
+            float: right;
+            margin: 2%;
+            margin-right: 0px;
+            /* .btn-info -- button styles from CVL */
+            color: #F8F9F9;
+            background-color: #0A76A5;
+            border-color: #0A76A5;
+        }
+
+        .completionItem label>span {
+            /*all text is inside <span> - this overrides bold for question text*/
+            font-weight: normal;
+        }
+
+        .completionItem span {
+            /*feedback text*/
+            font-weight: bold;
+        }
+
+        .completionFeedback i {
+            /*this pushes the feedback to a new line*/
+            padding: 20px
+        }
+
+        .completionControls {
+            /*position of submit button - width and position matches options*/
+            float: right;
+            width: 25%;
+        }
+
+        .completionControls button {
+            /*button is full width of 25% in layout*/
+            width: 100%;
+            /* different button */
+            color: #F8F9F9;
+            background-color: gray;
+            border-color: #0A76A5;
+        }
+
+        .completionControls button:hover {
+            background-color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="../assets/css/ilc_core_temp.css">
+</head>
+
+<body>
+    <noscript>
+        <div class="alert alert-warning clearfix" role="alert">
+            <img src="../assets/img/note_icon.png" height="100" alt>
+            <p>
+                <strong>Warning!</strong> To ensure the greatest educational experience, this learning activity contians
+                aspects that require Javascript to be enabled.
+            </p>
+        </div>
+    </noscript>
+
+    <section id="ilcLearningGoals" class="hidden">
+        <h2>Learning goals</h2>
+        <p>We are learning to:</p>
+        <ul>
+            <li>use appropriate terminology relating to photosynthesis</li>
+            <li>describe the changes in matter and energy transformations that occur during the process of
+                photosynthesis</li>
+            <li>use the laws of thermodynamics to explain energy transfer in the cell during the process of
+                photosynthesis</li>
+        </ul>
+        <h2>Success criteria</h2>
+        <p>I am able to:</p>
+        <ul>
+            <li>describe the net reaction of photosynthesis </li>
+            <li>describe the cell structures involved (chloroplasts) and label the parts on a diagram </li>
+            <li>describe the structures and processes of light dependent reaction, the photosystems and the role of
+                pigments in light capture, and the products of this process </li>
+            <li>describe the structures and processes involved in the light independent reactions (Calvin cycle), and
+                the products of these processes</li>
+            <li>identify the photosynthetic pathways in C<sub>3</sub>, C<sub>4</sub> and CAM plants</li>
+        </ul>
+    </section>
+
+    <main id="mainContent" class="container">
+        <section id="mindsOn">
+            <div class="row banner">
+                <h1><img src="../assets/img/sbi4u_03.03_mindsOn.png" alt="Minds On" class="img-responsive"></h1>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>Take a deep breath in and hold it for a second. You have just inhaled oxygen from the air around
+                        us. There is 21% oxygen in the air - consider: where does this oxygen come from? You might
+                        remember that the oxygen that all living things use for cellular respiration is a product of
+                        photosynthesis which we will explore in this learning activity.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="action">
+            <div class="row banner">
+                <h1><img src="../assets/img/sbi4u_03_action.png" alt="Action" class="img-responsive"></h1>
+            </div>
+
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Photosynthesis</h2>
+
+                    <p>All living things get their energy from the sun, either directly or through the consumption of
+                        organic carbon-containing compounds (mainly sugars) made by plants. Understanding which
+                        conditions and reactants can provide the best results has greatly increased crop yields and the
+                        nutritional value of foods. The term “<b>photosynthesis</b>” literally means, “<b><i>making with
+                                light</i></b>.” Although this definition makes photosynthesis sound simple, the complex
+                        structures, processes, pathways, and metabolic participants involved actually make it quite a
+                        complicated process.</p>
+                    <p>In this learning activity, you will learn how glucose is made from the simple ingredients of
+                        carbon dioxide, water and light energy.</p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+
+                    <img src="../assets/img/sbi4u_03.03.01.jpg" title="Diagram of leaf and sun" class="img-responsive">
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+
+                    <h2>Overview of photosynthesis</h2>
+
+                    <p>The process by which light energy is captured and channeled into the production of food molecules
+                        is called <b>photosynthesis</b>. During this process there are dozens of reactions, involving
+                        many enzymes and coenzymes at every step. Reactions occur in different structures and under
+                        varying conditions, but can be summarized in the following photosynthetic equation:</p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p><b> 6CO<sub>2</sub> + 6H<sub>2</sub>O + light energy &rarr;
+                            C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + 6O<sub>2</sub></b></p>
+                    <p><b>Carbon dioxide + water + light energy → glucose + oxygen gas</b></p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>Plants, algae, and some bacteria all use light energy to form carbohydrates. Some bacteria are
+                        chemosynthetic and do not need light energy at all; they get their energy from other molecules.
+                        These ancient organisms likely evolved before oxygen-producing organisms existed.</p>
+                    <p>In this course, you will concentrate on the process of photosynthesis in green oxygen-producing
+                        eukaryotic plants.</p>
+
+                    <h2>Structures involved in photosynthesis</h2>
+
+                    <p>Photosynthesis occurs in specialized organelles within plants, called <b>chloroplasts</b>. Within
+                        the chloroplasts, there are structures containing special light-sensitive pigments called
+                        <b>chlorophyll</b>.</p>
+                </div>
+            </div>
+
+
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+
+                    <h3>Chloroplasts</h3>
+
+                    <p>In green leaves, the cells just below the epidermal layer contain the green organelles called
+                        <b>chloroplasts</b>. They are the small and abundant circles that can be seen in the <b>palisade
+                            mesophyll cells</b>. They are also seen in the <b>spongy mesophyll cells</b>, but are found
+                        there less frequently.</p>
+
+                    <img src="../assets/img/sbi4u_03.03.40.svg" alt="Fine scale diagram of leaf structure"
+                        class="img-responsive">
+                    <br>
+                    <img src="../assets/img/sbi4u_03.03.02.jpg" title="Chloroplast, plant cell organelle"
+                        class="img-responsive">
+
+                </div>
+            </div>
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+
+                    <!-- ACCORDION ZERO BEGINS -->
+                    <div class="accordionILC panel-group" id="accordion0">
+                        <!-- ACCORDION ITEM 1 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion0" href="#accordion0-collapse1"
+                                        class="collapsed">
+                                        Chloroplast</a>
+                                </h4>
+                            </div>
+                            <div id="accordion0-collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>The chloroplast is the organelle that is responsible for carrying out
+                                        photosynthesis in plants. Its appearance is like that of a miniature cell with
+                                        an outer membrane. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ACCORDION ITEM 2 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion0" href="#accordion0-collapse2"
+                                        class="collapsed">
+                                        Thylakoids</a>
+                                </h4>
+                            </div>
+                            <div id="accordion0-collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>The chloroplast contains stacks of membranous disks called thylakoids. The
+                                        thylakoid membrane is embedded with many proteins.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ACCORDION ITEM 3 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion0" href="#accordion0-collapse3"
+                                        class="collapsed">
+                                        Granum</a>
+                                </h4>
+                            </div>
+                            <div id="accordion0-collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Thylakoids are grouped into columns, each called a granum (plural: grana, from
+                                        Greek, meaning “stack of coins”).</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- ACCORDION ITEM 4 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion0" href="#accordion0-collapse4"
+                                        class="collapsed">
+                                        Lumen</a>
+                                </h4>
+                            </div>
+                            <div id="accordion0-collapse4" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>The internal environment of the thylakoid is called the lumen. </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- ACCORDION ITEM 5 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion0" href="#accordion0-collapse5"
+                                        class="collapsed">
+                                        Lamellae</a>
+                                </h4>
+                            </div>
+                            <div id="accordion0-collapse5" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Some thylakoids from different grana are connected together by flat bands of
+                                        ribbon-shaped membrane, called lamellae</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ACCORDION ITEM 6 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion0" href="#accordion0-collapse6"
+                                        class="collapsed">
+                                        Stroma</a>
+                                </h4>
+                            </div>
+                            <div id="accordion0-collapse6" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>All of these structures are suspended in an aqueous medium called the stroma.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- END OF ACCORDION ITEMS -->
+                    </div>
+                    <!-- ACCORDION ONE ENDS -->
+                </div>
+            </div>
+
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Discover more</h3>
+                    <div class="callout_content_icon"><img src="../assets/icons/discover_more.svg" alt class="img-responsive">
+                        <div class="callout_content">
+                            <p style="padding-top: 15px">To learn more about chloroplasts, you may choose to explore the following video or perform your own research on the topic <a href="https://youtu.be/YxUG5EuBI-E"
+                                    target="_blank">chloroplasts<span class="sr-only">(Opens in new window)</span></a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Chlorophyll</h3>
+                    <p><b>Chlorophyll</b>, which gives the chloroplast its green colour, also provides it with its
+                        light-absorbing capability. Chlorophyll is a molecule which is bound to the membranes of the
+                        thylakoid.</p>
+                    <img src="../assets/img/sbi4u_03.03.03.jpg"
+                        alt="The structure of a chlorophyll molecule which is bound the membrane of a thylakoid."
+                        class="img-responsive">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>Chlorophyll comes in two main forms (called a and b) that differ only in one functional group:
+                        methyl (-CH<sub>3</sub>) in chlorophyll a, and carbonyl (-CHO) in chlorophyll b. These two forms
+                        of chlorophyll belong to a group of molecules called <b>pigments</b>. Pigments absorb light
+                        energy at specific electromagnetic wavelengths, depending on the pigment’s colour. The following
+                        image shows the electromagnetic spectrum. Plants’ pigments absorb light mostly within the
+                        visible spectrum. Other pigments, called <b>accessory pigments</b>, include <b>carotenoids</b>
+                        and <b>xanthophylls</b>. </p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p><b>Why are plants green?</b></p>
+
+                    <img src="../assets/img/sbi4u_03.03.05.jpg"
+                        title="An understanding of pigments and the electromagnetic spectrum helps us explain why plants are green."
+                        alt=" An understanding of pigments and the electromagnetic spectrum helps us explain why plants are green."
+                        class="img-responsive">
+
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>Chlorophylls a and b absorb light at the blue-violet and red wavelengths (400–500 nm and 600–700
+                        nm respectively), and generally do not absorb, but instead reflect, the green light wavelengths
+                        from 500–600 nm. This is why green plants are green. Only chlorophyll a can absorb the energy
+                        and transfer the electrons required for photosynthesis. However, chlorophyll b, and various
+                        other accessory pigments, can absorb energy and pass electrons to chlorophyll a, thus allowing a
+                        wider range of light energy to be harvested. Their collective absorptions add to form a combined
+                        absorption spectrum that allows for the entire range of visible light wavelengths to be
+                        captured. Their combined effect is called the <b>action spectrum</b>.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <img src="../assets/img/sbi4u_03.03.06.png"
+                        alt=" The action spectrum is the combined absorption spectrum for chlorophyll a and b."
+                        class="img-responsive">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Understanding checkpoint: Photosynthesis </h3>
+                </div>
+            </div>
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div id="sbi4u_mc2" class="multiple-choice-widget" data-ng-controller="multipleChoiceController"
+                        data-ng-init="getQuestionData('../widgets/sbi4u_u3la3_mc2.json')">
+                        <div data-multiple-choice-directive></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>2. What are the roles of chlorophyll <em>a</em>, chlorophyll <em>b</em>, and the other pigments
+                        in green plants, during photosynthesis?</p>
+                    <!-- *************************** MATCHING XXX BEGINS ******************************************* -->
+                    <div id="sbi4u_matching1" class="matching-widget" data-ng-controller="completionActivityController"
+                        data-ng-init="init('../widgets/sbi4u_u3la3_matching1.json')">
+                        <div data-matching-directive></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>3. How does the action spectrum explain why green plants appear green?</p>
+                    <button class="btn btn-default btn-answer-reveal" id="ilc1u_u1la1-suggestedAnswerButton-1">Suggested
+                        Answer</button>
+                    <div class="answer_reveal invisible" id="ilc1u_u1la1-suggestedAnswer-1">
+                        <p>The sum total of the absorption of light energy by all of the pigments in plants is called
+                            the action spectrum. None of these pigments absorb wavelengths of light in the green part of
+                            the spectrum between 500 and 600 nm. This means that those wavelengths are reflected by the
+                            leaf, while all other colours are absorbed.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Two stages of photosynthesis</h2>
+                    <p>Photosynthetic reactions are traditionally divided into two stages. The first stage requires
+                        light, so its reactions are called “light-dependent reactions,” or just “light reactions,” while
+                        the second stage’s reactions do not require light and are therefore called “light-independent
+                        reactions,” or “dark reactions.” It is important that you do not assume that the “dark
+                        reactions” only occur in the absence of light, as they occur whether or not light is present.
+                        Thus, this stage is now referred to as the Calvin Cycle. The Calvin Cycle, which is responsible
+                        for combining carbon into sugar molecules, is powered by the energy harvested during the light
+                        reactions. The process of combining the carbon atoms from carbon dioxide into a glucose molecule
+                        is called “fixing” the
+                        carbon.</p>
+                    <p>Each stage can be broken down into three steps:</p>
+
+                    <h3 class="h4">Stage 1: Light-dependent reactions, or light reactions</h3>
+                    <ol>
+                        <li>Capture of light energy</li>
+                        <li>Transfer of light energy by intermediate energy carriers</li>
+                        <li>Transformation of light energy into chemical potential energy (ATP and NADPH)
+                        </li>
+                    </ol>
+                    <h4>Stage 2: Light-independent reactions, or Calvin cycle</h4>
+                    <ol>
+                        <li>Carbon fixation</li>
+                        <li>Reduction of PGA</li>
+                        <li>Regeneration of RuBP<p>The details of each of these two stages will be described in the next
+                                sections.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+
+                    <img src="../assets/img/sbi4u_03.03.17.jpg"
+                        alt="The two interconnected stages of photosynthesis: light and dark reactions."
+                        class="img-responsive">
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Stage 1: Light-dependent reactions (Light reactions)</h3>
+                    <p>There are three stages of the light dependent reactions:</p>
+                    <ol>
+                        <li>Capture of light energy</li>
+                        <li>Transfer of light energy </li>
+                        <li>Transformation of light energy into chemical energy</li>
+                    </ol>
+                    <p>An overview of the location and processes involved in the light dependent reactions are described
+                        in the image and text below.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <img src="../assets/img/sbi4u_03.03.19.jpg"
+                        alt=" Caption: The light-dependent reactions. The process of non-cyclic photophosphorylation starts with the splitting of water, which releases H+ and an electron. The electron is energized by photosystem 680 and proceeds through the ETC (plastoquinone (pQ), b<sub>6</sub>-f complex, and plastocyanin (pC)). Next, the electron proceeds to photosystem 700, where it receives an energy boost and is carried by ferrodoxin (Fd) to the enzyme NADP reductase where NADPH is formed. Finally, the H+ protons built up in the lumen pass through ATP synthase to produce ATP."
+                        class="img-responsive">
+                </div>
+            </div>
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <!-- ACCORDION ONE BEGINS -->
+                    <div class="accordionILC panel-group" id="accordion1">
+                        <!-- ACCORDION ITEM 1 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#accordion1-collapse1" class="collapsed" data-parent="#accordion1">
+                                        1. Capture of light energy</a>
+                                </h4>
+                            </div>
+                            <div id="accordion1-collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">
+
+                                    <!-- *************************** TAB 1 BEGINS ******************************************* -->
+
+                                    <!--left column-->
+                                    <div class="col-xs-4">
+                                        <ul class="nav nav-pills-sm" role="tablist" style="width:100%">
+
+                                            <li class="active" style="width:100%" role="tab"><a href="#lefttab1_1"
+                                                    data-toggle="tab">
+                                                    Photon</a></li>
+                                            <li style="width:100%" role="tab"><a href="#lefttab1_2" data-toggle="tab">
+                                                    Antenna System</a></li>
+                                            <li style="width:100%" role="tab"><a href="#lefttab1_3" data-toggle="tab">
+                                                    Primary electron acceptor</a></li>
+                                            <li style="width:100%" role="tab"><a href="#lefttab1_4" data-toggle="tab">
+                                                    Photosystem II</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <!--right column-->
+                                    <div class="col-xs-8">
+                                        <div class="panel-body">
+                                            <div class="tab-content">
+                                                <!-- START TAB ITEMS -->
+
+                                                <div class="tab-pane fade in active" id="lefttab1_1">
+                                                    <h3 style="color:#0E8A16">Photon</h3>
+                                                    <p>When a photon of light energy hits a chlorophyll molecule that is
+                                                        bound to the thylakoid membrane, an electron absorbs much of
+                                                        this energy.</p>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="lefttab1_2">
+                                                    <h3 style="color:#0E8A16">Antenna System</h3>
+                                                    <p>The electron becomes excited to a higher energy level and leaves
+                                                        the chlorophyll a in order to move to neighbouring pigments.
+                                                        This association of several chlorophyll a and carotenoids,
+                                                        called an antenna system, passes on the excited electron to the
+                                                        reaction centre.</p>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="lefttab1_3">
+                                                    <h3 style="color:#0E8A16">Primary electron acceptor</h3>
+                                                    <p>From there, the excited electron is captured by a primary
+                                                        electron acceptor which oxidizes the reaction centre to gain the
+                                                        electron.</p>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="lefttab1_4">
+                                                    <h3 style="color:#0E8A16">Photosystem II</h3>
+                                                    <p>There are two different arrangements of pigments and proteins
+                                                        connected with antenna systems and a reaction centre. These are
+                                                        known as:</p>
+                                                    <p>a.&#9;photosystem II (or photosystem 680)</p>
+                                                    <p>b.&#9;photosystem I (or photosystem 700).</p>
+                                                    <p>The numbers 680 and 700 differentiate the two photosystems by
+                                                        indicating the wavelengths at which each absorbs light most
+                                                        effectively. Note: This diagram only shows photosystem 680.</p>
+                                                </div>
+                                                <!-- END OF TAB ITEMS -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- *************************** TAB 1 ENDS ******************************************* -->
+                                </div>
+                                <p><em><b>Note:</b> the naming system of photosystem I and II, are numbered contrary to
+                                        their actual sequence in the cycle since II comes before I. The reason is that
+                                        photosystem I was discovered before photosystem II. </em></p>
+                            </div>
+                        </div>
+                        <!-- ACCORDION ITEM 2 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#accordion1-collapse2" class="collapsed" data-parent="#accordion1">
+                                        2.Transfer of light energy by intermediate energy carriers</a>
+                                </h4>
+                            </div>
+                            <div id="accordion1-collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+
+                                    <img src="../assets/img/sbi4u_03.03.21.png"
+                                        alt="Light-dependent reactions of photosynthesis at the thylakoid membrane"
+                                        class="img-responsive">
+
+
+
+
+
+                                    <!-- *************************** TAB 1 BEGINS ******************************************* -->
+
+                                    <!--left column-->
+                                    <div class="col-xs-10 col-xs-offset-1">
+                                        <ul class="nav nav-pills-sm" role="tablist" style="width:100%">
+
+                                            <li class="active" style="width:33%" role="tab"><a href="#lefttab2_1"
+                                                    data-toggle="tab">
+                                                    <br><br>Photolysis</a></li>
+                                            <li style="width:37%" role="tab"><a href="#lefttab2_2" data-toggle="tab">
+                                                <br>Chemiosmotic gradient</a></li>
+                                            <li style="width:30%" role="tab"><a href="#lefttab2_3" data-toggle="tab">
+                                                    Electron transport<br>chain</a></li>
+
+
+                                        </ul>
+                                    
+                                    <!--right column-->
+                                    
+                                        <div class="panel-body">
+                                            <div class="tab-content">
+                                                <!-- START TAB ITEMS -->
+
+                                                <div class="tab-pane fade in active" id="lefttab2_1">
+                                                    <h3 style="color:#0E8A16">Photolysis</h3>
+                                                    <p>The energy passed through photosystem 680 is used to remove
+                                                        electrons from water and release protons (H<sup>+</sup> ions) in
+                                                        an enzyme-catalyzed process called photolysis (from “photo,”
+                                                        meaning “light,” and “-lysis,” meaning “split”). The oxygen that
+                                                        is released diffuses out of the chloroplast (which explains how
+                                                        oxygen is a product of photosynthesis). </p>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="lefttab2_2">
+                                                    <h3 style="color:#0E8A16">Chemiosmotic gradient</h3>
+                                                    <p>The protons are pumped into the lumen (interior) of the
+                                                        thylakoids and create a chemiosmotic gradient. Photosystem II
+                                                        feeds the same electrons to photosystem I. </p>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="lefttab2_3">
+                                                    <h3 style="color:#0E8A16">Electron transport chain</h3>
+                                                    <p>The transfer of electrons from photosystem II to photosystem I is
+                                                        accomplished along a pathway made up of an intermediate protein
+                                                        and metal ion energy carriers. The electrons are transferred
+                                                        between the molecules following the sequence: </p>
+                                                    <p> plastoquinone (pQ) &rarr; <sub>6</sub>-f complex &rarr;
+                                                        plastocyanin (pC).</p>
+                                                    <p>These are known collectively as the electron transport chain
+                                                        (ETC). As you learned in the last learning activity, the
+                                                        electron transport chain is a metabolic pathway in which an
+                                                        electron enters a carrier complex at a specific site and is
+                                                        transferred within the protein to emerge at a different site, to
+                                                        then be passed from a carrier to another protein complex via
+                                                        redox reactions.</p>
+                                                    <p> Another intermediate energy carrier called ferrodoxin (Fd)
+                                                        transfers the excited electron from photosystem I to the enzyme,
+                                                        NADP reductase.</p>
+                                                </div>
+                                                <!-- END OF TAB ITEMS -->
+                                            </div>
+                                            </div>
+                                            </div>
+                                            <div class="col-xs-12 margin-top-sm">
+                                    <!-- *************************** TAB 1 ENDS ******************************************* -->
+                                    <p>During the redox reactions, every transfer of electrons that occurs among the
+                                        intermediate energy carriers results in some transformation of energy, which is
+                                        used to move protons, via proton pumps, from the stroma into the lumen, or is
+                                        wasted as heat. </p>
+                                    <p>By the time an electron has reached photosystem I, it has delivered or “lost”
+                                        much of its original excitation energy. But because the pigments in photosystem
+                                        I also channel the light energy they receive into boosting the electrons, the
+                                        electron is at an even higher energy level than it was before..</p>
+                                    <p>The relationship between the energy of the electrons, their path through the ETC,
+                                        and the role of the photosystems in boosting their energy, is shown in the
+                                        following image.</p>
+
+                                    <img src="../assets/img/sbi4u_03.03.22.png"
+                                        alt="Light dependent reactions of photosynthesis" class="img-responsive">
+
+                                    <div class="row ilc-row-callout" style="padding-left: 25px">
+                                        <h3>Light Reactions</h3>
+                                        <div class="callout_content_icon"><img src="../assets/icons/watch.svg" alt
+                                                class="img-responsive">
+                                            <div class="callout_content">
+                                                <p>To review the light reactions in photosynthesis you may want to watch
+                                                    the following video or perform your own research.</p>
+                                                <p><a href="https://youtu.be/4xHPDxVrJqc" target="_blank">Light
+                                                        reactions<span class="sr-only">(Opens in new window)</span></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    
+                          
+
+
+                                    <h4 style="padding-top: 20px">Summary </h4>
+                                    <p>Electrons are excited by energy absorbed from light photons, first in photosystem
+                                        II and then in photosystem I. The photon energy is used to eject a high-energy
+                                        electron from chlorophyll, which is then passed from one electron acceptor to
+                                        another via redox reactions. This releases energy in a step-by-step manner, and
+                                        finally ends up being incorporated into NADPH, upon its reduction. The electrons
+                                        are replaced by free electrons that were generated by the splitting of water at
+                                        the beginning of the process.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        <!-- ACCORDION ITEM 3 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#accordion1-collapse3" class="collapsed" data-parent="#accordion1">
+                                        3. Transformation of light energy into chemical potential energy (ATP and
+                                        NADPH)</a>
+                                </h4>
+                            </div>
+                            <div id="accordion1-collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <img src="../assets/img/sbi4u_03.03.19.jpg"
+                                        alt="The light-dependent reactions. The process of non-cyclic photophosphorylation starts with the splitting of water, which releases H+ and an electron. The electron is energized by photosystem 680 and proceeds through the ETC (plastoquinone (pQ), b<sub>6</sub>-f complex, and plastocyanin (pC)). Next, the electron proceeds to photosystem 700, where it receives an energy boost and is carried by ferrodoxin (Fd) to the enzyme NADP reductase where NADPH is formed. Finally, the H+ protons built up in the lumen pass through ATP synthase to produce ATP."
+                                        class="img-responsive">
+
+                                    <b>Energy containing molecules: NADPH and ATP</b>
+
+                                    <p>The energy in the photons of light captured by chlorophyll is used to make two
+                                        kinds of energy-containing molecules: NADPH and ATP. </p>
+                                    <p>ATP is produced after photosystem II.</p>
+                                    <p>NADPH is produced after photosystem I. NADP reductase uses the energy carried by
+                                        the excited electrons to attach protons (H<sup>+</sup>) from the stroma to
+                                        NADP<sup>+</sup> (nicotinamide adenine diphosphate, oxidized), producing NADPH
+                                        (reduced) on the stroma side of the thylakoid membrane.</p>
+
+
+                                    <img src="../assets/img/sbi4u_03.03.25.jpg"
+                                        alt="The light-dependent reactions. The process of non-cyclic photophosphorylation starts with the splitting of water, which releases H+ and an electron. The electron is energized by photosystem 680 and proceeds through the ETC (plastoquinone (pQ), <sub>6</sub>-f complex, and plastocyanin (pC)). Next, the electron proceeds to photosystem 700, where it receives an energy boost and is carried by ferrodoxin (Fd) to the enzyme NADP reductase where NADPH is formed. Finally, the H+ protons built up in the lumen pass through ATP synthase to produce ATP."
+                                        class="img-responsive">
+
+                                    <hr>
+
+                                    <b>ATP Production using Electrochemical Energy</b>
+
+                                    <p>ATP is produced using the electrochemical energy provided by hydrogen protons
+                                        (H<sup>+</sup>). Electron transport creates an electrochemical potential of
+                                        hydrogen protons across the photosynthetic membrane through two reactions:</p>
+                                    <ol type="a">
+                                        <li>First, the release of H<sup>+</sup> during the oxidation of water by
+                                            photosystem II</li>
+                                        <li>
+                                            <p>Second, the movement of H<sup>+</sup> from the stroma side to the lumen
+                                                side by the coupled reactions of photosystem II and the cytochrome
+                                                <sub>6</sub>-f complex. This last process results in a higher
+                                                concentration of H<sup>+</sup> on the lumen side of the thylakoid
+                                                membrane.</p>
+                                            <p>The concentration difference of protons across the membrane is
+                                                responsible for the proton motive force that drives chemiosmosis, which
+                                                is used to generate ATP. This is the same ATP-generating process that
+                                                you learned about in the previous lesson on respiration.</p>
+                                        </li>
+                                    </ol>
+                                    <img src="../assets/img/sbi4u_03.03.26.jpg" alt class="img-responsive">
+
+                                    <hr>
+
+                                    <b>Proton Motive Force, Chemiosmosis and ATP production</b>
+                                    <p>In this process, H<sup>+</sup> ions become so concentrated in the lumen that they
+                                        are pushed out by their own numbers. Due to their charge, the H<sup>+</sup> ions
+                                        cannot effectively diffuse across the membrane. Instead, they are channelled
+                                        through a transmembrane enzyme complex called ATP synthase, which converts the
+                                        proton motive force into the chemical energy of ATP. This enzyme catalyzes a
+                                        phosphorylation reaction, forming ATP through the addition of inorganic
+                                        phosphate (Pi) to ADP, as protons pass through it to the stroma. The energy
+                                        generated in these light-dependent reactions, stored in ATP and NADPH, is used
+                                        in the next stage of photosynthesis, known as light- independent reactions.</p>
+                                    <img src="../assets/img/sbi4u_03.03.27.jpg"
+                                        alt="Energy containing molecules: NADPH and ATP" class="img-responsive">
+
+                                    <hr>
+
+                                    <h5>Non-cyclic photophosphorylation </h5>
+
+                                    <p>It is important to note that green plants predominantly use non-cyclic
+                                        photophosphorylation. This means that the electrons that are donated by
+                                        chlorophyll a are never returned to it. Instead, the electrons are accepted by
+                                        NADP, at the end of the process, to form NADPH. The electrons being donated from
+                                        chlorophyll a need to be replaced, however, which is accomplished by supplying
+                                        electrons that are continuously being stripped from water.</p>
+                                    <p>The path of the electrons is a linear sequence that looks like this:</p>
+                                    <p>Water → photosystem II &rarr; ETC &rarr; photosystem I &rarr; ETC &rarr; NADPH
+                                    </p>
+                                    <p>The ETC for non-cyclic photophosphorylation shown. The pathway of the excited
+                                        electron is shown as the dotted line. The hydrogen protons generated by the
+                                        oxidation of water and the ETC build up inside the thylakoid lumen, where they
+                                        help to create a proton gradient across the thylakoid membrane. This gradient
+                                        (proton motive force) is used by ATP synthase to generate ATP, whose energy is
+                                        used later to help make glucose.</p>
+
+                                    <h5>Cyclic photophosphorylation </h5>
+
+                                    <p>In contrast, during <b>cyclic photophosphorylation</b>, which occurs in some
+                                        photosynthetic bacteria, the electrons that are donated by chlorophyll a are
+                                        returned to it via the ETC. Only ATP is generated from the H<sup>+</sup> proton
+                                        gradient that is created. Since there is no free electron available to attach to
+                                        NADP<sup>+</sup>, there is no NADPH produced. The path of the electrons is a
+                                        loop that cycles between photosystem I and the ETC.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF ACCORDION ITEMS -->
+                    </div>
+                    <!-- ACCORDION ONE ENDS -->
+                </div>
+            </div>
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Understanding checkpoint: Light-dependent reactions</h2>
+                    <h3>Notebook</h3>
+                    <div class="callout_content_icon"><img src="../assets/icons/notebook.svg" alt=""
+                            class="img-responsive">
+                        <div class="callout_content">
+                            <p>Complete these questions in your notebook and check your answers with the suggested answers.</p>
+                        </div>
+                    </div>                
+                    <p>1. Compare the roles of photosystems I and II in photosynthesis.</p>
+                    <button class="btn btn-default btn-answer-reveal" id="ilc1u_u1la1-suggestedAnswerButton-2">Suggested
+                        Answer</button>
+                    <div class="answer_reveal invisible" id="ilc1u_u1la1-suggestedAnswer-2">
+                        <p>Photosystem II functions to harvest photon energy and donate high-energy excited electrons to
+                            the first of the electron carriers of the ETC. Photosystem I accepts the electrons passed
+                            along from photosystem II and, using more light energy from photons, re-excites those
+                            electrons to an even higher energy level, before passing them on to the rest of the electron
+                            carriers of the ETC.</p>
+                    </div>
+
+                    <p class="margin-top-lg">2. List the path of an electron excited by light photons during the light reactions, identifying
+                        each cellular component it passes through.</p>
+                    <button class="btn btn-default btn-answer-reveal" id="ilc1u_u1la1-suggestedAnswerButton-3">Suggested
+                        Answer</button>
+                    <div class="answer_reveal invisible" id="ilc1u_u1la1-suggestedAnswer-3">
+                        <p>An excited electron takes the following path during the light reactions: photosystem II,
+                            chlorophyll a, pheophytin, plastoquinone (Q), cytochrome b<sub>6</sub>-f complex,
+                            plastocyanin (pC), photosystem I, ferrodoxin (Fd), NADP reductase, NADP/ NADPH. (Also, a new
+                            electron from water replaces the lost electron).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Stage 2: Light-independent reactions (Calvin cycle)</h3>
+                    <br>
+                    <p><b>Overview</b></p>
+                    <p>The second stage of photosynthesis, whose reactions are called the <b>light-independent reactions
+                            (or the Calvin Cycle)</b>, uses the ATP and H<sup>+</sup> protons from the light-dependent
+                        reactions to reduce carbon from CO<sub>2</sub> to form carbohydrate molecules like glucose. The
+                        light-independent reactions can occur in sunshine or in darkness, since they do not depend on
+                        photons for energy.</p>
+                    <p>Carbon reduction involves a series of enzyme-mediated reactions in the stroma of the chloroplast.
+                        To eventually build complex organic molecules containing many carbon atoms, such as sugar,
+                        plants must start by attaching single carbon atoms to smaller carbon-containing molecules. All
+                        plants and algae obtain the single carbon atoms from CO<sub>2</sub>, available from the
+                        environment, and eventually use these atoms to produce glucose through the Calvin cycle. To form
+                        one molecule of glucose (C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>), six carbon atoms must be
+                        combined. Since one carbon atom is combined per loop of the cycle, the Calvin cycle must run six
+                        times for every glucose molecule produced hence the equation for photosynthesis:</p>
+                </div>
+            </div>
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p><b>6CO<sub>2</sub> + 6H<sub>2</sub>O + light energy &rarr;
+                            C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + 6O<sub>2</sub></b></p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>The Calvin cycle can be broken down into three phases: </p>
+                    <ol>
+                        <li>Carbon fixation</li>
+                        <li>Reduction of PGA</li>
+                        <li>Regeneration of RuBP</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                            <ul class="nav nav-pills-sm" role="tablist" style="width:100%">
+                                <li class="active" style="width:26%" role="tab"><a href="#tab1_1"
+                                        data-toggle="tab" style="padding: 10px 4px;">Phase 1:<br>Carbon fixation</a></li>
+                                <li style="width:35%" role="tab"><a href="#tab1_2" data-toggle="tab" style="padding: 10px 4px;">Phase 2:<br>Reduction
+                                        of PGA</a></li>
+                                <li style="width:39%" role="tab"><a href="#tab1_3" data-toggle="tab" style="padding: 10px 4px;">Phase 3:<br>Regeneration of RuBP</a></li>
+                            </ul>
+                        <div class="panel-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="tab1_1">
+                                    <p class="h4">Phase 1: Carbon fixation</p>
+                                    <p>In the first phase of the Calvin cycle, a CO<sub>2</sub> molecule is added to a
+                                        five-carbon compound called RuBP (ribulose 1,5-bisphosphate), which is already
+                                        present in the stroma. The enzyme, RuBP carboxylase (commonly called rubisco),
+                                        catalyzes the exergonic reaction between RuBP and CO<sub>2</sub>. This phase is
+                                        called carbon fixation because carbon atoms from carbon dioxide are being
+                                        incorporated into organic molecules. Biochemists call this incorporation
+                                        “fixing” the carbon atoms.</p>
+                                    <p>The combination of RuBP and CO<sub>2</sub> creates an unstable intermediate
+                                        compound, which immediately splits, yielding two molecules of the 3-carbon
+                                        compound, PGA (3-phosphoglycerate). Three CO<sub>2</sub> (1C x 3 = 3C) and three
+                                        RuBP (5C x 3 = 15C) undergo this stage of the Calvin cycle to produce six PGA
+                                        (18C) required to eventually make one molecule of the 3-carbon product of this
+                                        stage, glyceraldehyde-3-phosphate, or G3P). Since one entire turn of the cycle
+                                        represents the reactions involved for each CO<sub>2</sub> that enters it, the
+                                        cycle must be repeated three times to produce one molecule of G3P (3C). Since it
+                                        takes two G3P molecules to make one glucose molecule (6C), the cycle must run
+                                        six times per glucose molecule.</p>
+                                </div>
+                                <div class="tab-pane fade" id="tab1_2">
+                                    <p class="h4">Phase 2: Reduction of PGA</p>
+                                    <p>In the second phase, each of the six PGA molecules created from carbon fixation
+                                        is raised to a higher energy level by the addition of a phosphate group. The
+                                        phosphate comes from the ATP generated during the light-dependent reactions.</p>
+                                    <p>The resulting molecule is called 1,3-bisphosphoglycerate (PGAP). This molecule is
+                                        quickly converted to G3P in a reduction reaction, using the NADPH that was also
+                                        generated during the light-dependent reactions. Thus, six ATP and six NADPH are
+                                        used to produce one G3P molecule that goes on to become glucose.</p>
+
+                                    <p>One of the six G3P leaves the cycle, while the other five remain behind to
+                                        replenish the supply of RuBP to keep the cycle going. The G3P molecule that
+                                        leaves the cycle is used to produce a variety of carbohydrate compounds such as
+                                        glucose and fructose which can then be synthesized into sucrose or starch.</p>
+                                </div>
+
+                                <div class="tab-pane fade" id="tab1_3">
+                                    <p class="h4">Phase 3: Regeneration of RuBP</p>
+                                    <p>In the third and final phase of the Calvin cycle, the remaining five G3P
+                                        molecules, in combination with three phosphates and three ATP, synthesize three
+                                        energy-rich RuBP molecules. This process is called regeneration. Recall that one
+                                        RuBP is required to fix each CO<sub>2</sub> molecule as it enters the Calvin
+                                        cycle; therefore, regeneration is a crucial factor in the continuation of the
+                                        Calvin cycle.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END TABS-->
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                <img src="../assets/img/sbi4u_03.03.28.jpg" alt="Image of Calvin Cycle" class="img-responsive">
+            </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p><small>The three phases of the Calvin cycle. It produces one molecule of G3P for every three
+                            molecules of CO<sub>2</sub> that enters the cycle. G3P is used to produce glucose and other
+                            sugars. The number of carbon atoms in each molecule is shown in brackets after the name. The
+                            three main enzymes involved are shown in italics.</small></p>
+                    <h4>Understanding checkpoint: Light-independent reactions </h4>
+                    <p>Where does the energy in NADPH and ATP that feeds the Calvin cycle come from?</p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <button class="btn btn-default btn-answer-reveal"
+                        id="ilc1u_u1la1-suggestedAnswerButton-13">Suggested Answer</button>
+                    <div class="answer_reveal invisible" id="ilc1u_u1la1-suggestedAnswer-13">
+                        <p>The energy in ATP and NADPH comes from the light-dependent reactions. It is transferred to
+                            the Calvin cycle during the dark reactions.</p>
+                    </div>
+                    <br/>
+                    <p>Summarize the events of the light-independent reactions by referring to the reactants, products,
+                        and cellular components involved.</p>
+                    <button class="btn btn-default btn-answer-reveal" id="ilc1u_u1la1-suggestedAnswerButton-4">Suggested
+                        Answer</button>
+                    <div class="answer_reveal invisible" id="ilc1u_u1la1-suggestedAnswer-4">
+                        <p>CO<sub>2</sub> molecules enter into a three-step metabolic pathway called the Calvin cycle.
+                            ATP provides energy for enzymes to add the carbon from the CO<sub>2</sub> to intermediate
+                            carbon- and phosphate-rich molecules, eventually yielding the energy-rich G3P molecule,
+                            which leaves the Calvin cycle. NADPH is then used with more ATP to regenerate the
+                            carbon-rich intermediate RuBP, so that the cycle can begin again with the entry of more
+                            CO<sub>2</sub>.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+
+                    <div id="sbi4u_matching2" class="matching-widget" data-ng-controller="completionActivityController"
+                        data-ng-init="init('../widgets/sbi4u_u3la3_matching2.json')">
+                        <div data-matching-directive></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>What is the relationship between the light reactions and the Calvin Cycle?</p>
+                    <button class="btn btn-default btn-answer-reveal" id="ilc1u_u1la1-suggestedAnswerButton-5">Suggested
+                        Answer</button>
+                    <div class="answer_reveal invisible" id="ilc1u_u1la1-suggestedAnswer-5">
+                        <p>The light reactions use light energy and water to provide the energy (in the form of ATP and
+                            NADPH) for the Calvin Cycle, which fix carbon from gaseous carbon dioxide into energy-rich
+                            sugar molecules.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div id="sbi4u_mc3" class="multiple-choice-widget" data-ng-controller="multipleChoiceController"
+                        data-ng-init="getQuestionData('../widgets/sbi4u_u3la3_mc3.json')">
+                        <div data-multiple-choice-directive></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>What happens to the 3-carbon sugar produced at the end of photosynthesis.</p>
+                    <button class="btn btn-default btn-answer-reveal" id="ilc1u_u1la1-suggestedAnswerButton-6">Suggested
+                        Answer</button>
+                    <div class="answer_reveal invisible" id="ilc1u_u1la1-suggestedAnswer-6">
+                        <p>G3P can be joined to form glucose, which can be added to other monosaccharides to make a
+                            disaccharide, such as sucrose, or a polysaccharide, such as starch or cellulose.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Energy use and storage in plants</h2>
+                    <p>Glucose is produced by enzyme-catalyzed reactions in the stroma of the chloroplast or in the
+                        cytoplasm of the plant cell. Glucose can then be used immediately by mitochondria in the cell to
+                        release energy for metabolism or provide raw materials, so that cellulose for cell walls can be
+                        built.</p>
+                    <p>Under optimal conditions, plants often produce more glucose than they require immediately, so
+                        they will store extra glucose molecules as starch. Sucrose may also be produced and transported
+                        to other parts of the plant through the phloem (vascular tissue) and ends up in fruits (for
+                        example, in strawberries), in the stalk (for example, in sugarcane), or in the roots (for
+                        example, in beets and onions).</p>
+                    <h3>Types of photosynthesis: C<sub>3</sub>, C<sub>4</sub>, and CAM</h3>
+
+                    <p>There are variations to the <b>type</b> of photosynthesis you have just learned about in the
+                        previous section. These variations in how photosynthesis occurs, divide plants into two groups,
+                        based on the number of carbons of the first molecule formed from the fixing of carbon in the
+                        production of G3P. The groups are called:</p>
+                    <ol>
+                        <li>C<sub>3</sub> plants</li>
+                        <li>C<sub>4</sub> plants. Within C<sub>4</sub> plants there is another division, based on how
+                                the CO<sub>2</sub> is processed, called CAM.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <img src="../assets/img/sbi4u_03.03.31.jpeg"
+                        alt="C<sub>3</sub>, C<sub>4</sub> and CAM Photosynthesis Pathways in CO<sub>2</sub> fixation"
+                        class="img-responsive">
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>C<sub>3</sub> and C<sub>4</sub> plants are structurally different at the cellular level and their
+                        structure is closely linked to their function. </p>
+                    <p>C<sub>3</sub> and C<sub>4</sub> plants adapt to temperatures that are less than optimal for
+                        photosynthesis by using different methods to manage or prevent photorespiration.
+                        Photorespiration is a process that reduces the efficiency of photosynthesis, thus preventing
+                        photosynthesis when unfavourable temperatures are present. Rubisco, the enzyme that catalyzes
+                        the first step in the Calvin cycle, is required to fix carbon dioxide. However, Rubisco can also
+                        react with oxygen instead of carbon dioxide. If this occurs, it would lead to a less efficient
+                        photosynthetic rate. Photorespiration results when plants try to conserve water loss when the
+                        temperature rises above the optimal temperature for photosynthesis as seen in the image below.
+                    </p>
+                    <p>As it turns out, C<sub>3</sub> and C<sub>4</sub> plants differ in their rate of photorespiration.
+                        The higher the plant’s rate of photorespiration, the less efficient it is at converting sunlight
+                        into food. C<sub>4</sub> plants have important adaptations that make them more efficient at
+                        higher temperatures than C<sub>3</sub> plants, but less efficient at lower temperatures.</p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <img src="../assets/img/sbi4u_03.03.33.jpg" alt="Photorespiration" class="img-responsive">
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>You will learn the details of each of these types of plant in the following sections.</p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <!-- TABS START-->
+                    <div>
+                        <div>
+                            <ul class="nav nav-pills-sm" role="tablist" style="width:100%">
+                                <li class="active" style="width:25%" role="tab"><a href="#tab2_1"
+                                        data-toggle="tab">C<sub>3</sub><br>Plants</a></li>
+                                <li style="width:25%" role="tab"><a href="#tab2_2"
+                                        data-toggle="tab">C<sub>4</sub><br>Plants</a></li>
+                                <li style="width:50%" role="tab"><a href="#tab2_3" data-toggle="tab">Crassulacean acid<br>
+                                        metabolism (CAM)</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="panel-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="tab2_1">
+                                    <p class="h4">C<sub>3</sub> Plants</p>
+
+                                    <p>Plants that fix carbon into molecules containing three carbon atoms (like G3P via
+                                        the Calvin Cycle, as described previously) are called C<sub>3</sub> plants. </p>
+                                    <p>This designation differentiates C<sub>3</sub> plants, such as trees, wheat,
+                                        barley, potatoes, cotton, and sugar beets from other plants. </p>
+                                    <p>These C<sub>3</sub> plants use the enzyme rubisco (also known as RuBP
+                                        carboxylase) to join CO<sub>2</sub> taken from the air and fix it to a 5-carbon
+                                        molecule (RuBP) to create two copies of the 3-carbon molecule, G3P.</p>
+                                    <img src="../assets/img/sbi4u_03.03.35.jpg"
+                                        alt="Simple diagram of carbon fixation in C<sub>3</sub> Plants"
+                                        class="img-responsive">
+                                    <p>The C<sub>3</sub> plants make up 95% of the earth’s plant biomass. However,
+                                        C<sub>3</sub> plants cannot grow well in hot, dry areas because these conditions
+                                        produce higher rates of photorespiration for them, which limit their growth.
+                                    </p>
+                                    <p>For example, at a growing temperature of 25<sup>o</sup>C, 20% of the photosynthetically
+                                        fixed carbon is lost by C<sub>3</sub> plants to photorespiration. At temperatures higher than 28&#x2103;, increased rates of photorespiration can cause the loss of 25–50% of their photosynthetically fixed carbon.</p>
+                                </div>
+                                <div class="tab-pane fade" id="tab2_2">
+                                    <p class="h4">C<sub>4</sub> Plants</p>
+
+                                    <p>Plants that fix carbon into molecules containing four carbon atoms are called
+                                        C<sub>4</sub> plants. </p>
+                                    <p>This group of plants includes corn, sugar cane, sorghum, and crabgrass.
+                                        C<sub>4</sub> plants are more efficient at photosynthesis under hot, dry
+                                        conditions. </p>
+                                    <p>C<sub>4</sub> plants have important adaptations that make them more efficient at
+                                        higher temperatures than C<sub>3</sub> plants, but less efficient at lower
+                                        temperatures.</p>
+                                    <img src="../assets/img/sbi4u_03.03.38.jpeg"
+                                        alt="C 4 leaf structure is related to type of photosynthesis these plants perfom"
+                                        class="img-responsive">
+                                </div>
+
+                                <div class="tab-pane fade" id="tab2_3">
+                                    <p class="h4">Crassulacean acid metabolism (CAM)</p>
+                                    <p>Crassulacean acid metabolism, or CAM, is another way that some water-storing
+                                        succulent plants like pineapples, cacti, aloe vera, and orchids cope, especially
+                                        in hot and dry climates. </p>
+                                    <p>These plants limit photorespiration by carrying out the C<sub>4</sub> pathway at
+                                        night and switching to the Calvin cycle during the day.</p>
+                                    <img src="../assets/img/sbi4u_03.03.39.png" alt="alt-text missing"
+                                        class="img-responsive">
+                                    <p>CAM plants differ from C<sub>4</sub> plants because they combine the
+                                        C<sub>4</sub> pathway and Calvin cycle within the same cell, but carry them out
+                                        at different times. </p>
+                                    <p>This <b>temporal separation</b> is accomplished in part by reversing the timing
+                                        of stomatal openings that you would normally see in most other plants. </p>
+                                    <p>The stomata (singular, stoma) are specialized pores on the surface of leaves that
+                                        allow CO<sub>2</sub> in and H<sub>2</sub>O out, and which can be opened or closed by the
+                                        plant. Most plants keep their stomata open during the day to absorb
+                                        CO<sub>2</sub> when photosynthesis is active, and closed at night to prevent
+                                        water loss. </p>
+                                    <p>At night they fix CO<sub>2</sub>, using the same C<sub>4</sub> pathway as
+                                        C<sub>4</sub> plants, to accumulate carbon compounds. These compounds are then
+                                        decarboxylated during the day.</p>
+                                    <p>This causes a high concentration of CO<sub>2</sub> during the day, which
+                                        activates the C<sub>3</sub> pathway and suppresses photorespiration.</p>
+
+                                    <p>Thus, by modifying leaf structure, photosynthetic processes, and the timing of
+                                        these processes, C<sub>4</sub> and CAM plants can work around the problem of
+                                        photorespirative loss of carbon (as CO<sub>2</sub>) that is found in
+                                        C<sub>3</sub> plants.</p>
+
+                                    <p>C<sub>4</sub> plants do this by <b>spatially isolating</b> high concentrations of
+                                        CO<sub>2</sub> in two different cells, while CAM plants temporally isolate
+                                        CO<sub>2</sub> (day versus night) within the same cell.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END TABS-->
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Understanding checkpoint: Photorespiration</h3>
+                    <p>Review this section and complete the following multiple choice questions. </p>
+                </div>
+            </div>
+
+
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div id="sbi4u_mc5" class="multiple-choice-widget" data-ng-controller="multipleChoiceController"
+                        data-ng-init="getQuestionData('../widgets/sbi4u_u3la3_mc5.json')">
+                        <div data-multiple-choice-directive></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div id="sbi4u_mc6" class="multiple-choice-widget" data-ng-controller="multipleChoiceController"
+                        data-ng-init="getQuestionData('../widgets/sbi4u_u3la3_mc6.json')">
+                        <div data-multiple-choice-directive></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div id="sbi4u_mc7" class="multiple-choice-widget" data-ng-controller="multipleChoiceController"
+                        data-ng-init="getQuestionData('../widgets/sbi4u_u3la3_mc7.json')">
+                        <div data-multiple-choice-directive></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Understanding checkpoint: Photosynthesis</h3>
+
+                    <p>Describe the main events occurring inside each of the three phases of the Calvin cycle by putting
+                        the following steps in order as they occur in the Calvin Cycle. </p>
+
+                </div>
+            </div>
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div id="sbi4u_matching3" class="matching-widget" data-ng-controller="completionActivityController"
+                        data-ng-init="init('../widgets/sbi4u_u3la3_matching3.json')">
+                        <div data-matching-directive></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>Describe how the energy in the electron is used to produce the energy-carrying molecules, NADPH
+                        and ATP by putting the statements below in the correct order. </p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div id="sbi4u_matching4" class="matching-widget" data-ng-controller="completionActivityController"
+                        data-ng-init="init('../widgets/sbi4u_u3la3_matching4.json')">
+                        <div data-matching-directive></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--start multiple choice section -->
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>Explain where the electron comes from and how it gains energy during the light reactions by
+                        filling in the blanks in the answer below.</p>
+                    <div id="sbi4u_mc10" class="multiple-choice-widget" data-ng-controller="multipleChoiceController"
+                        data-ng-init="getQuestionData('../widgets/sbi4u_u3la3_mc10.json')">
+                        <div data-multiple-choice-directive></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="consolidation">
+            <div class="row banner">
+                <h1><img src="../assets/img/sbi4u_03_consolidation.png" alt="Consolidation" class="img-responsive"></h1>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Part 1: Summarize your learning</h2>
+
+                    <p><b>Concept mapping</b></p>
+
+                    <p>To better understand how each of these concepts relate to each other, it will be helpful to
+                        organize the concepts in a graphic organizer. Use a concept map to organize the following terms
+                        based on their relationships with each other.</p>
+
+
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    ATP
+                                </th>
+                                <th scope="col">
+                                    ATP synthase
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Calvin cycle
+                                </td>
+                                <td>
+                                    carbon dioxide
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    chloroplast
+                                </td>
+                                <td>
+                                    cyclic electron flow
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    electrochemical gradient
+                                </td>
+                                <td>
+                                    ETC
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    leaves
+                                </td>
+                                <td>
+                                    Light reactions
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    membrane
+                                </td>
+                                <td>
+                                    NADP<sup>+</sup>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    NADPH
+                                </td>
+                                <td>
+                                    photon
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    photophosphorylation
+                                </td>
+                                <td>
+                                    photosystem I
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    photosystem II
+                                </td>
+                                <td>
+                                    protons
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Rubisco
+                                </td>
+                                <td>
+                                    RuBP
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    stroma
+                                </td>
+                                <td>
+                                    thylakoid lumen
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    thylakoid membrane
+                                </td>
+                                <td>
+                                    glucose
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Part 2: Reflect on your learning</h2>
+
+                    <p>Now that you have completed this learning activity, reflect on the success criteria. </p>
+
+                    <ul>
+                        <li>describe the net reaction of photosynthesis</li>
+                        <li>describe the cell structures involved (chloroplasts) and label the parts on a diagram</li>
+                        <li>describe the structures and processes of light dependent reaction, the photosystems and the
+                            role of pigments in light capture, and the products of this process</li>
+                        <li>describe the structures and processes involved in the light independent reactions (Calvin
+                            cycle), and the products of these processes</li>
+                        <li>identify the photosynthetic pathways in C<sub>3</sub>, C<sub>4</sub> and CAM plants</li>
+                    </ul>
+                    <p>Looking at your notes for this learning activity, are they complete? Do you have all the
+                        information you will need to study later on?</p>
+                    <p>Take the time to review concepts you are unsure about before moving on.</p>
+                    <p>Select your level of readiness for each criteria.</p>
+                </div>
+            </div>
+
+
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+
+                <!-- ***************************TO MAKE THIS A FULL SCREEN SURVEY, SIMPLY DELETE THE <div> TAG IMMEDIATELY ABOVE THIS COMMENT AS WELL (AS ITS CLOSE </div>) ******************************************* -->
+                <!-- Semantic Responsive AODA AA compliant Table -->
+                <fieldset>
+                    <!--Wrapping a table in a fieldset is the last resort in terms of semantic AODA compliance to pass WAVE test-->
+                    <legend class="sr-only">Agree or Disagree statements</legend>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col" id="table001Col1" style="width: 40%">Success Criteria</th>
+                                <th scope="col" id="table001Col2">Yes - confident I am able</th>
+                                <th scope="col" id="table001Col3">Not yet - need to review the learning activity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Describe the net reaction of photosynthesis </td>
+                                <td><input type="radio" id="table1Row1Radial1" name="table1Row1Radial"
+                                        aria-labelledby="table001Col2"></td>
+                                <td><input type="radio" id="table1Row1Radial2" name="table1Row1Radial"
+                                        aria-labelledby="table001Col3"></td>
+                            </tr>
+                            <tr>
+                                <td>Describe the net reaction of photosynthesis </td>
+                                <td><input type="radio" id="table1Row2Radial1" name="table1Row2Radial"
+                                        aria-labelledby="table001Col2"></td>
+                                <td><input type="radio" id="table1Row2Radial2" name="table1Row2Radial"
+                                        aria-labelledby="table001Col3"></td>
+                            </tr>
+                            <tr>
+                                <td>Describe the structures and processes of light dependent reaction, the photosystems
+                                    and the role of pigments in light capture, and the products of this process </td>
+                                <td><input type="radio" id="table1Row3Radial1" name="table1Row3Radial"
+                                        aria-labelledby="table001Col2"></td>
+                                <td><input type="radio" id="table1Row3Radial2" name="table1Row3Radial"
+                                        aria-labelledby="table001Col3"></td>
+                            </tr>
+                            <tr>
+                                <td>Describe the structures and processes involved in the light independent reactions
+                                    (Calvin cycle), and the products of these processes</td>
+                                <td><input type="radio" id="table1Row4Radial1" name="table1Row4Radial"
+                                        aria-labelledby="table001Col2"></td>
+                                <td><input type="radio" id="table1Row4Radial2" name="table1Row4Radial"
+                                        aria-labelledby="table001Col3"></td>
+                            </tr>
+                            <tr>
+                                <td>Identify the photosynthetic pathways in C<sub>3</sub>, C<sub>4</sub> and CAM plants
+                                </td>
+                                <td><input type="radio" id="table1Row5Radial1" name="table1Row5Radial"
+                                        aria-labelledby="table001Col2"></td>
+                                <td><input type="radio" id="table1Row5Radial2" name="table1Row5Radial"
+                                        aria-labelledby="table001Col3"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </fieldset>
+                </div>
+                <!--SURVEY END-->
+            </div>
+        </section>
+    </main>
+
+    <!-- Compiled GVL, Widgets, ILOs, etc. -->
+    <script src="../dependencies/vendor.min.js"></script>
+    <script src="../dependencies/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!--include the script call before </body> -->
+    <script>
+        angular.bootstrap(document.getElementById('sbi4u_mc1'), ['multipleChoiceWidget']);
+        angular.bootstrap(document.getElementById('sbi4u_mc2'), ['multipleChoiceWidget']);
+        angular.bootstrap(document.getElementById('sbi4u_mc3'), ['multipleChoiceWidget']);
+        angular.bootstrap(document.getElementById('sbi4u_mc4'), ['multipleChoiceWidget']);
+        angular.bootstrap(document.getElementById('sbi4u_mc5'), ['multipleChoiceWidget']);
+        angular.bootstrap(document.getElementById('sbi4u_mc6'), ['multipleChoiceWidget']);
+        angular.bootstrap(document.getElementById('sbi4u_mc7'), ['multipleChoiceWidget']);
+        angular.bootstrap(document.getElementById('sbi4u_mc8'), ['multipleChoiceWidget']);
+        angular.bootstrap(document.getElementById('sbi4u_mc9'), ['multipleChoiceWidget']);
+        angular.bootstrap(document.getElementById('sbi4u_mc10'), ['multipleChoiceWidget']);
+        angular.bootstrap(document.getElementById('sbi4u_mc11'), ['multipleChoiceWidget']);
+
+        angular.bootstrap(document.getElementById("sbi4u_matching1"), ["matchingComboWidget"]);
+        angular.bootstrap(document.getElementById("sbi4u_matching2"), ["matchingComboWidget"]);
+        angular.bootstrap(document.getElementById("sbi4u_matching3"), ["matchingComboWidget"]);
+        angular.bootstrap(document.getElementById("sbi4u_matching4"), ["matchingComboWidget"]);
+    </script>
+    <script src="../assets/js/bugfixes.js"></script>
+
+    <!--end script call-->
+
+</body>
+
+</html>

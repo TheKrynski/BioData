@@ -1,0 +1,1506 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning activity 4.2: Investigating DNA replication</title>
+    <style>
+        /*matching widget styles*/
+        .completionItem {
+            /*question (label) and option (select) div*/
+            position: relative;
+            clear: both;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(86, 101, 105, 0.5);
+            margin-bottom: 20px;
+            background-color: #F8F9F9;
+        }
+
+        .completionItem label {
+            /* question is inside <label>*/
+            width: 71%;
+            padding: 2%;
+            font-size: 95%;
+        }
+
+        .completionItem select {
+            /* options are inside <select>*/
+            width: 25%;
+            float: right;
+            margin: 2%;
+            margin-right: 0px;
+            /* .btn-info -- button styles from CVL */
+            color: #F8F9F9;
+            background-color: #0A76A5;
+            border-color: #0A76A5;
+        }
+
+        .completionItem label>span {
+            /*all text is inside <span> - this overrides bold for question text*/
+            font-weight: normal;
+        }
+
+        .completionItem span {
+            /*feedback text*/
+            font-weight: bold;
+        }
+
+        .completionFeedback i {
+            /*this pushes the feedback to a new line*/
+            padding: 20px
+        }
+
+        .completionControls {
+            /*position of submit button - width and position matches options*/
+            float: right;
+            width: 25%;
+        }
+
+        .completionControls button {
+            /*button is full width of 25% in layout*/
+            width: 100%;
+            /* different button */
+            color: #F8F9F9;
+            background-color: gray;
+            border-color: #0A76A5;
+        }
+
+        .completionControls button:hover {
+            background-color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="../assets/css/ilc_core_temp.css">
+</head>
+
+<body>
+    <noscript>
+        <div class="alert alert-warning clearfix" role="alert">
+            <p><strong>Warning!</strong> To ensure the greatest educational experience, this learning activity contians
+                aspects that require Javascript to be enabled.</p>
+        </div>
+    </noscript>
+
+
+    <section id="ilcLearningGoals" class="hidden">
+        <h2>Learning goals </h2>
+        <p>We are learning to:</p>
+        <ul>
+            <li>use appropriate terminology related to molecular genetics</li>
+            <li>explain the current model of DNA replication, and describe the different repair mechanisms that can
+                correct mistakes in DNA sequencing</li>
+            <li>describe some of the historical scientific contributions that have advanced our understanding of
+                molecular genetics</li>
+        </ul>
+        <h2>Success criteria</h2>
+        <p>I am able to: </p>
+        <ul>
+            <li>Describe three possible models of DNA replication and how experiments confirmed the semiconservative
+                model </li>
+            <li>Compare and contrast the three stages of DNA replication </li>
+            <li>Use the terms DNA polymerase, RNA primer, lagging strand, leading strand, Okazaki fragments, matching
+                base pairs, nucleotide, DNA primase, replication fork to explain the process of DNA replication</li>
+            <li>Explain how DNA repairs take place </li>
+            <li>Describe telomeres and what happens to them over time </li>
+        </ul>
+    </section>
+
+    <main id="mainContent" class="container">
+        <section id="mindsOn">
+            <div class="row banner">
+                <h1><img src="../assets/img/sbi4u_04.02_mindsOn.png" alt="Minds On" class="img-responsive"></h1>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <img src="../assets/img/sbi4u_04.02.01.jpg"
+                        alt="Haploid sperm fertilizing a haploid egg cell. The term haploid means a cell or nucleus containing a single set of unpaired chromosomes"
+                        class="img-responsive img-right-50">
+
+                    <p>You began life as a single cell about the size of the dot in this letter
+                        &#x201C;i&#x201D;&#x2014;the combination of a haploid sperm and a haploid egg cell. </p>
+                    <p>Now, through cell division, you are a mass of trillions of cells. All those cells contain a copy
+                        of the original DNA from the single original cell. Every time your cells divided, your DNA
+                        needed to be replicated and the results had to be checked, to make sure there were no errors.
+                        Without this process, you couldn&#x2019;t exist.</p>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <img src="../assets/img/sbi4u_04.02.02.jpg" alt="Mitosis (nuclear division), computer artwork."
+                        class="img-responsive">
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <img src="../assets/img/sbi4u_04.02.03.jpg"
+                        alt="Two scientists working in a laboratory with a computer and microscope "
+                        class="img-responsive img-left-50">
+                    <p>Watson and Crick recognized that their model of DNA structure provided an obvious way for the
+                        molecule to replicate itself. Because each nucleotide base could only pair up with its
+                        complementary base, each strand of DNA could serve as a template for its own replication. But
+                        how did this happen? </p>
+                    <p>It was widely recognized that this was the next big scientific question to be solved, so the race
+                        was now on to understand the process of DNA replication. </p>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <img src="../assets/img/sbi4u_04.02.04.jpg"
+                        alt="a DNA double strand with base pairs matched up beside the image of a DNA molecule split up into two separate single strands."
+                        class="img-responsive center-block">
+                </div>
+            </div>
+        </section>
+
+        <section id="action">
+            <div class="row banner">
+                <h1><img src="../assets/img/sbi4u_04_action.png" alt="Action" class="img-responsive"></h1>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Finding the correct model of DNA replication</h2>
+                    <p>Initially, there were three models proposed for how a DNA molecule might replicate.</p>
+                    <img src="../assets/img/sbi4u_04.02.05.jpg"
+                        alt=" each part of the image - representation of the semiconservative model, representation of the conservative model, representation of the dispersive model"
+                        class="img-responsive">
+                </div>
+            </div>
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <!-- *************************** ACCORDION XXX BEGINS ******************************************* -->
+                    <div class="accordionILC panel-group" id="accordion1">
+                        <!-- ACCORDION ITEM X -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1"
+                                        href="#accordion1-collapse2" class="collapsed">Model 1: Semi-Conservative
+                                        Model</a></h4>
+                            </div>
+                            <div id="accordion1-collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+
+                                    <img src="../assets/img/sbi4u_04.02.06.jpg" alt class="img-responsive img-left-33">
+
+                                    <p>In the <em class="Italic">semi-conservative model</em>, the parent DNA
+                                        molecule splits apart, with each strand acting as a template for the
+                                        newly synthesized strand. This produces two new DNA molecules, with each
+                                        one containing one strand from the original parent DNA, and the other
+                                        strand made up of new DNA. As in the conservative model, the nucleotide
+                                        sequence is the same in each daughter DNA molecule.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1"
+                                        href="#accordion1-collapse1" class="collapsed">Model 2: Conservative Model</a>
+                                </h4>
+                            </div>
+                            <div id="accordion1-collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">
+
+                                    <img src="../assets/img/sbi4u_04.02.07.jpg" alt class="img-responsive img-left-33">
+
+                                    <p>In the <em class="Italic">conservative model</em>, the parent, or original
+                                        DNA molecule, produces an exact copy of itself but remains intact. The
+                                        result is two daughter DNA molecules&#x2014;one made entirely of new
+                                        nucleotides, and the other composed of the same original nucleotides as the
+                                        parent. However, because they are
+                                        identical copies, the nucleotide sequence is the same in each.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ACCORDION ITEM X -->
+                        
+
+                        <!-- ACCORDION ITEM X -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1"
+                                        href="#accordion1-collapse3" class="collapsed">Model 3: Dispersive Model</a>
+                                </h4>
+                            </div>
+                            <div id="accordion1-collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">
+
+                                    <img src="../assets/img/sbi4u_04.02.08.jpg" alt="" class="img-responsive img-left-33">
+                                    <p><em class="Italic">The dispersive model</em> proposes that the parental
+                                        DNA molecule is broken into fragments, and that each daughter DNA is
+                                        made up of a random mix of parental and new DNA, again with the same
+                                        nucleotide sequence as the parent.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- END OF ACCORDION ITEMS -->
+                </div>
+                <!-- *************************** ACCORDION XXX ENDS ******************************************* -->
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Proving the semiconservative model of DNA replication </h2>
+
+
+                    <img src="../assets/img/sbi4u_04.02.09.jpg" alt=" Photo of Meselson and Stahl"
+                        class="img-responsive img-right-50">
+                    <p>In 1958, the question of which model best described DNA replication was answered in the
+                        publication of a famous experiment by American researchers Matthew Meselson and Franklin Stahl.
+                    </p>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>The Meselson and Stahl experiments</h3>
+                    <p>To determine which kind of replication occurred, Meselson and Stahl decided to use isotopes of
+                        nitrogen to mark new nucleotides, thus distinguishing them from the ones in the original DNA.
+                    </p>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <p>By &#x201C;tagging&#x201D; the DNA in this way, they could determine whether the new DNA
+                                molecules:</p>
+                            <ul>
+                                <li>were made entirely of new nucleotides <em class="Italic">(the conservative
+                                        model)</em></li>
+                                <li>contained half-original and half-new nucleotides <em class="Italic">(the
+                                        semiconservative model)</em></li>
+                                <li>were a random mix of each <em class="Italic">(the dispersive model)</em></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-6">
+                            <img src="../assets/img/sbi4u_04.02.10.jpg"
+                                alt="The structure of adenine, guanine, thymine and cytosine " class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h4>Experiment 1</h4>
+                    <img src="../assets/img/sbi4u_04.02.11.jpg"
+                        alt="Colonies of multi-resistant E. coli colonies growing on a blood agar culture plate"
+                        class="img-responsive img-right-50">
+
+                    <p>For their experiment, they used the common bacteria, E. coli, because it reproduced
+                        quickly in culture and its biology was well understood. </p>
+
+                    <p>They also used nitrogen as their indicator atom, because it needs to be absorbed in large
+                        quantities in order for DNA replication to occur. </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">Isotope of Nitrogen</th>
+                                <th scope="col"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                        <mmultiscripts>
+                                            <mtext>N</mtext>
+                                            <mprescripts></mprescripts>
+                                            <mrow></mrow>
+                                            <mtext>15</mtext>
+                                        </mmultiscripts>
+                                    </math></th>
+                                <th scope="col"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                        <mmultiscripts>
+                                            <mtext>N</mtext>
+                                            <mprescripts></mprescripts>
+                                            <mrow></mrow>
+                                            <mtext>14</mtext>
+                                        </mmultiscripts>
+                                    </math></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Relative Weight</td>
+                                <td>Heavy</td>
+                                <td>Regular Weight</td>
+                            </tr>
+                            <tr>
+                                <td>Radioactivity </td>
+                                <td>Not Radioactive</td>
+                                <td>Radioactive</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>The heavy isotope, <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mmultiscripts>
+                                <mtext>N</mtext>
+                                <mprescripts></mprescripts>
+                                <mrow></mrow>
+                                <mtext>15</mtext>
+                            </mmultiscripts>
+                        </math> is heavier than the regular <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mmultiscripts>
+                                <mtext>N</mtext>
+                                <mprescripts></mprescripts>
+                                <mrow></mrow>
+                                <mtext>14</mtext>
+                            </mmultiscripts>
+                        </math>, so it can be separated out by density using a centrifuge. When substances that are
+                        suspended in liquids are placed in a test tube and spun in a centrifuge, the denser substances
+                        settle to the bottom of the test tube.</p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h4>Centrifugation </h4>
+                    <!-- Carousel -->
+                    <div id="ilcCarousel01" class="carousel slide" data-ride="carousel" data-wrap="true"
+                        data-interval="false">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#ilcCarousel01" data-slide-to="0" class="active"></li>
+                            <li data-target="#ilcCarousel01" data-slide-to="1"></li>
+                            <li data-target="#ilcCarousel01" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <!-- Slide 1 -->
+                            <div class="item active">
+                                <img src="../assets/img/sbi4u_04.02.12.jpg"
+                                    alt=" A centrifuge is equipment that spins test tubes around at very high speeds"
+                                    class="img-responsive center-block"><!-- Caption -->
+                                <!-- Caption -->
+                                <div class="carousel-caption">A centrifuge is equipment that spins test tubes around at
+                                    very high speeds</div>
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="item">
+                                <img src="../assets/img/sbi4u_04.02.13.jpg" style="width: 47%"
+                                    alt=" An image of a table top centrifiuge" class="img-responsive center-block">
+                                <!-- Caption -->
+                                <div class="carousel-caption">Centrifuges come in different sizes and speeds. There is a
+                                    gravitational force put on the material in the test tubes as it spins at high speed.
+                                </div>
+                            </div>
+
+                            <!-- Slide 3 -->
+                            <div class="item">
+                                <img src="../assets/img/sbi4u_04.02.14.jpg" style="width: 47%"
+                                    alt="An image of a test tube with layers of material in it"
+                                    class="img-responsive center-block">
+                                <!-- Caption -->
+                                <div class="carousel-caption">The material being centrifuged separates based on its
+                                    density as it experiences greater-than-normal g-forces. The most dense material
+                                    forms the bottom layers.</div>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <!-- Left -->
+                        <a href="#ilcCarousel01" data-slide="prev">
+                            <i class="fa fa-angle-left fa-2x"></i>
+                        </a>
+                        <!-- Right -->
+                        <a href="#ilcCarousel01" data-slide="next">
+                            <i class="fa fa-angle-right fa-2x pull-right"></i>
+                        </a>
+                    </div>
+                    <!-- /Carousel -->
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h4>Expected results for the three DNA replication models</h4>
+                    <p>After bacteria grown with <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mmultiscripts>
+                                <mtext>N</mtext>
+                                <mprescripts></mprescripts>
+                                <mrow></mrow>
+                                <mtext>15</mtext>
+                            </mmultiscripts>
+                        </math> replicated in a medium or substance with <math
+                            xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mmultiscripts>
+                                <mtext>N</mtext>
+                                <mprescripts></mprescripts>
+                                <mrow></mrow>
+                                <mtext>14</mtext>
+                            </mmultiscripts>
+                        </math> for a few generations, the following results would occur depending on which model was
+                        correct: </p>
+                    <img src="../assets/img/sbi4u_04.02.15.png" style="width: 70%"
+                        alt=" A summary of the three postulated methods of DNA synthesis"
+                        class="img-responsive center-block">
+
+                    <ul>
+                        <li>bacterial DNA will have the weight of <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mmultiscripts>
+                                    <mtext>N</mtext>
+                                    <mprescripts></mprescripts>
+                                    <mrow></mrow>
+                                    <mtext>15</mtext>
+                                </mmultiscripts>
+                            </math> and <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mmultiscripts>
+                                    <mtext>N</mtext>
+                                    <mprescripts></mprescripts>
+                                    <mrow></mrow>
+                                    <mtext>14</mtext>
+                                </mmultiscripts>
+                            </math>, and consequently, two separate bands will be visible after centrifuging.
+                            (Conservative Model)</li>
+                        <li>bacterial DNA will have an intermediate weight between the densities of <math
+                                xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mmultiscripts>
+                                    <mtext>N</mtext>
+                                    <mprescripts></mprescripts>
+                                    <mrow></mrow>
+                                    <mtext>15</mtext>
+                                </mmultiscripts>
+                            </math> and <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mmultiscripts>
+                                    <mtext>N</mtext>
+                                    <mprescripts></mprescripts>
+                                    <mrow></mrow>
+                                    <mtext>14</mtext>
+                                </mmultiscripts>
+                            </math>, and will also have bacterial DNA that is the weight of <math
+                                xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mmultiscripts>
+                                    <mtext>N</mtext>
+                                    <mprescripts></mprescripts>
+                                    <mrow></mrow>
+                                    <mtext>14</mtext>
+                                </mmultiscripts>
+                            </math> only. Consequently, two separate bands will be visible after centrifuging.
+                            (Semi-Conservative Model)</li>
+
+                        <li>bacterial DNA will have an intermediate weight between the densities of <math
+                                xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mmultiscripts>
+                                    <mtext>N</mtext>
+                                    <mprescripts></mprescripts>
+                                    <mrow></mrow>
+                                    <mtext>15</mtext>
+                                </mmultiscripts>
+                            </math> and <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mmultiscripts>
+                                    <mtext>N</mtext>
+                                    <mprescripts></mprescripts>
+                                    <mrow></mrow>
+                                    <mtext>14</mtext>
+                                </mmultiscripts>
+                            </math>, and consequently, only one band will be visible after centrifuging. (Dispersive
+                            Model)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Discover more</h3>
+                    <div class="callout_content_icon"><img src="../assets/icons/discover_more.svg" alt="" class="img-responsive">
+                        <div class="callout_content">
+                    <p>The image and video below summarize the work of Meselson and Stahl. You may choose to explore this video to assist your research.</p>
+                    <img src="../assets/img/sbi4u_04.02.16.jpg"
+                        alt=" a visual representation of the Meselson and Stahl experiment. The first bacteria were grown using heavy nitrogen and therefore all the DNA was heavy. The next generation was grown in light nitrogen and so all the DNA was half as heavy. The next generation was also grown in light nitrogen resulting in half of the DNA being light and half of it in between heavy and light"
+                        class="img-responsive">
+                </div>
+            </div>
+                    <div class="brightcove-video-container" data-video-id="2601115"></div>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <img src="../assets/img/sbi4u_04.02.17.jpg"
+                        alt="Semi-conservative model of DNA replication. The dark strand is the newly formed DNA. When the process is finished, there will be two DNA molecules, each containing one original strand (white) and one new strand (black)."
+                        class="img-responsive img-right-50">
+                    <p>Discovering that DNA replication was semiconservative helped researchers focus on the mechanisms
+                        involved. Far more research has been done since this discovery, so we now have a very detailed
+                        picture of the steps involved in DNA replication.</p>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Understanding checkpoint: Finding the correct model of DNA replication </h3>
+                    <p>In the Meselson and Stahl experiment, what pattern of banding would you expect to find in the
+                        centrifuge tubes after one generation in the regular nitrogen medium, if DNA replication were,
+                        in fact, conservative?</p>
+                        <button class="btn btn-default btn-answer-reveal" id="sbi4u_u4la2-suggestedAnswerButton-1">Suggested
+                        Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u4la2-suggestedAnswer-1">
+                        <p>If replication were conservative, there would be one band of heavy DNA and one band of
+                            regular DNA in the centrifuge tubes. This would be because one copy would contain the
+                            original heavy nitrogen, while the other copy would contain only the regular-weight
+                            nitrogen.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Stages in DNA replication</h2>
+                    <p>The process of DNA replication in prokaryotes (organisms whose cells don&#x2019;t contain a
+                        nucleus) and eukaryotes (organisms whose cells contain a nucleus) is similar, even though they
+                        have differently shaped DNA. Prokaryotes have circular strands of DNA and contain about a
+                        thousand times fewer nucleotides than the long, twisted strands of DNA found in eukaryotes.
+                        Because of this, DNA replication in prokaryotes is much faster, usually taking less than an
+                        hour, while in eukaryotes it takes a few hours.</p>
+                    <p>The process of DNA replication in both eukaryotes and prokaryotes can be broken down into three
+                        main phases:</p>
+                    <p><strong>Initiation:</strong> DNA is unwound and separated to expose each strand in the pair at
+                        multiple sites of replication along the DNA molecule.</p>
+                    <p><strong>Elongation:</strong> Enzymes attach complementary nucleotides onto the 3&#x2019; (three
+                        prime) end of
+                        each exposed strand in a linear sequence, and check for errors.</p>
+                    <p><strong>Termination:</strong> Nucleotide addition stops, enzymes are removed, and the newly
+                        formed strands of DNA coil back into the double helix shape.</p>
+                    <p>Next you will get into the details of the stages of DNA replication. To begin, you must perform
+                        your own research, or watch one (or more) of the following videos to get an overview of the
+                        three
+                        stages in DNA replication. You will take a detailed look at the three stages after. Copy the
+                        table below into your notebook to help guide your research. Once you are able to complete the
+                        table on your own, check the suggested answers to see how you did. </p>
+                </div>
+            </div>
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Explore This!</h3>
+                    <div class="callout_content_icon"><img src="../assets/icons/watch.svg" alt class="img-responsive">
+                        <div class="callout_content">
+                            <p>Please view one (or all, if you choose) of the following videos:</p>
+                            <ul>
+                                <li>
+                                    <p>DNA Replication</p>
+                                    <div class="brightcove-video-container margin-bottom-lg" data-video-id="2601116">
+                                    </div>
+                                </li>
+                                <li>
+                                    <p><a href="https://www.youtube.com/watch?v=5qSrmeiWsuc" target="_blank">DNA
+                                            Replication - Amoeba Sisters<span class="sr-only"> (Opens in new
+                                                window)</span></a> </p>
+                                </li>
+
+                                <li>
+                                    <p><a href="https://www.youtube.com/watch?v=8kK2zwjRV0M" target="_blank">DNA
+                                            Structure and Replication - Crash Course Biology #10<span
+                                                class="sr-only"></span></a> - (start 8:50 - end)</p>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>The table below is a summary list of all the key terms, including proteins and enzymes, involved
+                        in DNA replication. Keep it handy and refer to it as many times as required. </p>
+                </div>
+            </div>
+
+
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+
+                    <table id="sbi4u_u4la2-tableSuggestedAnswers-1" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 30%">
+                                    Term
+                                </th>
+                                <th scope="col" style="width: 20%">
+                                    Stage
+                                </th>
+                                <th scope="col">
+                                    Role in DNA Replication
+                                </th>
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <p>Origins of Replication</p>
+                                </th>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">Initiation</p>
+                                </td>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">Multiple sites along DNA where replication
+                                        begins.</p>
+                                </td>
+
+
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <p>Helicase</p>
+                                </th>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">Initiation</p>
+                                </td>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">At each origin of replication point, the
+                                        double-stranded DNA is unwound and separated by Helicase using ATP as energy.
+                                    </p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <p>Replication Fork</p>
+                                </th>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">Initiation</p>
+                                </td>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">When the two DNA strands split apart with
+                                        the
+                                        help of Helicase, a two-pronged form that resembles a fork is created, and is
+                                        known
+                                        as the replication fork.</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <p>Replication Bubbles</p>
+                                </th>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">Initiation</p>
+                                </td>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">When helicase opens up the DNA molecule
+                                        somewhere in the middle, a bubble containing two replication forks is formed in
+                                        the
+                                        DNA, one on each side of the bubble, and these are known as replication bubbles.
+                                    </p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <p>Topoisomerase</p>
+                                </th>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">Initiation</p>
+                                </td>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">In order to eliminate this coiling stress,
+                                        topoisomerase moves along the DNA just ahead of the helicase, cutting the DNA
+                                        and
+                                        relaxing the coils.</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <p>Single-Stranded DNA Binding Proteins (SSBs)</p>
+                                </th>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">Initiation</p>
+                                </td>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">The SSBs help prevent the two template
+                                        parent
+                                        DNA strands from re-establishing hydrogen bonds and protect the exposed bases
+                                        until
+                                        they are ready to bond with their complementary nucleotides.</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <p>DNA Polymerase I</p>
+                                </th>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">Elongation</p>
+                                </td>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">DNA polymerase I is active mostly near the
+                                        end
+                                        of DNA replication, where it removes the RNA primer.</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <p>DNA Polymerase III</p>
+                                </th>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">Elongation</p>
+                                </td>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">DNA polymerase III is responsible for
+                                        joining
+                                        the nucleotides together and checking for errors.</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <p>Deoxyribonucleoside Triphosphates<br>(dNTP)</p>
+                                </th>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">Elongation</p>
+                                </td>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">dNTPs are the nucleotides adenine,
+                                        thymine, guanine and cytosine, with two extra end phosphate groups on each
+                                        nucleotide
+                                        that form dATP, dTTP, dGTP and dCTP respectively, which provide energy required
+                                        for
+                                        the formation of DNA.</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <p>Primase</p>
+                                </th>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">Elongation</p>
+                                </td>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">Helps to form RNA primer.</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <p>RNA Primer</p>
+                                </th>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">Elongation</p>
+                                </td>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">A starting sequence of nucleotides for DNA
+                                        polymerase III to attach to formed from RNA with the help of primase.</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <p>Leading Strand</p>
+                                </th>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">Elongation</p>
+                                </td>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">DNA polymerase III continuously adds
+                                        nucleotides, starting from the initial RNA primer, in a 5&#x2019; to 3&#x2019;
+                                        direction.</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <p>Lagging Strand</p>
+                                </th>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">Elongation</p>
+                                </td>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">The lagging strand is synthesized
+                                        discontinuously in short fragments in the opposite direction to the leading
+                                        strand
+                                        (that is, away from the fork) with the use of many RNA primers and the formation
+                                        of
+                                        Okazaki fragments and DNA ligase.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <p>Okazaki Fragments</p>
+                                </th>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">Elongation</p>
+                                </td>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">DNA fragments about 100 nucleotides long
+                                        that
+                                        are formed on the lagging strand between RNA primers. All Okazaki fragments are
+                                        eventually joined together by the enzyme DNA ligase.</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <p>DNA Ligase</p>
+                                </th>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">Elongation</p>
+                                </td>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">Adjacent Okazaki fragments are joined
+                                        together
+                                        using the enzyme called DNA ligase.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <p>Proofreading</p>
+                                </th>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">Elongation</p>
+                                </td>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">DNA polymerase III is responsible for
+                                        joining
+                                        the nucleotides together and checking for errors.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <p>Telomeres</p>
+                                </th>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">Termination</p>
+                                </td>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">Telomeres are found at the end of DNA
+                                        where
+                                        primers are removed after DNA replication. In humans, the sequence is TTAGGG.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <p>Telomerase</p>
+                                </th>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">Termination</p>
+                                </td>
+                                <td>
+                                    <p class="tableSuggestedAnswer invisible">The enzyme that helps to form telomeres at
+                                        the
+                                        end of DNA molecules after the RNA primers have been removed.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button id="sbi4u_u4la2-tableSuggestedAnswersButton-1" class="btn btn-table-answer-reveal">Show
+                        Answers</button>
+                </div>
+            </div>
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <!-- ACCORDION ONE BEGINS -->
+                    <div class="accordionILC panel-group" id="accordion2">
+                        <!-- ACCORDION ITEM 1 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#accordion2-collapse1" class="collapsed"
+                                        data-parent="#accordion2">
+                                        Phase 1: Initiation</a>
+                                </h4>
+                            </div>
+                            <div id="accordion2-collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>The first phase in replicating DNA is to unwind and open up the molecule so that
+                                        the nucleotide base pairs on each strand can be exposed. You might think that
+                                        the easiest way to do this would be to start at one end of the DNA and split it
+                                        apart, like unzipping a zipper. This can work, but the process of replication
+                                        would then be very slow because there would be only one replication site along
+                                        the entire length of the DNA molecule, occurring just where the two strands are
+                                        separating.</p>
+                                    <p>If replication occurred at only one replication site, it would take about one
+                                        month to replicate the 200 million base pairs in a typical strand of eukaryotic
+                                        DNA, and several days to replicate the shorter prokaryotic DNA. That is because
+                                        in eukaryotic cells, only about 80 nucleotides per second can be added at a
+                                        replication site. In prokaryotes, the rate is about 10 times faster because the
+                                        DNA is not packaged in chromatin.</p>
+
+                                    <img src="../assets/img/sbi4u_04.02.18.jpg" style="padding-top: 20px"
+                                        alt="A representation of DNA replication showing &#x201C;bubbles&#x201D; or areas where the DNA strands separate and new DNA is created attached to each strand. Eventually all these &#x2018;bubbles&#x2019; join together and the two new fully created strands separate. This allows DNA replication to be happening in multiple places along a DNA strand at the same time"
+                                        class="img-responsive img-left-50">
+
+                                    <p>Taking days or weeks to replicate DNA is far too long for meeting the
+                                        needs of growth and development in organisms, some of which may only
+                                        live for a few days. The solution is to have hundreds or even thousands
+                                        of replication sites along the length of a DNA molecule, all replicating
+                                        different parts of the molecule at the same time. In this way, the
+                                        molecule can be copied in hours, instead of days or weeks.</p>
+
+                                    <h4>Origins of replication </h4>
+                                    <img src="../assets/img/sbi4u_04.02.19.jpg" alt=" "
+                                        class="img-responsive img-right-50">
+
+                                    <p>The multiple DNA replication sites are called the <strong>origins of
+                                            replication</strong> and occur all along the DNA molecule. They are
+                                        located in areas with lots of A-T base pairs, because these nucleotides
+                                        are held together with only two hydrogen bonds, so they are easier to
+                                        pull apart than C-G base pairs, which are held together by three
+                                        hydrogen bonds.</p>
+
+                                    <h4>Unwinding DNA: Helicase and the replication fork</h4>
+                                    <img src="../assets/img/sbi4u_04.02.20.jpg" alt=" "
+                                        class="img-responsive img-right-50">
+
+                                    <p>At each origin of replication point, the double-stranded DNA is unwound
+                                        and separated by the enzyme <strong>helicase</strong>. Helicase uses
+                                        ATP energy to break the hydrogen bonds joining the base pairs at the
+                                        origins of replication. As a result, the two strands split apart,
+                                        creating two prongs that resemble a fork. This is called the
+                                        <strong>replication fork</strong>.
+                                    </p>
+
+                                    <h4>Replication bubbles</h4>
+                                    <img src="../assets/img/sbi4u_04.02.21.jpg" alt=" "
+                                        class="img-responsive img-left-50">
+
+                                    <p>When helicase opens up the DNA molecule somewhere in the middle, a bubble
+                                        containing two replication forks is formed in the DNA, one on each side
+                                        of the bubble. Hundreds to thousands of these bubbles, called
+                                        replication bubbles, form simultaneously along the DNA molecule and each
+                                        one is a site at which replication can occur. Eventually, the bubbles
+                                        grow wide enough to merge and the segments of daughter strands of DNA
+                                        connect together to form a new complete strand.</p>
+
+                                    <h4>Eliminating DNA coiling stress: Topoisomerase</h4>
+                                    <img src="../assets/img/sbi4u_04.02.22.jpg" alt=" "
+                                        class="img-responsive img-right-50">
+
+                                    <p>There is a lot of activity occurring near the replication fork. For
+                                        example, the enzyme <strong>helicase</strong> unwinds the DNA as it
+                                        separates it. However, this causes some twisting and super-coiling to
+                                        accumulate further ahead, along the DNA. If this coiling were to
+                                        continue uncontrolled, it would eventually get so hard to twist the
+                                        molecule further that replication would have to stop. In order to
+                                        eliminate this coiling stress, another type of enzyme, called
+                                        <strong>topoisomerase, </strong>moves along the DNA, just ahead of the
+                                        helicase, cutting the DNA and relaxing the coils. In prokaryotes, and
+                                        some eukaryotes, the particular type of topoisomerase that does this job
+                                        is called <strong>gyrase.</strong>
+                                    </p>
+
+                                    <h4>Preventing base pairs from re-annealing: Single-stranded DNA binding proteins
+                                        (SSBs)</h4>
+                                    <img src="../assets/img/sbi4u_04.02.23.jpg" alt=" "
+                                        class="img-responsive img-right-50">
+
+                                    <p>Since the natural tendency of single-stranded DNA is to form hydrogen
+                                        bonds with its exposed bases, there is a danger that the split DNA will
+                                        simply re-anneal (join back together) or bond with other molecules in
+                                        the nucleoplasm and become degraded. To prevent the base pairs from
+                                        re-annealing and becoming degraded after the helicase enzyme has
+                                        separated the strands, <strong>single-stranded DNA binding proteins
+                                            (SSBs)</strong> bind to the exposed bases in the replication
+                                        bubbles. The SSBs help prevent the two template parent DNA strands from
+                                        re-establishing hydrogen bonds and protect the exposed bases until they
+                                        are ready to bond with their complementary nucleotides.</p>
+
+                                    <h4>Understanding checkpoint: The of process of initiation</h4>
+                                    <p>Hydrogen bonds are quite weak compared to covalent bonds. Explain why this fact
+                                        is actually advantageous to DNA in its role as the hereditary material in cells.
+                                    </p>
+                                    <button class="btn btn-default btn-answer-reveal"
+                                        id="sbi4u_u4la2-suggestedAnswerButton-2">Suggested Answer</button>
+                                    <div class="answer_reveal invisible" id="sbi4u_u4la2-suggestedAnswer-2">
+                                        <p>This is an advantage because it allows these bonds to be easily broken, thus
+                                            facilitating the process of DNA replication. In order for DNA replication to
+                                            occur, helicase must break the hydrogen bonds formed between nitrogenous
+                                            bases.</p>
+                                    </div>
+                                    <p style="margin-top: 1.5em;">DNA replication occurs in virtually all cells prior to
+                                        cell division. Why is DNA
+                                        replication essential?</p>
+                                        <button class="btn btn-default btn-answer-reveal"
+                                        id="sbi4u_u4la2-suggestedAnswerButton-3">Suggested Answer</button>
+                                    <div class="answer_reveal invisible" id="sbi4u_u4la2-suggestedAnswer-3">
+                                        <p>DNA replication is essential because it preserves genetic information,
+                                            from generation to generation, in each new daughter cell. This includes the
+                                            information for an organism&#x2019;s genes, growth, repair, and
+                                            reproduction.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ACCORDION ITEM 2 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#accordion2-collapse2" class="collapsed"
+                                        data-parent="#accordion2">
+                                        Phase 2: Elongation</a>
+                                </h4>
+                            </div>
+                            <div id="accordion2-collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+
+                                    <h4>Forming the complimentary daughter DNA strands: DNA polymerases</h4>
+                                    <p>Once the DNA has been unwound and split at the replication fork, the next phase
+                                        involves stringing together nucleotides along the exposed templates to form new
+                                        strands.</p>
+                                    <img src="../assets/img/sbi4u_04.02.23b.jpg" alt=" "
+                                        class="img-responsive img-left-50">
+
+                                    <p>This process is accomplished by <strong>DNA polymerase</strong>, which
+                                        attaches nucleotides, one at a time, to the 3&#x2019; end of a
+                                        pre-existing chain of nucleotides. The free-floating nucleotides it
+                                        gathers from the nucleoplasm have three phosphate groups attached to
+                                        their 3&#x2019; end, and so are called <strong>deoxyribonucleoside
+                                            triphosphates.</strong> After attaching a nucleotide, DNA polymerase
+                                        also performs checks for errors, to make sure that the correct base has
+                                        been added.</p>
+
+                                    <h4>Removing RNA primers and attaching nucleotides: DNA polymerase I and DNA
+                                        polymerase III</h4>
+                                    <img src="../assets/img/sbi4u_04.02.24.jpg"
+                                        alt="artist representation of DNA replicaiton showing DNA Polymerase 1 and 3 on the DNA strand."
+                                        class="img-responsive img-right-50">
+
+                                    <p>In prokaryotes, there are five versions of DNA polymerase, while in
+                                        eukaryotes, there are at least 15. Each version is numbered and has a
+                                        specific function in the process. You will focus only on the actions of
+                                        DNA polymerase I and III in this learning activity. </p>
+                                    <p><strong>DNA polymerase I</strong> is active mostly near the end of DNA
+                                        replication, where it removes the RNA primer.</p>
+                                    <p><strong>DNA polymerase III</strong> is responsible for joining the
+                                        nucleotides together and checking for errors.</p>
+
+                                    <h4>Attaching nucleotides to form new DNA requires energy: dNTPs</h4>
+
+                                    <p>How nucleotides are attached to form new DNA using dNTPs:</p>
+                                    <ol>
+                                        <li>DNA formation requires energy, and this comes from <strong>dNTPs</strong>
+                                            (deoxyribonucleoside triphosphates). Essentially, dNTPs are the nucleotides
+                                            adenine, thymine, guanine and cytosine with two extra end phosphate groups
+                                            on each nucleotide that form dATP, dTTP, dGTP and dCTP respectively. </li>
+                                        <li>New nucleotides are added to the growing DNA strand in a 5&#x2019; to
+                                            3&#x2019; direction. More information about this to follow. </li>
+                                        <li>During the joining reaction, the two end phosphates break off from the
+                                            deoxyribonucleoside triphosphate (dNTP), causing it to release energy.</li>
+                                        <li>This energy is used to create the <strong>phosphodiester bond</strong> that
+                                            connects the new nucleotide to the growing chain of nucleotides on the
+                                            strand.</li>
+                                        <li>Two phosphate ions are released due to the formation of the phosphodiester
+                                            bond.</li>
+                                    </ol>
+
+                                    <p><img src="../assets/img/sbi4u_04.02.25.jpg"
+                                            alt=" A visual representation of how nucleotides are attached to new DNA. "
+                                            class="img-responsive center-block" style="width: 80%; height: auto;"></p>
+
+                                    <h4>Forming a short sequence for DNA polymerase to bind to: RNA primers and primase
+                                    </h4>
+                                    <p>DNA polymerase III can only add nucleotides onto an existing DNA strand; it
+                                        cannot begin the synthesis of a new strand. To begin the synthesis of a new
+                                        strand, there must be a starting sequence of nucleotides for DNA polymerase III
+                                        to attach to. This starting sequence is provided by a short fragment of RNA that
+                                        is created and attached to the exposed template strand to serve as the starting
+                                        nucleotides from which DNA polymerase III can extend outwards.</p>
+                                    <p>The short fragment of RNA is called an <strong>RNA primer</strong>, which is
+                                        about 10 to 100 base pairs long and is complementary to a section of the exposed
+                                        template strand. The formation of this RNA primer requires the enzyme
+                                        <strong>primase</strong>. Once the RNA primer is formed and attached to the DNA
+                                        template, the primase enzyme is released.
+                                    </p>
+                                    <p>The two strands of newly forming DNA (leading and lagging) are both assembled
+                                        simultaneously using DNA polymerase; however, because of their different
+                                        orientations, the process and speed is not the same on each strand. The details
+                                        of each are described next.</p>
+                                    <p> <img src="../assets/img/sbi4u_04.02.26.jpg"
+                                            alt="artist representation of DNA replication showing DNA Primase on the DNA strand"
+                                            class="img-responsive"></p>
+                                    <h4>New DNA formation: Leading and lagging strands </h4>
+                                    <p style="vertical-align: middle; padding: 0% 0% 0% 25%;"> <img
+                                            src="../assets/img/sbi4u_04.02.27.svg"
+                                            alt="A representations of the leading and lagging strand "
+                                            class="img-responsive" style="width: 60%; height: auto;"></p>
+
+                                    <h5>Leading strand </h5>
+                                    <p>On the leading strand, DNA polymerase III continuously adds nucleotides, starting
+                                        from the initial RNA primer. It joins a new nucleotide to the existing chain of
+                                        nucleotides by catalyzing the formation of phosphodiester bonds at the 3&#x2019;
+                                        end, between the last nucleotide on the chain and the new deoxyribonucleoside
+                                        triphosphate. Since this is the natural orientation of the leading strand, the
+                                        process can continue easily along this strand in the same direction as the
+                                        replication fork. When replication is finished, the RNA primer is replaced with
+                                        DNA.</p>
+                                    <h5>Lagging strand </h5>
+                                    <p>The lagging strand does not have the 3&#x2019; end exposed on its last
+                                        nucleotide; it has the 5&#x2019; end, where it can&#x2019;t add new nucleotides.
+                                        Because of this, adding more nucleotides to the growing strand requires a
+                                        four-step process involving several more enzymes. </p>
+                                    <p>As with the leading strand, the DNA synthesis on the lagging strand starts with
+                                        the creation of short pieces of RNA templates that attach along the exposed
+                                        template of the lagging strand. The RNA templates serve as starting points for
+                                        the addition of new nucleotides. The lagging strand is then synthesized
+                                        discontinuously in short fragments in the opposite direction to the leading
+                                        strand (that is, away from the fork). Eventually, the short fragments are
+                                        attached together to form the new DNA strand. It is because of these extra steps
+                                        that this strand takes longer to assemble, which is why it lags behind the
+                                        leading strand.</p>
+                                    <p> <img src="../assets/img/sbi4u_04.02.28.jpg"
+                                            alt="representation of the DNA replication fork" class="img-responsive"></p>
+                                    <h5>Steps to forming the lagging strand</h5>
+
+
+
+                                    <!-- TABS START-->
+                                    <div>
+                                        <div>
+                                            <ul class="nav nav-pills-sm" role="tablist" style="width:100%">
+                                                <li class="active" style="width:20%" role="tab"><a href="#tab1_1"
+                                                        data-toggle="tab">Step<br /> 1</a></li>
+                                                <li style="width:40%" role="tab"><a href="#tab1_2"
+                                                        data-toggle="tab">Step<br /> 2 and 3</a></li>
+                                                <li style="width:20%" role="tab"><a href="#tab1_3"
+                                                        data-toggle="tab">Step<br /> 4</a></li>
+                                                <li style="width:20%" role="tab"><a href="#tab1_4"
+                                                        data-toggle="tab">Step<br /> 5</a></li>
+
+                                            </ul>
+                                        </div>
+
+                                        <div class="panel-body">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade in active" id="tab1_1">
+
+                                                    <p><strong> Make RNA primer</strong></p>
+                                                    <p>Create an initial chain of nucleotides using RNA primase and
+                                                        attach it to complementary exposed bases on the template strand.
+                                                    </p>
+                                                </div>
+
+
+                                                <div class="tab-pane fade" id="tab1_2">
+                                                    <p><strong> Add nucleotides to RNA primer</strong></p>
+                                                    <p>DNA polymerase III extends the initial chain of nucleotides by
+                                                        adding dNTPs onto the free 3&#x2019; hydroxyl (-OH) end of the
+                                                        RNA primer. This extension runs in the opposite direction to the
+                                                        replication fork. The fragment of DNA created is about a few
+                                                        hundred nucleotides long in eukaryotes, and a few thousand long
+                                                        in prokaryotes. These DNA fragments are called Okazaki fragments
+                                                        after Tsuneko Okazaki, the Japanese scientist who first
+                                                        discovered their role in the 1960s.</p>
+                                                </div>
+
+
+                                                <div class="tab-pane fade" id="tab1_3">
+                                                    <p><strong> Remove RNA primer</strong></p>
+                                                    <p>When an Okazaki fragment has grown long enough to bump into the
+                                                        next fragment along the template, it stops growing and the DNA
+                                                        polymerase III is released. DNA polymerase I attaches at this
+                                                        location and removes the RNA primer between the two fragments,
+                                                        while replacing the RNA bases with the correct DNA nucleotides.
+                                                    </p>
+                                                </div>
+
+
+                                                <div class="tab-pane fade" id="tab1_4">
+                                                    <p><strong> Join Okazaki fragments together</strong></p>
+                                                    <p>DNA polymerase I is released and the adjacent Okazaki fragments
+                                                        are joined together, using another enzyme called DNA ligase. The
+                                                        result is a new complete strand of DNA.</p>
+                                                </div>
+
+
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END TABS-->
+
+                                    <p><strong>Proof-Reading and Error Correction: Polymerase III </strong></p>
+                                    <p>DNA Polymerase III prevents point mutations by detecting the number of hydrogen
+                                        bonds a nucleotide forms. If hydrogen bonding does not occur, the bases are
+                                        mismatched and the DNA Polymerase replaces the incorrect base with the correct
+                                        one. </p>
+                                    <p> <img src="../assets/img/sbi4u_04.02.29.jpg" alt=" "
+                                            class="img-responsive center-block" style="width: 50%; height: auto;"></p>
+
+                                    <p>Like all reactions in living cells, DNA replication takes place in a chemical
+                                        environment that is very chaotic. During this process, millions of molecules of
+                                        phosphates, nucleotides, RNA, and enzymes are all colliding around each other.
+                                        In this environment it is possible for errors in DNA replication to occur, with
+                                        the occasional wrong nucleotide being added to the growing template. Errors in
+                                        copying the genetic code are called <strong>point mutations</strong> and can be
+                                        very dangerous for the organism, so mechanisms have evolved to catch errors as
+                                        they happen.</p>
+                                    <p>DNA polymerase III can detect if the nucleotide it has just added to the growing
+                                        strand has formed hydrogen bonds with its counterpart on the template strand. If
+                                        hydrogen bonding does not occur, it means that the bases are mismatched, so DNA
+                                        polymerase III removes the incorrect nucleotide and replaces it with the correct
+                                        one. This continuous error-checking process is so good that only about one error
+                                        per billion base pairs occurs.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ACCORDION ITEM 3 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#accordion2-collapse3" class="collapsed"
+                                        data-parent="#accordion2">
+                                        Phase 3: Termination</a>
+                                </h4>
+                            </div>
+                            <div id="accordion2-collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>When the last step in the elongation phase along the strand is completed, the
+                                        newly formed strand of DNA spontaneously begins to twist into a helical shape.
+                                        The replication process of bubble formation, nucleotide addition, and
+                                        re-twisting continues along the DNA until two complete and separate
+                                        semi-conservative daughter DNA molecules are made.</p>
+                                    <h4>Removing the RNA primer from the 5&#x2019; end of daughter DNA</h4>
+                                    <p> <img src="../assets/img/sbi4u_04.02.30.jpg" alt=" " class="img-responsive"></p>
+                                    <p>Each DNA replication results in a slightly shorter daughter molecule because
+                                        there is no way to fill in the 5&#x2019; end with nucleotides once the RNA
+                                        primer is removed.</p>
+                                    <p>As you saw in step three of elongation, an important act in replication is to
+                                        remove the RNA primer from the end of a newly formed section and replace it with
+                                        DNA. However, when the RNA primer is removed from the 5&#x2019; end of each
+                                        daughter DNA molecule, there is no adjacent nucleotide chain with a 3&#x2019;
+                                        end that can be extended to fill in the gap. This means that there is a gap at
+                                        the 5&#x2019; end of each DNA molecule that remains unpaired with the template
+                                        strand.</p>
+
+                                    <p>The gap is as long as the RNA primer. Eventually, the unpaired nucleotides on the
+                                        template strand break off, leaving the daughter DNA molecule a little shorter
+                                        than its parent. So, with each replication, the DNA gets a bit shorter. In
+                                        humans, about 100 base pairs are lost from each end of each chromosome every
+                                        time DNA replicates.</p>
+                                    <p>Prokaryotes, like bacteria, do not suffer from this problem, because their DNA is
+                                        circular, so there are no ends with gaps left exposed.</p>
+                                    <p>Even though 100 base pairs do not seem like a lot when compared to the millions
+                                        of base pairs that make up eukaryotic chromosomes, their loss over time could
+                                        result in significant genetic damage. For this reason, eukaryotic organisms have
+                                        evolved special regions at the end of their chromosomes called telomeres that
+                                        help to deal with this problem.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF ACCORDION ITEMS -->
+                    </div>
+                    <!-- ACCORDION ONE ENDS -->
+
+
+
+                </div>
+            </div>
+
+
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+
+                    <h2>Review the process of DNA replication </h2>
+                    <p>Now that you have studied the process of DNA replication in detail, make sure you have created
+                        detailed notes on the process to study from. </p>
+                </div>
+            </div>
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3 class="h4">Understanding checkpoint</h3>
+                    <div id="u4la2_mc1" class="multiple-choice-widget" data-ng-controller="multipleChoiceController"
+                        data-ng-init="getQuestionData('../widgets/sbi4u_u4la2_mc1.json')">
+                        <div data-multiple-choice-directive></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h4>Special regions at the end of chromosomes: Telomeres</h4>
+                    <img src="../assets/img/sbi4u_04.02.32.jpg"
+                        alt="telomeres are the pieces at the end of the DNA strand (end of chromosome)"
+                        class="img-responsive center-block">
+                    <p class="small text-center">Telomeres are found at the end of DNA, where primers are removed after
+                        DNA replication. In humans, the sequence is TTAGGG </p>
+                    <p>A telomere is a region of several thousand nucleotides made up of a simple repeated sequence that
+                        does not code for proteins. In humans, the sequence is <strong>TTAGGG.</strong> This acts as a
+                        buffer region of expendable DNA that can be gradually lost over repeated replications without
+                        damaging the active genetic code.</p>
+                    <p>Telomeres are of finite length, which means that cells are only able to divide a certain number
+                        of times before the DNA loss prevents further division. Cells die when their telomeres become
+                        too short to support further cell division. Cells with longer telomeres live longer. When you
+                        were born, your telomeres were longer than they are now, and with every division since then,
+                        they have been getting slightly smaller.</p>
+                    <p>Some cells, like reproductive cells, need to be able to replicate their DNA more times than
+                        somatic cells, so they produce an enzyme called telomerase that extends the telomeres.</p>
+                    <img src="../assets/img/sbi4u_04.02.33.gif" alt="A diagram of a chromosome, with the following labels:  Chromatid: One of the two identical strands of DNA that make up a chromosome. Centromere: Joins the two chromatids together, and is the region which fibres attach to during cell division. 
+                    Telomeres: Are molecular protective caps of reptitive DNA at the ends of chromosomes
+                    Cancer Cells: In tumors, telomerase is overactive, repairing telomeres and allowing cancer cells to replicate indefinitely
+                    When a cell divides:Without Telomerase: Telomeres get shorter each time a cell divides, leading to eventual cell death. This may play a role in aging.
+                    With Telomerase: Telomerase is an enzyme that builds and maintains telomeres. It prevents shortening by adding extra pieces of DNA each time a cell divides. " class="img-responsive">
+                    <p><a href="../assets/alt/sbi4u_04.02.33.html" target="_blank">Press here for long description<span class="sr-only">(opens in a new window)</span></a> </p>
+                    <p><strong>Telomerase</strong> can become mistakenly active in somatic cells, allowing cells to
+                        multiply indefinitely, potentially leading to cancer formation. The discovery of the importance
+                        of telomeres to cell aging and cancer formation has led to promising areas of medical research
+                        in combating age-related diseases and developing new cancer treatments.</p>
+                </div>
+            </div>
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Understanding checkpoint: DNA Replication</h3>
+                    <div id="u4la2_matching1" class="matching-widget" data-ng-controller="completionActivityController"
+                        data-ng-init="init('../widgets/sbi4u_u4la2_matching1.json')">
+                        <div data-matching-directive></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>What role do telomeres play in aging?</p>
+                    <button
+                        class="btn btn-default btn-answer-reveal" id="sbi4u_u4la2-suggestedAnswerButton-4">Suggested
+                        Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u4la2-suggestedAnswer-4">
+                        <p>Telomeres protect the genetic information near the ends of a DNA molecule. With each
+                            replication, short segments of them break off, resulting in the telomeres getting shorter
+                            over time. This sets a limit to how many times a cell can divide because, at some point, the
+                            telomeres get too short and DNA replication stops. When this happens, the cell dies. Cells
+                            with longer telomeres live longer.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="consolidation">
+            <div class="row banner">
+                <h1><img src="../assets/img/sbi4u_04_consolidation.png" alt="Consolidation" class="img-responsive"></h1>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Part 1: Create a review of DNA replication</h2>
+                    <p>To help solidify your learning, create a cartoon, series of sketches/images, <a
+                            href="https://www.nyfa.edu/student-resources/flipbook-animation-techniques-and-examples/"
+                            target="_blank">a flip book <span class="sr-only"> (Opens in new window)</span></a>or a
+                        stop-motion animation of the steps of DNA replication. </p>
+                    <p>Here is an example of images that demonstrate the major events in - <a
+                            href="http://www.dnareplication.info/stepsofdnareplication.php" target="_blank">DNA
+                            replication<span class="sr-only">(Opens in new window)</span></a></p>
+                    <h2>Part 2: Reflection</h2>
+                </div>
+            </div>
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Notebook</h3>
+                    <div class="callout_content_icon"><img src="../assets/icons/notebook.svg" alt
+                            class="img-responsive">
+                        <div class="callout_content">
+                            <p>Now that you have completed this learning activity, reflect on the success criteria.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <ul>
+                        <li>Describe three possible models of DNA replication and how experiments confirmed the
+                            semiconservative model </li>
+                        <li>Compare and contrast the three stages of DNA replication </li>
+                        <li>Use the terms DNA polymerase, RNA primer, lagging strand, leading strand, Okazaki fragments,
+                            matching base pairs, nucleotide, DNA primase, and replication fork to explain the process of
+                            DNA
+                            replication</li>
+                        <li>Explain how DNA repairs take place </li>
+                        <li>Describe telomeres and what happens to them over time </li>
+                    </ul>
+                    <p>Look at your notes for this learning activity. Are they complete? Do you have all the
+                        information you will need to study later? Take the time to review concepts you are unsure about
+                        before moving on. </p>
+                    <p>Select your level of readiness for each criteria. </p>
+                </div>
+            </div>
+
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <fieldset>
+                        <!--Wrapping a table in a fieldset is the last resort in terms of semantic AODA compliance to pass WAVE test-->
+                        <legend class="sr-only">Agree or Disagree statements</legend>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col" id="table001Col1" style="width: 60%">Success Criteria</th>
+                                    <th scope="col" id="table001Col2">Yes - confident I am able</th>
+                                    <th scope="col" id="table001Col3">Not yet - need to review the learning activity
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Describe three possible models of DNA replication and how experiments confirmed
+                                        the
+                                        semiconservative model</td>
+                                    <td style="vertical-align: middle; text-align: center"><input type="radio"
+                                            id="table1Row1Radial1" name="table1Row1Radial"
+                                            aria-labelledby="table001Col2">
+                                    </td>
+                                    <td style="vertical-align: middle; text-align: center"><input type="radio"
+                                            id="table1Row1Radial2" name="table1Row1Radial"
+                                            aria-labelledby="table001Col3">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Compare and contrast the three stages of DNA replication</td>
+                                    <td style="vertical-align: middle; text-align: center"><input type="radio"
+                                            id="table1Row2Radial1" name="table1Row2Radial"
+                                            aria-labelledby="table001Col2">
+                                    </td>
+                                    <td style="vertical-align: middle; text-align: center"><input type="radio"
+                                            id="table1Row2Radial2" name="table1Row2Radial"
+                                            aria-labelledby="table001Col3">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Use the terms DNA polymerase, RNA primer, lagging strand, leading strand,
+                                        Okazaki
+                                        fragments, matching base pairs, nucleotide, DNA primase, and replication fork to
+                                        explain
+                                        the process of DNA replication</td>
+                                    <td style="vertical-align: middle; text-align: center"><input type="radio"
+                                            id="table1Row3Radial1" name="table1Row3Radial"
+                                            aria-labelledby="table001Col2">
+                                    </td>
+                                    <td style="vertical-align: middle; text-align: center"><input type="radio"
+                                            id="table1Row3Radial2" name="table1Row3Radial"
+                                            aria-labelledby="table001Col3">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Explain how DNA repairs take place</td>
+                                    <td style="vertical-align: middle; text-align: center"><input type="radio"
+                                            id="table1Row4Radial1" name="table1Row4Radial"
+                                            aria-labelledby="table001Col2">
+                                    </td>
+                                    <td style="vertical-align: middle; text-align: center"><input type="radio"
+                                            id="table1Row4Radial2" name="table1Row4Radial"
+                                            aria-labelledby="table001Col3">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Describe telomeres and what happens to them over time</td>
+                                    <td style="vertical-align: middle; text-align: center"><input type="radio"
+                                            id="table1Row5Radial1" name="table1Row5Radial"
+                                            aria-labelledby="table001Col2">
+                                    </td>
+                                    <td style="vertical-align: middle; text-align: center"><input type="radio"
+                                            id="table1Row5Radial2" name="table1Row5Radial"
+                                            aria-labelledby="table001Col3">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
+                    <!--SURVEY END-->
+                </div>
+            </div>
+        </section>
+    </main><!-- Compiled GVL, Widgets, ILOs, etc. -->
+    <script src="../dependencies/vendor.min.js"></script>
+    <script src="../dependencies/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script>
+        angular.bootstrap(document.getElementById('u4la2_mc1'), ['multipleChoiceWidget']);
+        angular.bootstrap(document.getElementById("u4la2_matching1"), ["matchingComboWidget"]);
+    </script>
+    <script src="../assets/js/bugfixes.js"></script>
+</body>
+
+</html>

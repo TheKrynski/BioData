@@ -1,0 +1,1099 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning activity 4.1: Understanding DNA</title>
+    <link rel="stylesheet" href="../assets/css/ilc_core_temp.css">
+
+
+    <style>
+        /*matching widget styles*/
+        .completionItem {
+            /*question (label) and option (select) div*/
+            position: relative;
+            clear: both;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(86, 101, 105, 0.5);
+            margin-bottom: 20px;
+            background-color: #F8F9F9;
+        }
+
+        .completionItem label {
+            /* question is inside <label>*/
+            width: 30%;
+            padding: 2%;
+            font-size: 95%;
+        }
+
+        .completionItem select {
+            /* options are inside <select>*/
+            width: 60%;
+            float: right;
+            margin: 2%;
+            margin-right: 0px;
+            /* .btn-info -- button styles from CVL */
+            color: #F8F9F9;
+            background-color: #0A76A5;
+            border-color: #0A76A5;
+        }
+
+        .completionItem label>span {
+            /*all text is inside <span> - this overrides bold for question text*/
+            font-weight: normal;
+        }
+
+        .completionItem span {
+            /*feedback text*/
+            font-weight: bold;
+        }
+
+        .completionFeedback i {
+            /*this pushes the feedback to a new line*/
+            padding: 20px
+        }
+
+        .completionControls {
+            /*position of submit button - width and position matches options*/
+            float: right;
+            width: 60%;
+        }
+
+        .completionControls button {
+            /*button is full width of 25% in layout*/
+            width: 100%;
+            /* different button */
+            color: #F8F9F9;
+            background-color: gray;
+            border-color: #0A76A5;
+        }
+
+        .completionControls button:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <noscript>
+        <div class="alert alert-warning clearfix" role="alert"><img src="../assets/img/note_icon.png" width="80"
+                height="100" alt>
+            <p><strong>Warning!</strong> To ensure the greatest educational experience, this learning activity contains
+                aspects that require Javascript to be enabled.</p>
+        </div>
+    </noscript>
+
+    <section id="ilcLearningGoals" class="hidden">
+        <h2>Learning goals </h2>
+        <p>We are learning to:</p>
+        <ul>
+            <li>use appropriate terminology related to molecular genetics</li>
+            <li>conduct an investigation to extract DNA from the specimen of a plant or animal</li>
+            <li>describe some of the historical scientific contributions that have advanced people’s understanding of
+                molecular genetics</li>
+        </ul>
+        <h2>Success criteria</h2>
+        <p>I am able to: </p>
+        <ul>
+            <li>Describe some of the major developments that occurred in the development of our current understanding of
+                DNA</li>
+            <li>Compare the structures of the four nitrogenous bases </li>
+            <li>Draw a representation or make a model to explain the structure of DNA</li>
+            <li>Identify (number) the carbons on a sugar molecule and explain the meaning of 5’ and 3’ </li>
+            <li>Extract DNA from plants/food or describe the process </li>
+        </ul>
+    </section>
+
+
+    <main id="mainContent" class="container">
+        <section id="mindsOn">
+
+            <div class="row banner">
+                <h1><img src="../assets/img/sbi4u_04.01_mindsOn.png" alt="Minds On" class="img-responsive"></h1>
+            </div>
+            <div class="row">
+                <!-- left column -->
+                <div class="col-xs-5 col-xs-offset-1">
+                    <p>In the early 1950s, the race to discover the chemical structure of the heredity molecule, DNA,
+                        was intense. Only a few years earlier, it had been demonstrated that DNA carries genetic
+                        information. The story of the discovery of DNA demonstrates the process of science, revealing
+                        how science works by building on the earlier work of others, the excitement of discovery, and
+                        the role that chance plays in the process.</p>
+                </div>
+
+                <!-- right column -->
+                <div class="col-xs-5">
+                    <p><img src="../assets/img/sbi4u_04.01.01.jpg" alt class="img-responsive"></p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>Even though the structure of DNA has been known for decades, work on how its genetic information
+                        can be used, changed, and copied is still in its early stages. New technologies are allowing the
+                        DNA code of any species to be quickly sequenced and compared. </p>
+                </div>
+            </div>
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Try it!</h3>
+                    <div class="callout_content_icon"><img src="../assets/icons/try_it.svg" alt class="img-responsive">
+                        <div class="callout_content">
+                            <h4>Model DNA</h4>
+                            <p>If you choose, create your own model DNA molecule. Using candy, food, beads, pens,
+                                paperclips or other materials you have available, create a model of DNA using what you
+                                know about DNA at this point. </p>
+                            <p>You may want to do a search for ‘edible DNA’ to get some fun ideas. Some ideas of
+                                materials include licorice, spaghetti, toothpicks, marshmallows, gummy candy. When
+                                complete, keep your model DNA to use at the end of the learning activity. </p>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+        </section>
+
+        <section id="action">
+            <div class="row banner">
+                <h1><img src="../assets/img/sbi4u_04_action.png" alt="Action" class="img-responsive"></h1>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2 class="h3">Discovery of DNA</h2>
+                    <p>To begin your exploration of the DNA, your task is to create a timeline outlining important
+                        events in the discovery of DNA. This timeline should go into your notes so that you can use it
+                        to study for assessments in this course. </p>
+                    <p>To help guide your research, focus on big discoveries that were made in the years: 1869, 1919,
+                        1928, 1944 and 1950-53. </p>
+                    <p>Once you have reviewed the overview of the discovery of DNA, create a timeline with notes about
+                        this work.</p>
+
+                    <p>Review the important dates in early DNA research by completing the matching activity below. </p>
+
+
+
+                </div>
+            </div>
+
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+
+                    <div id="u4la1_matching1" class="matching-widget" data-ng-controller="completionActivityController"
+                        data-ng-init="init('../widgets/sbi4u_u4la1_matching1.json')">
+                        <div data-matching-directive></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3 class="h4">Understanding checkpoint: Discovering the structure of DNA</h3>
+                    <p>Identify the true statements below that explain how the Watson and Crick model of DNA structure
+                        explained the earlier discoveries of Chargaff and Franklin.</p>
+                    <div id="u4la1_mc1" class="multiple-choice-widget" data-ng-controller="multipleChoiceController"
+                        data-ng-init="getQuestionData('../widgets/sbi4u_u4la1_mc1.json')">
+                        <div data-multiple-choice-directive></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>Describe an unplanned or chance event that led to a major discovery in the history of early DNA
+                        research.</p>
+                    <button class="btn btn-default btn-answer-reveal" id="sbi4u_u4la1-suggestedAnswerButton-1">Suggested
+                        Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u4la1-suggestedAnswer-1">
+                        <ul>
+                            <li>Griffith discovering that the combination of two non-lethal strains of bacteria could
+                                produce a fatal case of pneumonia in the mice</li>
+                            <li>James Watson being allowed to see Rosalind Franklin’s unpublished X-ray crystallography
+                                results, enabling him to realize which of his own models was probably right</li>
+                        </ul>
+
+                    </div>
+                    <h3 class="margin-top-lg">Chemical composition of DNA</h3>
+                    <p>Watson and Crick ended their famous 1953 paper describing the structure of DNA with the modest
+                        statement that,</p>
+                </div>
+            </div>
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p><em class="Italic">“It has not escaped our notice that the specific pairing we have postulated
+                            immediately suggests a possible copying mechanism for the genetic material.” </em></p>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>It was obvious from the basic structure of DNA that each strand in the pair could serve as a
+                        template to make a new strand. But how did this happen? Watson and Crick didn’t understand the
+                        details of the process yet, but they wanted to let the world know that they were aware of its
+                        importance.</p>
+                    <p>We now know how DNA replicates itself and how it encodes genetic information.</p>
+                    <p>But there is still far more to be learned and new discoveries will be based on an understanding
+                        of the chemistry of the molecules involved. To understand the potential of DNA you need to know
+                        the details of its chemical structure, so you will focus on that in the rest of this section.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- left column -->
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>DNA consists of <strong class="Bold">two long strands made up of repeating sequences</strong> of
+                        simple units called <strong class="Bold">nucleotides (or bases)</strong>. Each nucleotide is
+                        attached to a sugar and a phosphate group. The sugar and phosphate groups join together in
+                        adjacent nucleotides to form a backbone for the DNA molecule. The nucleotide sequences in the
+                        two strands run in opposite directions to each other, which is why we describe the molecule as
+                        <strong class="Bold">anti-parallel</strong>.
+                    </p>
+                    <img src="../assets/img/sbi4u_04.01.03.jpg" alt="A necklace made out of beads"
+                        class="img-responsive">
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>Because the nucleotides are the molecules that give DNA its ability to store and transmit genetic
+                        information, it is important to know their chemical structure. </p>
+                    <h3>Nucleotide structure</h3>
+                    <p>Nucleotides consist of a <strong class="Bold">nitrogen base</strong>, a <strong
+                            class="Bold">five-carbon sugar (deoxyribose),</strong> and a <strong class="Bold">phosphate
+                            group.</strong> Click each one to learn more.</p>
+                    <p><img src="../assets/img/sbi4u_04.01.04.svg" alt class="img-responsive"></p>
+                </div>
+            </div>
+
+
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <ul class="nav nav-pills-sm" role="tablist" style="width:100%">
+
+
+                        <li class="active" style="width:25%" role="tab"><a href="#tab1_1" data-toggle="tab">
+                                Nitrogenous<br>Base</a></li>
+                        <li style="width:50%" role="tab"><a href="#tab1_2" data-toggle="tab">
+                                Deoyribose <br>(five-carbon sugar) </a></li>
+                        <li style="width:25%" role="tab"><a href="#tab1_3" data-toggle="tab">
+                                Phosphate<br>Group</a></li>
+
+                    </ul>
+
+                    <div class="panel-body">
+                        <div class="tab-content">
+                            <!-- START TAB ITEMS -->
+                            <div class="tab-pane fade in active" id="tab1_1">
+
+                                <p>The sugar and phosphate are the same in every nucleotide, but there are four
+                                    different types of nitrogen bases: adenine (A), guanine (G), cytosine (C), an
+                                    thymine (T). You will learn more about these in the next section.</p>
+                            </div>
+                            <div class="tab-pane fade" id="tab1_2">
+
+                                <p>The deoxyribose is the same for every nucleotide. </p>
+                            </div>
+
+                            <div class="tab-pane fade" id="tab1_3">
+
+                                <p>The phosphate group is the same for every nucleotide. </p>
+                            </div>
+
+                            <!-- END OF TAB ITEMS -->
+                        </div>
+                    </div>
+                </div>
+                <!-- *************************** TAB 01 ENDS ******************************************* -->
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>As previously mentioned, the sugar and phosphate are the same in every nucleotide, but there are
+                        four different types of nitrogen bases as seen in the table below. </p>
+                    <table id="table005" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="colgroup" colspan="4">
+                                    <b>The Four Nitrogen Bases Found in DNA Molecules </b>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p> Adenine (A) </p>
+
+                                </td>
+                                <td>
+                                    <p> Guanine (G)</p>
+
+                                </td>
+                                <td>
+                                    <p>Cytosine (C)</p>
+
+                                </td>
+                                <td>
+                                    <p>Thymine (T)</p>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p> <img class="img-responsive" src="../assets/img/sbi4u_04.01.05.png" alt=""></p>
+                                </td>
+                                <td>
+                                    <p> <img class="img-responsive" src="../assets/img/sbi4u_04.01.06.png" alt=""></p>
+                                </td>
+                                <td>
+                                    <p> <img class="img-responsive" src="../assets/img/sbi4u_04.01.07.png" alt=""></p>
+                                </td>
+                                <td>
+                                    <p><img class="img-responsive" src="../assets/img/sbi4u_04.01.08.png" alt=""></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <p><strong>Purines</strong></p>
+                                    <ul>
+                                        <li>Double-ring structure </li>
+                                        <li>Can only bond to Pyrimidines</li>
+
+                                    </ul>
+                                </td>
+                                <td colspan="2">
+                                    <p><strong>Pyrimidines</strong></p>
+                                    <ul>
+                                        <li>Single-ring structure</li>
+                                        <li>Can only bond with Purines</li>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>Purines can only bond with pyrimidines and vice versa because of the way in which the hydrogen
+                        bonds are positioned on the rings, pyrimidine-to-pyrimidine pairings are energetically
+                        unfavourable because the molecules are too far apart for hydrogen bonding to be established. The
+                        opposite is true for purine-to-purine pairings, which are energetically unfavourable because the
+                        molecules are too close, leading to overlap repulsion. </p>
+                    <p>The only possible pairings are A with C/T and G with C/T. However, it turns out that AC and GT
+                        pairings are impossible because the positions of hydrogen donors and acceptors are mismatched.
+                    </p>
+                    <p>That leaves only one way for these four nucleotide bases to pair up by complementary base
+                        pairing: </p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p style="text-align: center;"><strong>Adenine pairs with Thymine (A-T)</strong></p>
+                    <p style="text-align: center;"><strong>Guanine pairs with Cytosine (G-C)</strong></p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <table id="table006" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="colgroup" colspan="4">
+                                    <b>Complementary Base Pairings in DNA nucleotides</b>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>Purine</p>
+                                </td>
+                                <td>
+                                    <p>Pyrmidine</p>
+                                </td>
+                                <td>
+                                    <p>Purine</p>
+                                </td>
+                                <td>
+                                    <p>Pyrmidine</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p> Adenine (A)</p>
+
+                                </td>
+                                <td>
+                                    <p> Thymine (T)</p>
+                                </td>
+                                <td>
+                                    <p>Guanine (G)</p>
+
+                                </td>
+                                <td>
+                                    <p>Cytosine (C)</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <p><img src="../assets/img/sbi4u_04.01.10.svg" alt></p>
+                                </td>
+                                <td colspan="2">
+                                    <p><img src="../assets/img/sbi4u_04.01.11.svg" alt></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <p>An AT base pair with two hydrogen bonds</p>
+                                </td>
+                                <td colspan="2">
+                                    <p>A GC base pair with three hydrogen bonds</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <p>In both diagrams, the hydrogen bonds holding the pairs together are shown as
+                                        dashed lines.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <!-- left column -->
+                <div class="col-xs-5 col-xs-offset-1">
+                    <p>Each nitrogen base is attached by a glycosidic bond to a cyclic five-carbon sugar molecule called
+                        deoxyribose.</p>
+                </div>
+
+                <!-- right column -->
+                <div class="col-xs-5">
+                    <img src="../assets/img/sbi4u_04.01.14.svg" alt class="img-responsive">
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- left column -->
+                <div class="col-xs-5 col-xs-offset-1">
+                    <img src="../assets/img/sbi4u_04.01.15.svg" alt class="img-responsive"
+                        style="width: 90%; height: auto;">
+                </div>
+
+                <!-- right column -->
+                <div class="col-xs-5">
+                    <p>The first four carbon atoms in deoxyribose, together with an oxygen atom, form a five-sided ring.
+                        The fifth carbon atom extends out from the ring. According to chemical convention, the carbon
+                        atoms are numbered clockwise, starting with the carbon atom to the immediate right of the oxygen
+                        atom. This first carbon atom is designated as 1 (pronounced “1 prime”), followed by 2 (“2
+                        prime”), and so on. The 5 and 3 carbon atoms play a role in identifying the start and end,
+                        respectively, of a strand of DNA, as you will learn next.</p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>From nucleotides to DNA</h3>
+                </div>
+            </div>
+            <div class="row">
+                <!-- left column -->
+                <div class="col-xs-5 col-xs-offset-1">
+                    <p>DNA molecules are built by joining nucleotides together in a linear sequence. The distance
+                        between each nitrogen base pair is 0.34 nm. </p>
+                </div>
+
+                <!-- right column -->
+                <div class="col-xs-5">
+
+                    <p><img src="../assets/img/sbi4u_04.01.16.jpg" alt class="img-responsive"></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- left column -->
+                <div class="col-xs-5 col-xs-offset-1">
+                    <p><img src="../assets/img/sbi4u_04.01.17.png" alt class="img-responsive"></p>
+                </div>
+
+                <!-- right column -->
+                <div class="col-xs-5">
+                    <p>The nucleotides attach to each other by connecting the sugar group of one nucleotide to the
+                        phosphate group of the next. The deoxyribose and phosphate molecules are joined together by a
+                        covalent bond called a <strong class="Bold">phosphodiester bond</strong>, which forms between
+                        the <strong class="Bold">third</strong> and <strong class="Bold">fifth</strong> carbon atoms of
+                        adjacent sugar rings. <em class="Italic">It is the sugar-to-phosphate linkage that forms the
+                            backbone of the DNA molecule.</em></p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>DNA is made from two anti-parallel DNA strands with 5’ and 3’ ends </h3>
+                    <p>The two ends of DNA strands are called the 5’ (“five prime”) and 3’ (“three prime”) ends.
+                        This&#160;is because the first nucleotide on the DNA strand has a phosphate group attached to
+                        the 5’ carbon in the sugar, so it is called the 5’ end. The last nucleotide on the strand has a
+                        hydroxyl group (OH) in the 3’ position of the sugar, so this is called the 3’ end. Because the
+                        phosphate always joins at the 3’ end of the sugar as nucleotides are added, this means that the
+                        DNA strand has a direction. </p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- left column -->
+                <div class="col-xs-5 col-xs-offset-1">
+                    <p>Nucleotide sequences are always read from the 5’ end to the 3’ end. So, for example, in the
+                        figure below the gene sequence on the left would be read as 5’–ACTG–3’ rather than as 3’ –
+                        GTCA–5’.</p>
+                </div>
+
+                <!-- right column -->
+                <div class="col-xs-5">
+                    <img src="../assets/img/sbi4u_04.01.19.png" alt class="img-responsive">
+                </div>
+            </div>
+
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Try it!</h3>
+                    <div class="callout_content_icon"><img src="../assets/icons/notebook.svg" alt=""
+                            class="img-responsive">
+                        <div class="callout_content">
+                            <p>Answer the following questions based on the image and compare your answers to the
+                                suggested
+                                answers. </p>
+                        </div>
+                    </div>
+                    <img src="../assets/img/sbi4u_04.01.20.svg" alt class="img-responsive"
+                        style="width: 50%; height: auto;">
+                    <p>How many nucleotides are in this picture and what are their names? </p>
+                    <button class="btn btn-default btn-answer-reveal" id="sbi4u_u4la1-suggestedAnswerButton-2">Suggested
+                        Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u4la1-suggestedAnswer-2">
+                        <p>Three - Cytosine, Adenine, Adenine</p>
+                    </div>
+                    <p class="margin-top-lg">Identify the end being shown as ‘A’ in the diagram.</p>
+                    <button class="btn btn-default btn-answer-reveal" id="sbi4u_u4la1-suggestedAnswerButton-3">Suggested
+                        Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u4la1-suggestedAnswer-3">
+                        <p>5’ or 5 prime end</p>
+                    </div>
+                    <p class="margin-top-lg">Identify the end being shown as ‘B’ in the diagram.</p>
+                    <button class="btn btn-default btn-answer-reveal" id="sbi4u_u4la1-suggestedAnswerButton-4">Suggested
+                        Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u4la1-suggestedAnswer-4">
+                        <p>3’ or 3 prime end</p>
+                    </div>
+                    <p class="margin-top-lg">What is the gene sequence for this figure? </p>
+                    <button class="btn btn-default btn-answer-reveal" id="sbi4u_u4la1-suggestedAnswerButton-5">Suggested
+                        Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u4la1-suggestedAnswer-5">
+                        <p>5’ CAA 3’</p>
+                    </div>
+                    <p class="margin-top-lg">What would be the gene sequence for the complimentary DNA strand (strand 2)
+                        to the one in the image?</p>
+                    <button class="btn btn-default btn-answer-reveal" id="sbi4u_u4la1-suggestedAnswerButton-6">Suggested
+                        Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u4la1-suggestedAnswer-6">
+                        <p>Remember the base pairings A-T and C-G and that the strands run anti-parallel to each other
+                        </p>
+                        <p>Strand 1: 5’ CAA 3’</p>
+                        <p>Strand 2: 3’ GTT 5’</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>The spiral or double helix structure of DNA</h3>
+                    <p>Now we'll cover more about the structure of DNA. The image here shows a short section of a piece
+                        of DNA in its natural double helix or “twisted ladder” configuration</p>
+                    <img src="../assets/img/sbi4u_04.01.21.jpg" alt class="img-responsive">
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <ul>
+                        <li>Each nucleotide will quickly attract its complementary nucleotide to form a base pair, DNA
+                            will not remain as a single strand, under normal conditions.</li>
+                        <li>DNA usually consists of two strands, each a complement of the other, with one having the 5’
+                            end at the top, and the other having the 3’ end at the top. Therefore, each strand is read
+                            in an opposite direction.</li>
+                        <li>The reason why paired DNA strands twist into a spiral or double helix shape is because of
+                            the bond angles between the phosphate and sugar, as well as between the nucleotides. By
+                            twisting into this shape, the molecule achieves its most stable configuration. </li>
+                        <li>The amount of coiling will depend on chemical conditions and temperature, but under normal
+                            conditions, the helix makes one complete turn about every 10 nucleotides. This means that
+                            each full helical twist is about 3.4 nm long. </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <!-- left column -->
+                <div class="col-xs-5 col-xs-offset-1">
+                    <p>Although each individual nucleotide is very small, DNA can be a very large molecule because it
+                        may contain millions of nucleotide base pairs. For instance, the largest human chromosome,
+                        chromosome number 1, is made up of one large coiled strand of DNA that is approximately 245
+                        million base pairs long.</p>
+                </div>
+
+                <!-- right column -->
+                <div class="col-xs-5">
+                    <p><img src="../assets/img/sbi4u_04.01.22.svg" alt class="img-responsive"></p>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Understanding checkpoint: The chemical composition of DNA</h3>
+                </div>
+            </div>
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h4>Understanding checkpoint: Discovering the structure of DNA</h4>
+                    <p>Identify the true statements below that explain how the Watson and Crick model of DNA structure
+                        explained the earlier discoveries of Chargaff and Franklin.</p>
+                    <div id="u4la1_mc2" class="multiple-choice-widget" data-ng-controller="multipleChoiceController"
+                        data-ng-init="getQuestionData('../widgets/sbi4u_u4la1_mc2.json')">
+                        <div data-multiple-choice-directive></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h4 class="h4">Activity</h4>
+                    <p>Print out the diagram below, or use a digital tool to annotate the image and complete the
+                        following:</p>
+                    <ul>
+                        <li>label the 3' and 5' ends.</li>
+                        <li>circle a nucleotide.</li>
+                        <li>label a sugar and a phosphate.</li>
+                        <li>label the rest of the bases with their initial.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>Compare your answer with the suggested response after you have completed this task. </p>
+                    <img src="../assets/img/sbi4u_04.01.23.svg" alt class="img-responsive"
+                        style="width: 40%; height: auto;">
+                    <button class="btn btn-default btn-answer-reveal" id="sbi4u_u4la1-suggestedAnswerButton-7">Suggested
+                        Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u4la1-suggestedAnswer-7">
+                        <img src="../assets/img/sbi4u_04.01.24.svg" alt class="img-responsive"
+                            style="width: 50%; height: auto;">
+                    </div>
+                </div>
+            </div>
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Extraction of DNA</h3>
+                    <p>DNA extraction is an important laboratory technique that allows scientists to isolate DNA to
+                        study its structure, properties and sequence. The process of isolating the DNA from the tissue
+                        is called <strong>DNA extraction.</strong> </p>
+                    <p>In DNA extraction the following steps are performed on tissues containing the target DNA:</p>
+                    <!-- *************************** ACCORDION 10 BEGINS ******************************************* -->
+                    <div class="accordionILC panel-group" id="accordion10">
+                        <!-- ACCORDION ITEM 1 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion10"
+                                        href="#accordion10-collapse1" class="collapsed">Step 1</a></h4>
+                            </div>
+                            <div id="accordion10-collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>First physically broken up to make it easier to get at the DNA. </p>
+                                </div>
+                            </div>
+                        </div><!-- ACCORDION ITEM 2 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion10"
+                                        href="#accordion10-collapse2" class="collapsed">Step 2</a></h4>
+                            </div>
+                            <div id="accordion10-collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Second, a solution is added, called a lysis solution (“lysis” means to break up),
+                                        which is sometimes also called a buffer. The solution breaks the remaining cells
+                                        apart, releasing the DNA from the nucleus and other organelles. (Heating up the
+                                        lysis and tissue solution will break down any enzymes that degrade DNA).</p>
+                                </div>
+                            </div>
+                        </div><!-- ACCORDION ITEM 3 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion10"
+                                        href="#accordion10-collapse3" class="collapsed">Step 3</a></h4>
+                            </div>
+                            <div id="accordion10-collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Third, the DNA is physically separated from the other chemicals in the solution
+                                        through a filtering process. (Filter paper or a centrifuge can be used).</p>
+                                </div>
+                            </div>
+                        </div><!-- ACCORDION ITEM 4 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion10"
+                                        href="#accordion10-collapse4" class="collapsed">Step 4</a></h4>
+                            </div>
+                            <div id="accordion10-collapse4" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Fourth, after filtering, the DNA can be further purified by repeated washing with
+                                        water and filtering. The result will be a clear fluid containing water and
+                                        dissolved DNA, ready for any type of analysis.</p>
+                                </div>
+                            </div>
+                        </div><!-- ACCORDION ITEM 5 -->
+                        <!-- END OF ACCORDION ITEMS -->
+                    </div>
+                    <!-- *************************** ACCORDION 10 ENDS ******************************************* -->
+                </div>
+            </div>
+
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Explore this!</h3>
+                    <div class="callout_content_icon"><img src="../assets/icons/watch.svg" alt=""
+                            class="img-responsive">
+                        <div class="callout_content">
+                            <p>Geneticists use variations on this procedure, depending on how they will analyze the DNA.
+                                To see this process in action, watch this video of the DNA Extraction process used by
+                                geneticists at the Canadian Museum of Nature.</p>
+                            <div class="brightcove-video-container" data-video-id="2606912"></div>
+                            <br>
+                            <p>DNA extraction usually takes place in biological labs, but you can perform a version of
+                                it yourself in your own kitchen, using simple materials. In the lab activity described
+                                next, you will learn how to isolate DNA from a simple fruit: strawberries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Lab Activity: Extraction of DNA</h3>
+                    <div class="callout_content_icon"><img src="../assets/icons/lab_activity.svg" alt=""
+                            class="img-responsive">
+                        <div class="callout_content">
+                            <h3>Extraction of DNA</h3>
+                            <p>Strawberries are an ideal fruit from which to isolate DNA, since they are octoploid,
+                                meaning that they contain eight copies of their DNA. Most organisms are diploid,
+                                containing only two sets of DNA, one from each of their parents. So, using strawberries
+                                gives you more DNA to work with. This is an optional activity. If you choose not to
+                                complete the lab you should still read through the entire lab and answer the questions
+                                at the end. The lab instructions are outlined below:</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <ul class="nav nav-pills-sm" role="tablist" style="width:100%">
+                        <li class="active" style="width:20%" role="tab"><a href="#tab2_1" data-toggle="tab">
+                                Purpose
+                            </a></li>
+                        <li style="width:20%" role="tab"><a href="#tab2_2" data-toggle="tab">
+                                Background
+                            </a></li>
+                        <li style="width:20%" role="tab"><a href="#tab2_3" data-toggle="tab">
+                                Materials
+                            </a></li>
+                        <li style="width:20%" role="tab"><a href="#tab2_4" data-toggle="tab">
+                                Procedure
+                            </a></li>
+                        <li style="width:20%" role="tab"><a href="#tab2_5" data-toggle="tab">
+                                Analysis
+                            </a></li>
+                    </ul>
+                    <div class="panel-body">
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="tab2_1">
+                                <p>To extract DNA from the tissues of a strawberry plant, using a four-stage process.
+                                    After completing this lab, you will have a sample of pure strawberry DNA that you
+                                    can hold in your hand.</p>
+                            </div>
+                            <div class="tab-pane fade" id="tab2_2">
+                                <p>Ripe strawberries are used because they contain enzymes (pectinases and cellulases)
+                                    that help to break down the cell walls, making it easier for you to extract the DNA.
+                                </p>
+                                <p>From the video, you saw that the museum scientists extracted DNA using a process that
+                                    included heating and cooling. This ensures that the sample is as undamaged and pure
+                                    as possible. However, here you are only concerned with extracting DNA for visual
+                                    observation, so it does not have to be of high purity, which is why this simpler
+                                    procedure does not require heating and cooling.</p>
+                            </div>
+                            <div class="tab-pane fade" id="tab2_3">
+                                <ul>
+                                    <li>Resealable plastic bag</li>
+                                    <li>Scissors</li>
+                                    <li>One medium-sized ripe strawberry (it is best if it is slightly soft)</li>
+                                    <li>10mL of dishwashing liquid (about 2 teaspoons)</li>
+                                    <li>3g of table salt (about 1/2 teaspoon)</li>
+                                    <li>Water</li>
+                                    <li>50mL of 70–95% isopropyl alcohol (also called “rubbing alcohol”), which is
+                                        available at any drugstore. Place the alcohol in the freezer for at least one
+                                        hour to ensure that it is cold. If you do not have access to a freezer, put the
+                                        alcohol in the refrigerator overnight to get it as cold as possible.</li>
+                                    <li>Coffee filter (or a thick piece of paper towel that doesn’t have any visible
+                                        holes)</li>
+                                    <li>Small sieve with a small bowl over which the sieve can fit. If no sieve is
+                                        available, then use a coffee cup with the filter paper placed over the top of
+                                        it.</li>
+                                    <li>A 250mL or 500mL measuring cup</li>
+                                    <li>One small clear glass</li>
+                                    <li>One plastic stir stick</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="tab2_4">
+                                <p>You will extract the DNA using a four-stage process, with each stage involving
+                                    several steps. In the first stage, you will break open the cells of the ripe
+                                    strawberry by crushing it. Second, you will use a lysis solution to break down the
+                                    cellular and nuclear membranes to separate the DNA from the other cell parts. Third,
+                                    you will filter out the solid material using a coffee filter or a thick piece of
+                                    paper towel and collect the liquid containing the DNA. In the fourth and final
+                                    stage, you will precipitate the DNA from the solution using very cold alcohol.</p>
+                                <ul>
+                                    <li>Prepare the lysis solution: In a measuring cup, dissolve the salt in about 50mL
+                                        of water. Add the 10mL of dishwashing liquid and then add the remaining water to
+                                        make 100mL of solution. Gently stir but do not shake; you do not want a lot of
+                                        bubbles.</li>
+                                    <li>Obtain a ripe strawberry. If the green leaves (sepals) are still on the
+                                        strawberry, remove them.</li>
+                                    <li>Place the strawberry in the resealable plastic bag. Press the air out and seal
+                                        it.</li>
+                                    <li>Gently mash the bagged strawberry with your fingers for five minutes. Don’t
+                                        break the bag.</li>
+                                    <li>Add 10mL of lysis solution to the bag. Press the air out carefully and reseal
+                                        the bag.</li>
+                                    <li>Mash the bagged strawberry with the lysis solution for two minutes. This will
+                                        separate out the DNA from the other cell parts.</li>
+                                </ul>
+                                <p><strong>Important</strong><strong>:</strong><strong> </strong>Mash the strawberry and
+                                    lysis mixture carefully to avoid creating bubbles. The fewer bubbles you create, the
+                                    better your results will be.</p>
+                                <ul>
+                                    <li>Prepare your filter apparatus. If you have a sieve and a small bowl, place the
+                                        sieve across the bowl mouth so that any liquid can drip through the sieve and be
+                                        caught in the bowl below. Lay the coffee filter paper or piece of paper towel
+                                        onto the sieve screen. If you do not have a sieve handy, you can just use a
+                                        coffee cup and place the coffee filter or paper towel over the top of the cup,
+                                        but you may have to hold onto it as you start pouring.</li>
+                                    <li>Cut one of the bottom corners off the bag and squeeze the strawberry pulp, along
+                                        with the liquid, onto the coffee filter or paper towel.</li>
+                                    <li>After the pulp mixture has been filtering for about a minute or two, pour
+                                        approximately 10mL of water over the pulp on the filter. This rinsing will
+                                        ensure that you obtain as much DNA as possible.</li>
+                                    <li>Once the filtering appears complete, dispose of the bag, filter, and strawberry
+                                        pulp into appropriate waste containers. Do not eat the mashed strawberry mixture
+                                        as it contains dishwashing liquid.</li>
+                                    <li>Pour the filtrate into a small, clear drinking glass.</li>
+                                    <li>Raise the glass to eye level so that you can see what is happening and <em
+                                            class="Italic">slowly </em>drizzle the <em class="Italic">ice-cold</em>
+                                        isopropyl alcohol <em class="Italic">along the inside of the glass </em>until
+                                        DNA strands begin to appear in the solution. Do this carefully as you do not
+                                        want the alcohol to mix with the filtrate. The appearance of DNA is called
+                                        precipitation.</li>
+                                    <li>Observe the characteristics of the DNA as it precipitates.</li>
+                                    <li>Once it appears that no more DNA is going to precipitate out, you can begin to
+                                        collect the DNA on the plastic stir stick. Insert the stir stick into the
+                                        mixture and slowly wind it around. You will notice that strands of material are
+                                        wrapping themselves around the stick. Pull out the stir stick and observe. Those
+                                        strands are the strawberry’s DNA.</li>
+                                    <li>When finished, dispose of the materials safely. Pour the contents of the glass
+                                        down the drain, along with running water. Do not drink any of the contents as
+                                        they contain isopropyl alcohol, which is mildly poisonous.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="tab2_5">
+                                <p>Answer the following questions based on the lab procedure.</p>
+                                <p>Why did you have to mash the strawberry before adding the lysis solution?&#9;</p>
+                                <button class="btn btn-default btn-answer-reveal"
+                                    id="sbi4u_u4la1-suggestedAnswerButton-8">Suggested Answer</button>
+                                
+                                <div class="answer_reveal invisible" id="sbi4u_u4la1-suggestedAnswer-8">
+                                    <p>To break up the cell walls of the tissues to help release the DNA</p>
+                                </div>
+                                <p class="margin-top-lg">What did the lysis solution do in the extraction process?</p>
+                                <button class="btn btn-default btn-answer-reveal"
+                                    id="sbi4u_u4la1-suggestedAnswerButton-9">Suggested Answer</button>
+                                <div class="answer_reveal invisible" id="sbi4u_u4la1-suggestedAnswer-9">
+                                    <p>The lysis mixture chemically broke up the cell and nuclear membranes to release
+                                        the DNA into solution.</p>
+                                </div>
+                                <p class="margin-top-lg">Why did you rinse the filter paper?</p>
+                                <button class="btn btn-default btn-answer-reveal"
+                                    id="sbi4u_u4la1-suggestedAnswerButton-10">Suggested Answer</button>
+                                <div class="answer_reveal invisible" id="sbi4u_u4la1-suggestedAnswer-10">
+                                    <p>To wash the DNA out of the filter paper, since DNA is soluble in water</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="consolidation">
+            <div class="row banner">
+                <h1><img src="../assets/img/sbi4u_04_consolidation.png" alt="Consolidation" class="img-responsive"></h1>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2 class="h3">Part 1: Review activity</h2>
+                    <p>Match the experiment to the researcher who performed the research and the purpose of the
+                        experiment. </p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>Review the important dates in early DNA research by completing the matching activity below. </p>
+                    <div id="u4la1_matching2" class="matching-widget" data-ng-controller="completionActivityController"
+                        data-ng-init="init('../widgets/sbi4u_u4la1_matching2.json')">
+                        <div data-matching-directive></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Identifying the components of DNA</h3>
+                    <p>Label the following <a href="../assets/locker_docs/sbi4u_04.01.25.pdf" target="_blank">DNA
+                            molecule<span class="sr-only">(Opens in new window)</span></a> using the terms below. When
+                        you are ready compare your answer with the suggested answer. </p>
+                    <h4 class="h4">Labels</h4>
+                    <p>Adenine and Thymine</p>
+                    <p>Guanine and Cytosine</p>
+                    <p>5’ end (use twice)</p>
+                    <p>3’ end (use twice)</p>
+                    <p>Phosphodiester Bond</p>
+                    <p>Nucleotide</p>
+                    <p>Deoxyribose Sugar</p>
+                    <p>Phosphate</p>
+                    <p><img src="../assets/img/sbi4u_04.01.25.png" alt class="img-responsive"></p>
+
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <button class="btn btn-default btn-answer-reveal"
+                        id="sbi4u_u4la1-suggestedAnswerButton-11">Suggested Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u4la1-suggestedAnswer-11">
+                        <img src="../assets/img/sbi4u_04.01.26.png" alt class="img-responsive">
+
+                    </div>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Part 2: Model DNA</h3>
+                    <p>Revisit your model DNA from the beginning of the learning activity if you built one. Now that you
+                        know more about DNA is there any way that you could improve it, or make it more realistic? Can
+                        you identify and label all the parts of the molecule now? </p>
+                    <h3>Part 3: Reflection </h3>
+                    <p>Now that you have completed this learning activity, reflect back on the success criteria. </p>
+                    <ul>
+                        <li>Describe some of the major developments that occured in the development of our current
+                            understanding of DNA</li>
+                        <li>Compare the structures of the four nitrogenous bases </li>
+                        <li>Draw a representation or make a model to explain the structure of DNA</li>
+                        <li>Identify (number) the carbons on a sugar molecule and explain the meaning of 5’ and 3’ </li>
+                        <li>Extract DNA from plants/food or describe the process </li>
+                    </ul>
+                    <p>Looking at your notes for this learning activity, are they complete? Do you have all the
+                        information you will need to study later on? Take the time to review concepts you are unsure
+                        about before moving on. </p>
+                    <p>Select your level of readiness for each criterion. </p>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <fieldset>
+                        <!--Wrapping a table in a fieldset is the last resort in terms of semantic AODA compliance to pass WAVE test-->
+                        <legend class="sr-only">
+                            Agree or Disagree statements
+                        </legend>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col" id="table001Col1">Success Criteria</th>
+                                    <th scope="col" id="table001Col2">Yes - confident I am able</th>
+                                    <th scope="col" id="table001Col3">Not yet - need to review the learning activity
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Describe some of the major developments that occurred in the development of our
+                                        current understanding of DNA</td>
+                                    <td style="vertical-align: middle; text-align: center"><input type="radio"
+                                            id="table1Row1Radial1" name="table1Row1Radial"
+                                            aria-labelledby="table001Col2"> </td>
+                                    <td style="vertical-align: middle; text-align: center"><input type="radio"
+                                            id="table1Row1Radial2" name="table1Row1Radial"
+                                            aria-labelledby="table001Col3"> </td>
+                                </tr>
+                                <tr>
+                                    <td>Compare the structures of the four nitrogenous bases</td>
+                                    <td style="vertical-align: middle; text-align: center"><input type="radio"
+                                            id="table1Row2Radial1" name="table1Row2Radial"
+                                            aria-labelledby="table001Col2"> </td>
+                                    <td style="vertical-align: middle; text-align: center"><input type="radio"
+                                            id="table1Row2Radial2" name="table1Row2Radial"
+                                            aria-labelledby="table001Col3"> </td>
+                                </tr>
+                                <tr>
+                                    <td>Draw the generic structures of amino acids and how a peptide bond is formed</td>
+                                    <td style="vertical-align: middle; text-align: center"><input type="radio"
+                                            id="table1Row3Radial1" name="table1Row3Radial"
+                                            aria-labelledby="table001Col2"> </td>
+                                    <td style="vertical-align: middle; text-align: center"><input type="radio"
+                                            id="table1Row3Radial2" name="table1Row3Radial"
+                                            aria-labelledby="table001Col3"> </td>
+                                </tr>
+                                <tr>
+                                    <td>Identify (number) the carbons on a sugar molecule and explain the meaning of 5’
+                                        and 3’
+                                    </td>
+                                    <td style="vertical-align: middle; text-align: center"><input type="radio"
+                                            id="table1Row4Radial1" name="table1Row4Radial"
+                                            aria-labelledby="table001Col2"> </td>
+                                    <td style="vertical-align: middle; text-align: center"><input type="radio"
+                                            id="table1Row4Radial2" name="table1Row4Radial"
+                                            aria-labelledby="table001Col3"> </td>
+                                </tr>
+                                <tr>
+                                    <td>Extract DNA from plants/food or describe the process
+                                    </td>
+                                    <td style="vertical-align: middle; text-align: center"><input type="radio"
+                                            id="table1Row5Radial1" name="table1Row5Radial"
+                                            aria-labelledby="table001Col2"> </td>
+                                    <td style="vertical-align: middle; text-align: center"><input type="radio"
+                                            id="table1Row5Radial2" name="table1Row5Radial"
+                                            aria-labelledby="table001Col3"> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Compiled GVL, Widgets, ILOs, etc. -->
+    <script src="../dependencies/vendor.min.js"></script>
+    <script>
+        angular.bootstrap(document.getElementById("u4la1_matching1"), ["matchingComboWidget"]);
+        angular.bootstrap(document.getElementById("u4la1_matching2"), ["matchingComboWidget"]);
+        angular.bootstrap(document.getElementById("u4la1_matching3"), ["matchingComboWidget"]);
+        angular.bootstrap(document.getElementById('u4la1_mc1'), ['multipleChoiceWidget']);
+        angular.bootstrap(document.getElementById('u4la1_mc2'), ['multipleChoiceWidget']);
+
+    </script>
+    <script src="../assets/js/bugfixes.js"></script>
+</body>
+
+</html>

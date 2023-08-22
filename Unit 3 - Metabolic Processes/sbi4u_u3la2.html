@@ -1,0 +1,1635 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Learning activity 3.2: Investigating cellular respiration</title>
+    <style>
+        /*matching widget styles*/
+        .completionItem {
+            /*question (label) and option (select) div*/
+            position: relative;
+            clear: both;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(86, 101, 105, 0.5);
+            margin-bottom: 20px;
+            background-color: #F8F9F9;
+        }
+
+        .completionItem label {
+            /* question is inside <label>*/
+            width: 45%;
+            padding: 2%;
+            font-size: 95%;
+        }
+
+        .completionItem select {
+            /* options are inside <select>*/
+            width: 50%;
+            float: right;
+            margin: 2%;
+            margin-right: 0px;
+            /* .btn-info -- button styles from CVL */
+            color: #F8F9F9;
+            background-color: #0A76A5;
+            border-color: #0A76A5;
+        }
+
+        .completionItem label>span {
+            /*all text is inside <span> - this overrides bold for question text*/
+            font-weight: normal;
+        }
+
+        .completionItem span {
+            /*feedback text*/
+            font-weight: bold;
+        }
+
+        .completionFeedback i {
+            /*this pushes the feedback to a new line*/
+            padding: 20px
+        }
+
+        .completionControls {
+            /*position of submit button - width and position matches options*/
+            float: right;
+            width: 25%;
+        }
+
+        .completionControls button {
+            /*button is full width of 25% in layout*/
+            width: 100%;
+            /* different button */
+            color: #F8F9F9;
+            background-color: gray;
+            border-color: #0A76A5;
+        }
+
+        .completionControls button:hover {
+            background-color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="../assets/css/ilc_core_temp.css">
+</head>
+
+<body>
+    <noscript>
+        <div class="alert alert-warning clearfix" role="alert">
+            <p><strong>Warning!</strong> To ensure the greatest educational experience, this learning activity contians
+                aspects that require Javascript to be enabled.</p>
+        </div>
+    </noscript>
+
+    <section id="ilcLearningGoals" class="hidden">
+        <h2>Learning goals</h2>
+        <p>We are learning to:</p>
+        <ul>
+            <li>use appropriate terminology to explain the major concepts related to cellular respiration</li>
+            <li>describe changes in matter and energy transformations that occur in aerobic and anaerobic cellular
+                respiration</li>
+            <li>use the laws of thermodynamics to explain the transfer of energy in the cell during the process of
+                cellular respiration</li>
+        </ul>
+        <h2>Success criteria</h2>
+        <p>I am able to:</p>
+        <ul>
+            <li>state the net reaction of aerobic cellular respiration</li>
+            <li>describe the cell structures involved (mitochondria) and label the parts on a diagram</li>
+            <li>describe the process of glycolysis and the products it creates</li>
+            <li>differentiate between aerobic respiration and anaerobic respiration (fermentation) by describing the
+                locations and products of these reactions</li>
+            <li>describe the transition reaction, Krebs cycle, and electron transport train with respect to the
+                structures, substrates and products involved in these pathways</li>
+            <li>identify and describe when phosphorylation, chemiosmosis, and energy carriers are used in the metabolic
+                pathway</li>
+            <li>explain the process of using proteins and lipids as energy molecules and how they fit into the chemical
+                processes</li>
+        </ul>
+    </section>
+
+    <main id="mainContent" class="container">
+
+        <section id="mindsOn">
+            <div class="row banner">
+                <h1><img src="../assets/img/sbi4u_03.02_mindsOn.png" alt="Minds On" class="img-responsive"></h1>
+            </div>
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Think</h3>
+                    <div class="callout_content_icon">
+                        <img src="../assets/icons/think.svg" alt class="img-responsive" />
+                        <div class="callout_content">
+                            <p>Fermentation is a process that you will learn about in this learning activity.
+                                Fermentation has been used for millennia to produce different types of foods in all
+                                cultures. </p>
+                            <p>Think about all the foods you eat that have been made through the fermentation process
+                                and write them down in your notebook.</p>
+                            <p>By the end of the learning activity, you will have learned why fermentation occurs in
+                                some organisms and how we as humans have used it to create food products.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="action">
+            <div class="row banner">
+                <h1><img src="../assets/img/sbi4u_03_action.png" alt="Action" class="img-responsive"></h1>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Introduction</h2>
+                    <p>All living things require energy in order to carry out all aspects of their lives. You get your
+                        energy from the plants and animals you eat. As you learned in the previous learning activity,
+                        your lifestyle, diet and genetics play a large part in determining how your energy level and
+                        general health are affected by your choices. In this learning activity, you will learn how the
+                        process of <strong>cellular respiration</strong> turns food into useable energy for the cell.
+                    </p>
+                    <h2>Overview of aerobic cellular respiration </h2>
+                    <p><strong>Aerobic cellular respiration</strong> is the process of capturing the energy of the
+                        electrons that are shared in the covalent bonds (C-H) of glucose, using oxygen as a final
+                        electron acceptor. The process results in the release of energy and the formation of water and
+                        carbon dioxide as products:</p>
+                </div>
+            </div>
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>C</mi>
+                                <mn>6</mn>
+                            </msub>
+                            <msub>
+                                <mi>H</mi>
+                                <mn>12</mn>
+                            </msub>
+                            <msub>
+                                <mi>O</mi>
+                                <mn>6</mn>
+                            </msub>
+                            <mo>&#xA0;</mo>
+                            <mo>+</mo>
+                            <mo>&#xA0;</mo>
+                            <mn>6</mn>
+                            <msub>
+                                <mi>O</mi>
+                                <mn>2</mn>
+                            </msub>
+                            <mo>&#x2192;</mo>
+                            <mo>&#xA0;</mo>
+                            <mn>6</mn>
+                            <mi>C</mi>
+                            <msub>
+                                <mi>O</mi>
+                                <mn>2</mn>
+                            </msub>
+                            <mo>+</mo>
+                            <mo>&#xA0;</mo>
+                            <mn>6</mn>
+                            <msub>
+                                <mi>H</mi>
+                                <mn>2</mn>
+                            </msub>
+                            <mi>O</mi>
+                            <mspace linebreak='newline' />
+                            <mspace width="160px" />
+                            <mo>+</mo>
+                            <mo>&#xA0;</mo>
+                            <mtext>energy&#x2007;in&#x2007;the&#x2007;form&#x2007;of&#x2007;ATP</mtext>
+                        </math></p>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>Aerobic cellular respiration can be broken down into four main stages:</p>
+                    <ol>
+                        <li>Glycolysis</li>
+                        <li>Pyruvate oxidation</li>
+                        <li>Krebs cycle</li>
+                        <li>Electron transport chain/Chemiosmosis</li>
+                    </ol>
+
+                    <p><strong>Aerobic cellular respiration</strong> uses energy-carrying coenzymes, enzymes, and
+                        specialized structures within the mitochondria to incrementally extract the energy of the
+                        electrons as they move toward their final electron acceptor, oxygen. </p>
+                    <p>This catabolic, exothermic process follows the laws of thermodynamics. It generates free energy
+                        in the form of ATP and loses energy as waste heat during every reaction.</p>
+                    <p>The <strong>electrons</strong> that are stripped from glucose have a lot of potential energy. As
+                        they move through the electron transport chain via <strong>redox</strong> reactions, the
+                        electrons lose some energy in order to drive the proton pumps, and even more is lost as heat
+                        (disorder). You can think of the electrons as being at the top of a flight of stairs and that at
+                        every stage of the respiration process, they move down the staircase, converting their potential
+                        energy to useable energy with every step.</p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3> Structures involved in aerobic cellular respiration</h3>
+                    <p>Before you learn the details of aerobic cellular respiration, you need to review the cellular
+                        structures and molecules involved.</p>
+                    <ul>
+                        <li>The Mitochondrion</li>
+                        <li>Enzymes and Coenzymes </li>
+                    </ul>
+                    <h4> The mitochondrion</h4>
+                    <img src="../assets/img/sbi4u_03.02.01.jpg" alt="Mitochondrion" class="img-responsive">
+                    <p>Eukaryotic animal and plant cells are filled with cytoplasm. The cytoplasm of the cell is the
+                        medium in which all the cell components and free-floating compounds and ions are found. Cellular
+                        respiration (both aerobic and anaerobic) begins in the <strong>cytoplasm</strong>.</p>
+                    <p>The rest of the process occurs in the specialized organelle called the
+                        <strong>mitochondrion</strong>.</p>
+                    <img src="../assets/img/sbi4u_03.02.02.jpg" alt="" class="img-responsive img-right-50">
+
+                    <p>The mitochondrion has an outer membrane and an inner membrane. The inner membrane has folds
+                        called cristae, which provide a greater surface area and specialized environments for
+                        energy-carrying reactions. The space within the inner membrane is called the matrix. Most of the
+                        reactions take place in the matrix and on the internal membrane.</p>
+
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>The role of enzymes and coenzymes</h3>
+                    <p>Recall that <strong>enzymes</strong> (made up of proteins) in the body are biological catalysts
+                        that speed up chemical reactions without being used up themselves, and
+                        <strong>coenzymes</strong> are non-protein compounds that are necessary for the proper
+                        functioning of an enzyme. </p>
+                    <p>You were already introduced to the energy-carrying coenzyme, <strong>NADH</strong>, in the
+                        previous learning activity. It is joined here by another, weaker energy-carrying coenzyme called
+                        <strong>FADH<sub>2</sub></strong>.</p>
+
+                    <div class="row">
+                        <!-- left column -->
+                        <div class="col-xs-4">
+                            <img src="../assets/img/sbi4u_03.02.03.svg" alt=" Chemical structure of co-enzyme NADH"
+                                class="img-responsive">
+                            <p class="small text-center">The redox reaction of NADH to <math
+                                    xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <msup>
+                                        <mtext>NAD</mtext>
+                                        <mtext>+</mtext>
+                                    </msup>
+                                </math></p>
+
+                        </div><!-- right column -->
+                        <div class="col-xs-8">
+                            <img src="../assets/img/sbi4u_03.02.04.jpg" alt=" Reaction diagram of redox reaction"
+                                class="img-responsive">
+                            <p class="small text-center">The redox reaction of <math
+                                    xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <msub>
+                                        <mtext>FADH</mtext>
+                                        <mn>2</mn>
+                                    </msub>
+                                </math> to FAD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3> Glucose: An energy source</h3>
+                    <p>Glucose is the main energy source of cellular respiration. Glucose is absorbed quickly into the
+                        bloodstream, once ingested. Cells are made permeable to glucose by the pancreatic hormone,
+                        insulin. Once inside the cytoplasm of a cell, glucose is processed for its free
+                        energy&#x2014;harvested as ATP&#x2014;to do immediate cellular work.</p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- left column -->
+                <div class="col-xs-5 col-xs-offset-1">
+                    <img src="../assets/img/sbi4u_03.02.05a.jpg" alt=" Chemical structure of glucose"
+                        class="img-responsive">
+                </div><!-- right column -->
+                <div class="col-xs-5">
+                    <p>You are now going to learn more about the four stages of aerobic cellular respiration in more
+                        detail. The description of each stage starts off with an overview of the process, highlighting
+                        what happens to the main carbon-containing molecules.</p>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-xs-12 col-xs-offset-1">
+                    <h4 style="padding-top: 20px">Stage 1: Glycolysis</h4>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p><strong>Details</strong></p>
+                    <p>Glycolysis is a 10-step enzyme catalyzed reaction that takes place in the
+                        <strong>cytoplasm</strong> of a eukaryotic cell. During glycolysis, each glucose (6 Carbons)
+                        that has entered the cytoplasm of the cell is split into two 3-carbon molecules that eventually
+                        become pyruvate (2 &#xD7; 3 Carbons). Collectively, this pathway prepares the energy-rich
+                        glucose molecule for the extraction of the energy stored in its bonds. To accomplish this,
+                        however, some energy has to be invested first, in order to destabilize the glucose molecule. Two
+                        ATP molecules are expended initially by the cell, while four ATP and two NADH molecules are then
+                        produced. Thus, the <em class="Italic">net yield of energy-carrying products is two ATP and two
+                            NADH</em>. </p>
+                    <p>The glycolysis stage of aerobic cellular respiration does not require oxygen.</p>
+                    <p>Examine the glycolysis flowchart and learn the details of glycolysis in the table. There are many
+                        intermediate compounds and enzymes in this process. You are not required to know each step;
+                        rather, you are to know the key changes that occurs to glucose on its way to become pyruvate.
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Notebook</h3>
+                    <div class="callout_content_icon"><img src="../assets/icons/notebook.svg" alt=""
+                            class="img-responsive">
+                        <div class="callout_content">
+                            <p>You are responsible for knowing the level of detail in the table below. You should copy
+                                this table into your notebook.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <img src="../assets/img/sbi4u_03.02.06.jpg" alt="" class="img-responsive">
+                </div>
+            </div>
+
+
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 20%">Stage of Glycolysis</th>
+                            <th scope="col">Process</th>
+                            <th scope="col" style="width: 40%">Results</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>Two ATP molecules are <strong>consumed</strong> to prepare the 6-carbon glucose molecule
+                                to be broken down into 3-carbon molecules. </td>
+                            <td>(2 ATP consumed) </td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>
+                                <p>After the fourth reaction in the glycolysis pathway, the glucose is separated into
+                                    two 3-carbon molecules called <strong>glyceraldehyde-3-phosphate (G3P).</strong></p>
+                                <p>From this point on, the metabolic reactions occur twice (once for each 3-carbon half
+                                    of the original glucose molecule).
+                            </td>
+                            <td>
+                                <p>glyceraldehyde-3-phosphate (G3P)</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>In the next series of reactions, <strong>glyceraldehyde-3-phosphate (G3P)</strong> is
+                                converted to two 3-carbon pyruvate molecules. The energy harvested during the exothermic
+                                and enzyme catalyzed formation of pyruvates produces 2 NADH and 4 ATP molecules.</td>
+                            <td>
+                                <p>2 pyruvate molecules</p>
+                                <p>2 NADH</p>
+                                <p>4 ATP produced
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td><strong>NET tally of the products of one molecule of glucose by the end of
+                                    glycolysis:</strong></td>
+                            <td>
+                                <p><strong>2</strong> (3-C) Pyruvate molecules</p>
+                                <p><strong>2</strong> NADH</p>
+                                <p><strong>2</strong> ATP</p>
+                                <p>(4 produced &#x2013; 2 consumed = 2 ATP Net)
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                
+                <div class="col-xs-10 col-xs-offset-1">
+                <img src="../assets/img/sbi4u_03.02.07.jpg"
+                    alt=" A flow chart overview of glycolysis. One 6-carbon glucose molecule is split and modified by 10 different enzymes during energy investment and harvesting phases into two pyruvate molecules and a net gain of two ATP molecules."
+                    class="img-responsive">
+            </div>
+</div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p><strong>The glycolytic pathway does not require oxygen</strong> and thus, is an
+                        <strong>anaerobic</strong> reaction. In fact, it is the key stage, initiating both aerobic and
+                        anaerobic respiration. All cells can use glycolysis to get some energy from glucose. If oxygen
+                        is not present, however, the cell will revert to anaerobic respiration of pyruvates, which is
+                        described later on in this learning activity. You will also investigate how anaerobic and
+                        aerobic respiration differ, using a simple experiment involving yeast.</p>
+                    <p>Stages 2 to 4 of aerobic cellular respiration, which follow, outline the sequence of events that
+                        would occur only if oxygen were present in the mitochondria</p>
+                </div>
+            </div>
+
+
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h4>Understanding checkpoint: Glycolysis </h4>
+                    <p>Answering the questions below will help you review glycolysis. Check the suggested answers after
+                        completing the questions. </p>
+                    <p>What is the purpose of the process of glycolysis?</p>
+                    <button class="btn btn-default btn-answer-reveal" id="sbi4u_u3la2-suggestedAnswerButton-1">Suggested
+                        Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u3la2-suggestedAnswer-1">
+                        <p>Glycolysis is the first step of cellular aerobic respiration, and breaks down glucose into 2
+                            pyruvate molecules, which produces high energy carriers in the form of 2 NADH and 2 ATP
+                            molecules.</p>
+                    </div>
+                    <p>Create a simple flow chart, using paper and pencil or computer program of your choice, using word
+                        labels and numbers to summarize the ATP and NADH production in stage 1 of respiration. Start
+                        with glucose. Include the number of carbons found in the intermediate molecule at each stage, as
+                        well as in the glucose molecule.</p>
+                    <button class="btn btn-default btn-answer-reveal" id="sbi4u_u3la2-suggestedAnswerButton-2">Suggested
+                        Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u3la2-suggestedAnswer-2">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="colgroup" colspan="3"> <span style="padding-left: 3%">G Glucose
+                                            (6-C)</span><br><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                            <mo mathvariant="bold">&#x2199;</mo>
+                                        </math>
+                                        <span style="padding-left: 22%">
+                                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                                <mo mathvariant="bold">&#x2198;</mo>
+                                            </math></span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>G3P(3-C)<br><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                            <mo>&#x2193;</mo>
+                                        </math></td>
+                                    <td>G3P(3-C)<br><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                            <mo>&#x2193;</mo>
+                                        </math></td>
+                                    <td>2 ATP used</td>
+                                </tr>
+                                <tr>
+                                    <td>Pyruvate<br>(3-C)
+                                    </td>
+                                    <td> Pyruvate<br>(3-C)
+                                    </td>
+                                    <td>4 ATP produced<br>2 NADH produced
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="text-center"><strong> Two (3-C)</strong><br><strong>
+                                            Pyruvate</strong>
+                                    </td>
+                                    <td><strong>Net 2 ATP</strong><br><strong>2 NADH</strong>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p style="padding-top: 30px">Based on your flow chart, what is the total production of ATP and NADH
+                        during this stage?</p>
+                    <button class="btn btn-default btn-answer-reveal" id="sbi4u_u3la2-suggestedAnswerButton-3">Suggested
+                        Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u3la2-suggestedAnswer-3">
+                        <p>Net of 2 ATP and 2 NADH</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-xs-offset-1">
+                        <h4 style="padding-top: 20px">Stage 2: Pyruvate oxidation</h4>
+                    </div>
+                </div>
+
+                <div class="row ilc-row-text">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <p><strong>Summary:</strong> The two pyruvate molecules (2 &#xD7; 3 carbons) produced in
+                            glycolysis are decarboxylated (2 &#xD7; 1 carbons are removed as two <math
+                                xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msub>
+                                    <mtext>CO</mtext>
+                                    <mtext>2</mtext>
+                                </msub>
+                            </math> are formed) to produce two acetyl-CoA (2 &#xD7; 2 carbons), as well as reduced
+                            energy carriers. Pyruvate oxidation occurs in the mitochondrial matrix as seen below.</p>
+                        <img src="../assets/img/sbi4u_03.02.09.jpg" alt="" class="img-responsive">
+                        <p><strong>Details</strong></p>
+                        <p>Also known as the <strong>oxidative decarboxylation of pyruvate</strong>, this second stage
+                            of aerobic respiration occurs once to each of the two pyruvate molecules produced by the
+                            glycolysis of each molecule of glucose. Before this stage can occur, each pyruvate has to be
+                            actively transported across the outer mitochondrial membrane, through the intermembrane
+                            space and the inner mitochondrial membrane, finally reaching the specialized chemical
+                            environment of the <strong>mitochondrial matrix.</strong></p>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col" style="width: 60%">The three main steps in pyruvate oxidation</th>
+                                    <th scope="col">Substances Produced From the Oxidation of one Pyruvate Molecule</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+
+                                    <td>1. A <strong>CO<sub>2</sub></strong> molecule is removed from one pyruvate.</td>
+                                    <td><strong>CO<sub>2</sub></strong></td>
+                                </tr>
+                                <tr>
+
+                                    <td>2. Each pyruvate is also quickly oxidized by the energy carrier,
+                                        NAD<sup>+</sup>, which gains two electrons and two protons, to become
+                                        <strong>NADH and H<sup>+</sup></strong>. Acetic acid is formed as the remaining
+                                        product.
+                                    </td>
+                                    <td><strong>NADH</strong><br><strong>H<sup>+</sup></strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3. A vitamin B5 derivative called <strong>coenzyme A (CoA)</strong> bonds with
+                                        the acetic acid and forms a complex called <strong>acetyl-CoA.</strong> This
+                                        complex is the final product in the oxidation of pyruvate.</td>
+                                    <td><strong>Acetyl-CoA</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Net tally of products from the oxidative decarboxylation of TWO pyruvate
+                                            molecules (or pyruvate oxidation):</strong></td>
+                                    <td>
+                                        <p><strong>2 CO<sub>2</sub></strong></p>
+                                        <p><strong>2 Acetyl-CoA</strong></p>
+                                        <p><strong>2 NADH</strong></p>
+                                        <p><strong>2 H<sup>+</sup></strong>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                </div>
+                <div class="row ilc-row-callout">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <p>There is no ATP produced in pyruvate oxidation, but it is the preparation step for the next
+                            stage in cellular aerobic respiration.</p>
+                    </div>
+                </div>
+                <div class="row ilc-row-text">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <p>This transitional set of reactions prepares what is left of the original glucose for the
+                            removal of the remaining energy. As discussed in the previous learning activity, the
+                            reduction of the coenzyme NAD<sup>+</sup> to NADH is an energy-storing endergonic reaction.
+                            NADH and other energy-carrying molecules (such as <math
+                                xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msub>
+                                    <mtext>FADH</mtext>
+                                    <mn>2</mn>
+                                </msub>
+                            </math>, which appears in the next step, stage 3) will eventually contribute their energy to
+                            the formation of ATP, which occurs during stage 4, the final stage of aerobic cellular
+                            respiration. </p>
+                        <p>Note that the coenzymes are derived from vitamins, and as such, remind you of the importance
+                            of balanced nutrition.</p>
+                    </div>
+                </div>
+
+                <div class="row ilc-row-widget">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <h4>Understanding checkpoint: Pyruvate oxidation</h4>
+                        <div id="u3la2_mc1" class="multiple-choice-widget" data-ng-controller="multipleChoiceController"
+                            data-ng-init="getQuestionData('../widgets/sbi4u_u3la2_mc1.json')">
+                            <div data-multiple-choice-directive></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="row">
+                    <div class="col-xs-12 col-xs-offset-1">
+                        <h4 style="padding-top: 20px">Stage 3: Krebs cycle</h4>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="row ilc-row-text">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <p><strong>Summary:</strong> Two acetyl-CoA (2 &#xD7; 2 carbons) molecules are reacted in a
+                            metabolic pathway to produce four CO<sub>2</sub> (4 &#xD7; 1 carbon) molecules, and energy
+                            carriers are reduced, harvesting electrons and protons. The Krebs cycle occurs in the
+                            <strong>mitochondrial matrix</strong>. This eight-step enzyme-catalyzed process is
+                            summarized in the flow chart below. Note that citrate is turned into isocitrate in the first
+                            step, but the number of carbons does not change and no energy is released. Note: previously,
+                            the Krebs cycle was known as the citric acid cycle as citrate is one of the intermediate
+                            molecules.</p>
+                        <img src="../assets/img/sbi4u_03.02.11.jpg" alt="" class="img-responsive">
+                        <p><strong>Details</strong></p>
+                        <p>The Krebs cycle carries each of the two acetyl-CoA molecules produced from one glucose
+                            molecule through further enzyme-facilitated oxidation reactions, <em
+                                class="Italic">dehydrogenation, decarboxylation, and phosphorylation</em>. Many of the
+                            descriptive details of each of these eight reactions have purposely been omitted here.
+                            However, the following points are important to remember:</p>
+                        <ul>
+                            <li>The actions of the eight different enzymes involved in the cycle result in the
+                                transformation of each acetyl-CoA molecule into the following molecules: </li>
+                        </ul>
+                        <p>Citrate &#x2192; isocitrate &#x2192; &#x3B1;-ketoglutarate &#x2192; succinyl-CoA &#x2192;
+                            succinate &#x2192; fumarate &#x2192; malate &#x2192; oxaloacetate </p>
+                        <p>Each stage serves to prepare for carrying out the harvesting of energy in successive
+                            reactions or stages. (Note: you are not responsible for knowing all the intermediate steps
+                            or molecules)</p>
+                        <ul>
+                            <li>Energy is removed from the transformed molecules in the form of ATP, NADH, and flavin
+                                adenine dinucleotide (FADH<sub>2</sub>). These energy carriers feed their energy into
+                                the fourth and final stage of aerobic cellular respiration.</li>
+                            <li>Oxaloacetate, which begins the cycle as a reactant, is regenerated as a product during
+                                the last reactions in the cycle.</li>
+                        </ul>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="colgroup" colspan="2">Net tally of products from 2 acetyl-CoA (per
+                                        glucose) entering the Krebs cycle:</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="width: 5%"><strong>4</strong></td>
+                                    <td><strong><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                                <msub>
+                                                    <mtext>CO</mtext>
+                                                    <mtext>2</mtext>
+                                                </msub>
+                                            </math> </strong></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>6</strong></td>
+                                    <td><strong>NADH</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>2</strong></td>
+                                    <td><strong><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                                <msub>
+                                                    <mtext>FADH</mtext>
+                                                    <mn>2</mn>
+                                                </msub>
+                                            </math></strong></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>2</strong></td>
+                                    <td><strong> ATP</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>By the end of the Krebs cycle, all of the six carbons from the original glucose molecule have
+                            been removed as CO<sub>2</sub>. However, although a net of only 4 ATP molecules has been
+                            generated, 10 NADH and 2 FADH<sub>2</sub> molecules have been formed from glycolysis,
+                            pyruvate oxidation and the Krebs cycle. Altogether, these will deliver their energetic
+                            payloads for ATP production in the fourth and final stage of aerobic cellular respiration.
+                        </p>
+                    </div>
+                </div>
+                <div class="row ilc-row-text">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <h4>Understanding checkpoint: Krebs (citric acid) cycle</h4>
+                        <ol>
+                            <li>Explain why the Krebs cycle needs to occur twice for each glucose molecule undergoing
+                                cellular respiration.</li>
+                        </ol>
+                        <button class="btn btn-default btn-answer-reveal"
+                            id="sbi4u_u3la2-suggestedAnswerButton-4">Suggested Answer</button>
+                        <div class="answer_reveal invisible" id="sbi4u_u3la2-suggestedAnswer-4">
+                            <p>Each glucose molecule leads to the production of 2 acetyl-CoA molecules at the end of
+                                pyruvate oxidation, and each &#x201C;turn&#x201D; of the Krebs cycle uses one acetyl-CoA
+                                molecule. Thus the Krebs cycle has to occur twice for each glucose molecule.</p>
+                        </div>
+                        <ol start="2">
+                            <li>Name the energy carriers in the Krebs cycle.</li>
+                        </ol>
+                        <button class="btn btn-default btn-answer-reveal"
+                            id="sbi4u_u3la2-suggestedAnswerButton-5">Suggested Answer</button>
+                        <div class="answer_reveal invisible" id="sbi4u_u3la2-suggestedAnswer-5">
+                            <p>ATP, NADH, FADH<sub>2</sub></p>
+                        </div>
+                        <ol start="3">
+                            <li>Complete the following table in your notebook and compare your response to the suggested
+                                answers provided</li>
+                        </ol>
+                        <table id="sbi4u_u3la2-tableSuggestedAnswers-1" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <td></td>
+                                    <th scope="col" style="width: 20%">Glycolysis</th>
+                                    <th scope="col" style="width: 20%">Pyruvate Oxidation</th>
+                                    <th scope="col" style="width: 15%">The Krebs Cycle</th>
+                                    <th scope="col" style="width: 15%">Total Tally of ATP, NADH, FADH<sub>2</sub> and
+                                        CO<sub>2</sub></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ATP</td>
+                                    <td> <span class="tableSuggestedAnswer invisible">2</span></td>
+                                    <td>
+                                    <td> <span class="tableSuggestedAnswer invisible">2</span></td>
+                                    <td>
+                                        <span class="tableSuggestedAnswer invisible"><strong>4</strong></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>NADH</td>
+                                    <td> <span class="tableSuggestedAnswer invisible">2</span></td>
+                                    <td> <span class="tableSuggestedAnswer invisible">2</span></td>
+                                    <td> <span class="tableSuggestedAnswer invisible">6</span></td>
+                                    <td>
+                                        <span class="tableSuggestedAnswer invisible"><strong>10</strong></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>FADH<sub>2</sub></td>
+                                    <td>
+                                    <td>
+                                    <td> <span class="tableSuggestedAnswer invisible">2</span></td>
+                                    <td>
+                                        <span class="tableSuggestedAnswer invisible"><strong>2</strong></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CO<sub>2</sub></td>
+                                    <td>
+                                    <td> <span class="tableSuggestedAnswer invisible">2</span></td>
+                                    <td> <span class="tableSuggestedAnswer invisible">4</span></td>
+                                    <td>
+                                        <span class="tableSuggestedAnswer invisible"><strong>6</strong></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Additional Products</p>
+                                        <p>(Name and amount produced)
+                                    </td>
+                                    <td><span class="tableSuggestedAnswer invisible">2 Pyruvate</span> </td>
+                                    <td><span class="tableSuggestedAnswer invisible">
+                                            2 Acetyl-CoA<br />
+                                            2 H<sup>+</sup>
+                                        </span>
+                                    </td>
+                                    <td>
+                                    <td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button id="sbi4u_u3la2-tableSuggestedAnswersButton-1" class="btn btn-table-answer-reveal">Show
+                            Answers</button>
+                        <!-- *************************** REVEAL TABLE XXX ENDS ****************************************** -->
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-xs-offset-1">
+                        <h4 style="padding-top: 20px">Stage 4: Electron transport chain (ETC) and chemiosmosis</h4>
+                    </div>
+                </div>
+
+                <div class="row ilc-row-text">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <ul>
+                            <li>Stage 4 occurs in the <strong>cristae of the matrix,</strong> the <strong>inner
+                                    membrane,</strong> and the <strong>intermembrane space.</strong> </li>
+                            <li>The electrons harvested from the oxidation of glucose move from electron donors (NADH
+                                and FADH<sub>2</sub>) to a final electron acceptor (O<sub>2</sub>) via a series of redox
+                                reactions called the <strong>electron transport chain (ETC). </strong></li>
+                            <li>The ETC is made up of a sequence of molecules called <strong>cytochrome
+                                    complexes</strong> that release some energy from the electrons at each step in the
+                                chain. </li>
+                            <li>The energy released is used to power <strong>three proton pumps</strong> that push
+                                H<sup>+</sup> ions out across the mitochondrial matrix membrane into the intermembrane
+                                space. The resulting transmembrane proton gradient is used to make ATP by
+                                <strong>chemiosmosis.</strong></li>
+                        </ul>
+                        <!-- <img src="../assets/img/sbi4u_03.02.12.jpg" alt="" class="img-responsive"> -->
+
+                    </div>
+                </div>
+                <div class="row ilc-row-callout">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <h3>Explore this!</h3>
+                        <div class="callout_content_icon"><img src="../assets/icons/watch.svg" alt=""
+                                class="img-responsive">
+                            <div class="callout_content">
+                                <p>Let&#x2019;s watch a video to learn more about the Electron Transport Chain and
+                                    Chemiosmosis before reading about the details below. You may also search for other
+                                    videos on the topic.</p>
+                                <p><a href="https://www.youtube.com/watch?v=xbJ0nbzt5Kw" target="_blank">Cellular
+                                        Respiration (Electron Transport Chain)<span class="sr-only">(Opens in new
+                                            window)</span></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ilc-row-text">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <p><strong>Details</strong></p>
+                        <ul>
+                            <li>The 10 NADH and two FADH<sub>2</sub> generated during the first three stages of aerobic
+                                respiration through the oxidation of glucose now move into the folds of the inner
+                                membrane within the matrix, called the cristae.</li>
+                            <li>Various membrane-associated proteins and special compounds called cytochromes comprise a
+                                series of increasingly strong reducers, called the electron transport chain (ETC). This
+                                linear series of molecules carries out coupled redox reactions to pass on electrons from
+                                the energy carriers FADH<sub>2</sub> and NADH to oxygen.</li>
+                            <li>The electrons are passed along the ETC like a baton handed from runner to runner in a
+                                relay race. With each transfer, the electrons occupy a slightly more stable position on
+                                the carrier molecule. The energy they give up at each transfer is used to power the
+                                proton pumps that pump the H<sup>+</sup> ions out of the matrix into the intermembrane
+                                space. There are five steps in this series, which will be discussed next.</li>
+                        </ul>
+                        <figure>
+                        <img src="../assets/img/sbi4u_03.02.13.jpg"
+                            alt=""
+                            class="img-responsive"><p class="text-center"><a href="../assets/alt/sbi4u_03.02.01.html" target="_blank">Press here for long description<span class="sr-only">(Opens in a new window)</span></a></p>
+                            </figure>
+                    </div>
+                </div>
+                <div class="row ilc-row-widget margin-top-xl">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <p><strong>Detailed steps of the electron transport chain and chemiosmosis</strong></p>
+                        <p>The NADH and FADH<sub>2</sub> produced in the Krebs cycle have their high-energy electrons
+                            and associated protons removed in the ETC.</p>
+                        <!-- *************************** ACCORDION XXX BEGINS ******************************************* -->
+                        <div class="accordionILC panel-group" id="accordion1">
+                            <!-- ACCORDION ITEM X -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1"
+                                            href="#accordion1-collapse1" class="collapsed">Step 1: Electron and Proton
+                                            Removal</a></h4>
+                                </div>
+                                <div id="accordion1-collapse1" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>A membrane-bound enzyme in the cristae called NADH dehydrogenase removes the
+                                            high-energy electrons from NADH. The protons (<math
+                                                xmlns="http://www.w3.org/1998/Math/MathML">
+                                                <msup>
+                                                    <mi>H</mi>
+                                                    <mo>+</mo>
+                                                </msup>
+                                            </math>) associated with the electrons are now free to be moved by the
+                                            enzyme into the matrix. The energy released is used to drive the three
+                                            proton pumps that pump the H<sup>+</sup> ions out of the matrix into the
+                                            intermembrane space. </p>
+                                        <p>The NAD<sup>+</sup> produced goes back into the Krebs cycle, where it gets
+                                            turned again into NADH.</p>
+                                        <img src="../assets/img/sbi4u_03.02.14.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ACCORDION ITEM X -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1"
+                                            href="#accordion1-collapse2" class="collapsed">Step 2: Electron Transport by
+                                            Ubiquinone</a></h4>
+                                </div>
+                                <div id="accordion1-collapse2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>The FADH<sub>2</sub> has its high-energy electrons removed by the next
+                                            molecule in the chain, ubiquinone. The low-energy FAD molecule is also
+                                            returned to the Krebs cycle.</p>
+                                        <p>The mobile electron carrier, ubiquinone, moves within the membrane. It
+                                            carries electrons to the proton pump, called the b-c1 complex, which forces
+                                            more H<sup>+</sup> out of the matrix into the intermembrane space.</p>
+                                        <img src="../assets/img/sbi4u_03.02.15.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ACCORDION ITEM X -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1"
+                                            href="#accordion1-collapse3" class="collapsed">Step 3: Electron Transport by
+                                            Cytochrome C</a></h4>
+                                </div>
+                                <div id="accordion1-collapse3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>The electron carrier, cytochrome C, carries electrons to the third proton
+                                            pump, called cytochrome C oxidase. </p>
+                                        <p>Most of the energy of the high-energy electrons carried by ubiquinone and
+                                            cytochrome C is used to pump H<sup>+</sup> out of the matrix into the
+                                            intermembrane space, while the rest is lost as heat. The H<sup>+</sup> that
+                                            are pumped out become concentrated as they build up in the intermembrane
+                                            space. These charged atoms cannot easily move back across the membrane into
+                                            the matrix.</p>
+                                        <p>The result is that an electrochemical gradient is built up across the
+                                            membrane, with H<sup>+</sup> concentrated on the outside. This gradient
+                                            contains potential energy, which eventually gets used to make ATP.</p>
+                                        <img src="../assets/img/sbi4u_03.02.16.jpg" alt="" class="img-responsive">
+                                        <p>The electrons that were oxidized from glucose are at a high-energy level, and
+                                            as they move through the ETC, they give up their energy in small amounts.
+                                            One way to visualize this is to think of the ETC as a flight of stairs and
+                                            the electrons as tennis balls bouncing down the stairs.</p>
+                                        <img src="../assets/img/sbi4u_03.02.17.svg" alt="" class="img-responsive">
+                                        <p class="small text-center">The energy changes taking place during the ETC are
+                                            compared to a tennis ball bouncing down the stairs</p>
+                                        <p>As the balls bounce toward the bottom of the stairs, they transfer their
+                                            potential energy to kinetic energy.</p>
+                                        <p>As electrons move through the electron transport chain via redox reactions,
+                                            they lose some energy through driving the pumping of protons, and some is
+                                            wasted as heat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ACCORDION ITEM X -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1"
+                                            href="#accordion1-collapse4" class="collapsed">Step 4: Electron Acceptance
+                                            and the Formation of Water</a></h4>
+                                </div>
+                                <div id="accordion1-collapse4" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>All of the electrons that were stripped from glucose in the Krebs cycle have
+                                            had their energy used to pump protons (H<sup>+</sup>) out of the matrix and
+                                            are now at a very low energy level. </p>
+                                        <p>These lower energy electrons must be accepted by an atom for the preceding
+                                            electrons to continue to flow through the ETC. </p>
+                                        <p>At the end of the ETC, two electrons passing through the final complex
+                                            (cytochrome oxidase) are donated to the final electron acceptor, oxygen. As
+                                            one oxygen atom accepts two electrons, it also binds two protons
+                                            (2H<sup>+</sup>) together, resulting in the formation of one molecule of
+                                            water (H<sub>2</sub>O).</p>
+
+                                        <img src="../assets/img/sbi4u_03.02.18.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ACCORDION ITEM X -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1"
+                                            href="#accordion1-collapse5" class="collapsed">Step 5: Production of ATP by
+                                            Chemiosmosis</a></h4>
+                                </div>
+                                <div id="accordion1-collapse5" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>The electrochemical gradient created by the pumping of H<sup>+</sup> out of
+                                            the matrix provides the energy needed to generate ATP. </p>
+                                        <p>Inside the matrix, the H<sup>+</sup> concentration is low, so the trend is
+                                            for the H<sup>+</sup> to equalize its concentration (as with
+                                            diffusion/osmosis). </p>
+                                        <p>Specialized H<sup>+</sup> channel proteins that span the inner membrane open
+                                            to let the H<sup>+</sup> flow into the matrix. As with busy commuters
+                                            rushing through turnstiles in a train station, the protons stream through
+                                            the protein channel, to the end of which the enzyme ATP synthase is
+                                            attached. </p>
+                                        <p>The kinetic energy delivered by the movement of the H<sup>+</sup>, called the
+                                            proton motive force (PMF), powers ATP synthase to phosphorylate ADP with Pi
+                                            to form ATP. </p>
+                                        <p>The energy that was stored in those C-H bonds of glucose that were
+                                            transferred to energy carriers, and transported and harvested along the ETC
+                                            to pump protons out of the matrix in order to generate the PMF, is now being
+                                            used to form ATP!</p>
+                                        <p>Chemiosmotic ATP generation depends on constant maintenance of the
+                                            H<sup>+</sup> reservoir in the intermembrane space, which, in turn, is
+                                            accomplished by the movement of electrons through the ETC. The electrons
+                                            will only keep moving if oxygen is present to accept them at the end of the
+                                            process&#x2014;hence the need for oxygen in aerobic cellular respiration.
+                                        </p>
+                                        <img src="../assets/img/sbi4u_03.02.19.jpg" alt="" class="img-responsive">
+                                        <!-- END OF ACCORDION ITEMS -->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- *************************** ACCORDION XXX ENDS ******************************************* -->
+                    </div>
+                </div>
+                <div class="row ilc-row-text">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <h2>ATP yield through oxidative phosphorylation</h2>
+                        <p>The main goal of the ETC and chemiosmosis is to harvest the energy from the carrier molecules
+                            produced in the first three stages of aerobic respiration. Let&#x2019;s do the math in the
+                            table below to find out how much ATP is produced in total.</p>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <td></td>
+                                    <th scope="col">Glycolysis</th>
+                                    <th scope="col">Pyruvate oxidation</th>
+                                    <th scope="col">Krebs cycle</th>
+                                    <th scope="col">ETC and chemiosmosis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>NADH</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>6</td>
+                                    <td rowspan="5" class="text-center" style="vertical-align: middle">
+                                        4 + 6 + 18 + 4=<br><span style="color: rgb(238, 0, 0)">32 ATP</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>NADH Produces:</p>
+                                        <p>2 ATP in glycolysis</p>
+                                        <p>3 ATP in all other steps
+                                    </td>
+                                    <td><span style="color: rgb(238, 0, 0)">4 ATP</span></td>
+                                    <td><span style="color: rgb(238, 0, 0)">6 ATP</span></td>
+                                    <td><span style="color: rgb(238, 0, 0)">18 ATP</span></td>
+                                </tr>
+                                <tr>
+                                    <td>FADH<sub>2</sub></td>
+                                    <td>
+                                    <td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>FADH<sub>2</sub></p>
+                                        <p>Produces:</p>
+                                        <p>2 ATP
+                                    </td>
+                                    <td>
+                                    <td>
+                                    <td><span style="color: rgb(238, 0, 0)">4 ATP</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Total</td>
+                                    <td><span style="color: rgb(238, 0, 0)">4 ATP</span></td>
+                                    <td><span style="color: rgb(238, 0, 0)">6 ATP</span></td>
+                                    <td><span style="color: rgb(238, 0, 0)">22 ATP</span></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <h3>Summary</h3>
+                        <p>Thus, during the four stages of <strong>aerobic cellular respiration</strong>, the energy of
+                            the electrons that are shared in the covalent bonds (C-H) of glucose is harvested, using
+                            oxygen to produce carbon dioxide, water and the release of energy which is stored as ATP.
+                        </p>
+                        <p>The <strong>overall</strong> chemical equation for the four stages of aerobic cellular
+                            respiration is:</p>
+                    </div>
+                </div>
+                <div class="row ilc-row-callout">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msub>
+                                    <mi>C</mi>
+                                    <mn>6</mn>
+                                </msub>
+                                <msub>
+                                    <mi>H</mi>
+                                    <mn>12</mn>
+                                </msub>
+                                <msub>
+                                    <mi>O</mi>
+                                    <mn>6</mn>
+                                </msub>
+                                <mo>&#xA0;</mo>
+                                <mo>+</mo>
+                                <mo>&#xA0;</mo>
+                                <mn>6</mn>
+                                <msub>
+                                    <mi>O</mi>
+                                    <mn>2</mn>
+                                </msub>
+                                <mo>&#x2192;</mo>
+                                <mo>&#xA0;</mo>
+                                <mn>6</mn>
+                                <mi>C</mi>
+                                <msub>
+                                    <mi>O</mi>
+                                    <mn>2</mn>
+                                </msub>
+                                <mo>+</mo>
+                                <mo>&#xA0;</mo>
+                                <mn>6</mn>
+                                <msub>
+                                    <mi>H</mi>
+                                    <mn>2</mn>
+                                </msub>
+                                <mi>O</mi>
+                                <mo>&#xA0;</mo>
+                                <mo>+</mo>
+                                <mo>&#xA0;</mo>
+                                <mtext>energy</mtext>
+                            </math></p>
+                    </div>
+                </div>
+                <div class="row ilc-row-callout">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <h3>Notebook</h3>
+                        <div class="callout_content_icon"><img src="../assets/icons/notebook.svg" alt=""
+                                class="img-responsive">
+                            <div class="callout_content">
+                                <p>Answer the following questions based on this chemical reaction.</p>
+                            </div>
+                        </div>
+                        <ol>
+                            <li>Where does this reaction occur in the human body?</li>
+                        </ol>
+
+                        <button class="btn btn-default btn-answer-reveal"
+                            id="sbi4u_u3la2-suggestedAnswerButton-7">Suggested Answer</button>
+                        <div class="answer_reveal invisible" id="sbi4u_u3la2-suggestedAnswer-7">
+                            <p>In every cell that is using aerobic respiration. </p>
+                        </div>
+                        <ol start="2">
+                            <li>What is the source of oxygen for humans and which organ primarily helps to bring oxygen
+                                into the human body?</li>
+                        </ol>
+                        <button class="btn btn-default btn-answer-reveal"
+                            id="sbi4u_u3la2-suggestedAnswerButton-8">Suggested Answer</button>
+                        <div class="answer_reveal invisible" id="sbi4u_u3la2-suggestedAnswer-8">
+                            <p>The air that is breathed in and the lungs.</p>
+                        </div>
+                        <ol start="3">
+                            <li>What is the original source of the carbon in the carbon dioxide that is produced?</li>
+                        </ol>
+                        <button class="btn btn-default btn-answer-reveal"
+                            id="sbi4u_u3la2-suggestedAnswerButton-9">Suggested Answer</button>
+                        <div class="answer_reveal invisible" id="sbi4u_u3la2-suggestedAnswer-9">
+                            <p>Glucose</p>
+                        </div>
+                        <ol start="4">
+                            <li>How is carbon dioxide removed from the human body?</li>
+                        </ol>
+                        <button class="btn btn-default btn-answer-reveal"
+                            id="sbi4u_u3la2-suggestedAnswerButton-10">Suggested Answer</button>
+                        <div class="answer_reveal invisible" id="sbi4u_u3la2-suggestedAnswer-10">
+                            <p>During exhalation in the respiration process using the lungs</p>
+                        </div>
+                        <ol start="5">
+                            <li>During what stage of aerobic cellular respiration is water produced?</li>
+                        </ol>
+                        <button class="btn btn-default btn-answer-reveal"
+                            id="sbi4u_u3la2-suggestedAnswerButton-11">Suggested Answer</button>
+                        <div class="answer_reveal invisible" id="sbi4u_u3la2-suggestedAnswer-11">
+                            <p>Electron Transport Chain</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ilc-row-text margin-top-xl">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <h4>Understanding checkpoint: Aerobic cellular respiration</h4>
+                    </div>
+                </div>
+
+                <div class="row ilc-row-widget">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <p>Match the following four stages of aerobic cellular respiration with the net products in
+                            terms of ATP, NADH, FADH<sub>2</sub> and CO<sub>2</sub> from the oxidation of one glucose
+                            molecule</p>
+                        <div id="u3la2_matching1" class="matching-widget"
+                            data-ng-controller="completionActivityController"
+                            data-ng-init="init('../widgets/sbi4u_u3la2_matching1.json')">
+                            <div data-matching-directive></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row ilc-row-widget margin-top-xl">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <div id="u3la2_mc2" class="multiple-choice-widget" data-ng-controller="multipleChoiceController"
+                            data-ng-init="getQuestionData('../widgets/sbi4u_u3la2_mc2.json')">
+                            <div data-multiple-choice-directive></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ilc-row-text margin-top-xl">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <h2>Alternative metabolic pathways</h2>
+                        <ul>
+                            <li>So far, you have only seen glucose as a source of energy a cell can use, but you already
+                                know that fats and other lipids contain a lot of energy that gets used up when glucose
+                                is unavailable. </li>
+                            <li>The aerobic breakdown (catabolism) of fats is accomplished by a process called
+                                <strong>&#x3B2;-oxidation.</strong></li>
+                            <li>Proteins can also provide a source of energy through a process called
+                                <strong>deamination</strong><strong>.</strong></li>
+                        </ul>
+                        <h3>&#x3B2;-oxidation of fats</h3>
+                        <p>Enzymes in the matrix add CoA to the terminal ends of fatty-acid tails, allowing for the
+                            stripping of electrons from the numerous C-H bonds by NAD<sup>+</sup> to NADH. The end
+                            result is the production of acetyl-CoA molecules. These enter the Krebs cycle and
+                            respiration continues as usual with its regular production of NADH and FADH<sub>2</sub> as
+                            seen below.</p>
+                        <h3>Deamination of proteins</h3>
+                        <ul>
+                            <li>Proteins can be broken down into amino acids, which can then be deaminated to produce
+                                energy-rich molecules that feed into cellular respiration pathways. </li>
+                            <li>Amino acids all contain an amino group (-NH<sub>2</sub>), which is removed during the
+                                process of deamination. Because of their unique functional groups, when different amino
+                                acids are deaminated, they form products that can feed into glycolysis or the Krebs
+                                cycle as seen below. </li>
+                        </ul>
+                        <p>For example, alanine becomes pyruvate, and glutamate becomes &#x3B1;-ketoglutarate (one of
+                            the compounds of the Krebs cycle). The process of deamination, however, results in the
+                            production of the toxic substance, urea, which is filtered from the body by the kidneys and
+                            excreted in urine.</p>
+                        <h4>Understanding checkpoint: Alternative cellular fuels</h4>
+                        <p>Although it is the main carbon-rich source of energy for cellular respiration, glucose is not
+                            the only source. Explain how other sources of carbon are oxidized for energy. Check the
+                            sample answer once you have completed your work. </p>
+                        <button class="btn btn-default btn-answer-reveal"
+                            id="sbi4u_u3la2-suggestedAnswerButton-12">Suggested Answer</button>
+                        <div class="answer_reveal invisible" id="sbi4u_u3la2-suggestedAnswer-12">
+                            <p><strong>Lipids</strong></p>
+                            <ul>
+                                <li>are broken down to glycerol and fatty acid chains</li>
+                                <li>fatty acids chains enter the krebs cycle as acetyl-CoA by having enzymes in the
+                                    adding CoA to the end of the fatty acid chains </li>
+                                <li>glycerol enters glycolysis as G3P</li>
+                            </ul>
+                            <p><strong>Proteins</strong> </p>
+                            <ul>
+                                <li>Due to varying functional groups, amino acids that are formed after deamination can
+                                    enter the pathway as pyruvate, acetyl-CoA or into the Krebs cycle</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ilc-row-text">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <h3>Anaerobic cellular respiration</h3>
+                        <p>Whether oxygen is present or not during glycolysis, the first set of electrons that are
+                            oxidized from glucose reduce NAD<sup>+</sup> to NADH. Cells do not have limitless supplies
+                            of NAD<sup>+</sup> available to undergo reduction reactions to gain the electrons. Until the
+                            NADH can offload their electrons to an acceptor like oxygen, they become unavailable for
+                            further electron removal.</p>
+                        <p>In anaerobic conditions where oxygen is not present, another electron acceptor must be used.
+                            In the absence of oxygen, animal muscle cells and yeast cells have evolved different
+                            mechanisms to handle this problem.</p>
+                        <h3>Lactic acid fermentation in muscle cells</h3>
+                        <p>Humans undertaking strenuous exercise use up oxygen faster than they can metabolize glucose,
+                            so they will temporarily shift to producing <strong>lactic acid</strong> (lactate), which is
+                            toxic and is the cause of muscle cramps. In the absence of oxygen, the protons and electrons
+                            that were removed from glucose during glycolysis attach back onto pyruvate, creating lactic
+                            acid. Increasing oxygen delivery reduces the uncomfortable symptoms produced by this process
+                            and restarts aerobic cellular respiration.</p>
+                    </div>
+                </div>
+
+
+                <div class="row ilc-row-callout">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <h3>Explore this!</h3>
+                        <div class="callout_content_icon"><img src="../assets/icons/watch.svg" alt=""
+                                class="img-responsive">
+                            <div class="callout_content">
+                                <p>Watch the following video to learn more about <a
+                                        href="https://www.youtube.com/watch?v=HZtXLhm7ISA" target="_blank">anaerobic
+                                        respiration<span class="sr-only">(Opens in new window)</span></a> or perform
+                                    your own research on the topic.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row ilc-row-text">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <h3>Alcohol fermentation in yeast cells</h3>
+                        <p>In the case of alcoholic fermentation in yeast cells:</p>
+                        <ul>
+                            <li>Pyruvate is decarboxylated (CO<sub>2</sub> is removed), resulting in the formation of
+                                the intermediate compound, acetaldehyde.</li>
+                            <li>Acetaldehyde is then reduced as NADH dumps its electrons onto it to form ethanol
+                                (alcohol). </li>
+                            <li>Yeast used in the brewing of beer and winemaking undergoes this process until the
+                                alcohol reaches a toxicity concentration of about 12%, killing all the cells.</li>
+                        </ul>
+                        <h3>Energy efficiency of respiration</h3>
+                        <p>While anaerobic respiration can be accomplished by every type of cell, it still can only
+                            provide the meager glycolytic payoff of two ATP per glucose molecule, which is much less
+                            than the 32 ATP produced by aerobic respiration as a whole. </p>
+                        <p>Even with this great payoff, aerobic respiration is still governed by the very real problem
+                            posed by the second law of thermodynamics, which states that disorder is always increasing.
+                            This reminds you that with every one of the 30 or so reactions that make up the oxidation of
+                            glucose, energy is being incrementally stored; however, even more is being lost. </p>
+                        <p>Just how much energy is being lost? </p>
+                        <p>Calculate the energy lost to heat (disorder) using the following information and check your
+                            answer with the provided answer. </p>
+                        <ul>
+                            <li>The amount of energy stored in glucose (3012 kJ/glucose)</li>
+                            <li>The amount of energy harvested as ATP per Glucose is 30 kJ/ATP</li>
+                            <li>32 net ATP from the aerobic respiration of glucose</li>
+                        </ul>
+                        <button class="btn btn-default btn-answer-reveal"
+                            id="sbi4u_u3la2-suggestedAnswerButton-13">Suggested Answer</button>
+                        <div class="answer_reveal invisible" id="sbi4u_u3la2-suggestedAnswer-13">
+                            <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mtext>Energy&#x2007;Stored&#x2007;in&#x2007;Glucose&#x2007;</mtext>
+                                    <mspace linebreak="newline" />
+                                    <mspace width="60px" />
+                                    <mtext>
+                                        –&#x2007;Energy&#x2007;Harvested&#x2007;as&#x2007;ATP&#x2007;per&#x2007;Glucose
+                                    </mtext>
+                                    <mspace linebreak="newline" />
+                                    <mtext>=&#x2007;Energy&#x2007;Lost&#x2007;as&#x2007;Heat</mtext>
+                                    <mspace linebreak="newline" />
+                                    <mo>=</mo>
+                                    <mn>3,012</mn>
+                                    <mo>&#xA0;</mo>
+                                    <mi>k</mi>
+                                    <mi>J</mi>
+                                    <mo>/</mo>
+                                    <mtext>glucose</mtext>
+                                    <mo>&#xA0;</mo>
+                                    <mi>–</mi>
+                                    <mo>&#xA0;</mo>
+                                    <mo>(</mo>
+                                    <mo>&#xA0;</mo>
+                                    <mn>32</mn>
+                                    <mo>&#xA0;</mo>
+                                    <mtext>ATP</mtext>
+                                    <mo>&#xA0;</mo>
+                                    <mo>&#xd7;</mo>
+                                    <mo>&#xA0;</mo>
+                                    <mn>30</mn>
+                                    <mo>&#xA0;</mo>
+                                    <mi>k</mi>
+                                    <mi>J</mi>
+                                    <mo>/</mo>
+                                    <mtext>ATP</mtext>
+                                    <mo>)</mo>
+                                    <mo>&#xA0;</mo>
+                                    <mspace linebreak="newline" />
+                                    <mo>=</mo>
+                                    <mn>3,012</mn>
+                                    <mo>&#xA0;</mo>
+                                    <mi>k</mi>
+                                    <mi>J</mi>
+                                    <mo>&#xA0;</mo>
+                                    <mi>–</mi>
+                                    <mo>&#xA0;</mo>
+                                    <mn>960</mn>
+                                    <mo>&#xA0;</mo>
+                                    <mi>k</mi>
+                                    <mi>J</mi>
+                                    <mi> </mi>
+                                    <mi> </mi>
+                                    <mspace linebreak="newline" />
+                                    <mo>=</mo>
+                                    <mn>2,052</mn>
+                                    <mo>&#xA0;</mo>
+                                    <mi>k</mi>
+                                    <mi>J</mi>
+                                    <mo>&#xA0;</mo>
+                                    <mi>o</mi>
+                                    <mi>f</mi>
+                                    <mo>&#xA0;</mo>
+                                    <mtext>energy&#x2007;is&#x2007;lost&#x2007;as&#x2007;heat</mtext>
+                                </math></p>
+                        </div>
+                        <p style="padding-top: 30px">How efficient is aerobic respiration? </p>
+                        <p>Of the energy available in glucose, calculate what percentage was transferred into useable
+                            free energy (ATP), available to do the work of the cell? Check your answer with the provided
+                            answer.</p>
+                        <button class="btn btn-default btn-answer-reveal"
+                            id="sbi4u_u3la2-suggestedAnswerButton-14">Suggested Answer</button>
+                        <div class="answer_reveal invisible" id="sbi4u_u3la2-suggestedAnswer-14">
+                            <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mfenced open='[' close=']'>
+                                        <mrow>
+                                            <mfrac>
+                                                <mrow>
+                                                    <mtext mathvariant="bold">Energy of all ATP produced</mtext>
+                                                </mrow>
+                                                <mtext mathvariant="bold">energy of glucose</mtext>
+                                            </mfrac>
+                                        </mrow>
+                                    </mfenced>
+                                    <mo>&#xA0;</mo>
+                                    <mo mathvariant="bold">&#xd7;</mo>
+                                    <mo>&#xA0;</mo>
+                                    <mn mathvariant="bold">100</mn>
+                                    <mo>&#xA0;</mo>
+                                    <mo mathvariant="bold">=</mo>
+                                    <mo>&#xA0;</mo>
+                                    <mtext mathvariant="bold">%efficiency</mtext>
+                                    <mspace linebreak="newline" />
+                                    <mo>=</mo>
+                                    <mo>&#xA0;</mo>
+                                    <mo>[</mo>
+                                    <mo>&#xA0;</mo>
+                                    <mtext>960&#x2007;kJ</mtext>
+                                    <mo>&#xA0;</mo>
+                                    <mo>&#xf7;</mo>
+                                    <mo>&#xA0;</mo>
+                                    <mtext>3,012&#x2007;kJ</mtext>
+                                    <mo>]</mo>
+                                    <mo>&#xA0;</mo>
+                                    <mo>&#xd7;</mo>
+                                    <mo>&#xA0;</mo>
+                                    <mn>100</mn>
+                                    <mspace linebreak="newline" />
+                                    <mo>=</mo>
+                                    <mo>&#xA0;</mo>
+                                    <mtext>32%</mtext>
+                                </math></p>
+                        </div>
+                        <p style="padding-top: 30px">Only 32%? That may not sound like a great payoff, but it is a lot
+                            better than anaerobic cellular respiration, which only produces two ATP, translating to 2%
+                            efficiency. </p>
+                        <p>In aerobic respiration, some of the H<sup>+</sup> leaks out of the proton reservoir and makes
+                            its way back into the matrix, thus avoiding ATP synthase, and some of the energy from the
+                            proton pumps is actually used to power processes other than just ATP production. Therefore,
+                            the real amount of net ATP actually available is more like 30 ATP, reducing the real
+                            efficiency of the process to 30%. Losing this much energy isn&#x2019;t unusual in the
+                            context of energy transfers, all of which have to follow the second law of thermodynamics.
+                            The most efficient internal combustion engines are only able to transfer about 25% of
+                            gasoline energy into the desired kinetic energy to turn the tires of a car.</p>
+                    </div>
+                </div>
+                <div class="row ilc-row-text">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <h4>Understanding checkpoint: Cellular respiration</h4>
+                        <p>How efficient is aerobic cellular respiration compared to anaerobic cellular respiration?</p>
+                        <button class="btn btn-default btn-answer-reveal"
+                            id="sbi4u_u3la2-suggestedAnswerButton-15">Suggested Answer</button>
+                        <div class="answer_reveal invisible" id="sbi4u_u3la2-suggestedAnswer-15">
+                            <p>Aerobic cellular respiration is 16x more efficient than anaerobic respiration because 32
+                                ATP are produced in the former and 2 ATP in the latter process.</p>
+                        </div>
+                        <p>How does the second law of thermodynamics affect the efficiency of cellular respiration?</p>
+                        <button class="btn btn-default btn-answer-reveal"
+                            id="sbi4u_u3la2-suggestedAnswerButton-16">Suggested Answer</button>
+                        <div class="answer_reveal invisible" id="sbi4u_u3la2-suggestedAnswer-16">
+                            <p>The second law states that the disorder of the universe increases, entropy increases, and
+                                energy that is lost, is lost in the form of heat to the surrounding environment.</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="consolidation">
+            <div class="row banner">
+                <h1><img src="../assets/img/sbi4u_03_consolidation.png" alt="Consolidation" class="img-responsive"></h1>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Part 1: Summarize your learning</h2>
+                    <p>Starting with a molecule of glucose, use graphic organizers to show how it is metabolized into
+                        carbon dioxide molecules through aerobic cellular respiration. Also, show the other products of
+                        cellular respiration (e.g. NADH and FADH<sub>2</sub>).</p>
+                    <h2>Part 2: Connect your learning</h2>
+                    <p>Recall that you had been asked if you know of any fermented food products at the start of the
+                        learning activity. You may now understand why organisms undergo this alternate pathway to
+                        metabolize glucose. Fermented products are not just new trendy products in grocery stores.
+                        Archaeological evidence from the Zagros Mountains of Iran suggests that fermentation has existed
+                        as a food-processing method since around 5,000 BCE. Today, every region of the Earth seems to
+                        have a cultural delicacy that uses biological organisms to ferment food or drink, in order to
+                        create a new flavour. Kimchee, sauerkraut, pickles, injera, sago, yoghurt, and sour cream are
+                        just a few examples of how varied fermented foods from around the world can be.</p>
+                    <img src="../assets/img/sbi4u_03.02.31.jpg"
+                        alt="A B.Sc is required to work as a Fermentation Scientist"
+                        class="img-responsive img-right-50">
+                    <p>When most people think of fermentation, they think of brewing beer and winemaking. Many cultures
+                        around the world discovered how to create fermented beverages early on in their history. Some
+                        theorists suggest that the aristocracy of European nations stayed healthier than their peasantry
+                        by drinking fermented beverages, rather than the contaminated water available to their
+                        supporting classes. Currently, alcoholic beverages support a multi-billion-dollar industry,
+                        internationally. Beer and wine producers often hire microbiologists, organic chemists, and
+                        engineers, all of whom require a B.Sc.</p>
+                    <img src="../assets/img/sbi4u_03.02.32.jpg" alt="A wine brewery" class="img-responsive img-left-50">
+                    <p>Often, a graduate degree or an additional two years of study in brewing or winemaking from a
+                        specialist institution may be required, if one plans to become a master brewer,
+                        <strong>vintner</strong> (someone who makes or sells wine), <strong>oenologist</strong> (someone
+                        who studies wines), or <strong>sommelier</strong> (wine steward). With so many successful
+                        microbreweries in Canada, there is likely to always be some market for these skills. The
+                        transferability of the training is high, considering the large number of foods that rely on
+                        fermentation by living organisms, as part of their production.</p>
+
+                    <p>Fermentation is used in more industrial applications than just food manufacturing. The use of
+                        maize (corn), which is fermented to make ethanol fuel, has supported a growing agricultural and
+                        industrial sector in North America in the last few decades, as increasingly more fuels contain
+                        an ethanol component. Ethanol is mixed with gasoline to reduce our reliance on fossil fuels and
+                        to reduce carbon dioxide emissions, which have been implicated as a contributing factor in
+                        global climate change. </p>
+                    <h2>Part 3: Reflect on your learning</h2>
+                    <p>Now that you have completed this learning activity, reflect back on the success criteria.</p>
+
+                    <p>Looking at your notes for this learning activity. Are they complete? Do you have all the
+                        information you will need to study later on? </p>
+                    <p>Take the time to review concepts you are unsure about before moving on.</p>
+                    <p>Select your level of readiness for each criteria. </p>
+
+                    <!-- ***************************TO MAKE THIS A FULL SCREEN SURVEY, SIMPLY DELETE THE <div> TAG IMMEDIATELY ABOVE THIS COMMENT AS WELL (AS ITS CLOSE </div>) ******************************************* -->
+                    <!-- Semantic Responsive AODA AA compliant Table -->
+                    <fieldset>
+                        <!--Wrapping a table in a fieldset is the last resort in terms of semantic AODA compliance to pass WAVE test-->
+                        <legend class="sr-only">Agree or Disagree statements</legend>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col" id="table001Col1" style="width: 40%">Success Criteria</th>
+                                    <th scope="col" id="table001Col2">Yes - I am confident</th>
+                                    <th scope="col" id="table001Col3">Not yet - need to review the learning activity
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>State the net reaction of aerobic cellular respiration</td>
+                                    <td><input type="radio" id="table1Row1Radial1" name="table1Row1Radial"
+                                            aria-labelledby="table001Col2" /></td>
+                                    <td><input type="radio" id="table1Row1Radial2" name="table1Row1Radial"
+                                            aria-labelledby="table001Col3" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Describe the cell structures involved (mitochondria) and label the parts on a
+                                        diagram</td>
+                                    <td><input type="radio" id="table1Row2Radial1" name="table1Row2Radial"
+                                            aria-labelledby="table001Col2" /></td>
+                                    <td><input type="radio" id="table1Row2Radial2" name="table1Row2Radial"
+                                            aria-labelledby="table001Col3" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Describe the process of glycolysis and the products it creates</td>
+                                    <td><input type="radio" id="table1Row3Radial1" name="table1Row3Radial"
+                                            aria-labelledby="table001Col2" /></td>
+                                    <td><input type="radio" id="table1Row3Radial2" name="table1Row3Radial"
+                                            aria-labelledby="table001Col3" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Differentiate between aerobic respiration and anaerobic respiration
+                                        (fermentation) by describing the locations and products of these reactions</td>
+                                    <td><input type="radio" id="table1Row4Radial1" name="table1Row4Radial"
+                                            aria-labelledby="table001Col2" /></td>
+                                    <td><input type="radio" id="table1Row4Radial2" name="table1Row4Radial"
+                                            aria-labelledby="table001Col3" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Describe the transition reaction, Krebs cycle, and electron transport chain with
+                                        respect to the structures, substrates and products involved in these pathways
+                                    </td>
+                                    <td><input type="radio" id="table1Row5Radial1" name="table1Row5Radial"
+                                            aria-labelledby="table001Col2" /></td>
+                                    <td><input type="radio" id="table1Row5Radial2" name="table1Row5Radial"
+                                            aria-labelledby="table001Col3" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Identify and describe when phosphorylation, chemiosmosis, and energy carriers
+                                        are used in the metabolic pathway</td>
+                                    <td><input type="radio" id="table1Row6Radial1" name="table1Row6Radial"
+                                            aria-labelledby="table001Col2" /></td>
+                                    <td><input type="radio" id="table1Row6Radial2" name="table1Row6Radial"
+                                            aria-labelledby="table001Col3" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Explain the process of using proteins and lipids as energy molecules and how
+                                        they fit into the chemical processes</td>
+                                    <td><input type="radio" id="table1Row7Radial1" name="table1Row7Radial"
+                                            aria-labelledby="table001Col2" /></td>
+                                    <td><input type="radio" id="table1Row7Radial2" name="table1Row7Radial"
+                                            aria-labelledby="table001Col3" /></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
+                    <!--SURVEY END-->
+                </div>
+            </div>
+        </section>
+    </main><!-- Compiled GVL, Widgets, ILOs, etc. -->
+    <script src="../dependencies/vendor.min.js"></script>
+    <script src="../dependencies/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script>
+        angular.bootstrap(document.getElementById("u3la2_matching1"), ["matchingComboWidget"]);
+
+    </script>
+    <script>
+        angular.bootstrap(document.getElementById('u3la2_mc1'), ['multipleChoiceWidget']);
+        angular.bootstrap(document.getElementById('u3la2_mc2'), ['multipleChoiceWidget']);
+
+    </script>
+    <script src="../assets/js/bugfixes.js"></script>
+</body>
+
+</html>

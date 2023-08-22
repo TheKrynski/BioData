@@ -1,0 +1,1341 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Learning activity 2.5: Investigating cell transport</title>
+  <!--IF NO NAV BAR NEEDED FOR THIS LA, UN-COMMENT THIS STYLE TAG...
+<style>
+ body#topNavNone nav.navbar-ilc
+ {display: none; }
+</style>
+
+ Also, replace the <body> tag with <body id="topNavNone"> -->
+  <style>
+    /*matching widget styles*/
+
+    .completionItem {
+      /*question (label) and option (select) div*/
+      position: relative;
+      clear: both;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(86, 101, 105, 0.5);
+      margin-bottom: 20px;
+      background-color: #F8F9F9;
+    }
+
+    .completionItem label {
+      /* question is inside <label>*/
+      width: 71%;
+      padding: 2%;
+      font-size: 95%;
+    }
+
+    .completionItem select {
+      /* options are inside <select>*/
+      width: 25%;
+      float: right;
+      margin: 2%;
+      margin-right: 0px;
+      /* .btn-info -- button styles from CVL */
+      color: #F8F9F9;
+      background-color: #0A76A5;
+      border-color: #0A76A5;
+    }
+
+    .completionItem label>span {
+      /*all text is inside <span> - this overrides bold for question text*/
+      font-weight: normal;
+    }
+
+    .completionItem span {
+      /*feedback text*/
+      font-weight: bold;
+    }
+
+    .completionFeedback i {
+      /*this pushes the feedback to a new line*/
+      padding: 20px
+    }
+
+    .completionControls {
+      /*position of submit button - width and position matches options*/
+      float: right;
+      width: 25%;
+    }
+
+    .completionControls button {
+      /*button is full width of 25% in layout*/
+      width: 100%;
+      /* different button */
+      color: #F8F9F9;
+      background-color: gray;
+      border-color: #0A76A5;
+    }
+
+    .completionControls button:hover {
+      background-color: black;
+    }
+
+    .tableAlign {
+      text-align: center;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../assets/css/ilc_core_temp.css">
+</head>
+
+<body>
+  <noscript>
+    <div class="alert alert-warning clearfix" role="alert">
+      <p> <strong>Warning!</strong> To ensure the greatest educational experience, this learning activity contians
+        aspects that require Javascript to be enabled. </p>
+    </div>
+  </noscript>
+  <section id="ilcLearningGoals" class="hidden">
+    <h2>Learning goals</h2>
+    <p>We are learning to:</p>
+    <ul>
+      <li>Review of the function of various organelles of the cells. </li>
+      <li>Discuss the cell membrane in detail, and the movement of material across a cell membrane.</li>
+      <li>Conduct an investigation on the process of osmosis.</li>
+    </ul>
+    <h2>Success criteria</h2>
+    <p>I am able to:</p>
+    <ul>
+      <li>Identify and describe the function of cell organelles </li>
+      <li>Describe the structure of the cell membrane and explain how it leads to semi-permeable properties</li>
+      <li>Compare different types of cell transport explaining how molecules are transported in and out of cells</li>
+      <li>Analyse data to explain the concept of osmosis </li>
+      <li>Research and evaluate scientific cellular research for benefits and possible complications and hazards </li>
+    </ul>
+  </section>
+  <main id="mainContent" class="container">
+    <section id="mindsOn">
+      <div class="row banner">
+        <h1><img src="../assets/img/sbi4u_02.05_mindsOn.png" alt="Minds On" class="img-responsive"></h1>
+      </div>
+      <div class="row ilc-row-callout">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h3>Case study</h3>
+          <div class="callout_content_icon">
+            <img src="../assets/icons/case_study.svg" alt class="img-responsive" />
+            <div class="callout_content">
+              <p>The following case study will be used to guide your work in this learning activity. Take the time now
+                to read the case study and answer any of the questions that you can. It would be a good time to put your
+                self-directed learning
+                strategies to use and do some brief research on the topics in the case study that you do not know about.
+              </p>
+              <ul>
+                <li>
+                  <p><a href="../assets/locker_docs/sbi4u_02.05.01.pdf" target="_blank">Hydration and Dehydration (Water
+                      and Osmosis)<span class="sr-only"> (Opens in new window)</span></a></p>
+                </li>
+                <li>
+                  <p><a href="../assets/locker_docs/sbi4u_02.05.01acc.html" target="_blank">Hydration and Dehydration
+                      (Water and Osmosis) (accessible version)<span class="sr-only"> (Opens in new window)</span></a>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row ilc-row-text">
+        <div class="col-xs-10 col-xs-offset-1">
+          <p>Now that you have reviewed the case study, complete the following reflection in your notebook. You will
+            need to use this reflection again later on so be sure to save it. </p>
+          <ul>
+            <li>What is the main idea or issue in the case study? </li>
+            <li>What things do you already know about the case study? </li>
+            <li>What things do you think that you will have to learn about in order to complete the case study?</li>
+          </ul>
+          <p>Now it is time to work through the learning activity. Be sure to add notes to your notebook. The guided
+            notes will help you focus on the important parts. </p>
+        </div>
+      </div>
+    </section>
+    <section id="action">
+      <div class="row banner">
+        <h1><img src="../assets/img/sbi4u_02_action.png" alt="Action" class="img-responsive"></h1>
+      </div>
+      <div class="row ilc-row-text">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h2>Cell structure </h2>
+          <p>All living things are composed of one or more cells. The cell must be able to perform tasks, in order to
+            stay alive. Cells have structures that enable them to ingest food, excrete waste, and, in some cases, move
+            around. Specialized
+            structures known as organelles work together to make a cell function effectively. Although individual cells
+            may be modified to perform specific functions, most animal and plant cells share many of the same basic
+            organelles. Most of your
+            study in this course deals with plants and animals. The cells of plants and animals have membranes
+            surrounding their organelles.</p>
+          <p>Below are diagrams of a typical plant cell and animal cell.</p>
+          <p><strong>Animal Cell</strong></p>
+          <img src="../assets/img/sbi4u_02.05.02.jpg"
+            alt="Animal cell diagram, roughly in the shape of a circle (a sphere cut open from the middle). In the center is the nucleus which is made up of the: nuclear envelope, nuclear pore, chromatin, nucleolus (most inner part of the nucleus). Around the nucleus, there are the rough endoplasmatic reticulum and the smooth endoplasmatic reticulum. There are also mitochondria, ribosomes, golgi apparatus, lysosomes, centrioles, microtubules, vacuoles inside of the cytoplasm. The cytoplasm is encapsulated with the plasma membrane."
+            class="img-responsive">
+          <p class="text-center"><a href="../assets/alt/sbi4u_02.05.02.html" target="_blank">Press here for a long description<span class="sr-only"> (Opens in new window)</span></a></p>
+          <p><strong>Plant Cell</strong></p> <img src="../assets/img/sbi4u_02.05.03.png"
+            alt="Plant cell diagram, roughly in the shape of a rectangle. Inside of the plant cell, there are: chloroplasts (which contain flattened sacs called thylakoids), nucleus (which contains the nucleolus), mitochondria, chromoplast, lysosomes, polyribosomes, free ribosomes, vacuole (takes up a large portion of the cell), Golgi apparatus, microtubules, rough endoplasmic reticulum, smooth endoplasmic reticulum, and plasmodesmata."
+            class="img-responsive">
+          <p class="text-center"><a href="../assets/alt/sbi4u_02.05.03.html" target="_blank">Press here for a long description<span class="sr-only"> (Opens in new window)</span></a></p>
+          <p>You will have learned about these organelles in previous science courses. Check your knowledge of cells and
+            organelles by completing the matching activity below. Once you have selected your responses, press submit to
+            see how you did.
+          </p>
+        </div>
+      </div>
+      <div class="row ilc-row-widget">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h3 class="h4">Understanding checkpoint: Cell structure</h3>
+          <div id="u2la5_matching1" class="matching-widget" data-ng-controller="completionActivityController"
+            data-ng-init="init('../widgets/sbi4u_u2la5_matching1.json')">
+            <div data-matching-directive></div>
+          </div>
+        </div>
+      </div>
+      <div class="row ilc-row-text">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h3>The cell membrane</h3>
+          <p>The cell membrane separates the cytoplasm from the external environment. It acts like the cell’s
+            <strong>“security guard,”</strong> controlling which chemicals can get in or out of the cell.
+          </p>
+          <p>The cell membrane allows essential molecules into the cell and allows metabolic waste to leave. This means
+            that the inside of a cell can be kept chemically different from its external environment.</p>
+          <img src="../assets/img/sbi4u_02.05.05.png" alt="Representation of a cell membrane" class="img-responsive">
+          <p>Important features of phospholipids, which make up the majority of the cell membrane are described below.
+          </p>
+          <img src="../assets/img/sbi4u_02.05.06.jpg"
+            alt="Phospholipid containing a hydrophilic head and a hydrophobic tail (made up of two fatty-acid chains and one glycerol molecule)."
+            class="img-responsive">
+        </div>
+      </div>
+      <div class="row ilc-row-widget">
+        <div class="col-xs-10 col-xs-offset-1">
+          <!-- *************************** ACCORDION 1 BEGINS ******************************************* -->
+          <div class="accordionILC panel-group" id="accordion1">
+            <!-- ACCORDION ITEM 1.1 -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse1"
+                    class="collapsed">Phospholipids</a></h4>
+              </div>
+              <div id="accordion1-collapse1" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <!-- REPLACE THIS LINE WITH YOUR CONTENTS FOR THIS TAB-->
+                  <p>The cell membrane is composed mainly of phospholipids, which are each composed of a phospholipid
+                    “head,” containing a phosphate group, and a long “tail,” made up of two fatty-acid chains. </p>
+                </div>
+              </div>
+            </div>
+            <!-- ACCORDION ITEM 1.2 -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse2"
+                    class="collapsed">Phosphate “head” region </a></h4>
+              </div>
+              <div id="accordion1-collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <!-- REPLACE THIS LINE WITH YOUR CONTENTS FOR THIS TAB-->
+                  <p>The head region is classified as hydrophilic (meaning “water-loving”) because it is water-soluble.
+                  </p>
+                  <p>The reason why the head end is hydrophilic is because it contains a polar phosphate
+                    (PO<sub>4</sub>) group. Recall that the water molecule is also polar because it has a region of
+                    positive charge and a region of negative charge.
+                    Because polar molecules are attracted to other polar molecules, the head end is attracted to water
+                    molecules.</p>
+                </div>
+              </div>
+            </div>
+            <!-- ACCORDION ITEM 1.3 -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse3"
+                    class="collapsed">“Tail” portion</a></h4>
+              </div>
+              <div id="accordion1-collapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <!-- REPLACE THIS LINE WITH YOUR CONTENTS FOR THIS TAB-->
+                  <p>The tail portion of a phospholipid is hydrophobic (meaning “water-fearing”) and non-polar, because
+                    they are not water-soluble. </p>
+                  <p>This means that the tail end wants to point away from water. The hydrophobic tail contains one
+                    glycerol molecule attached to two fatty-acid chains, which means that each part of the tail is
+                    attracted to fats or oils because it is
+                    made up of fatty acids.</p>
+                </div>
+              </div>
+            </div>
+            <!-- ACCORDION ITEM 1.4 -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse4"
+                    class="collapsed">Phospholipid membrane </a></h4>
+              </div>
+              <div id="accordion1-collapse4" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <!-- REPLACE THIS LINE WITH YOUR CONTENTS FOR THIS TAB-->
+                  <p>Having a water-seeking head and a fat-seeking tail means that two of these molecules will join
+                    tail-to-tail when placed in water. This makes it the perfect molecule for constructing cell
+                    membranes in a watery environment. Also,
+                    you will note that in the image above of a phospholipid, one of the fatty acids is unsaturated,
+                    meaning that it contains a double bond. This causes the molecules to slightly bend or kink. In the
+                    next section, you will see how this
+                    bending helps create passageways in the membrane.</p> <img src="../assets/img/sbi4u_02.05.07.png"
+                    alt="Phospholipids are attracted tail to tail and form a circle - this is the phospholipid bilayer"
+                    class="img-responsive">
+                </div>
+              </div>
+            </div>
+            <!-- END OF ACCORDION ITEMS -->
+          </div>
+          <!-- *************************** ACCORDION XXX ENDS ******************************************* -->
+        </div>
+      </div>
+      <div class="row ilc-row-text">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h4>The fluid-mosaic model of the cell membrane</h4>
+          <img src="../assets/img/sbi4u_02.05.08.jpg"
+            alt="The fluid-mosaic model for the cell membrane. The membrane consists of a phospholipid bilayer with proteins embedded in it. Carbohydrates and cholesterol molecules are also present."
+            class="img-responsive">
+          <p>Important features of the cell membrane are described in the next section. Refer to the image above which
+            shows the fluid-mosaic model of the cell membrane as you read through.</p>
+        </div>
+      </div>
+      <div class="row ilc-row-widget">
+        <div class="col-xs-10 col-xs-offset-1">
+          <!-- *************************** ACCORDION 2 BEGINS ******************************************* -->
+          <div class="accordionILC panel-group" id="accordion2">
+            <!-- ACCORDION ITEM 2.1 -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion2" href="#accordion2-collapse1"
+                    class="collapsed">Phospholipid bilayer</a></h4>
+              </div>
+              <div id="accordion2-collapse1" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <!-- REPLACE THIS LINE WITH YOUR CONTENTS FOR THIS TAB-->
+                  <p>A double layer (bilayer) of phospholipids found in the cell membrane.</p>
+                  <p>The <strong>outside layer</strong> of the membrane is made up of the <strong>hydrophilic
+                      heads</strong>. They face outward toward the watery environment. </p>
+                  <p>The <strong>inside layer</strong> of the membrane is made up of the <strong>hydrophobic fatty-acid
+                      tails</strong>, which face inward.</p>
+                </div>
+              </div>
+            </div>
+            <!-- ACCORDION ITEM 2.2 -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion2" href="#accordion2-collapse2"
+                    class="collapsed">Proteins and cholesterol </a></h4>
+              </div>
+              <div id="accordion2-collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <!-- REPLACE THIS LINE WITH YOUR CONTENTS FOR THIS TAB-->
+                  <p>Inserted into the membrane are proteins and cholesterol. They can fit in because of the bends
+                    caused by the unsaturated lipid layer. </p>
+                  <p>The <strong>cholesterol</strong> molecules are free to drift around within the lipid bilayer to fix
+                    any breaks in the membrane. Cholesterol also helps to maintain the fluid condition of the bilayer.
+                    At low temperatures,
+                    cholesterol keeps the phospholipids apart, and at higher temperatures, it attracts the phospholipids
+                    and stabilizes the membrane. </p>
+                  <p>The <strong>proteins</strong> are called <strong>integral proteins</strong>, because they are
+                    embedded in the membrane and function as channels through which ions and other molecules can travel
+                    in and out of the cell. </p>
+                </div>
+              </div>
+            </div>
+            <!-- ACCORDION ITEM 2.3 -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion2" href="#accordion2-collapse3"
+                    class="collapsed">Fluid-mosaic model of the cell membrane </a></h4>
+              </div>
+              <div id="accordion2-collapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <!-- REPLACE THIS LINE WITH YOUR CONTENTS FOR THIS TAB-->
+                  <p>The combination of the lipid bilayer, the proteins, and the cholesterol produces the fluid-mosaic
+                    model of the cell membrane. </p>
+                  <p>It is called “fluid” because the membrane is not completely solid, giving it the capability of
+                    allowing material to pass through it. It also means that the membrane can constantly adjust itself
+                    to maintain a seal around the
+                    cytoplasm. It is called “mosaic” because the membrane contains several kinds of molecules embedded
+                    in it. </p>
+                </div>
+              </div>
+            </div>
+            <!-- ACCORDION ITEM 2.4 -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion2" href="#accordion2-collapse4"
+                    class="collapsed">Glycoproteins </a></h4>
+              </div>
+              <div id="accordion2-collapse4" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <!-- REPLACE THIS LINE WITH YOUR CONTENTS FOR THIS TAB-->
+                  <p>One important type of protein embedded in the membrane is the glycoproteins, which are proteins
+                    with an attached carbohydrate. They act as receptor sites for hormones and aid in the cell’s
+                    adhesion to other cells.</p>
+                </div>
+              </div>
+            </div>
+            <!-- ACCORDION ITEM 2.5 -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion2" href="#accordion2-collapse5"
+                    class="collapsed">Selective permeability </a></h4>
+              </div>
+              <div id="accordion2-collapse5" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <!-- REPLACE THIS LINE WITH YOUR CONTENTS FOR THIS TAB-->
+                  <p>The cell membrane plays an essential role in regulating what enters and leaves the cell. Because
+                    most living membranes are able to control what passes through them, they are described as being
+                    <strong>selectively
+                      permeable</strong>.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- END OF ACCORDION ITEMS -->
+          </div>
+          <!-- *************************** ACCORDION 2 ENDS ******************************************* -->
+        </div>
+      </div>
+      <div class="row ilc-row-widget">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h4>Understanding checkpoint: Cell membrane</h4>
+          <p>Complete the following true and false questions to review the topic The Cell Membrane.</p>
+          <!-- *************************** MC 1 BEGINS ******************************************* -->
+          <div id="u2la5_mc1" class="multiple-choice-widget" data-ng-controller="multipleChoiceController"
+            data-ng-init="getQuestionData('../widgets/sbi4u_u2la5_mc1.json')">
+            <div data-multiple-choice-directive></div>
+          </div>
+          <!--*************************** MC 1 ENDS ******************************************* -->
+        </div>
+      </div>
+      <div class="row ilc-row-callout">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h3>Explore This!</h3>
+          <div class="callout_content_icon"><img src="../assets/icons/watch.svg" alt="" class="img-responsive">
+            <div class="callout_content">
+              <p>If you would like to observe an interesting demonstration of hydrophilic and hydrophobic properties,
+                explore this video. It is modelling how soap works. Soap is made of a molecule similar to phospholipids
+                and has one side that is hydrophilic and one side that is hydrophobic. You may also choose to search for
+                examples on your own.</p>
+              <p><a href="https://youtu.be/ZEAzLw3Uiy8" target="_blank">Candy Corn in Space<span class="sr-only">(Opens
+                    in new window)</span></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row ilc-row-callout">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h3>Notebook</h3>
+          <div class="callout_content_icon"><img src="../assets/icons/notebook.svg" alt="" class="img-responsive">
+            <div class="callout_content">
+              <p>Reflect back at your case study for this learning activity. How does this new learning help you
+                understand the case? Make notes or try to answer some more of the prompting questions. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row ilc-row-text">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h2>Membrane transport </h2>
+          <p>The cell membrane provides a controlled gateway for molecules moving in and out of the cell. There are
+            three processes by which molecules move in and out of the cell:</p>
+          <ul>
+            <li>Passive transport</li>
+            <li>Active transport</li>
+            <li>The use of vesicles to move very large molecules around</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row ilc-row-widget">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h3>Passive transport</h3>
+          <p>The movement of materials across a cell membrane without using any of the cell’s energy is Passive
+            Transport.</p>
+          <p>There are three types of passive transport:</p>
+          <!-- *************************** ACCORDION 3 BEGINS ******************************************* -->
+          <div class="accordionILC panel-group" id="accordion3">
+            <!-- ACCORDION ITEM 3.1 -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion3" href="#accordion3-collapse1"
+                    class="collapsed">Diffusion</a></h4>
+              </div>
+              <div id="accordion3-collapse1" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <!-- REPLACE THIS LINE WITH YOUR CONTENTS FOR THIS TAB-->
+                  <p>Diffusion is the movement of molecules from an area of higher concentration to an area of lower
+                    concentration. Many molecules—especially small, uncharged ones, such as oxygen and carbon
+                    dioxide—can move easily through the cell
+                    membrane as a result of diffusion. Movement from an area of higher concentration to one of lower
+                    concentration is known as moving along the concentration gradient. This is illustrated below.</p>
+                  <p>When there is an equal concentration of particles throughout the solution, it is said to be in
+                    equilibrium.</p>
+                  <img src="../assets/img/sbi4u_02.05.14.jpg"
+                    alt="A beaker of water, dropping food colouring into it. It spreads out over time."
+                    class="img-responsive">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col" style="text-align: center; vertical-align: middle;">Three factors that affect
+                          how fast diffusion occurs</th>
+                        <th scope="col" style="text-align: center; vertical-align: middle;">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">State of matter</th>
+                        <td>Diffusion occurs more rapidly in a gas than in a liquid.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Temperature</th>
+                        <td>Diffusion occurs more rapidly at higher temperatures.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Size of the molecule</th>
+                        <td>Large molecules cannot diffuse across cell membranes.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- ACCORDION ITEM 3.2 -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion3" href="#accordion3-collapse2"
+                    class="collapsed">Osmosis</a></h4>
+              </div>
+              <div id="accordion3-collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <!-- REPLACE THIS LINE WITH YOUR CONTENTS FOR THIS TAB-->
+                  <p><strong>Osmosis</strong> is the diffusion of water across a selectively permeable membrane. Water
+                    molecules move from a region of higher water (lower solute) concentration to a region of lower water
+                    (higher solute) concentration.
+                    This movement will continue until equilibrium is reached.</p>
+                  <p>Solutions are often categorized by their potential for osmosis across membranes. </p>
+                  <p>There are three categories:</p>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p><strong>Isotonic</strong><br><img src="../assets/img/sbi4u_02.05.15.jpg"
+                          alt="Diagram showing an isotonic solution" class="img-responsive"></p>
+                      <cite>Isotonic solution: The concentration of solutes in the fluid surrounding the cell is the
+                        same as it is in the cell cytoplasm. Therefore, the solute concentrations are at equilibrium and
+                        no net movement of water
+                        occurs.</cite>
+                    </div>
+                    <div class="col-xs-4">
+                      <p><strong>Hypertonic</strong><br><img src="../assets/img/sbi4u_02.05.16.jpg"
+                          alt="Diagram showing an hypertonic solution" class="img-responsive"></p>
+                      <cite>Hypertonic solution: The fluid surrounding the cell has a higher solute concentration than
+                        the cytoplasm of the cell. As a result, water diffuses out of the cell by osmosis.</cite>
+                    </div>
+                    <div class="col-xs-4">
+                      <p><strong>Hypotonic</strong><br><img src="../assets/img/sbi4u_02.05.17.jpg"
+                          alt="Diagram showing an hypotonic solution" class="img-responsive"></p>
+                      <cite>Hypotonic solution: The solute concentration of the fluid surrounding the cell is less than
+                        that of the cell’s cytoplasm. As a result, water diffuses into the cell by osmosis.</cite>
+                    </div>
+                  </div>
+                  <br>
+                  <p><b>Measuring osmosis</b></p>
+                  <p>The osmotic potential of solutions can be measured with a device called an osmometer, which
+                    consists of a tube with a permeable membrane at one end.</p>
+                  <p>The osmotic potential of the test solution is measured in relation to the concentration inside the
+                    tube using the following steps:</p>
+                  <ul>
+                    <li>A solution of known solute concentration is placed inside the tube. This is the osmometer.</li>
+                    <li>The change in height of the fluid in the tube before and after inserting the osmometer into the
+                      solution indicates the osmotic potential of the solution. </li>
+                    <li>If water leaves the osmometer to go into the solution, then the osmometer is hypotonic in
+                      relation to the solution, and the fluid level drops. </li>
+                    <li>If water enters the osmometer from the solution, then the osmometer is hypertonic in relation to
+                      the solution, and the fluid level rises</li>
+                  </ul>
+                  <p><img src="../assets/img/sbi4u_02.05.18.svg"
+                      alt="An osmometer measures the osmotic potential of solutions by changes in the height of fluid in the tube."
+                      class="img-responsive"></p>
+                </div>
+              </div>
+            </div>
+            <!-- ACCORDION ITEM 3.3 -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion3" href="#accordion3-collapse3"
+                    class="collapsed">Facilitated diffusion</a></h4>
+              </div>
+              <div id="accordion3-collapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <!-- REPLACE THIS LINE WITH YOUR CONTENTS FOR THIS TAB-->
+                  <p>Some molecules may be too large or hydrophilic to travel through the lipid portion of the cell
+                    membrane. Facilitated diffusion occurs when molecules enter cells with the aid of “helper molecules”
+                    known as transport proteins.
+                    Transport proteins move materials into or out of cells along the concentration gradient (from high
+                    concentration to low concentration), so no energy is required. The structure of these proteins
+                    enables them to be highly selective.
+                    A particular transport protein will recognize and help move only one type of dissolved molecule or
+                    ion, based on the particle’s shape, size, and electrical charge.</p>
+                  <p>Now, take a look at a real-life example that occurs within your cells. </p>
+                  <ul>
+                    <li>The sugar molecule glucose is too large to travel through the cell membrane without the help of
+                      a transport protein.</li>
+                  </ul>
+                  <img src="../assets/img/sbi4u_02.05.19.jpg"
+                    alt="a protein channel in a cell membrane. It lets molecules transport through. A carrier protein is also in the cell membrane. It transports molecules by opening on one side, then transforming and opening on the other side."
+                    class="img-responsive center-block">
+                  <cite style="line-height:1">
+                    In facilitated diffusion, larger molecules, such as glucose, move along the concentration gradient
+                    from areas of higher concentration to areas of lower concentration. This is helped by proteins
+                    embedded within the cell
+                    membrane.
+                  </cite>
+                  <ul class="margin-top-lg">
+                    <li>Since glucose is constantly being used inside cells for energy, the concentration of glucose
+                      inside the cell is lower than its concentration outside the cell. </li>
+                  </ul>
+                  <p>Therefore, glucose moves down the concentration gradient and into the cell by facilitated
+                    diffusion.</p>
+                </div>
+              </div>
+            </div>
+            <!-- END OF ACCORDION ITEMS -->
+          </div>
+          <!-- *************************** ACCORDION XXX ENDS ******************************************* -->
+        </div>
+      </div>
+      <div class="row ilc-row-text">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h3>Active transport</h3>
+          <p>Sometimes, for a certain molecule to get inside a cell, it is necessary for a cell to create a large
+            concentration gradient between the inside and outside of the cell. The movement of molecules, atoms, and
+            ions against a concentration
+            gradient across a cell membrane using the cell’s energy, in the form of ATP, is called active transport.
+            This is sometimes also called an active transport pump because the cell is literally using energy to “pump”
+            the molecules through the
+            membrane, against the concentration gradient.</p>
+          <img src="../assets/img/sbi4u_02.05.20.jpg"
+            alt="A transport molecule is in the cell membrane and is transporting a molecule from a lower concentration to the side with a higher concentration"
+            class="img-responsive center-block">
+          <p>Like facilitated diffusion, active transport relies on transport proteins to allow substances to pass
+            through the membrane. Active transport, however, requires energy to move substances against the
+            concentration gradient.</p>
+          <p>A cell uses active transport to maintain an intracellular environment that is different from the
+            environment outside the cell. For example:</p>
+          <ul>
+            <li>It allows a cell to bring in and <strong>store nutrients</strong> that are already in high concentration
+              inside the cell. </li>
+            <li>It also allows a cell to completely <strong>remove harmful waste</strong> products from the
+              intracellular environment. </li>
+            <li>Active transport is necessary for <strong>homeostasis</strong>—a process by which a constant internal
+              environment is maintained, despite changes in the external environment. You will learn about homeostasis
+              in a later unit.</li>
+          </ul>
+          <p>The process of active transport requires an input of cellular energy (ATP). </p>
+          <ol>
+            <li>An ion is drawn onto the transport protein. </li>
+            <li>ATP is used to move the ion through the membrane.</li>
+            <li>The ion is released inside, on the other side of the membrane, where its concentration is higher.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="row ilc-row-callout">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h3>Explore This!</h3>
+          <div class="callout_content_icon"><img src="../assets/icons/watch.svg" alt="" class="img-responsive">
+            <div class="callout_content">
+              <p>Explore the following video to review passive and active transport or search on your own for videos
+                related to the topic.</p>
+              <p><a href="https://www.youtube.com/watch?v=eDeCgTRFCbA" target="_blank">Transport In Cells: Active
+                  Transport | Cells | Biology | Fuse School<span class="sr-only">(Opens in new window)</span></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row ilc-row-text">
+        <div class="col-xs-10 col-xs-offset-1">
+          <p>Here is a summary table to help you review passive and active transport.</p>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <td rowspan="2"></td>
+                <th scope="colgroup" colspan="2" class="tableAlign">Passive transport</th>
+                <th scope="rowgroup" rowspan="2" style="text-align: center; vertical-align: middle;">Active transport
+                </th>
+              </tr>
+              <tr>
+                <th scope="col" class="tableAlign">Simple diffusion/osmosis</th>
+                <th scope="col" class="tableAlign">Facilitated diffusion</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Direction of movement</th>
+                <td><em class="Italic">High </em>to <em class="Italic">low </em>concentration</td>
+                <td><em class="Italic">High </em>to <em class="Italic">low </em>concentration</td>
+                <td><em class="Italic">Low </em>to <em class="Italic">high </em>concentration</td>
+              </tr>
+              <tr>
+                <th scope="row">Uses a membrane protein</th>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <th scope="row">Uses energy</th>
+                <td>No</td>
+                <td>No</td>
+                <td>Yes (ATP)</td>
+              </tr>
+              <tr>
+                <th scope="row">Typical molecules using pathway</th>
+                <td><em class="Italic">Non-polar:</em>
+                  <br>O<sub>2</sub>, CO<sub>2</sub>, H<sub>2</sub>O
+                </td>
+                <td><em class="Italic">Polar:</em>
+                  <br> Glucose
+                </td>
+                <td><em class="Italic">Ions:</em>
+                  <br> Na<sup>+</sup>, K<sup>+</sup>, H<sup>+</sup>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h2>The use of vesicles to move very large molecules around</h2>
+          <p>Up to this point we have examined how relatively small molecules are transported through the cell membrane
+            via passive or active transport. However, some molecules are <strong>too large</strong> to be transported
+            through the cell
+            membrane. The cell uses a special method to move these molecules so that they <strong>do not</strong> have
+            to pass through the phospholipid bilayer called <strong>vesicles</strong>. </p>
+          <p>The cell membrane can fold in on itself to wrap around and seal large objects in a sac called a vesicle.
+            Like active transport, the cell must <strong>expend energy</strong> to use vesicles, in order to transport
+            larger molecules (such as
+            proteins and polysaccharides) across the cell membrane.</p>
+          <p>There are two ways in which vesicles are used to move materials <strong>across</strong> cell membranes
+            called: </p>
+          <ul>
+            <li><strong>Endocytosis,</strong> which brings materials into the cell </li>
+            <li><strong>Exocytosis,</strong> which takes material out of the cell </li>
+          </ul>
+          <div class="row">
+            <!-- left column -->
+            <div class="col-xs-10 col-xs-offset-1">
+              <img src="../assets/img/sbi4u_02.05.23.jpg" alt="Exocytosis" class="img-responsive">
+              <img src="../assets/img/sbi4u_02.05.24.jpg" alt="Endocytosis" class="img-responsive">
+            </div>
+          </div>
+
+          <br>
+          <br>
+          <h3>Endocytosis</h3>
+          <p><strong>Endocytosis</strong> is the process by which cells ingest (take in) large materials. A portion of
+            the cell (plasma) membrane surrounds the material to be transported into the cell.</p>
+          <p>The “pinched-in” portion eventually breaks free from the cell membrane and forms a vesicle in the
+            cytoplasm. This allows the material within the vesicle to travel to its final destination within the cell.
+          </p>
+          <p>There are three main types of <strong>endocytosis</strong>: </p> <img
+            src="../assets/img/sbi4u_02.05.25.jpg"
+            alt="Three images. The first one shows phagocytosis - a larger piece of solid being surrounded by cell membrane to form a vessicle. The second shows pinocytosis - a small molecule being surrounded by cell membrane for form a vesicle. The third shows receptor mediated endocytosis where there are receptors on the cell membrane."
+            class="img-responsive" style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+      </div>
+      <div class="row ilc-row-widget">
+        <div class="col-xs-10 col-xs-offset-1">
+          <!-- *************************** ACCORDION XXX BEGINS ******************************************* -->
+          <div class="accordionILC panel-group" id="accordion4">
+            <!-- ACCORDION ITEM 4 -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion4" href="#accordion4-collapse1"
+                    class="collapsed">Phagocytosis (“cell-eating”)</a></h4>
+              </div>
+              <div id="accordion4-collapse1" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <!-- REPLACE THIS LINE WITH YOUR CONTENTS FOR THIS TAB-->
+                  <p>Phagocytosis is the process by which cells engulf large, solid particles. </p>
+                  <p>For example, this may occur when your immune cells (for example, white blood cells) engulf invading
+                    bacteria to destroy them. The trapped bacteria are digested after the vesicle fuses with a lysosome
+                    inside the cell.</p>
+                </div>
+              </div>
+            </div>
+            <!-- ACCORDION ITEM 4.2 -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion4" href="#accordion4-collapse2"
+                    class="collapsed">Pinocytosis (“cell-drinking”)</a></h4>
+              </div>
+              <div id="accordion4-collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <!-- REPLACE THIS LINE WITH YOUR CONTENTS FOR THIS TAB-->
+                  <p>Pinocytosis is the process by which liquid droplets enter the cell, along with any small particles
+                    they may contain. This occurs in nearly all cell types, almost all of the time.</p>
+                </div>
+              </div>
+            </div>
+            <!-- ACCORDION ITEM 4.3 -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion4" href="#accordion4-collapse3"
+                    class="collapsed">Receptor-mediated endocytosis</a></h4>
+              </div>
+              <div id="accordion4-collapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <!-- REPLACE THIS LINE WITH YOUR CONTENTS FOR THIS TAB-->
+                  <p>Receptor-mediated endocytosis (RME) enables the cell to acquire bulk quantities of specific
+                    substances. RME involves the use of receptors to recognize and bind molecules before they are
+                    engulfed. During RME, the molecule that is
+                    to enter the cell binds to special receptor proteins located on the outside of the cell membrane.
+                    Once enough molecules have gathered in an area, the cell membrane pinches in, forming the vesicle
+                    that will transport these
+                    molecules into the cell.</p>
+                  <p>This process is how molecules such as cholesterol enter the cell. If a person consumes too much
+                    cholesterol in their diet, there won’t be enough receptors to handle it all. Instead, the
+                    cholesterol builds up in the walls of the
+                    arteries and veins where it hardens, forming a sticky substance called plaque. This excess plaque
+                    can block blood vessels, leading to heart disease.</p>
+                </div>
+              </div>
+            </div>
+            <!-- END OF ACCORDION ITEMS -->
+          </div>
+          <!-- *************************** ACCORDION XXX ENDS ******************************************* -->
+        </div>
+      </div>
+      <div class="row ilc-row-text">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h3>Exocytosis</h3>
+          <p><strong>Exocytosis</strong> is the opposite of endocytosis. </p>
+          <p>Exocytosis uses vesicles to export large molecules <strong>out of the cell</strong>. This is useful for
+            removing large waste particles. </p>
+          <p>For example, lysosomes often break down wastes and other toxins inside the cell, and these wastes are then
+            transported out of the cell in a vesicle. The vesicle is transported through the cytoplasm to fuse with the
+            cell membrane. The
+            cell membrane rearranges, opens, and releases the contents of the vesicle outside the cell.</p> <img
+            src="../assets/img/sbi4u_02.05.26.jpg" alt="Exocytosis" class="img-responsive"
+            style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+      </div>
+      <div class=" row ilc-row-text">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h4>Understanding checkpoint: Membrane transport</h4>
+          <p>Complete the following table in your notebook and then compare your answers with the suggested answers.</p>
+          <table class="table table-bordered" id="sbi4u_u2la5-tableSuggestedAnswers-11">
+            <thead>
+              <tr>
+                <td></td>
+                <th scope="col" style="width: 20%; text-align: center; vertical-align: middle;">Requires Energy (Yes/No)
+                </th>
+                <th scope="col" style="width: 20%; text-align: center; vertical-align: middle;">Molecules move against
+                  concentration gradient (From low to high) (Yes/No)</th>
+                <th scope="col" style="width: 20%; text-align: center; vertical-align: middle;">Size of molecules
+                  transported in/out of the cell (Small/Large)</th>
+                <th scope="col" style="width: 20%; text-align: center; vertical-align: middle;">Molecules transported
+                  through cell membrane (Yes/No)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Active Transport</th>
+                <td><span class="tableSuggestedAnswer invisible">Yes</span></td>
+                <td><span class="tableSuggestedAnswer invisible">Yes</span></td>
+                <td><span class="tableSuggestedAnswer invisible">Small</span></td>
+                <td><span class="tableSuggestedAnswer invisible">Yes</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Osmosis</th>
+                <td><span class="tableSuggestedAnswer invisible">No</span></td>
+                <td><span class="tableSuggestedAnswer invisible">No</span></td>
+                <td><span class="tableSuggestedAnswer invisible">Small</span></td>
+                <td><span class="tableSuggestedAnswer invisible">Yes</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Facilitated Diffusion</th>
+                <td><span class="tableSuggestedAnswer invisible">No</span></td>
+                <td><span class="tableSuggestedAnswer invisible">No</span></td>
+                <td><span class="tableSuggestedAnswer invisible">Small</span></td>
+                <td><span class="tableSuggestedAnswer invisible">Yes</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Vesicle Formation</th>
+                <td><span class="tableSuggestedAnswer invisible">Yes</span></td>
+                <td><span class="tableSuggestedAnswer invisible">Yes</span></td>
+                <td><span class="tableSuggestedAnswer invisible">Large</span></td>
+                <td><span class="tableSuggestedAnswer invisible">No</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <button id="sbi4u_u2la5-tableSuggestedAnswersButton-11" class="btn btn-table-answer-reveal">Show
+            Answers</button>
+        </div>
+      </div>
+      <div class="row ilc-row-callout">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h3>Notebook</h3>
+          <div class="callout_content_icon"><img src="../assets/icons/notebook.svg" alt="" class="img-responsive">
+            <div class="callout_content">
+              <p>Reflect back at your case study for this learning activity. How does this new learning help you
+                understand the case? Make notes or try to answer some more of the prompting questions. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row ilc-row-callout">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h3>Try It!</h3>
+          <div class="callout_content_icon"><img src="../assets/icons/try_it.svg" alt="" class="img-responsive">
+            <div class="callout_content">
+              <p>If you have the materials, perform the “Osmosis Experiment” below to investigate the movement of water
+                in and out of a strip of potato in two solutions: tap water, and a salt solution. If you are unable to
+                complete the experiment on
+                your own, sample observations are provided below.</p>
+              <div class="accordionILC panel-group" id="accordion111">
+                <!-- ACCORDION ITEM X -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion111"
+                        href="#accordion111-collapse1" class="collapsed">Materials</a></h4>
+                  </div>
+                  <div id="accordion111-collapse1" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <ul>
+                        <li>One peeled potato (any type will work)</li>
+                        <li>Tap water</li>
+                        <li>Two small glasses</li>
+                        <li>Table salt</li>
+                        <li>Tablespoon</li>
+                        <li>Small knife</li>
+                        <li>Ruler</li>
+                        <li>Measuring cup</li>
+                      </ul>
+                      <!-- ACCORDION ITEM X -->
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion111"
+                        href="#accordion111-collapse2" class="collapsed">Procedure</a></h4>
+                  </div>
+                  <div id="accordion111-collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <ol>
+                        <li>Use a knife to cut two identical potato strips. Each “strip” should be about 4 cm long and 1
+                          cm wide. It is important that both of them are the same size. Use a ruler to confirm that they
+                          are of equal size. Record the
+                          length (L), width (W), and thickness (T) of each strip, and calculate the volume (V) in the
+                          table below. </li>
+                        <li>Fill each glass with 250 mL (1 cup) of water. Label the glasses “A” and “B.”</li>
+                        <li>Place one potato strip into glass A so that it is totally submerged.</li>
+                        <li>Add three tablespoons of salt to glass B, and then add the other potato strip so that it is
+                          totally submerged.</li>
+                        <li>Allow the potato strips to soak for 24 hours.</li>
+                        <li>After 24 hours, measure the dimensions of your strips and calculate their volume in
+                          cm<sup>3</sup> (L × W × T).</li>
+                        <li>Record your observations in a data table, like the one below. </li>
+                      </ol>
+                      <table class="table table-bordered small">
+                        <thead>
+                          <tr>
+                            <th scope="rowgroup" rowspan="2"
+                              style="width: 30%; text-align: center; vertical-align: middle;">Treatment</th>
+                            <th scope="colgroup" colspan="4"
+                              style="width: 35%; text-align: center; vertical-align: middle;">Initial size of potato
+                              strip (cm)</th>
+                            <th scope="colgroup" colspan="4"
+                              style="width: 35%; text-align: center; vertical-align: middle;">Size of potato strip after
+                              24 hours (cm)</th>
+                          </tr>
+                          <tr>
+                            <th scope="col" style="width: 8.75%; text-align: center; vertical-align: middle;">L</th>
+                            <th scope="col" style="width: 8.75%; text-align: center; vertical-align: middle;">W</th>
+                            <th scope="col" style="width: 8.75%; text-align: center; vertical-align: middle;">T</th>
+                            <th scope="col" style="width: 8.75%; text-align: center; vertical-align: middle;">V
+                              (cm<sup>3</sup>)</th>
+                            <th scope="col" style="width: 8.75%; text-align: center; vertical-align: middle;">L</th>
+                            <th scope="col" style="width: 8.75%; text-align: center; vertical-align: middle;">W</th>
+                            <th scope="col" style="width: 8.75%; text-align: center; vertical-align: middle;">T</th>
+                            <th scope="col" style="width: 8.75%; text-align: center; vertical-align: middle;">V
+                              (cm<sup>3</sup>)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Glass A—just water</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Glass B—water and salt</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p>If you are unable to perform this experiment, “Sample Observations” are provided below. You can
+                        use these sample data to answer the analysis questions.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion111"
+                        href="#accordion111-collapse3" class="collapsed">Results and analysis</a></h4>
+                  </div>
+                  <div id="accordion111-collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>Answer the questions that follow using your own results or those from the sample data below.
+                      </p>
+                      <table id="sbi4u_u2la5-tableSuggestedAnswers-1" class="table table-bordered"
+                        style="font-size: 80%;">
+                        <thead>
+                          <tr>
+                            <th scope="rowgroup" rowspan="2"
+                              style="width: 30%; text-align: center; vertical-align: middle;">Treatment</th>
+                            <th scope="colgroup" colspan="4"
+                              style="width: 35%; text-align: center; vertical-align: middle;">Initial size of potato
+                              strip (cm)</th>
+                            <th scope="colgroup" colspan="4"
+                              style="width: 35%; text-align: center; vertical-align: middle;">Size of potato strip after
+                              24 hours (cm)</th>
+                          </tr>
+                          <tr>
+                            <th scope="col" style="width: 8.75%; text-align: center; vertical-align: middle;">L</th>
+                            <th scope="col" style="width: 8.75%; text-align: center; vertical-align: middle;">W</th>
+                            <th scope="col" style="width: 8.75%; text-align: center; vertical-align: middle;">T</th>
+                            <th scope="col" style="width: 8.75%; text-align: center; vertical-align: middle;">V
+                              (cm<sup>3</sup>)</th>
+                            <th scope="col" style="width: 8.75%; text-align: center; vertical-align: middle;">L</th>
+                            <th scope="col" style="width: 8.75%; text-align: center; vertical-align: middle;">W</th>
+                            <th scope="col" style="width: 8.75%; text-align: center; vertical-align: middle;">T</th>
+                            <th scope="col" style="width: 8.75%; text-align: center; vertical-align: middle;">V
+                              (cm<sup>3</sup>)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td style="padding: 5px;">Glass A—just water</td>
+                            <td style="padding: 5px;">
+                              <p class="tableSuggestedAnswer invisible" style="padding-left: 0;">4.0</p>
+                            </td>
+                            <td style="padding: 5px;">
+                              <p class="tableSuggestedAnswer invisible" style="padding-left: 0;">1.0</p>
+                            </td>
+                            <td style="padding: 5px;">
+                              <p class="tableSuggestedAnswer invisible" style="padding-left: 0;">0.5</p>
+                            </td>
+                            <td style="padding: 5px;">
+                              <p class="tableSuggestedAnswer invisible" style="padding-left: 0;">2.0</p>
+                            </td>
+                            <td style="padding: 5px;">
+                              <p class="tableSuggestedAnswer invisible" style="padding-left: 0;">4.1</p>
+                            </td>
+                            <td style="padding: 5px;">
+                              <p class="tableSuggestedAnswer invisible" style="padding-left: 0;">1.3</p>
+                            </td>
+                            <td style="padding: 5px;">
+                              <p class="tableSuggestedAnswer invisible" style="padding-left: 0;">0.6</p>
+                            </td>
+                            <td style="padding: 5px;">
+                              <p class="tableSuggestedAnswer invisible" style="padding-left: 0;">3.2</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 5px;">Glass B—water and salt</td>
+                            <td style="padding: 5px;">
+                              <p class="tableSuggestedAnswer invisible" style="padding-left: 0;">4.0</p>
+                            </td>
+                            <td style="padding: 5px;">
+                              <p class="tableSuggestedAnswer invisible" style="padding-left: 0;">1.0</p>
+                            </td>
+                            <td style="padding: 5px;">
+                              <p class="tableSuggestedAnswer invisible" style="padding-left: 0;">0.5</p>
+                            </td>
+                            <td style="padding: 5px;">
+                              <p class="tableSuggestedAnswer invisible" style="padding-left: 0;">2.0</p>
+                            </td>
+                            <td style="padding: 5px;">
+                              <p class="tableSuggestedAnswer invisible" style="padding-left: 0;">3.4</p>
+                            </td>
+                            <td style="padding: 5px;">
+                              <p class="tableSuggestedAnswer invisible" style="padding-left: 0;">0.6</p>
+                            </td>
+                            <td style="padding: 5px;">
+                              <p class="tableSuggestedAnswer invisible" style="padding-left: 0;">0.3</p>
+                            </td>
+                            <td style="padding: 5px;">
+                              <p class="tableSuggestedAnswer invisible" style="padding-left: 0;">0.6</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <button id="sbi4u_u2la5-tableSuggestedAnswersButton-1" class="btn btn-table-answer-reveal">Show
+                        Answers</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row ilc-row-text">
+        <div class="col-xs-10 col-xs-offset-1">
+          <p>Complete the following questions based on the Osmosis experiment you just completed. Make sure to include
+            proper units in your answer. </p>
+          <ol>
+            <li>What was the change in the volume of the potato strip in glass A after 24 hours? </li>
+          </ol>
+          <p>
+            <button class="btn btn-default btn-answer-reveal" id="sbi4u_u2la5-suggestedAnswerButton-1">Suggested
+              Answer</button>
+          </p>
+          <div class="answer_reveal invisible" id="sbi4u_u2la5-suggestedAnswer-1">
+            <p>Your answer may be different, depending on the texture and size of the potato you used. In the sample
+              data, the potato in glass A increased in volume by about 1.2 cm<sup>3</sup>.</p>
+          </div>
+          <br>
+          <ol start="2">
+            <li>What was the change in the volume of the potato strip in glass B after 24 hours?</li>
+          </ol>
+          <p>
+            <button class="btn btn-default btn-answer-reveal" id="sbi4u_u2la5-suggestedAnswerButton-2">Suggested
+              Answer</button>
+          </p>
+          <div class="answer_reveal invisible" id="sbi4u_u2la5-suggestedAnswer-2">
+            <p>Your answer may be different, depending on the texture and size of the potato you used. In the sample
+              data, the potato in glass B decreased in volume by about 1.4 cm<sup>3</sup>.</p>
+          </div>
+          <br>
+          <ol start="3">
+            <li>Which glass showed most change? Were their changes both in the same direction?</li>
+          </ol>
+          <p>
+            <button class="btn btn-default btn-answer-reveal" id="sbi4u_u2la5-suggestedAnswerButton-3">Suggested
+              Answer</button>
+          </p>
+          <div class="answer_reveal invisible" id="sbi4u_u2la5-suggestedAnswer-3">
+            <p>Your answer may be different, depending on the texture of the potato you used, but your results should
+              generally be similar to those in the sample data. In the sample data, both glasses showed changes in the
+              potato volumes. In glass A,
+              the potato grew by about 1.2 cm<sup>3</sup>, and in glass B, the potato shrank by about 1.4
+              cm<sup>3</sup>. The shrinkage in glass B was greater than the growth in glass A, indicating that the salt
+              solution in glass B was much saltier
+              than the inside of the potato. In other words, there was greater osmotic potential in glass B than in
+              glass A.</p>
+          </div>
+          <br>
+          <ol start="4">
+            <li>Discuss the movement of water into or out of each strip (assume that salt cannot move). Did water enter
+              or exit the strip? </li>
+          </ol>
+          <p>
+            <button class="btn btn-default btn-answer-reveal" id="sbi4u_u2la5-suggestedAnswerButton-4">Suggested
+              Answer</button>
+          </p>
+          <div class="answer_reveal invisible" id="sbi4u_u2la5-suggestedAnswer-4">
+            <p>In glass A, the potato's internal environment was hypertonic, in relation to the tap water. Therefore,
+              water moved by osmosis from the glass into the potato’s cell, causing it to swell up. This was seen as an
+              increase in size and
+              volume.</p>
+            <p>In glass B, the potato’s internal environment was hypotonic, in relation to the salty water. Thus, water
+              moved out of the potato and into the glass. This caused the potato to shrivel up and become smaller in
+              volume.</p>
+          </div>
+          <br>
+          <ol start="5">
+            <li>Use the terms “hypotonic” and “hypertonic” to classify each solution in relation to the potato strip and
+              explain why the water moved as it did for each strip.</li>
+          </ol>
+          <p>
+            <button class="btn btn-default btn-answer-reveal" id="sbi4u_u2la5-suggestedAnswerButton-6">Suggested
+              Answer</button>
+          </p>
+          <div class="answer_reveal invisible" id="sbi4u_u2la5-suggestedAnswer-6">
+            <p>The solution in glass A was hypotonic in relation to the potato, while the solution in glass B was
+              hypertonic in relation to the potato.</p>
+          </div>
+          <br>
+          <ol start="6">
+            <li>How would increasing the temperature of the hypertonic solution affect osmosis for the potato strip?
+              Explain how this works.</li>
+          </ol>
+          <p>
+            <button class="btn btn-default btn-answer-reveal" id="sbi4u_u2la5-suggestedAnswerButton-7">Suggested
+              Answer</button>
+          </p>
+          <div class="answer_reveal invisible" id="sbi4u_u2la5-suggestedAnswer-7">
+            <p>The rate of water leaving the potato would increase. Increasing the temperature increases the motion of
+              the water molecules, thus increasing the rate of diffusion of water.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="consolidation">
+      <div class="row banner">
+        <h1><img src="../assets/img/sbi4u_02_consolidation.png" alt="Consolidation" class="img-responsive"></h1>
+      </div>
+      <div class="row ilc-row-callout">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h3>Part 1: Case study</h3>
+          <div class="callout_content_icon">
+            <img src="../assets/icons/case_study.svg" alt class="img-responsive" />
+            <div class="callout_content">
+              <p>Now that you have learned all about membrane transport, revisit the case study from the beginning of
+                this learning activity. Complete all the guiding questions. You will need to use this case study in the
+                assessment for grading at the end
+                of this unit. </p>
+              <p><a href="../assets/locker_docs/sbi4u_02.05.27.pdf" target="_blank">Hydration and Dehydration<span
+                    class="sr-only"> (Opens in new window)</span></a></p>
+              <p><a href="../assets/locker_docs/sbi4u_02.05.01acc.html" target="_blank">Hydration and Dehydration (Water
+                  and
+                  Osmosis) - Accessible Version<span class="sr-only"> (Opens in new window)</span></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row ilc-row-text">
+        <div class="col-xs-10 col-xs-offset-1">
+          <p>Review your reflection completed when you first were introduced to the case study. Review your responses to
+            the prompts. </p>
+          <ul>
+            <li>What is the main idea or issue in the case study? </li>
+            <li>What things do you already know about the case study? </li>
+            <li>What things do you think that you will have to learn about in order to complete the case study?</li>
+          </ul>
+          <p>Jot down a new reflection labelled “after case study”. Use the following prompts to guide your reflection.
+          </p>
+          <ul>
+            <li>Were you correct about the main idea or issue? Anything you would change or edit now? </li>
+            <li>Did you learn about things that you thought you would need? Were there any surprises? </li>
+            <li>What further questions do you have about this topic now?</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row ilc-row-text">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h2>Part 2: Reflection</h2>
+        </div>
+      </div>
+      <div class="row ilc-row-callout">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h3>Think</h3>
+          <div class="callout_content_icon"><img src="../assets/icons/think.svg" alt="" class="img-responsive">
+            <div class="callout_content">
+              <p>Now that you have completed this learning activity, reflect back on the success criteria. </p>
+              <ul>
+                <li>Identify and describe the function of cell organelles </li>
+                <li>Describe the structure of the cell membrane and explain how it leads to semi-permeable properties
+                </li>
+                <li>Compare different types of cell transport, explaining how molecules are transported in and out of
+                  cells</li>
+                <li>Analyse data to explain the concept of osmosis </li>
+                <li>Research and evaluate scientific cellular research for benefits and possible complications and
+                  hazards</li>
+              </ul>
+              <p>Looking at your notes for this learning activity, are they complete? Do you have all the information
+                you will need to study later on? </p>
+              <p>Take the time to review concepts you are unsure about before moving on.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row ilc-row-widget">
+        <div class="col-xs-10 col-xs-offset-1">
+          <p>Select your level of readiness for each criteria.</p>
+          <fieldset>
+            <!--Wrapping a table in a fieldset is the last resort in terms of semantic AODA compliance to pass WAVE test-->
+            <legend class="sr-only">Track your progress in the diagram </legend>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col" id="table001Col1" style="width: 70%; text-align: center; vertical-align: middle;">I am
+                    able to:</th>
+                  <th scope="col" id="table001Col2" style="width: 15%; text-align: center; vertical-align: middle;">Yes
+                    - confident</th>
+                  <th scope="col" id="table001Col3" style="width: 15%; text-align: center; vertical-align: middle;">No -
+                    need to review the learning activity</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Identify and describe the function of cell organelles</td>
+                  <td style="width: 15%; text-align: center; vertical-align: middle;">
+                    <input type="radio" id="table1Row1Radial1" name="table1Row1Radial" aria-labelledby="table001Col2" />
+                  </td>
+                  <td style="width: 15%; text-align: center; vertical-align: middle;">
+                    <input type="radio" id="table1Row1Radial2" name="table1Row1Radial" aria-labelledby="table001Col3">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Describe the structure of the cell membrane and explain how it leads to semi-permeable properties
+                  </td>
+                  <td style="width: 15%; text-align: center; vertical-align: middle;">
+                    <input type="radio" id="table1Row2Radial1" name="table1Row2Radial" aria-labelledby="table001Col2" />
+                  </td>
+                  <td style="width: 15%; text-align: center; vertical-align: middle;">
+                    <input type="radio" id="table1Row2Radial2" name="table1Row2Radial" aria-labelledby="table001Col3" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Compare different types of cell transport, explaining how molecules are transported in and out of
+                    cells</td>
+                  <td style="width: 15%; text-align: center; vertical-align: middle;">
+                    <input type="radio" id="table1Row3Radial1" name="table1Row3Radial" aria-labelledby="table001Col2" />
+                  </td>
+                  <td style="width: 15%; text-align: center; vertical-align: middle;">
+                    <input type="radio" id="table1Row3Radial2" name="table1Row3Radial" aria-labelledby="table001Col3" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Analyse data to explain the concept of osmosis</td>
+                  <td style="width: 15%; text-align: center; vertical-align: middle;">
+                    <input type="radio" id="table1Row4Radial1" name="table1Row4Radial" aria-labelledby="table001Col2" />
+                  </td>
+                  <td style="width: 15%; text-align: center; vertical-align: middle;">
+                    <input type="radio" id="table1Row4Radial2" name="table1Row4Radial" aria-labelledby="table001Col3" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Research and evaluate scientific cellular research for benefits and possible complications and
+                    hazards</td>
+                  <td style="width: 15%; text-align: center; vertical-align: middle;">
+                    <input type="radio" id="table1Row5Radial1" name="table1Row5Radial" aria-labelledby="table001Col2" />
+                  </td>
+                  <td style="width: 15%; text-align: center; vertical-align: middle;">
+                    <input type="radio" id="table1Row5Radial2" name="table1Row5Radial" aria-labelledby="table001Col3" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Compiled GVL, Widgets, ILOs, etc. -->
+  <script src="../dependencies/vendor.min.js"></script>
+  <script>
+    angular.bootstrap(document.getElementById("u2la5_matching1"), ["matchingComboWidget"]);
+    angular.bootstrap(document.getElementById('u2la5_mc1'), ['multipleChoiceWidget']);
+  </script>
+  <script src="../assets/js/bugfixes.js"></script>
+</body>
+
+</html>

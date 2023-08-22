@@ -1,0 +1,2376 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning activity 1.3: Investigating population growth</title>
+    <link rel="stylesheet" href="../assets/css/ilc_core_temp.css">
+</head>
+
+<body>
+    <noscript>
+        <div class="alert alert-warning clearfix" role="alert">
+            <p><strong>Warning!</strong> To ensure the greatest educational experience, this learning activity contians
+                aspects that require Javascript to be enabled.</p>
+        </div>
+    </noscript>
+    <section id="ilcLearningGoals" class="hidden">
+        <div>
+            <h2>Learning goals</h2>
+            <p>We are learning to: </p>
+            <ul>
+                <li>use appropriate terminology related to population growth</li>
+                <li>understand the factors involved in population changes</li>
+                <li>use mathematical population growth models to calculate the growth of populations</li>
+                <li>determine, through computer simulations, the characteristics of population growth for a predator and
+                    its prey</li>
+                <li>describe the characteristics and factors that affect a given population, such as density-dependent
+                    and density-independent factors</li>
+            </ul>
+            <h2>Success criteria</h2>
+            <p>I am able to:</p>
+            <ul>
+                <li>define density dependent and density-independent factors and provide examples</li>
+                <li>calculate the population change in a population</li>
+                <li>analyse both geometric, exponential and logistic growth patterns.</li>
+                <li>describe the predator-prey cycle</li>
+            </ul>
+        </div>
+    </section>
+    <main id="mainContent" class="container">
+        <section id="mindsOn">
+            <div class="row banner">
+                <h1><img src="../assets/img/sbi4u_01.04_mindsOn.png" alt="Minds On" class="img-responsive"></h1>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>Animals (and plants) have a natural habitat to which they belong. A habitat is an area with a
+                        particular set of features that is defined by two characteristics: </p>
+                    <ul>
+                        <li><em class="Italic">physical</em> (<strong>abiotic</strong>) </li>
+                        <li><em class="Italic">biological </em>(<strong>biotic</strong>) </li>
+                    </ul>
+                    <p>Habitats can be defined using any number of abiotic and biotic features. </p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- left column -->
+                <div class="col-xs-5 col-xs-offset-1">
+                    <p>For example, the habitat of a chimpanzee will be tropical and will have lots of fruit trees in
+                        it.</p>
+                </div>
+
+                <!-- right column -->
+                <div class="col-xs-5">
+                    <p><img src="../assets/img/sbi4u_01.04.01.jpg" alt=" Mother and Baby Chimpanzee on a tree"
+                            class="img-responsive"></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- left column -->
+                <div class="col-xs-5 col-xs-offset-1">
+                    <p><img src="../assets/img/sbi4u_01.04.02.jpg"
+                            alt=" Cedar tree in the coastal rainforest of British Columbia" class="img-responsive"></p>
+                </div>
+
+                <!-- right column -->
+                <div class="col-xs-5">
+                    <p>The habitat of a cedar tree in the coastal rainforest of British Columbia will be wet, warm, and
+                        full of moss.</p>
+                </div>
+            </div>
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Think</h3>
+                    <div class="callout_content_icon"><img src="../assets/icons/think.svg" alt class="img-responsive">
+                        <div class="callout_content">
+
+                            <p>Imagine a small population of an animal species moving into a new environment in another
+                                region of the world. </p>
+                        </div>
+                    </div>
+                    <p>Think about the consequences of:</p>
+                    <ul>
+                        <li>What happens when an animal is introduced to a new habitat</li>
+                        <li>The impact to the natural environment</li>
+                        <li>Feeding relationships in the new environment</li>
+                        <li>The consequences to the human population</li>
+                    </ul>
+                    <p>When thinking about these questions, consider how the following factors would be affected:</p>
+                    <ul>
+                        <li>Impact on abiotic (physical) components of the environment</li>
+                        <li>Impact on biotic (living) components of the environment</li>
+                        <li>Impact on human population</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="action">
+            <div class="row banner">
+                <h1><img src="../assets/img/sbi4u_01_action.png" alt="Action" class="img-responsive"></h1>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Introduction</h2>
+                    <p>In the Minds On activity you considered the impact of introducing a non-native species into a new
+                        habitat. The invasive Carp is an example of a non-native species that made their way into a new
+                        habitat - the waters of the Great Lakes.
+                        These organisms are expanding out of control, sometimes with devastating consequences. </p>
+                    <p>Other non-native species, like zebra mussels that have invaded the Great Lakes, or the Japanese
+                        beetle that is rapidly destroying trees throughout western Canada have had populations increase
+                        rapidly over the last decade. </p>
+                    <p>You also hear about species whose populations are so low they are threatened with extinction,
+                        like the giant panda. </p>
+                    <p>In both cases, it is important for us to understand the factors that make these populations
+                        behave in the way they do, in order for us to help manage them.</p>
+                    <!-- Carousel -->
+                    <div id="sbi4uu1la4" class="carousel slide" data-ride="carousel" data-wrap="true"
+                        data-interval="false">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#sbi4uu1la4" data-slide-to="0" class="active"></li>
+                            <li data-target="#sbi4uu1la4" data-slide-to="1"></li>
+                            <li data-target="#sbi4uu1la4" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <!-- Slide 1 -->
+                            <div class="item active">
+                                <img src="../assets/img/sbi4u_01.04.03.jpg"
+                                    alt="Zebra mussels have invaded the Great Lakes" class="img-responsive">
+                                <!-- Caption -->
+                                <div class="carousel-caption">Zebra mussels have invaded the Great Lakes</div>
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="item">
+                                <img src="../assets/img/sbi4u_01.04.04.jpg"
+                                    alt="Japanese beetles are destroying trees in Western Canada."
+                                    class="img-responsive">
+                                <!-- Caption -->
+                                <div class="carousel-caption">
+                                    Japanese beetles are destroying trees in Western Canada.
+                                </div>
+                            </div>
+
+                            <!-- Slide 3 -->
+                            <div class="item">
+                                <img src="../assets/img/sbi4u_01.04.05.jpg"
+                                    alt="Giant panda populations are low and they are facing extinction."
+                                    class="img-responsive">
+                                <!-- Caption -->
+                                <div class="carousel-caption">
+                                    Giant panda populations are low and they are facing extinction.
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <!-- Left -->
+                        <a href="#sbi4uu1la4" data-slide="prev">
+                            <i class="fa fa-angle-left fa-2x"></i>
+                        </a>
+                        <!-- Right -->
+                        <a href="#sbi4uu1la4" data-slide="next">
+                            <i class="fa fa-angle-right fa-2x pull-right"></i>
+                        </a>
+                    </div>
+                    <!-- /Carousel -->
+                </div>
+            </div>
+            <!-- ACCORDION ONE ENDS -->
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>In this learning activity, you will learn what forces make populations change over time. You will
+                        also learn how to make predictions about the dynamics of populations based on their fundamental
+                        attributes, such as population growth
+                        rates.</p>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>How populations change</h3>
+                    <p>No population in nature remains unchanged for long. Population size is always changing due to:
+                    </p>
+                    <ul>
+                        <li>new individuals are added through births (natality) </li>
+                        <li>immigration (individuals moving into a population)</li>
+                        <li>loss through death (mortality) </li>
+                        <li>emigration (individuals moving out of a population)</li>
+                    </ul>
+                    <p>All populations are changed by the number of:</p>
+                    <ul>
+                        <li>births (b) </li>
+                        <li>deaths (d)</li>
+                    </ul>
+                    <p>Some populations are also changed by:</p>
+                    <ul>
+                        <li>immigration (i) </li>
+                        <li>emigration (e)</li>
+                    </ul>
+                    <p>In general, populations can be described as either open or closed depending on different factors
+                        described in the table below.</p>
+                    <table id="table001" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <th scope="col">
+                                    Closed Population
+                                </th>
+                                <th scope="col">
+                                    Open Population
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p><strong>Impact of immigration and emigration</strong></p>
+                                </td>
+                                <td>
+                                    <p>Not changed by immigration or emigration</p>
+                                </td>
+                                <td>
+                                    <p>Can be changed by immigration and emigration</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><strong>Distance or Physical Barriers and Population Movement</strong></p>
+                                </td>
+                                <td>
+                                    <p>Separated from other populations by long distances or are surrounded by physical
+                                        barriers that prevent them from moving in and out of the population.</p>
+                                </td>
+                                <td>
+                                    <p>No barrier preventing them from moving in and out of the population.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><strong>Example</strong></p>
+                                </td>
+                                <td>
+                                    <p>An island in the middle of the ocean is generally closed to immigrants that
+                                        can&#x2019;t swim or fly</p>
+                                </td>
+                                <td>
+                                    <p>A population of moose in a patch of boreal forest in northern Ontario is
+                                        considered to be an open population, because the moose can move in and out of it
+                                        easily.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>The <strong>net population</strong> change means the change in population size after the combined
+                        effects of births, deaths, immigration, and emigration are accounted for. The net population
+                        change can be determined by the equation:</p>
+                    <p>Net population change = (b + i) &#x2013; (d + e)</p>
+                    <p>To determine the population change as a percentage of the total population, use this formula,
+                        where n is the initial population size:</p>
+                </div>
+            </div>
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mrow>
+                                    <mi>P</mi>
+                                    <mi>e</mi>
+                                    <mi>r</mi>
+                                    <mi>c</mi>
+                                    <mi>e</mi>
+                                    <mi>n</mi>
+                                    <mi>t</mi>
+                                    <mi>a</mi>
+                                    <mi>g</mi>
+                                    <mi>e</mi>
+                                    <mi>&nbsp;</mi>
+                                    <mi>c</mi>
+                                    <mi>h</mi>
+                                    <mi>a</mi>
+                                    <mi>n</mi>
+                                    <mi>g</mi>
+                                    <mi>e</mi>
+                                    <mi>&nbsp;</mi>
+                                    <mi>i</mi>
+                                    <mi>n</mi>
+                                    <mi>&nbsp;</mi>
+                                    <mi>p</mi>
+                                    <mi>o</mi>
+                                    <mi>p</mi>
+                                    <mi>u</mi>
+                                    <mi>l</mi>
+                                    <mi>a</mi>
+                                    <mi>t</mi>
+                                    <mi>i</mi>
+                                    <mi>o</mi>
+                                    <mi>n</mi>
+                                    <mo>=</mo>
+                                    <mfrac>
+                                        <mrow>
+                                            <mo>(</mo>
+                                            <mi>b</mi>
+                                            <mo>+</mo>
+                                            <mi>i</mi>
+                                            <mo>)</mo>
+                                            <mo>&#x2212;</mo>
+                                            <mo>(</mo>
+                                            <mi>d</mi>
+                                            <mo>+</mo>
+                                            <mi>e</mi>
+                                            <mo>)</mo>
+                                        </mrow>
+                                        <mi>n</mi>
+                                    </mfrac>
+                                    <mo>&#xD7;</mo>
+                                    <mi>&nbsp;</mi>
+                                    <mn>100</mn>
+                                    <mo>%</mo>
+                                </mrow>
+                            </mrow>
+                        </math></p>
+                    <p>or</p>
+                    <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mrow>
+                                    <mi>P</mi>
+                                    <mi>e</mi>
+                                    <mi>r</mi>
+                                    <mi>c</mi>
+                                    <mi>e</mi>
+                                    <mi>n</mi>
+                                    <mi>t</mi>
+                                    <mi>a</mi>
+                                    <mi>g</mi>
+                                    <mi>e</mi>
+                                    <mi>&nbsp;</mi>
+                                    <mi>c</mi>
+                                    <mi>h</mi>
+                                    <mi>a</mi>
+                                    <mi>n</mi>
+                                    <mi>g</mi>
+                                    <mi>e</mi>
+                                    <mi>&nbsp;</mi>
+                                    <mi>i</mi>
+                                    <mi>n</mi>
+                                    <mi>&nbsp;</mi>
+                                    <mi>p</mi>
+                                    <mi>o</mi>
+                                    <mi>p</mi>
+                                    <mi>u</mi>
+                                    <mi>l</mi>
+                                    <mi>a</mi>
+                                    <mi>t</mi>
+                                    <mi>i</mi>
+                                    <mi>o</mi>
+                                    <mi>n</mi>
+                                    <mo>=</mo>
+                                    <mfrac>
+                                        <mrow>
+                                            <mi>N</mi>
+                                            <mi>e</mi>
+                                            <mi>t</mi>
+                                            <mi>&nbsp;</mi>
+                                            <mi>p</mi>
+                                            <mi>o</mi>
+                                            <mi>p</mi>
+                                            <mi>u</mi>
+                                            <mi>l</mi>
+                                            <mi>a</mi>
+                                            <mi>t</mi>
+                                            <mi>i</mi>
+                                            <mi>o</mi>
+                                            <mi>n</mi>
+                                            <mi>&nbsp;</mi>
+                                            <mi>c</mi>
+                                            <mi>h</mi>
+                                            <mi>a</mi>
+                                            <mi>n</mi>
+                                            <mi>g</mi>
+                                            <mi>e</mi>
+                                        </mrow>
+                                        <mi>n</mi>
+                                    </mfrac>
+                                    <mi>&nbsp;</mi>
+                                    <mo>&#xD7;</mo>
+                                    <mi>&nbsp;</mi>
+                                    <mn>100</mn>
+                                    <mi mathvariant="normal">%</mi>
+                                </mrow>
+                            </mrow>
+                        </math></p>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h4>Example</h4>
+                    <p>Check your understanding by working out the problem below in your notebook before comparing your
+                        answer with the suggested answer.</p>
+                </div>
+            </div>
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Notebook</h3>
+                    <div class="callout_content_icon"><img src="../assets/icons/notebook.svg" alt class="img-responsive">
+                        <div class="callout_content">
+                            <h4>Try This Example!</h4>
+                            <p>Check your understanding by working out the problem below in your notebook before comparing your answer with the suggested answer.</p>
+                            </div>
+                        </div>
+                        <img src="../assets/img/sbi4u_01.04.06.jpg" alt="A red fox in the forest" class="img-responsive">
+                            <p>a) In 2009, a population of red foxes in Ontario contained 2430 individuals. During the
+                                year there were 331 births, 674 deaths, 12 immigrants, and 17 emigrants. What was the
+                                net population change over the year? </p>
+                            <button class="btn btn-default btn-answer-reveal"
+                                id="sbi4u_u1la4-suggestedAnswerButton-1">Suggested Answer</button>
+                            <div class="answer_reveal invisible" id="sbi4u_u1la4-suggestedAnswer-1">
+
+
+                                <p>Net population change = (b + i) &#x2013; (d +e)</p>
+                                <p> = (331 + 12) &#x2013; (674 + 17)</p>
+                                <p> = &#x2013;348</p>
+
+                            </div>
+                            <br>
+                            <p>b) Write a concluding statement and then check your answer. </p>
+                            <button class="btn btn-default btn-answer-reveal"
+                                id="sbi4u_u1la4-suggestedAnswerButton-2">Suggested Answer</button>
+                            <div class="answer_reveal invisible" id="sbi4u_u1la4-suggestedAnswer-2">
+
+
+                                <p>The net population change over the year was a decrease of 348 foxes.</p>
+
+                            </div>
+                            <br>
+                            <p>c) What was the percentage change in population size over the year?</p>
+                            <button class="btn btn-default btn-answer-reveal"
+                                id="sbi4u_u1la4-suggestedAnswerButton-3">Suggested Answer</button>
+                            <div class="answer_reveal invisible" id="sbi4u_u1la4-suggestedAnswer-3">
+
+
+                                <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                        <mi>Percentage change in population</mi>
+                                        <mspace linebreak="newline" />
+                                        <mo>=</mo>
+                                        <mfrac>
+                                            <mrow>
+                                                <mo>(</mo>
+                                                <mi>b</mi>
+                                                <mo>+</mo>
+                                                <mi>i</mi>
+                                                <mo>)</mo>
+                                                <mo>-</mo>
+                                                <mo>(</mo>
+                                                <mi>d</mi>
+                                                <mo>+</mo>
+                                                <mi>e</mi>
+                                                <mo>)</mo>
+                                            </mrow>
+                                            <mrow>
+                                                <mi>n</mi>
+                                            </mrow>
+                                        </mfrac>
+                                        <mo>&#xD7;</mo>
+
+                                        <mn>100</mn>
+                                        <mi>%</mi>
+                                    </math></p>
+                                <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                        <mrow>
+                                            <mrow>
+                                                <mo>=</mo>
+                                                <mstyle scriptlevel="+1">
+                                                    <mfrac>
+                                                        <mrow>
+                                                            <mo>&#x2212;</mo>
+                                                            <mn>348</mn>
+                                                        </mrow>
+                                                        <mn>2430</mn>
+                                                    </mfrac>
+                                                </mstyle>
+                                                <mi>&nbsp;</mi>
+                                                <mo>&#xD7;</mo>
+                                                <mi>&nbsp;</mi>
+                                                <mn>100</mn>
+                                            </mrow>
+                                        </mrow>
+                                    </math>%</p>
+                                <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                        <mo>=</mo>
+                                        <mo>-</mo>
+                                        <mn>14.3</mn>
+                                        <mi>%</mi>
+                                    </math></p>
+                                <p>In 2009, the red fox population decreased by 14.3%.</p>
+                            </div>
+                        </div>
+                    </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Population dynamics</h3>
+                    <p>Population dynamics are the changes in population size that occur over time.</p>
+                    <p>The four factors that affect population dynamics are:</p>
+                    <ul>
+                        <li>births</li>
+                        <li>deaths</li>
+                        <li>immigration</li>
+                        <li>emigration</li>
+                    </ul>
+                    <p>Population dynamics are the result of an interaction between:</p>
+                    <ul>
+                        <li><strong>internal factors</strong> (for example, reproductive ability) </li>
+                        <li><strong>external factors</strong> (for example, weather, food supply, predation, and
+                            disease)</li>
+                    </ul>
+                    <p>Some populations remain relatively stable over long periods of time, while others may fluctuate
+                        dramatically or go through cycles. Population dynamics research studies how the internal and
+                        external factors affecting population size
+                        interact to produce changes in population size. This can get very complicated, since populations
+                        are simultaneously affected by density, the amount of resources available, their environment,
+                        and interactions with other species. </p>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- left column -->
+                <div class="col-xs-5 col-xs-offset-1">
+                    <p><img src="../assets/img/sbi4u_01.04.07.jpg" alt="Group of puffins" class="img-responsive"></p>
+                </div>
+
+                <!-- right column -->
+                <div class="col-xs-5">
+                    <p>Population ecology is the area of biology that studies how populations change overtime in
+                        relation to their environment and other species. Conserving biodiversity, such as the Atlantic
+                        puffins (Fratercula arctica) on bird island in
+                        Elliston, Newfoundland, is very important in population ecology research.</p>
+
+                </div>
+            </div>
+
+
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Try it!</h3>
+                    <div class="callout_content_icon"><img src="../assets/icons/try_it.svg" alt class="img-responsive">
+                        <div class="callout_content">
+                            <p>a) Determine the population change for rabbits living on an island, given the following
+                                information:</p>
+                            <p>In 2008, 3 male and 6 female rabbits were introduced to the island. There were no rabbits
+                                there before. Over the next year, the population experienced 35 births and 16 deaths,
+                                and no immigration or emigration. </p>
+                            <p>Determine the population size, the net population change, and the percentage change over
+                                the year.</p>
+                            <button class="btn btn-default btn-answer-reveal"
+                                id="sbi4u_u1la4-suggestedAnswerButton-4">Suggested Answer</button>
+                            <div class="answer_reveal invisible" id="sbi4u_u1la4-suggestedAnswer-4">
+
+                                <p>The net population change of rabbits on the island in 2008 is determined using the
+                                    equation:</p>
+                                <p>net population change= (b + i) &#x2013; (d + e)</p>
+                                <p>= (35 + 0) &#x2013; (16 + 0) = 19</p>
+                                <p>The population size at the end of 2008 was 9 + 19 = 28 </p>
+                                <p><strong>The percentage change in population is:</strong></p>
+                                <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                        <mrow>
+                                            <mrow>
+                                                <mi>Percentage change in population</mi>
+                                                <mspace linebreak="newline" />
+
+                                                <mo>=</mo>
+                                                <mfrac>
+                                                    <mrow>
+                                                        <mo>(</mo>
+                                                        <mi>b</mi>
+                                                        <mo>+</mo>
+                                                        <mi>i</mi>
+                                                        <mo>)</mo>
+                                                        <mo>&#x2212;</mo>
+                                                        <mo>(</mo>
+                                                        <mi>d</mi>
+                                                        <mo>+</mo>
+                                                        <mi>e</mi>
+                                                        <mo>)</mo>
+                                                    </mrow>
+                                                    <mi>n</mi>
+                                                </mfrac>
+                                                <mo>&#xD7;</mo>
+                                                <mi>&nbsp;</mi>
+                                                <mn>100</mn>
+                                                <mi mathvariant="normal">%</mi>
+                                            </mrow>
+                                        </mrow>
+                                    </math></p>
+                                <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                        <mo>=</mo>
+                                        <mfrac>
+                                            <mrow>
+                                                <mn>19</mn>
+                                            </mrow>
+                                            <mrow>
+                                                <mn>9</mn>
+                                            </mrow>
+                                        </mfrac>
+
+                                        <mo>&#xD7;</mo>
+
+                                        <mn>100</mn>
+                                    </math><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                        <mrow>
+                                            <mo>%</mo>
+                                        </mrow>
+                                    </math></p>
+                                <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                        <mo>=</mo>
+                                        <mn>211</mn>
+                                        <mi>%</mi>
+                                    </math></p>
+                                <p>In 2008, the population of rabbits on the island increased by 211%.</p>
+
+                            </div>
+                            <br>
+                            <p>b) In 2009, a bridge was constructed from the mainland to the island. Over the next year,
+                                the rabbit population experienced 56 births, 23 deaths, 15 immigrants, and 5 emigrants.
+                                Determine the percentage change in the population over
+                                the
+                                year.</p>
+                            <button class="btn btn-default btn-answer-reveal"
+                                id="sbi4u_u1la4-suggestedAnswerButton-5">Suggested Answer</button>
+                            <div class="answer_reveal invisible" id="sbi4u_u1la4-suggestedAnswer-5">
+
+                                <p>The percentage change in the rabbit population in 2009:</p>
+                                <p>Percentage change in population = ((56+15)-(23+5))/28&#xD7; 100%<br>= 154%</p>
+                                <p>Therefore, in 2009, the population of rabbits increased by 154%.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Modelling and predicting population change</h3>
+                    <p>As you learned in the previous learning activity, human activities impact all species on the
+                        planet. </p>
+                    <p>This forces us to become global resource managers. However, to do so, we need to know how
+                        populations respond to combinations of factors influencing their dynamics. We also need to be
+                        able to predict how populations will act in response
+                        to the actions we take. </p>
+                    <p>For this purpose, biologists create models of population dynamics to see how populations respond
+                        to changes in various input factors.</p>
+                    <p>Before you can predict how a population will change, you need to create a model of how its
+                        population dynamics work. Models are made up of equations that describe how the population
+                        responds to changes in internal and external factors.
+                        Models of population growth range from the simple to the complex. They are built starting with
+                        the simplest set of factors thought to be necessary. If the simple model fails to produce
+                        accurate predictions, then more factors are added,
+                        which makes the model more complex. </p>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>In the next sections, you will learn about the three fundamental population growth models: the
+                        geometric growth model, the exponential growth model and the logistic growth model.</p>
+                    <!-- ACCORDION ONE BEGINS -->
+                    <div class="accordionILC panel-group" id="accordion2">
+                        <!-- ACCORDION ITEM 1 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion2" href="#accordion2-collapse1"
+                                        class="collapsed">
+                                        Geometric growth model</a>
+                                </h4>
+                            </div>
+                            <div id="accordion2-collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Geometric growth is the simplest population growth model.</p>
+                                    <p>1. It happens in populations where individuals can only breed once per time
+                                        period (like deer, which breed once per year).</p>
+                                    <p>2. If the birth and death rates per individual remain constant, then the
+                                        population growth rate is constant over a fixed time period (for example, one
+                                        year).</p>
+                                    <p>For example, in the colony of bacteria shown in the table below, the population
+                                        is doubling every day. Day 0 is the day from which the initial population size
+                                        is measured. On Day 0, the population size is 1. On the next day, it
+                                        doubles to 2 and the day after that, it becomes 4, and so on.</p>
+                                    <table id="table002" class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">
+                                                    Time (days)
+                                                </th>
+                                                <th scope="col">
+                                                    Number of bacteria
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p>0</p>
+                                                </td>
+                                                <td>
+                                                    <p>1</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>1</p>
+                                                </td>
+                                                <td>
+                                                    <p>2</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>2</p>
+                                                </td>
+                                                <td>
+                                                    <p>4</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>3</p>
+                                                </td>
+                                                <td>
+                                                    <p>8</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>4</p>
+                                                </td>
+                                                <td>
+                                                    <p>16</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>5</p>
+                                                </td>
+                                                <td>
+                                                    <p>32</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>6</p>
+                                                </td>
+                                                <td>
+                                                    <p>64</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>7</p>
+                                                </td>
+                                                <td>
+                                                    <p>128</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>8</p>
+                                                </td>
+                                                <td>
+                                                    <p>256</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <img src="../assets/img/sbi4u_01.04.10.jpg"
+                                        alt="Graph demonstrating the geometric growth in a colony of bacteria.  The curve increases gradually at first and then more rapidly as time goes on."
+                                        class="img-responsive">
+
+                                    <div class="row ilc-row-callout">
+                                        <p style="padding-left: 20px">Geometric growth can be modelled using the
+                                            following equation:</p>
+                                        <p style="padding-left: 20px"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                                <mrow>
+                                                    <mrow>
+                                                        <mi mathvariant="normal">F</mi>
+                                                        <mi mathvariant="normal">i</mi>
+                                                        <mi mathvariant="normal">x</mi>
+                                                        <mi mathvariant="normal">e</mi>
+                                                        <mi mathvariant="normal">d</mi>
+                                                        <mi>&nbsp;</mi>
+                                                        <mi mathvariant="normal">G</mi>
+                                                        <mi mathvariant="normal">r</mi>
+                                                        <mi mathvariant="normal">o</mi>
+                                                        <mi mathvariant="normal">w</mi>
+                                                        <mi mathvariant="normal">t</mi>
+                                                        <mi mathvariant="normal">h</mi>
+                                                        <mi>&nbsp;</mi>
+                                                        <mi mathvariant="normal">R</mi>
+                                                        <mi mathvariant="normal">a</mi>
+                                                        <mi mathvariant="normal">t</mi>
+                                                        <mi mathvariant="normal">e</mi>
+                                                        <mo>(</mo>
+                                                        <mi mathvariant="normal">&#x3BB;</mi>
+                                                        <mo>)</mo>
+                                                        </mrow>
+                                                        </mrow>
+                                                        </math>
+                                                        </p>
+                                                        <p style="padding-left: 20px"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                                        <mo>=</mo>
+                                                        <mfrac>
+                                                            <mrow>
+                                                                <mi>p</mi>
+                                                                <mi>o</mi>
+                                                                <mi>p</mi>
+                                                                <mi>u</mi>
+                                                                <mi>l</mi>
+                                                                <mi>a</mi>
+                                                                <mi>t</mi>
+                                                                <mi>i</mi>
+                                                                <mi>o</mi>
+                                                                <mi>n</mi>
+                                                                <mi>&nbsp;</mi>
+                                                                <mi>s</mi>
+                                                                <mi>i</mi>
+                                                                <mi>z</mi>
+                                                                <mi>e</mi>
+                                                                <mi>&nbsp;</mi>
+                                                                <mi>o</mi>
+                                                                <mi>n</mi>
+                                                                <mi>&nbsp;</mi>
+                                                                <mi>a</mi>
+                                                                <mi>&nbsp;</mi>
+                                                                <mi>p</mi>
+                                                                <mi>a</mi>
+                                                                <mi>r</mi>
+                                                                <mi>t</mi>
+                                                                <mi>i</mi>
+                                                                <mi>c</mi>
+                                                                <mi>u</mi>
+                                                                <mi>l</mi>
+                                                                <mi>a</mi>
+                                                                <mi>r</mi>
+                                                                <mi>&nbsp;</mi>
+                                                                <mi>d</mi>
+                                                                <mi>a</mi>
+                                                                <mi>y</mi>
+                                                                <mi>&nbsp;</mi>
+                                                                <mi>N</mi>
+                                                                <mo>(</mo>
+                                                                <mi>t</mi>
+                                                                <mo>+</mo>
+                                                                <mn>1</mn>
+                                                                <mo>)</mo>
+                                                                <mi>&nbsp;</mi>
+                                                            </mrow>
+                                                            <mrow>
+                                                                <mi>p</mi>
+                                                                <mi>o</mi>
+                                                                <mi>p</mi>
+                                                                <mi>u</mi>
+                                                                <mi>l</mi>
+                                                                <mi>a</mi>
+                                                                <mi>t</mi>
+                                                                <mi>i</mi>
+                                                                <mi>o</mi>
+                                                                <mi>n</mi>
+                                                                <mi>&nbsp;</mi>
+                                                                <mi>s</mi>
+                                                                <mi>i</mi>
+                                                                <mi>z</mi>
+                                                                <mi>e</mi>
+                                                                <mi>&nbsp;</mi>
+                                                                <mi>o</mi>
+                                                                <mi>n</mi>
+                                                                <mi>&nbsp;</mi>
+                                                                <mi>a</mi>
+                                                                <mi>&nbsp;</mi>
+                                                                <mi>p</mi>
+                                                                <mi>a</mi>
+                                                                <mi>r</mi>
+                                                                <mi>t</mi>
+                                                                <mi>i</mi>
+                                                                <mi>c</mi>
+                                                                <mi>u</mi>
+                                                                <mi>l</mi>
+                                                                <mi>a</mi>
+                                                                <mi>r</mi>
+                                                                <mi>&nbsp;</mi>
+                                                                <mi>d</mi>
+                                                                <mi>a</mi>
+                                                                <mi>y</mi>
+                                                                <mi>&nbsp;</mi>
+                                                                <mi>N</mi>
+                                                                <mo>(</mo>
+                                                                <mi>t</mi>
+                                                                <mo>)</mo>
+                                                            </mrow>
+                                                        </mfrac>
+                                               
+                                            </math></p>
+                                        <p style="padding-left: 20px">Equation&nbsp;<math
+                                                xmlns="http://www.w3.org/1998/Math/MathML">
+                                                <mrow>
+                                                    <mrow>
+                                                        <mi>&#x3BB;</mi>
+                                                        <mo>=</mo>
+                                                        <mfrac>
+                                                            <mrow>
+                                                                <mi>N</mi>
+                                                                <mo>(</mo>
+                                                                <mi>t</mi>
+                                                                <mo>+</mo>
+                                                                <mn>1</mn>
+                                                                <mo>)</mo>
+                                                            </mrow>
+                                                            <mrow>
+                                                                <mi>N</mi>
+                                                                <mo>(</mo>
+                                                                <mi>t</mi>
+                                                                <mo>)</mo>
+                                                            </mrow>
+                                                        </mfrac>
+                                                    </mrow>
+                                                </mrow>
+                                            </math> or <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                                <mrow>
+                                                    <mrow>
+                                                        <mi>&#x3BB;</mi>
+                                                        <mo>=</mo>
+                                                        <mfrac>
+                                                            <msub>
+                                                                <mi>N</mi>
+                                                                <mrow>
+                                                                    <mi>t</mi>
+                                                                    <mo>+</mo>
+                                                                    <mn>1</mn>
+                                                                </mrow>
+                                                            </msub>
+                                                            <msub>
+                                                                <mi>N</mi>
+                                                                <mi>t</mi>
+                                                            </msub>
+                                                        </mfrac>
+                                                    </mrow>
+                                                </mrow>
+                                            </math></p>
+
+                                    </div>
+
+                                    <div class="row">
+                                        <p>Where:</p>
+                                        <ul>
+                                            <li>&#x3BB; (the Greek letter &#x201C;lambda&#x201D;) is the fixed growth
+                                                rate.</li>
+                                            <li>N(t) is the population size at a particular time, t (for example, a
+                                                particular day).</li>
+                                            <li>N(t+1) is the population size at a time 1 unit after N(t). (if time is
+                                                measured in days, N(t+1) would be the population size one day after
+                                                N(t).</li>
+                                        </ul>
+                                        <p>For the above example of the bacteria, &#x3BB; is equal to 2, since the
+                                            population doubles every day.</p>
+                                        <p>The geometric growth equation can be used to calculate the population size on
+                                            a particular day. For example, here’s how to calculate the population size
+                                            on the ninth day:</p>
+                                        <p>1. Rearrange the formula to solve for N(t+1):</p>
+                                        <p> N(t+1)= N(t) &#xD7; &#x3BB;</p>
+                                    </div>
+
+                                    <div class="row ilc-row-text">
+                                        <table id="table003" class="table table-bordered">
+                                            <thead></thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td style="width: 40%">
+                                                        <b>Data: </b>
+                                                        <p>t=8<br>N (t) = Day 8<br>N (t +1) = N (8+1) = Day
+                                                            9<br>&#x3BB;= 2</p>
+                                                    </td>
+                                                    <td>
+                                                        <b>Formula:</b>
+                                                        <p>N (t +1)= N (t) &#xD7; &#x3BB;<br>N(t +1) = 256 × 2<br>N(t
+                                                            +1)= 512<br><br>Therefore the population of bacteria on day
+                                                            9 will be 512.</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="row ilc-row-text">
+                                        <p>You can find the population size at any particular time by rearranging the
+                                            equation to solve for N(t). Notice that:</p>
+                                        <table id="table004" class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">
+                                                        When t=0
+                                                    </th>
+                                                    <th scope="col">
+                                                        When t=1
+                                                    </th>
+                                                    <th scope="col">
+                                                        When t=2
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p> N(t +1) = N(t) x &#x3BB;</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>N(2) = N(1) &#xD7; &#x3BB;</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>N(3) = N(2) &#xD7; &#x3BB;</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>N(1) = N(0) &#xD7; &#x3BB;</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>N(2) = N(1) &#xD7; &#x3BB;</p>
+                                                        <p>Substitute</p>
+                                                        <p>if N(1) = N(0) &#xD7; &#x3BB; </p>
+                                                        <p>N(2) = N(0) &#xD7; &#x3BB; &#xD7; &#x3BB; </p>
+                                                    </td>
+                                                    <td>
+                                                        <p>N(3) = N(2) &#xD7; &#x3BB;</p>
+                                                        <p>Substitute</p>
+                                                        <p>if N(2) = N(0) &#xD7; &#x3BB; &#xD7; &#x3BB;</p>
+                                                        <p>N(3) =N(0) &#xD7; &#x3BB; &#xD7; &#x3BB; &#xD7; &#x3BB;</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <p>The formula for population size for geometric growth models
+                                                            at any particular time is:</p>
+                                                        <p>N(t) = N(0) &#xD7; &#x3BB;<sup>t</sup></p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="row ilc-row-callout">
+                                        <h3 style="padding-left: 20px">Try it!</h3>
+                                        <div class="callout_content_icon"><img src="../assets/icons/try_it.svg"
+                                                style="padding-left: 20px" alt class="img-responsive">
+                                            <div class="callout_content">
+                                                <p>Find the size of the above population of bacteria on day 12, if the
+                                                    initial population size is 1 and &#x3BB; = 2.</p>
+                                                <button class="btn btn-default btn-answer-reveal"
+                                                    id="sbi4u_u1la4-suggestedAnswerButton-6">Suggested Answer</button>
+                                                <div class="answer_reveal invisible" id="sbi4u_u1la4-suggestedAnswer-6">
+                                                    <p>N(t) = N(0) &#xD7; &#x3BB;<sup>t</sup></p>
+                                                    <p>Therefore,</p>
+                                                    <p>N(12) = 1 &#xD7; 2<sup>12</sup> = 4,096</p>
+                                                </div>
+                                                <br>
+                                                <p>Write a concluding statement about size of the above population of
+                                                    bacteria on day 12.</p>
+                                                <button class="btn btn-default btn-answer-reveal"
+                                                    id="sbi4u_u1la4-suggestedAnswerButton-7">Suggested Answer</button>
+                                                <div class="answer_reveal invisible" id="sbi4u_u1la4-suggestedAnswer-7">
+                                                    <p>There will be 4,096 bacteria in the population on day 12.</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <!-- ACCORDION ONE ENDS -->
+                    <!-- ACCORDION THREE BEGINS -->
+                    <div class="accordionILC panel-group" id="accordion3">
+                        <!-- ACCORDION ITEM 1 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion3" href="#accordion3-collapse1"
+                                        class="collapsed">
+                                        Exponential growth model</a>
+                                </h4>
+                            </div>
+                            <div id="accordion3-collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Some populations, like humans, can reproduce at any time of the year. This means
+                                        that the population can grow continuously, since it is not restricted to fixed
+                                        time periods.</p>
+                                    <p>This produces exponential population growth. Like geometric growth, the
+                                        population is growing at a fixed rate over a fixed time period. A graph of
+                                        exponential growth looks almost identical to that of geometric growth, but it
+                                        has a slightly steeper slope because it increases continuously. </p>
+                                    <p>Both the geometric and the exponential growth graphs produce a J-shaped curve.
+                                    </p>
+                                    <p>Here is the equation to determine exponential growth rate at a particular time:
+                                    </p>
+                                    <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                            <mrow>
+                                                <mrow>
+                                                    <mfrac>
+                                                        <mrow>
+                                                            <mi mathvariant="bold">d</mi>
+                                                            <mi mathvariant="bold">N</mi>
+                                                        </mrow>
+                                                        <mrow>
+                                                            <mi mathvariant="bold">d</mi>
+                                                            <mi mathvariant="bold">t</mi>
+                                                        </mrow>
+                                                    </mfrac>
+                                                    <mo mathvariant="bold">=</mo>
+                                                    <mi mathvariant="bold">r</mi>
+                                                    <mi mathvariant="bold">N</mi>
+                                                </mrow>
+                                            </mrow>
+                                        </math></p>
+                                    <p>Where:</p>
+                                    <ol>
+                                        <li>N is population size </li>
+                                        <li>r is the growth rate per individual</li>
+                                    </ol>
+                                    <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                            <mfrac>
+                                                <mrow>
+                                                    <mi>d</mi>
+                                                    <mi>N</mi>
+                                                </mrow>
+                                                <mrow>
+                                                    <mi>d</mi>
+                                                    <mi>t</mi>
+                                                </mrow>
+                                            </mfrac>
+                                            <mo>=</mo>
+                                            <mi>r</mi>
+                                            <mi>N</mi>
+                                        </math></p>
+                                    <p>is called the <strong>instantaneous growth rate</strong> of the population,
+                                        because it tells you how much the population size is changing at any particular
+                                        instant in time.</p>
+                                    <p>With unlimited environmental resources, the value for r reaches its maximum. This
+                                        is called the biotic potential of the population. <strong>Biotic
+                                            potential</strong> means the maximum population growth rate that could occur
+                                        under
+                                        ideal
+                                        conditions for an organism.</p>
+                                    <p>Here is an example you could try in your notebook:</p>
+                                    <p>A population of 8,000 algae plants in a pond is growing exponentially. The growth
+                                        rate per individual, r, is 0.25 per day. </p>
+                                    <p>What is the instantaneous growth rate of the population?</p>
+                                    <button class="btn btn-default btn-answer-reveal"
+                                        id="sbi4u_u1la4-suggestedAnswerButton-8">Suggested Answer</button>
+                                    <div class="answer_reveal invisible" id="sbi4u_u1la4-suggestedAnswer-8">
+
+
+                                        <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                                <mfrac>
+                                                    <mrow>
+                                                        <mi>d</mi>
+                                                        <mi>N</mi>
+                                                    </mrow>
+                                                    <mrow>
+                                                        <mi>d</mi>
+                                                        <mi>t</mi>
+                                                    </mrow>
+                                                </mfrac>
+                                                <mo>=</mo>
+                                                <mi>r</mi>
+                                                <mi>N</mi>
+                                            </math></p>
+                                        <p>= 0.25 &#xD7; 8,000 </p>
+
+                                    </div>
+                                    <br>
+                                    <p>Write a concluding statement beginning with &#x201C;When the population size is
+                                        8,000,...&#x201D;</p>
+                                    <button class="btn btn-default btn-answer-reveal"
+                                        id="sbi4u_u1la4-suggestedAnswerButton-9">Suggested Answer</button>
+                                    <div class="answer_reveal invisible" id="sbi4u_u1la4-suggestedAnswer-9">
+
+
+                                        <p>When the population size is 8,000, the instantaneous growth rate of the
+                                            population is 2000 algae plants per day.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF ACCORDION ITEMS -->
+                    </div>
+                    <!-- ACCORDION FOUR BEGINS -->
+                    <div class="accordionILC panel-group" id="accordion4">
+                        <!-- ACCORDION ITEM 1 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion4" href="#accordion4-collapse1"
+                                        class="collapsed">
+                                        Logistic Growth Model</a>
+                                </h4>
+                            </div>
+                            <div id="accordion4-collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Of course, geometric and exponential growth can&#x2019;t continue forever. At
+                                        some point, the population runs out of resources like food or space. All
+                                        populations eventually face limits on their growth. When this happens, the
+                                        growth curve changes shape. The logistic growth model describes this pattern.
+                                    </p>
+                                    <p>The logistic growth model more closely resembles what happens in natural
+                                        populations. Most populations begin with only a handful of breeding individuals.
+                                    </p>
+                                    <p>Since the population is small, the amount of available resources in the area may
+                                        be much greater than the population needs. So, initially, population growth will
+                                        not be limited by the resources available. This leads to
+                                        geometric or exponential growth. </p>
+
+                                    <p>At some point, the population increase begins to slow down because the supply of
+                                        available resources becomes limited, until eventually, the size stabilizes near
+                                        its carrying capacity. Because the resulting curve on the graph
+                                        looks S-shaped, it is sometimes also called a sigmoid curve (sigma is the Greek
+                                        letter, S).</p>
+
+                                    <p>As shown in the following figure, the logistic population growth model can be
+                                        divided into three phases: </p>
+                                    <ul>
+                                        <li>The Lag phase</li>
+                                        <li>The Log phase</li>
+                                        <li>The Stationary phase</li>
+                                    </ul>
+                                    <img src="../assets/img/sbi4u_01.04.11.jpg"
+                                        alt="Graph showing the logistic model of population growth.  The curve shows an initial slow growth period, followed by a rapid growth period and followed by a stable population size. "
+                                        class="img-responsive">
+                                    <p>Here&#x2019;s an explanation of the phases that would add more context:</p>
+                                    <table id="table005" class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">
+                                                    Phase of logistic population growth model
+                                                </th>
+                                                <th scope="col">
+                                                    Lag phase
+                                                </th>
+                                                <th scope="col">
+                                                    Log phase
+                                                </th>
+                                                <th scope="col">
+                                                    Stationary phase
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p>Part of curve</p>
+                                                </td>
+                                                <td>
+                                                    <p>First part of the curve</p>
+                                                </td>
+                                                <td>
+                                                    <p>Next phase in the growth pattern is called the log phase (short
+                                                        for &#x201C;logarithmic&#x201D;)</p>
+                                                </td>
+                                                <td>
+                                                    <p>The last phase and part of curve</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Growth pattern</p>
+                                                </td>
+                                                <td>
+                                                    <p>Population is slowly building up</p>
+                                                    <p>Increase in population size is slow, because the population is
+                                                        still small.</p>
+                                                </td>
+                                                <td>
+                                                    <p>Population increases geometrically or exponentially</p>
+                                                    <p>Since there are enough resources to meet the needs of the
+                                                        population, population growth rate reaches its maximum and
+                                                        biotic potential.</p>
+                                                    <p>As the population increases, it begins to run out of resources
+                                                        such as food, water, and space. Numbers increase until there are
+                                                        no longer enough available resources to maintain the high rate
+                                                        of population increase. At
+                                                        this point, the population growth rate begins to slow down and
+                                                        eventually stops when the population size reaches its carrying
+                                                        capacity (K).</p>
+                                                </td>
+                                                <td>
+                                                    <p>Population approaches its carrying capacity because </p>
+                                                    <p>number of births = number of deaths </p>
+                                                    <p>Eventually a dynamic equilibrium around its carrying capacity is
+                                                        maintained as</p>
+                                                    <p>population growth rate = 0</p>
+                                                    <p>In this phase, populations can either be stable, or can fluctuate
+                                                        around K.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <h4>Using the logistic growth model</h4>
+                                    <p>Mathematically, the logistic growth model is expressed using the following
+                                        equation:</p>
+                                    <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                            <mrow>
+                                                <mrow>
+                                                    <mfrac>
+                                                        <mrow>
+                                                            <mi>d</mi>
+                                                            <mi>N</mi>
+                                                        </mrow>
+                                                        <mrow>
+                                                            <mi>d</mi>
+                                                            <mi>t</mi>
+                                                        </mrow>
+                                                    </mfrac>
+                                                    <mo>=</mo>
+                                                    <mi>r</mi>
+                                                    <mi>N</mi>
+                                                    <mi>&nbsp;</mi>
+                                                    <mfrac>
+                                                        <mrow>
+                                                            <mo>(</mo>
+                                                            <mi>K</mi>
+                                                            <mo>&#x2212;</mo>
+                                                            <mi>N</mi>
+                                                            <mo>)</mo>
+                                                        </mrow>
+                                                        <mi>K</mi>
+                                                    </mfrac>
+                                                </mrow>
+                                            </mrow>
+                                        </math></p>
+                                    <p><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                            <mrow>
+                                                <mrow>
+                                                    <mi mathvariant="normal">W</mi>
+                                                    <mi mathvariant="normal">h</mi>
+                                                    <mi mathvariant="normal">e</mi>
+                                                    <mi mathvariant="normal">r</mi>
+                                                    <mi mathvariant="normal">e</mi>
+                                                    <mi>:</mi>
+                                                </mrow>
+                                            </mrow>
+                                        </math> <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                            <mrow>
+                                                <mstyle scriptlevel="+1">
+                                                    <mfrac>
+                                                        <mrow>
+                                                            <mi>d</mi>
+                                                            <mi>N</mi>
+                                                        </mrow>
+                                                        <mrow>
+                                                            <mi>d</mi>
+                                                            <mi>t</mi>
+                                                        </mrow>
+                                                    </mfrac>
+                                                </mstyle>
+                                            </mrow>
+                                        </math>is the instantaneous growth rate of the population,</p>
+                                    <p><strong>N</strong> is the population size at time <em class="Italic">t</em></p>
+                                    <p><strong>r</strong> is the growth rate per individual</p>
+                                    <p><strong>K</strong> is the carrying capacity</p>
+
+                                    <p>This equation is similar to the one you saw previously for exponential growth.
+                                        The difference here is the addition of the term (K &#x2013; N)/K. This term
+                                        gives you the proportion of the carrying capacity that is still
+                                        unused. As N gets closer in value to K, (K &#x2013; N)/K gets closer to zero.
+                                        This causes the population growth rate to slow down (late log phase). When N
+                                        reaches K, this term is zero, and so population growth stops
+                                        (stationary phase).</p>
+                                    <p>The graph below compares the exponential and logistic growth models.</p>
+
+                                    <!-- right column -->
+
+                                    <img src="../assets/img/sbi4u_01.04.12.png"
+                                        alt="Graph comparing the logistic and exponential models of population growth.  The curve representing exponential growth increases rapidly and does not level off while the logistic growth curve levels off after a period of time. "
+                                        class="img-responsive">
+
+                                    <p>The logistic growth model is useful for modelling the behaviour of natural
+                                        populations, because it accounts for the fact that resources are always finite.
+                                    </p>
+                                    <p>However, it assumes that the amount of resources stays constant. In natural
+                                        systems, there are often variations in resource availability. </p>
+                                    <p>For example, the amount of space and food available may be reduced by the arrival
+                                        of a new species that competes for these resources. Abiotic factors, like
+                                        extreme weather, fire, or floods can also change the amount of
+                                        resources available. </p>
+                                    <p>As a result, natural populations generally display logistic growth patterns, but
+                                        not as cleanly as shown in the theoretical model seen in the previous figure.
+                                    </p>
+                                    <h5 class="h5"><strong>Example</strong></h5>
+                                    <img src="../assets/img/sbi4u_01.04.13.jpg" alt class="img-responsive">
+                                    <p>For many decades, biologists have studied a population of fur seals (Callorhinus
+                                        ursinus) on St. Paul&#x2019;s Island, Alaska. In one long-term study, the number
+                                        of breeding males was recorded over the period 1910 to 1950.
+                                        The population data are shown in the table below:</p>
+                                    <table id="table006" class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">
+                                                    Time (year)
+                                                </th>
+                                                <th scope="col">
+                                                    Number of breeding males
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p>1910</p>
+                                                </td>
+                                                <td>
+                                                    <p>1000</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>1914</p>
+                                                </td>
+                                                <td>
+                                                    <p>900</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>1916</p>
+                                                </td>
+                                                <td>
+                                                    <p>3100</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>1919</p>
+                                                </td>
+                                                <td>
+                                                    <p>4800</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>1922</p>
+                                                </td>
+                                                <td>
+                                                    <p>3200</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>1924</p>
+                                                </td>
+                                                <td>
+                                                    <p>3300</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>1925</p>
+                                                </td>
+                                                <td>
+                                                    <p>3400</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>1930</p>
+                                                </td>
+                                                <td>
+                                                    <p>6050</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>1933</p>
+                                                </td>
+                                                <td>
+                                                    <p>8600</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>1937</p>
+                                                </td>
+                                                <td>
+                                                    <p>10,800</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>1938</p>
+                                                </td>
+                                                <td>
+                                                    <p>9200</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>1940</p>
+                                                </td>
+                                                <td>
+                                                    <p>10,000</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>1942</p>
+                                                </td>
+                                                <td>
+                                                    <p>10,400</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>1945</p>
+                                                </td>
+                                                <td>
+                                                    <p>10,000</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>1946</p>
+                                                </td>
+                                                <td>
+                                                    <p>10,100</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>1947</p>
+                                                </td>
+                                                <td>
+                                                    <p>9800</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>1950</p>
+                                                </td>
+                                                <td>
+                                                    <p>9900</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>The data from table are plotted in the figure below.</p>
+                                    <p> A sigmoid-shaped trend line was added, to highlight the logistic pattern
+                                        revealed in the data.</p>
+                                    <img src="../assets/img/sbi4u_01.04.14.svg"
+                                        alt="Logistic population growth in the number of breeding males in a population of fur seals on St. Paul’s Island, Alaska"
+                                        class="img-responsive">
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ACCORDION ONE ENDS -->
+
+                </div>
+            </div>
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Try it!</h3>
+                    <div class="callout_content_icon"><img src="../assets/icons/try_it.svg" alt class="img-responsive">
+                        <div class="callout_content">
+                            <p><strong>Understanding checkpoint: Modelling and predicting population change</strong>
+                            </p>
+                            <p>Answer the following questions in your noteook:</p>
+                            <p>In the following paragraphs, fill in the blanks using the correct population terminology.
+                                Compare your answers to the suggested answers once complete and reflect on if you will
+                                need to revisit the topic.</p>
+                            <p>a) The number of individuals in a given population is symbolized by the letter _____. The
+                                intrinsic rate of increase, also known as the ______________________, is the rate at
+                                which populations can grow if resources were unlimited,
+                                and is represented by the letter ____. Populations will grow to the limits of their
+                                ______________________, which puts a cap on the number of individuals; this number is
+                                called the _____________________ and is symbolized by the letter
+                                _____.</p>
+                            <button class="btn btn-default btn-answer-reveal"
+                                id="sbi4u_u1la4-suggestedAnswerButton-10">Suggested Answer</button>
+                            <div class="answer_reveal invisible" id="sbi4u_u1la4-suggestedAnswer-10">
+
+
+                                <p>The number of individuals in a given population is symbolized by the letter
+                                    <strong>N</strong>. The intrinsic rate of increase, also known as the <strong>biotic
+                                        potential</strong>, is the rate at which
+                                    populations could grow if resources were unlimited, and is represented by the letter
+                                    r. Populations will grow to the limits of their <strong>environment</strong>, which
+                                    puts a cap on the number of individuals; this
+                                    number is called the <strong>carrying capacity</strong> and is symbolized by the
+                                    letter <strong>K</strong>.</p>
+
+                            </div>
+                            <br>
+                            <p>b) The population growth model, which attempts to account for the amount of resources
+                                that a given population&#x2019;s habitat has available to sustain it, is called the
+                                ____________ growth model. When graphed, the model displays an
+                                S-shaped or _________________ curve. This curve can be broken up into three phases. The
+                                first phase is characterized by a period of slow, constant, arithmetic increase and is
+                                called the _______________ phase. The second phase is
+                                characterized by very rapid growth, moving quickly from slow growth to an exponential
+                                growth pattern, and is called the ________________ phase.The third phase is
+                                characterized by the flattening out of the line into a plateau,
+                                indicating that the growth rate is __________ and thus, the population is no longer
+                                increasing. For this reason, it is called the _________________ phase. In natural
+                                populations, natural fluctuations will causes light fluctuations
+                                around the K value, showing that a state of dynamic population _____________________ has
+                                been reached.</p>
+                            <button class="btn btn-default btn-answer-reveal"
+                                id="sbi4u_u1la4-suggestedAnswerButton-11">Suggested Answer</button>
+                            <div class="answer_reveal invisible" id="sbi4u_u1la4-suggestedAnswer-11">
+
+
+                                <p>The population growth model, which attempts to account for the amount of resources
+                                    that a given population&#x2019;s habitat has available to sustain it, is called the
+                                    <strong>logistic growth</strong> model. When graphed, the model
+                                    displays an S-shaped or <strong>sigmoid</strong> curve. This curve can be broken up
+                                    into three phases. The first phase is characterized by a period of slow, constant,
+                                    arithmetic increase and is called the <strong>lag</strong>
+                                    phase. The second phase is characterized by very rapid growth, moving quickly from
+                                    slow growth to an exponential growth pattern, and is called the <strong>log</strong>
+                                    phase. The third phase is characterized by the flattening out of
+                                    the line into a plateau, indicating that the growth rate is <strong>zero</strong>
+                                    and thus, the population is no longer increasing. For this reason, it is called the
+                                    <strong>stationary</strong> phase. In natural populations, natural
+                                    fluctuations will cause slight fluctuations around the K value, showing that a state
+                                    of dynamic population <strong>equilibrium</strong> has been reached.</p>
+
+                            </div>
+                            <br>
+                            <p>c) Theoretically, what prevents the unlimited exponential growth of natural populations,
+                                causing them to eventually display a logistic growth pattern?</p>
+                            <button class="btn btn-default btn-answer-reveal"
+                                id="sbi4u_u1la4-suggestedAnswerButton-12">Suggested Answer</button>
+                            <div class="answer_reveal invisible" id="sbi4u_u1la4-suggestedAnswer-12">
+                                <p>For natural populations, the resources are never unlimited. One or more resources
+                                    determine the carrying capacity for a species, in a particular environment. As those
+                                    resource limits are reached, the population growth slows down
+                                    until it stops growing completely and levels off. This causes the initial
+                                    exponential growth pattern (J-curve) to change into the sigmoid, or S-shaped curve,
+                                    of the logistic growth model.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Density-dependent and density-independent factors</h3>
+                    <p>Population growth is affected by internal and external factors. Populations can theoretically
+                        undergo exponential growth forever, but are prevented from doing so because of the limits
+                        imposed on them by the carrying capacity. The
+                        carrying capacity is determined by a combination of internal and external factors. </p>
+                    <ul>
+                        <li>The <i>internal factors</i> are called <strong>density-dependent factors</strong>, because
+                            their influence changes with the density of the population. </li>
+                        <li>The <i>external factors</i> are called <strong>density-independent factors</strong>, because
+                            their influence does not depend on the density of the population.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <!-- ACCORDION ONE BEGINS -->
+                    <div class="accordionILC panel-group" id="accordion5">
+                        <!-- ACCORDION ITEM 1 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion5" href="#accordion5-collapse1"
+                                        class="collapsed">
+                                        Density-dependent factors</a>
+                                </h4>
+                            </div>
+                            <div id="accordion5-collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>The factors that affect a population&#x2019;s growth rate because of its density
+                                        are called <strong>density-dependent factors</strong>. The effect of these
+                                        factors intensifies as density increases. </p>
+                                    <p>For animals, these factors can include:</p>
+                                    <ol>
+                                        <li>the amount of food </li>
+                                        <li>breeding territory available</li>
+                                        <li>social dynamics</li>
+                                        <li>predator avoidance opportunities</li>
+                                        <li>the risk of parasites and disease, and so on. </li>
+                                    </ol>
+                                    <p>For plants, the availability of resources like sunlight, water, and soil will
+                                        depend on how many other plants are competing for them in the same area.</p>
+                                    <br>
+                                    <h4>Examples of density-dependent factors</h4>
+                                    <p>Density-dependent factors include:</p>
+                                    <ol>
+                                        <li>Predator focus<br>Predators may focus their hunting on the most common prey,
+                                            because they are so visible. As prey density goes up, predation pressure may
+                                            increase, causing higher mortality.</li>
+                                        <li>Resource availability<br>When density is high, individuals have to share
+                                            resources. In some cases, this increases the amount of energy they spend
+                                            acquiring and protecting resources(for example, feeding territories),which
+                                            leads
+                                            to lower birth rates and higher mortality rates.</li>
+                                        <li>Aggression<br>Under high density some species, like mice, change their
+                                            behaviour and become more anti-social and aggressive against their own
+                                            species.</li>
+                                        <li>Emigration<br>As density increases, some individuals may migrate away from
+                                            the area, seeking better conditions and thus decreasing the population size.
+                                        </li>
+                                        <li>Waste accumulation<br>In dense populations, there can be an accumulation of
+                                            toxic wastes, such as fecal matter and urine, which pollute the habitat.
+                                        </li>
+                                        <li>Disease<br>Diseases and parasites can often spread more quickly in densely
+                                            crowded populations.</li>
+                                        <li>Stress<br>High density increases stress levels in many animals, leading to
+                                            weakened immune systems and other health problems.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ACCORDION ITEM 2 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion5" href="#accordion5-collapse2"
+                                        class="collapsed">
+                                        Density-independent factors</a>
+                                </h4>
+                            </div>
+                            <div id="accordion5-collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p><strong>Density-independent factors</strong> affect the population growth rate in
+                                        ways that are not related to the population&#x2019;s density.
+                                        Density-independent factors can wipeout populations, whether they contain a
+                                        thousand
+                                        individuals or only ten.</p>
+                                    <p>Density-independent factors include <i>abiotic</i> factors such as:</p>
+                                    <ul>
+                                        <li>Extreme weather events</li>
+                                        <li>Fires</li>
+                                        <li>Droughts</li>
+                                        <li>Volcanic eruptions</li>
+                                        <li>Pollution</li>
+                                    </ul>
+                                    <p>Many insect populations are regulated by density-independent factors, especially
+                                        weather. </p>
+                                    <ul>
+                                        <li>Cold weather can wipe out entire populations.</li>
+                                        <li>Warm weather can cause their numbers to rise exponentially.</li>
+                                    </ul>
+                                    <img src="../assets/img/sbi4u_01.04.16.jpg"
+                                        alt="Japanese beetle (Popillia japonica) in western Canada"
+                                        class="img-responsive">
+                                    <p>There is dramatic evidence of this in populations of the Japanese beetles
+                                        (<i>Popillia japonica</i>) in western Canada.</p>
+                                    <p>The Japanese beetle has traditionally not been very abundant in Canada. However,
+                                        with climate change, it is spreading northwards, through British Columbia, and
+                                        east into Alberta, as the climate warms up. The beetles lay
+                                        their eggs in pine trees and when the eggs hatch, the larvae eat the tissue
+                                        under the bark, eventually causing the trees to die. Huge areas of western
+                                        Canada are becoming deforested, due to the recent increase in pine beetle
+                                        populations.</p>
+                                    <p>Cold winters used to kill off most of the Japanese beetles every year, keeping
+                                        their numbers low. As winters become milder, the beetles are surviving better,
+                                        which is resulting in an explosion in their numbers. This is an example of
+                                        a density-independent factor because the warm weather benefits all beetles,
+                                        whether their population size is high or low.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF ACCORDION ITEMS -->
+                    </div>
+                    <!-- ACCORDION ONE ENDS -->
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Understanding checkpoint: Density-dependent and density-independent factors</h3>
+                    <p>a) Data collected on an island population of the song sparrow (<i>Melospiza melodia</i>) are
+                        presented in the following table. </p>
+                    <p>Graph the number of surviving young on the vertical y-axis against the number of breeding females
+                        on the horizontal x-axis as a scatter plot. </p>
+                    <p>Draw this graph by hand. Include a line of best fit (trend line) and label the axes and then
+                        compare your graph to the suggested answer below.</p>
+                    <table id="table008" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    Number of surviving young per female
+                                </th>
+                                <th scope="col">
+                                    Number of breeding females
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>4.1</p>
+                                </td>
+                                <td>
+                                    <p>1</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>3.9</p>
+                                </td>
+                                <td>
+                                    <p>20</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>4.5</p>
+                                </td>
+                                <td>
+                                    <p>28</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>3.8</p>
+                                </td>
+                                <td>
+                                    <p>30</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>3.2</p>
+                                </td>
+                                <td>
+                                    <p>45</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>3.1</p>
+                                </td>
+                                <td>
+                                    <p>48</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>3.2</p>
+                                </td>
+                                <td>
+                                    <p>50</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>2.8</p>
+                                </td>
+                                <td>
+                                    <p>52</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>2.7</p>
+                                </td>
+                                <td>
+                                    <p>53</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>1.1</p>
+                                </td>
+                                <td>
+                                    <p>62</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>1.3</p>
+                                </td>
+                                <td>
+                                    <p>65</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>0.8</p>
+                                </td>
+                                <td>
+                                    <p>72</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="btn btn-default btn-answer-reveal" id="sbi4u_u1la4-suggestedAnswerButton-A">Suggested
+                        Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u1la4-suggestedAnswer-A">
+
+
+                        <img src="../assets/img/sbi4u_01.04.17.svg"
+                            alt="Graph demonstrating that as the the number of breeding females increases, the number of surviving young per female decreases."
+                            class="img-responsive">
+
+                    </div>
+                    <br>
+                    <p>b) Describe the trend in the data. What appears to be the relationship between the number of
+                        surviving young and the number of breeding females on the island? Check your answer with the
+                        suggested response below after you have completed
+                        the question. </p>
+                    <button class="btn btn-default btn-answer-reveal"
+                        id="sbi4u_u1la4-suggestedAnswerButton-13">Suggested Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u1la4-suggestedAnswer-13">
+
+                        <p>The data shows a negative linear relationship between the number of surviving young and the
+                            number of breeding females on the island. The relationship shows that as the number of
+                            breeding females increases, the number of surviving
+                            young decreases.</p>
+                    </div>
+                    <br>
+                    <p>c) Is this most likely an example of density-dependence or density-independence? Explain your
+                        answer. Check your answer with the suggested response below after you have completed the
+                        question.</p>
+                    <button class="btn btn-default btn-answer-reveal"
+                        id="sbi4u_u1la4-suggestedAnswerButton-14">Suggested Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u1la4-suggestedAnswer-14">
+                        <p>This is most likely an example of density-dependence, because breeding success is declining
+                            as density increases. This may be happening because there is more competition for nest sites
+                            or food.</p>
+                    </div>
+                </div>
+            </div>
+            <!--start multiple choice section -->
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>For the following problems select the type of factor that is causing the population change.</p>
+                    <div id="u1la4_mc2" class="multiple-choice-widget" data-ng-controller="multipleChoiceController"
+                        data-ng-init="getQuestionData('../widgets/sbi4u_u1la4_mc2.json')">
+                        <div data-multiple-choice-directive></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Population cycles and predator-prey dynamics</h3>
+                </div>
+            </div>
+            <div class="row">
+                <!-- left column -->
+                <div class="col-xs-5 col-xs-offset-1">
+                    <p>Some populations do not follow the logistic or exponential growth pattern. Instead, their numbers
+                        go through a population cycle, during which dramatic increases and decreases occur over a
+                        regular time period.</p>
+                </div>
+                <!-- right column -->
+                <div class="col-xs-5">
+                    <p><img src="../assets/img/sbi4u_01.04.18.jpg" alt class="img-responsive"></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>For example, the forest tent caterpillar (Malacosoma disstria) is the larval form of a moth found
+                        throughout eastern North America. This insect has high fecundity and can lay 300 eggs at a time.
+                        It also experiences regular population
+                        cycles. These cycles occur about every 10 years and the peak lasts for two to four years.</p>
+                    <img src="../assets/img/sbi4u_01.04.19.svg"
+                        alt="Population cycles of tent caterpillars in Ontario as revealed by the size of the strip of vegetation (defoliate)"
+                        class="img-responsive">
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>In a year of peak abundance, the tent caterpillars will eat all of the leaves (defoliate) on most
+                        of the Aspen trees, over a wide region. The trees will eventually recover if they are given time
+                        to grow their leaves again.</p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- left column -->
+                <div class="col-xs-5 col-xs-offset-1">
+                    <p>After a few years of very high abundance, the population of tent caterpillars will suddenly
+                        decline and stay relatively low for the next eight to 10 years. The causes of these outbreaks
+                        and declines are not fully understood, but
+                        biologists have shown that weather, predation, and parasites all play a role.</p>
+                </div>
+                <!-- right column -->
+                <div class="col-xs-5">
+                    <p><img src="../assets/img/sbi4u_01.04.20.jpg" alt class="img-responsive"></p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>Sometimes, population cycles involve more than one species. This is sometimes seen in the case of
+                        a predator and its main prey, where both show a similar fluctuation in population size. A famous
+                        example of this is the predator-prey
+                        relationship between the Canadian lynx (<i>Lynx canadensis</i>) and the snowshoe hare (<i>Lepus
+                            americanus</i>), in Canada&#x2019;s boreal forest.</p>
+                </div>
+            </div>
+            <div class="row ilc-row-callout">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Case study: Canadian lynx and snowshoe hare</h3>
+                    <div class="callout_content_icon"><img src="../assets/icons/case_study.svg" alt class="img-responsive">
+                        <div class="callout_content">
+                    <p>The example of the population cycles shown by the lynx, a medium-sized predatory cat, and its
+                        main prey, the snowshoe hare (a kind of rabbit) is probably the best documented and studied
+                        example in the world.</p>
+                </div>
+            </div>
+        </div>
+            </div>
+            <div class="row margin-top-xl">
+                <!-- left column -->
+                <div class="col-xs-5 col-xs-offset-1">
+                    <p><img src="../assets/img/sbi4u_01.04.21.jpg" alt="Decorative" class="img-responsive"></p>
+                </div>
+
+                <!-- right column -->
+                <div class="col-xs-5">
+                    <p><img src="../assets/img/sbi4u_01.04.22.jpg" alt="Decorative" class="img-responsive"></p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h4>The data</h4>
+                    <p>During the eighteenth and nineteenth centuries, employees of the Hudson&#x2019;s Bay Company in
+                        northern Ontario reported that the Ojibwe First Nations people would go through periods of
+                        starvation approximately every 10 years. They
+                        attributed this to the very obvious periodic decline in a major food source of these indigenous
+                        people: the snowshoe hare.</p>
+                    <p>At that time, both the hare and its main predator, the lynx, were trapped for their fur, which
+                        was sold commercially through the Hudson&#x2019;s Bay Company. Because of this, the
+                        Hudson&#x2019;s Bay Company kept detailed records of the
+                        numbers of pelts (skins with fur) collected every year, over a period of several hundred years.
+                        These records revealed a cycling of the population sizes of lynx and hares, with each cycle
+                        lasting about 10 years. A sample of this data is
+                        shown below:</p>
+                    <figure><img src="../assets/img/sbi4u_01.04.23.png"
+                        alt="Number of pelts of the Canadian lynx (dotted line) and snowshoe hare (solid line) collected by the Hudson’s Bay Company between 1845 and 1935.  Graphs demonstrates that the two populations follow the same trend as their populations increase and decrease."
+                        class="img-responsive"></figure>
+                    <p>You can see that the numbers of hare are generally higher than the numbers of lynx, but that both
+                        reach peak levels about every 10 years, and then dramatically drop off again. You can also see
+                        that the population peaks in lynx seem to
+                        occur a year or two later than those for the hares. In the 1950s, biologists analyzed these
+                        records to try and understand what caused these regular cycles. The idea that populations cycled
+                        naturally was considered unlikely, as the
+                        scientific consensus at the time was that natural
+                        populations were generally stable. This data set has since become a textbook example of natural
+                        population cycling, and the research into why it occurs continues to this day.</p>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h5 class="h5">How the cycle happens?</h5>
+                </div>
+            </div>
+            <div class="row">
+                <!-- left column -->
+                <div class="col-xs-5 col-xs-offset-1">
+                    <p>The preferred food of hares is the mature leaves (needles) of white spruce trees that grow
+                        everywhere in the boreal forest. However, these leaves grow very slowly in the cold climate, so
+                        hares eat all of the available needles in a short
+                        time. Lynx are major predators of the hares and will travel many kilometres to find areas in
+                        which hares are abundant.</p>
+                </div>
+                <!-- right column -->
+                <div class="col-xs-5">
+                    <p><img src="../assets/img/sbi4u_01.04.24.jpg" alt="Decorative" class="img-responsive"></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- left column -->
+                <div class="col-xs-5 col-xs-offset-1">
+                    <p><img src="../assets/img/sbi4u_01.04.25.jpg" alt="Decorative" class="img-responsive"></p>
+                </div>
+
+                <!-- right column -->
+                <div class="col-xs-5">
+                    <p>The population cycle of lynx and hares is synchronized over a very wide area of the boreal forest
+                        region of northern Canada. Movement of individual animals in and out of the population
+                        can&#x2019;t explain the pattern over an area this
+                        large, so it must be the result of births and deaths.</p>
+                </div>
+            </div>
+
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>Biologists have investigated many possible causes for this pattern and no single cause has
+                        emerged as the driving force. It is now understood that the cycles result from a complex
+                        interaction of many density-dependent and
+                        density-independent factors. </p>
+                    <p>The latest research indicates that a combination of two main factors primarily drives the cycle.
+                        They are:</p>
+                    <ul>
+                        <li>Food Supply</li>
+                        <li>Predation</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>The interactions of these factors cause the cycle to have three phases:</p>
+                    <img src="../assets/img/sbi4u_01.04.26.jpg" alt class="img-responsive">
+                </div>
+            </div>
+
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <!-- ACCORDION ONE BEGINS -->
+                    <div class="accordionILC panel-group" id="accordion6">
+                        <!-- ACCORDION ITEM 1 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion6" href="#accordion6-collapse1"
+                                        class="collapsed">
+                                        The Increasing Phase</a>
+                                </h4>
+                            </div>
+                            <div id="accordion6-collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>When density and numbers of hares are low:</p>
+                                    <ol>
+                                        <li>there is a lot for them to eat and their fecundity can be high. </li>
+                                        <li>females can produce 16&#x2013;18 offspring per summer.</li>
+                                        <li>they can also start breeding at one year of age, so their population can
+                                            increase quickly. </li>
+                                        <li>the numbers of their predators is low also.</li>
+                                        <li>most predators, like the lynx, foxes, and owls, will switch to other prey.
+                                            This gives the hare population a chance to increase. </li>
+                                    </ol>
+                                    <p>However, as the hare numbers increase, they begin to run out of their preferred
+                                        food and shift to eating less nutritious vegetation, especially during winter.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ACCORDION ITEM 2 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion6" href="#accordion6-collapse2"
+                                        class="collapsed">
+                                        Peak Phase</a>
+                                </h4>
+                            </div>
+                            <div id="accordion6-collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Hare numbers increase rapidly when there is:</p>
+                                    <ol>
+                                        <li>abundant food</li>
+                                        <li>low predation</li>
+                                    </ol>
+                                    <p>Within three years, they can reach peak abundance. However, as their density
+                                        increases:</p>
+                                    <ol>
+                                        <li>their mortality increases</li>
+                                        <li>their reproduction rate declines</li>
+                                        <li>mostly likely because less food is available and there is more social stress
+                                        </li>
+                                    </ol>
+                                    <p>When hares are abundant, the food supply for lynx is plentiful, so they can also
+                                        reproduce rapidly. However, the lynx only gives birth in spring, which means
+                                        that the population increase in lynx is delayed, in relation to that of
+                                        the hare. The increase in the lynx population generally lags behind the increase
+                                        in the hare population by a year or two.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ACCORDION ITEM 3 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion6" href="#accordion6-collapse3"
+                                        class="collapsed">
+                                        Decline Phase</a>
+                                </h4>
+                            </div>
+                            <div id="accordion6-collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Once the hares reach their peak abundance, their numbers start to fall quickly
+                                        because </p>
+                                    <ol>
+                                        <li>they are running out of high-quality food.</li>
+                                        <li>there are now increasing numbers of predators eating them and their
+                                            offspring. Lynx eat the adult hares, while opportunistic predators like
+                                            hawks, owls, and foxes eat both adults and juveniles.</li>
+                                    </ol>
+                                    <p>Consequently, as the hare population decreases drastically the Lynx are impacted
+                                        because:</p>
+                                    <ol>
+                                        <li>their food supply disappears, and some lynx starve.</li>
+                                        <li>they become susceptible to disease, causing increased mortality and
+                                            decreased fecundity. </li>
+                                    </ol>
+                                    <p>This causes the population of lynx to drop dramatically as well, but this only
+                                        occurs after the hares have begun their decline. With low numbers of hares, the
+                                        vegetation now begins its recovery. Eventually, with more food
+                                        available and lower numbers of predators, the hare population increases, and the
+                                        cycle begins again.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF ACCORDION ITEMS -->
+                    </div>
+                    <!-- ACCORDION ONE ENDS -->
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h3>Population cycles and predator-prey dynamics</h3>
+                    <div id="u1la4_mc3" class="multiple-choice-widget" data-ng-controller="multipleChoiceController"
+                        data-ng-init="getQuestionData('../widgets/sbi4u_u1la4_mc3.json')">
+                        <div data-multiple-choice-directive></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>2) Why does the population cycle of lynx usually lag behind the cycle of the hare by about one
+                        year? Answer the question below and check your response with the suggested answer.</p>
+                    <button class="btn btn-default btn-answer-reveal"
+                        id="sbi4u_u1la4-suggestedAnswerButton-15">Suggested Answer</button>
+                    <div class="answer_reveal invisible" id="sbi4u_u1la4-suggestedAnswer-15">
+                        <p>The population increase in the lynx takes about a year to occur after the hare population
+                            increases, because the lynx only gives birth once per year in spring. As the abundance of
+                            hares declines, there is less food for the lynx, but
+                            this does not cause starvation or a decline in the lynx population until most of the hares
+                            are gone, and this takes many months to occur.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="consolidation">
+            <div class="row banner">
+                <h1><img src="../assets/img/sbi4u_01_consolidation.png" alt="Consolidation" class="img-responsive"></h1>
+            </div>
+            <div class="row ilc-row-text">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2 class="h3">Part 1: Summarize your learning</h2>
+                    <p>You have learned about many population growth models: geometric growth, exponential growth, and
+                        logistic growth. To help you consolidate your understanding of these growth models, in your
+                        notebook, complete the table below using the
+                        information presented in this learning activity.</p>
+                    <table id="table010" class="table table-bordered">
+                        <thead></thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>Definition:</p>
+                                </td>
+                                <td>
+                                    <p>Characteristics:</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Examples:</p>
+                                </td>
+                                <td>
+                                    <p>Non-examples:</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Part 2: Reflect your learning</h3>
+                    <p>Looking at your notes for this learning activity, are they complete? Do you have all the
+                        information you will need to study later on?</p>
+                    <p>Take the time to review concepts you are unsure about before moving on.</p>
+                    <p>Now that you have completed this learning activity, reflect back on the success criteria. Select
+                        your level of readiness for each criteria.</p>
+                </div>
+            </div>
+            <div class="row ilc-row-widget">
+                <div class="col-xs-10 col-xs-offset-1">
+                <!-- Semantic Responsive AODA AA compliant Table -->
+                <fieldset>
+                    <!--Wrapping a table in a fieldset is the last resort in terms of semantic AODA compliance to pass WAVE test-->
+                    <legend class="sr-only">
+                        Agree or Disagree statements
+                    </legend>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col" id="table001Col1">Success Criteria</th>
+                                <th scope="col" id="table001Col2">Yes - confident I am able</th>
+                                <th scope="col" id="table001Col3">Not yet - need to review the learning activity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Define density dependent and density-independent factors and provide examples</td>
+                                <td><input type="radio" id="table1Row1Radial1" name="table1Row1Radial"
+                                        aria-labelledby="table001Col2"> </td>
+                                <td><input type="radio" id="table1Row1Radial2" name="table1Row1Radial"
+                                        aria-labelledby="table001Col3"> </td>
+                            </tr>
+                            <tr>
+                                <td>Calculate the population change in a population</td>
+                                <td><input type="radio" id="table1Row2Radial1" name="table1Row2Radial"
+                                        aria-labelledby="table001Col2"> </td>
+                                <td><input type="radio" id="table1Row2Radial2" name="table1Row2Radial"
+                                        aria-labelledby="table001Col3"> </td>
+                            </tr>
+                            <tr>
+                                <td>Analyse both geometric, exponential and logistic growth patterns.</td>
+                                <td><input type="radio" id="table1Row3Radial1" name="table1Row3Radial"
+                                        aria-labelledby="table001Col2"> </td>
+                                <td><input type="radio" id="table1Row3Radial2" name="table1Row3Radial"
+                                        aria-labelledby="table001Col3"> </td>
+                            </tr>
+                            <tr>
+                                <td>Describe the predator-prey cycle</td>
+                                <td><input type="radio" id="table1Row4Radial1" name="table1Row4Radial"
+                                        aria-labelledby="table001Col2"> </td>
+                                <td><input type="radio" id="table1Row4Radial2" name="table1Row4Radial"
+                                        aria-labelledby="table001Col3"> </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </fieldset>
+            </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Compiled GVL, Widgets, ILOs, etc. -->
+    <script src="../dependencies/vendor.min.js"></script>
+    <script src="../dependencies/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script>
+        angular.bootstrap(document.getElementById('u1la4_mc1'), ['multipleChoiceWidget']);
+        angular.bootstrap(document.getElementById('u1la4_mc2'), ['multipleChoiceWidget']);
+        angular.bootstrap(document.getElementById('u1la4_mc3'), ['multipleChoiceWidget']);
+
+    </script>
+    <script src="../assets/js/bugfixes.js"></script>
+</body>
+
+</html>
